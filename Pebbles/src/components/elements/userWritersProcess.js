@@ -41,17 +41,17 @@ function UserWritersProcess({ dats }) {
                         return <Grid container direction='row' item xs={12} sm={4} spacing={0}>
                             
                             <Grid item xs={4} sm={12}>
-                                <h2>6 Pages</h2>
+                                <p style={{fontWeight:"bold"}}>6 Pages</p>
                                 <p>{dats.node.writersixpageprice}</p>
                             </Grid>
 
                             <Grid item xs={4} sm={12}>
-                                <h2>12 Pages</h2>
+                                <p style={{fontWeight:"bold"}}>12 Pages</p>
                                 <p>{dats.node.writertwelvepageprice}</p>
                             </Grid>
 
                             <Grid item xs={4} sm={12}>
-                                <h2>More</h2>
+                                <p style={{fontWeight:"bold"}}>More</p>
                                 <p>Contact to discuss.</p>
                             </Grid>
                         

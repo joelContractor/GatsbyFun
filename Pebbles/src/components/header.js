@@ -20,10 +20,10 @@ const Header = ({ siteTitle }) => (
         <Link to="/" style={ {float:`left`, color: `white`,textDecoration: `none`, textShadow:`2px 1px black`} }> {siteTitle} </Link>
       </h1>
       <h2 style={{ float:`right`, textAlign:`right` }}>
-        <Link to="/artist/" style={ {color: `#d3d3d3`,textDecoration: `none`, textShadow:`2px 1px black`} }> actors </Link>
-        <Link to="/" style={ {color: `white`,textDecoration: `none`, textShadow:`2px 1px black`} }> crew </Link>
-        <Link to="/" style={ {color: `#d3d3d3`,textDecoration: `none`, textShadow:`2px 1px black`} }> writers </Link>
-        <Link to="/" style={ {color: `#d3d3d3`,textDecoration: `none`, textShadow:`2px 1px black`} }> directors </Link>
+        <Link to="/artist/" activeStyle={{ color: "red" }} style={ {color: `#d3d3d3`,textDecoration: `none`, textShadow:`2px 1px black`} }> actors </Link>
+        <Link to="/page-2/" activeStyle={{ color: "red" }} style={ {color: `#d3d3d3`, textDecoration: `none`, textShadow:`2px 1px black`} }> crew </Link>
+        <Link to="/" activeStyle={{ color: "red" }} style={ {color: `#d3d3d3`, textDecoration: `none`, textShadow:`2px 1px black`} }> writers </Link>
+        <Link to="/" activeStyle={{ color: "red" }} style={ {color: `#d3d3d3`, textDecoration: `none`, textShadow:`2px 1px black`} }> directors </Link>
       </h2>
     </div>
   </header>
