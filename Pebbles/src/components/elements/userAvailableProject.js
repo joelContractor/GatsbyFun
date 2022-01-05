@@ -25,10 +25,10 @@ function UserAvailableProject({ dats }) {
                                 <p>{dats.node.availableprojectbriefdescription}</p>
                                 <Grid item xs={12} container direction="row" spacing={0}>
                                     
-                                    <Grid item xs={2} sm={1}><p style={{fontWeight:"bold"}}>Paid:</p></Grid>
-                                    <Grid item xs={10} sm={3}><p>{dats.node.availablescriptcost}</p></Grid>
-                                    <Grid item xs={2} sm={1}><p style={{fontWeight:"bold"}}>Type:</p></Grid>
-                                    <Grid item xs={10} sm={3}><p>{dats.node.availablescripttype}</p></Grid>
+                                    <Grid item xs={12} sm={6} md={3}><p style={{fontWeight:"bold"}}>Paid: <span style={{fontWeight:"normal"}}>{dats.node.availablescriptcost}</span></p></Grid>
+                                   
+                                    <Grid item xs={12} sm={6} md={3}><p style={{fontWeight:"bold"}}>Type: <span style={{fontWeight:"normal"}}>{dats.node.availablescripttype}</span></p></Grid>
+                                    
                                     
                                 </Grid>
                             
@@ -49,7 +49,7 @@ function UserAvailableProject({ dats }) {
                             />
                             
                         </Grid>
-                }
+                    }
                 })()}
             </Grid>
         </Grid>

@@ -17,12 +17,12 @@ const ArtistPage = ({data}) => (
       <Grid item xs={12}>
           <h2>Find Diverse Actors</h2>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} md={6}>
         <Typography variant="body2" color="text.secondary">
             When referring to Lorem ipsum, different expressions are used, namely fill text, fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
         </Typography>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} md={6}>
         <Typography variant="body2" color="text.secondary">
             When referring to Lorem ipsum, different expressions are used, namely fill text, fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
         </Typography>
@@ -132,6 +132,8 @@ export const query = graphql`
           userhistoryyear4
           userhistoryyear5
           userhistoryyear6
+          videoreelsrc
+          videoreeldescription
           writerimage {
             gatsbyImageData
           }

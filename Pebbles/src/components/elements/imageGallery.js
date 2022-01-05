@@ -19,7 +19,7 @@ function UserImageGallery({ dats }) {
             <Grid container direction="row" spacing={6}>
                 {(() => {
                     if(dats.node.spectacleurl){
-                        return <Grid item xs={2}>
+                        return <Grid item xs={6} sm={4} md={2}>
                             
                             <GatsbyImage image={getImage(dats.node.spectacleurl.gatsbyImageData)} alt={"gay/lesbian"}/>
                         
@@ -29,7 +29,7 @@ function UserImageGallery({ dats }) {
 
                 {(() => {
                     if(dats.node.spectacleurl){
-                        return <Grid item xs={2}>
+                        return <Grid item xs={6} sm={4} md={2}>
                             
                             <GatsbyImage image={getImage(dats.node.spectacleurl.gatsbyImageData)} alt={"gay/lesbian"}/>
                         
@@ -39,7 +39,7 @@ function UserImageGallery({ dats }) {
 
                 {(() => {
                     if(dats.node.spectacleurl){
-                        return <Grid item xs={2}>
+                        return <Grid item xs={6} sm={4} md={2}>
                             
                             <GatsbyImage image={getImage(dats.node.spectacleurl.gatsbyImageData)} alt={"ability challenged"}/>
                         
@@ -49,7 +49,7 @@ function UserImageGallery({ dats }) {
 
                 {(() => {
                     if(dats.node.spectacleurl){
-                        return <Grid item xs={2}>
+                        return <Grid item xs={6} sm={4} md={2}>
                             
                             <GatsbyImage image={getImage(dats.node.spectacleurl.gatsbyImageData)} alt={"fluid gender"}/>
                         
@@ -59,7 +59,7 @@ function UserImageGallery({ dats }) {
 
                 {(() => {
                     if(dats.node.spectacleurl){
-                        return <Grid item xs={2}>
+                        return <Grid item xs={6} sm={4} md={2}>
                             
                             <GatsbyImage image={getImage(dats.node.spectacleurl.gatsbyImageData)} alt={"female"}/>
                         
@@ -69,7 +69,7 @@ function UserImageGallery({ dats }) {
 
                 {(() => {
                     if(dats.node.spectacleurl){
-                        return <Grid item xs={2}>
+                        return <Grid item xs={6} sm={4} md={2}>
                             
                             <GatsbyImage image={getImage(dats.node.spectacleurl.gatsbyImageData)} alt={"black"}/>
                         

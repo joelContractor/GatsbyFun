@@ -18,30 +18,42 @@ function UserWritersProcess({ dats }) {
             <Grid container direction="row" spacing={6}>
                 {(() => {
                     if(dats.node.writerprocessone){
-                        return <Grid item xs={8}>
+                        return <>
+                            <Grid item xs={12}>
+                                
+                                <h2>Writer's Process</h2>
                             
-                            <h2>Writer's Process</h2>
-                            <p>{dats.node.writerprocessone}</p>
-                            <p>{dats.node.writerprocesstwo}</p>
-                            <p>{dats.node.writerprocessthree}</p>
-                            <p>{dats.node.writerprocessfour}</p>
-                        
-                        </Grid>
+                            </Grid>
+                            <Grid item xs={12} sm={8}>
+
+                                <p>{dats.node.writerprocessone}</p>
+                                <p>{dats.node.writerprocesstwo}</p>
+                                <p>{dats.node.writerprocessthree}</p>
+                                <p>{dats.node.writerprocessfour}</p>
+                            
+                            </Grid>
+                        </>
                     }
                 })()}
 
                 {(() => {
                     if(dats.node.writersixpageprice){
-                        return <Grid item xs={4}>
+                        return <Grid container direction='row' item xs={12} sm={4} spacing={0}>
                             
-                            <h2>6 Pages</h2>
-                            <p>{dats.node.writersixpageprice}</p>
+                            <Grid item xs={4} sm={12}>
+                                <h2>6 Pages</h2>
+                                <p>{dats.node.writersixpageprice}</p>
+                            </Grid>
 
-                            <h2>12 Pages</h2>
-                            <p>{dats.node.writertwelvepageprice}</p>
+                            <Grid item xs={4} sm={12}>
+                                <h2>12 Pages</h2>
+                                <p>{dats.node.writertwelvepageprice}</p>
+                            </Grid>
 
-                            <h2>More</h2>
-                            <p>Contact to discuss.</p>
+                            <Grid item xs={4} sm={12}>
+                                <h2>More</h2>
+                                <p>Contact to discuss.</p>
+                            </Grid>
                         
                         </Grid>
                     }

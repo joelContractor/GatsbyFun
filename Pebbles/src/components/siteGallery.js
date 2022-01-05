@@ -7,13 +7,8 @@ import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
 
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-
-
-
 
 function SiteGallery({ data }) {
 
@@ -22,12 +17,12 @@ function SiteGallery({ data }) {
         
 
  
-            <Grid container  direction="row" spacing={2} sx={{ fontSize:`13px`, fontFamily:`Arial`}}>
+            <Grid container direction="row" spacing={2} sx={{ fontSize:`13px`, fontFamily:`Arial`}}>
             
                 
                         {data.map((dats) => (
                                
-                                    <Grid item xs={6} sm={3} state={dats} >
+                                    <Grid item xs={6} sm={4} lg={3} state={dats} >
                                        
                                         <Card sx={{ border:"1px solid white", padding:"0px"}}>
                                             <CardMedia
@@ -49,7 +44,7 @@ function SiteGallery({ data }) {
                                                 
                                                 <Link to="/"><Button sx={{fontSize:"12px", color:'gray', borderColor:'#d3d3d3', borderRadius:'3px', height:'50px'}} variant="outlined" size="small">Go</Button></Link>
                                                 
-                        </CardActions> */}
+                                            </CardActions> */}
                                         </Card>               
                                     </Grid>
                          

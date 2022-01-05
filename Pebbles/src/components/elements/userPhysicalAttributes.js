@@ -19,7 +19,7 @@ function UserPhysicalAttributes({ dats }) {
             <Grid container direction="row"  spacing={6}>  
                 {(() => {
                     if(dats.node.hairColour){
-                        return <Grid item xs={4}>
+                        return <Grid item xs={6} sm={4}>
                                 
                                 <h2>Physical Attributes</h2>
                                 <p>Ethnicity: {dats.node.ethnicity}</p>
@@ -37,7 +37,7 @@ function UserPhysicalAttributes({ dats }) {
 
                 {(() => {
                     if(dats.node.physicalattributeimage){
-                        return <Grid item xs={8}>
+                        return <Grid item xs={6} sm={8}>
                                 
                                 <GatsbyImage image={getImage(dats.node.physicalattributeimage.gatsbyImageData)} alt={"physical attribute image"}/>
                             

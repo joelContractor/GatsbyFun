@@ -19,15 +19,21 @@ function UserWriterDescription({ dats }) {
             <Grid container direction="row" spacing={6}>
                     {(() => {
                         if(dats.node.writerdescription){
-                            return <Grid item xs={8}>
+                            return <>
+                                <Grid item xs={12}>
+                                    
+                                    <h2>{dats.node.title}</h2>
                                 
-                                <h2>{dats.node.title} </h2>
-                                <p>{dats.node.writerdescription}</p>
-                                <p>{dats.node.writerdescriptionCopy1}</p>
-                                <p>{dats.node.writerdescriptionCopy2}</p>
-                                <p>{dats.node.writerdescriptionCopy3}</p>
-                            
-                            </Grid>
+                                </Grid>
+                                <Grid item xs={8}>
+
+                                    <p>{dats.node.writerdescription}</p>
+                                    <p>{dats.node.writerdescriptionCopy1}</p>
+                                    <p>{dats.node.writerdescriptionCopy2}</p>
+                                    <p>{dats.node.writerdescriptionCopy3}</p>
+                                
+                                </Grid>
+                            </>
                         }
                     })()}
                     

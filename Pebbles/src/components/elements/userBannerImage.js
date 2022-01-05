@@ -1,31 +1,25 @@
-import React, { useState } from "react"
+import React from "react"
 import { getImage, StaticImage } from "gatsby-plugin-image"
 /*import { Link } from "gatsby"*/
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
-
+import Button from '@mui/material/Button';
 import { convertToBgImage } from "gbimage-bridge"
 import BackgroundImage from 'gatsby-background-image'
 
 
 
 
-function UserBannerImage({ dats }) {
+function UserBannerImage({ dats, show, showInfo}) {
 
 
-    const [show, setShow] = useState('none')
-
-    function showInfo(){
-        if(show ==='none'){
-            setShow('block');
-        }else{setShow('none');}
-    }
+    
     
     const res =
 
-        <Grid state={{dats}} container xs={12} sx={{pt:"50px", mt:"10px", pb:"50px", borderTop:"1px dotted grey"}}>
+        <Grid state={{dats}} container xs={12} sx={{}}>
             <Grid item xs={12}>
                 <BackgroundImage
                     Tag="section"
@@ -36,12 +30,10 @@ function UserBannerImage({ dats }) {
                     preserveStackingContext
                 >   
                 
-                    <Grid container xs={12}>
-                        <Grid item xs={8} >
-                            <p style={ { color: `#151515`, fontSize: `2.0rem`, textAlign: `center`, padding: `50vh 10px 10px 10px` } }></p>
-                            <p style={ { color: `#151515`, fontSize: `1.2rem`, textAlign: `center`, padding: `10px`} }></p>
+                    <Grid container xs={12} style={{ padding: `50vh 10px 10px 10px` }}>
+                        <Grid item xs={4} sm={4} >
                     
-                            <div style={ { position: `relative`, bottom: `20px`, textAlign: `left`, marginTop:`10px`, padding: `10px`, background: `rgba(255, 255, 255, 0.5)`, borderRadius: `50px`, border: `1px solid #d3d3d3`, width:`max-content`, marginLeft: `10px`} }>
+                            <div style={ { position: `relative`, bottom: `20px`, textAlign: `left`, marginTop:`10px`, padding: `10px`, background: `rgba(255, 255, 255, 0.7)`, borderRadius: `50px`, border: `1px solid #d3d3d3`, width:`max-content`, marginLeft: `10px`} }>
                                 
                                 {(() => {
 
@@ -221,12 +213,11 @@ function UserBannerImage({ dats }) {
                             
                             </div>
                         </Grid>
-                        <Grid item xs={4}>
-                        <p style={ { fontSize: `2.0rem`, padding: `50vh 10px 10px 10px` } }></p>
-                        <p style={ { fontSize: `1.2rem`, padding: `10px`} }></p>
-                            <button style={ { float:`right`, position: `relative`, bottom: `20px`, borderRadius: `50px`, color: `black`, fontWeight: `italic`, border: `1px solid #d3d3d3`, height: `50px`, padding: `5px 20px 5px 20px`, background: `rgba(255, 255, 255, 0.5)`, marginRight: `10px` } } onClick={showInfo}>
-                                {show === 'none'? `More`: `Less`} about  <span style={ { color: `black`, fontWeight: `bold` } }>{dats.node.title}</span>
-                            </button>
+                        <Grid item xs={12} sm={8} sx={{padding:`10px`}}>
+
+                            <Button style={ { textTransform: `none`, backgroundColor:`rgba(255, 255, 255, 0.7)`, width:`100%`, position: `relative`, bottom: `22px`, borderRadius: `50px`, color: `black`, fontWeight: `italic`, border: `1px solid #d3d3d3`, height: `50px`, padding: `4px 20px 4px 20px` } } onClick={showInfo}>
+                                {show === 'none'? `More `: `Less `} about {dats.node.title}
+                            </Button>
                         </Grid> 
                     </Grid>
                 </BackgroundImage>
