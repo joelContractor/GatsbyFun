@@ -22,9 +22,9 @@ function SiteGallery({ data }) {
                 
                         {data.map((dats) => (
                                
-                                    <Grid item xs={6} sm={4} lg={3} state={dats} >
+                                    <Grid item xs={6} sm={6} md={4} lg={3} state={dats} >
                                        
-                                        <Card sx={{ border:"1px solid white", padding:"0px"}}>
+                                        <Card sx={{ border:"1px solid white", padding:"0px", height:"400px"}}>
                                             <CardMedia
                                                 component="img"
                                                 height="150"

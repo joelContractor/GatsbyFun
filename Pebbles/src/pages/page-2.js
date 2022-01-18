@@ -9,6 +9,8 @@ import Typography from '@mui/material/Typography'
 
 const SecondPage = ({data}) => (
 
+  
+
   <Layout>
 
     <Seo title="Diverse Artist Page" />
@@ -27,6 +29,7 @@ const SecondPage = ({data}) => (
         <Typography variant="body2" color="text.secondary">
             <p>Advertise your jobs through diverse channels: Make an effort to reach diverse candidates by placing your job ads in additional magazines, websites and forums visited by underrepresented groups or dedicated to minorities.</p>
         </Typography>
+
       </Grid>
     </Grid>
     <SiteGallery  data={ data.allDatoCmsActingagency.edges } />
@@ -126,6 +129,8 @@ export const query = graphql`
           userhistoryyear4
           videoreelsrc
           videoreeldescription
+          usertel
+          useremail
           writerimage {
             gatsbyImageData
           }

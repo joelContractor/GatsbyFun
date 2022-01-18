@@ -7,15 +7,15 @@ import Seo from "../components/seo"
 import { Grid } from "@material-ui/core"
 import Typography from '@mui/material/Typography'
 
-const ArtistPage = ({data}) => (
+const WriterPage = ({data}) => (
   <Layout>
-    <Seo title="Diverse Actor Page" />
+    <Seo title="Diverse Writer Page" />
 
     <GalleryBanner  data={ data.allDatoCmsActorTemp.edges } /> {/* added -> comp now reusable -> search path added by page uniform field names after search term eg.'data.allDatoCmsActors.edges' */}
     
     <Grid container sx={{marginBottom:'75px'}} spacing={3}>
       <Grid item xs={12}>
-          <h2>Find Diverse Actors</h2>
+          <h2>Find Diverse Writers</h2>
       </Grid>
       <Grid item xs={12} md={6}>
         <Typography variant="body2" color="text.secondary">
@@ -35,7 +35,7 @@ const ArtistPage = ({data}) => (
 )
 
 export const query = graphql`
-  query MyArtistQuery {
+  query MyWriterQuery {
     datoCmsSpectacle {
       spectacleprice
       title
@@ -162,4 +162,4 @@ export const query = graphql`
   }
 `;
 
-export default ArtistPage
+export default WriterPage

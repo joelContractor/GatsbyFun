@@ -25,7 +25,7 @@ function UserWriterDescription({ dats }) {
                                     <h2>{dats.node.title}</h2>
                                 
                                 </Grid>
-                                <Grid item xs={8}>
+                                <Grid item xs={12} sm={8}>
 
                                     <p>{dats.node.writerdescription}</p>
                                     <p>{dats.node.writerdescriptionCopy1}</p>
@@ -39,7 +39,7 @@ function UserWriterDescription({ dats }) {
                     
                     {(() => {
                             if(dats.node.writerimage){
-                                return <Grid item xs={4}>
+                                return <Grid item xs={12} sm={4}>
                                         
                                     <GatsbyImage image={getImage(dats.node.writerimage.gatsbyImageData)} alt={"testimage"}/>
                                     

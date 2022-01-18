@@ -18,6 +18,7 @@ import UserWorkHistory from "../components/elements/userWorkHistory"
 import UserImageGallery from "../components/elements/imageGallery"
 import UserBannerImage from "./elements/userBannerImage";
 import UserVideoPortfolio from "./elements/userVideoPortfolio";
+import UserContact from "./elements/userContact";
 
 
 
@@ -33,6 +34,9 @@ function GalleryBanner({ data }) {
             setShow('block');
         }else{setShow('none');}
     }
+
+    
+      
 
     const res =
 
@@ -114,8 +118,16 @@ function GalleryBanner({ data }) {
                                         </>
                                     }
                                 })()}
+
+                                {(() => {
+                                    if(dats.node.videoreelsrc){
+                                        return <>
+                                            <UserContact dats={dats} />
+                                        </>
+                                    }
+                                })()}
                                 
-                                <UserImageGallery dats={ dats } />
+                                {/*<UserImageGallery dats={ dats } />*/}
 
                             </Grid>  
                                 

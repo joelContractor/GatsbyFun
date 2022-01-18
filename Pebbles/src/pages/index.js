@@ -1,29 +1,153 @@
+import { graphql } from 'gatsby'
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import GalleryBanner from "../components/galleryBanner"
+import SiteGallery from "../components/siteGallery"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { Grid } from "@material-ui/core"
+import Typography from '@mui/material/Typography'
 
-const IndexPage = ({ location }) => (
+const IndexPage = ({data}) => (
+
+  
+
   <Layout>
-    <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={600}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
+
+    <Seo title="Diverse Pool Landing Page" />
+      {/* Component */}
+    <GalleryBanner  data={ data.allDatoCmsSpectacle.edges } /> {/* added -> comp now reusable -> search path added by page uniform field names after search term eg.'data.allDatoCmsActors.edges' */}
+    <Grid container sx={{marginBottom:'75px'}} spacing={2}>
+      <Grid item xs={12}>
+          <h2>Diverse Pool</h2>
+      </Grid>
+      <Grid item xs={12} md={6}>
+        <Typography variant="body2" color="text.secondary">
+            <p>Recruit from diverse talent pools: In order to hire diverse candidates, you need to consider widening your talent pool. Try proactively sourcing and adding talent from diverse to your talent pool?</p>
+        </Typography>
+      </Grid>
+      <Grid item xs={12} md={6}>
+        <Typography variant="body2" color="text.secondary">
+            <p>Advertise your jobs through diverse channels: Make an effort to reach diverse candidates by placing your job ads in additional magazines, websites and forums visited by underrepresented groups or dedicated to minorities.</p>
+        </Typography>
+
+      </Grid>
+    </Grid>
+    <SiteGallery  data={ data.allDatoCmsActingagency.edges } />
+  
   </Layout>
 )
+
+export const query = graphql`
+  query MyLandingPageQuery {
+    datoCmsSpectacle {
+      spectacleprice
+      title
+      id
+      spectacledescription
+      spectacleurl {
+        url
+        gatsbyImageData
+      }
+    }
+    allDatoCmsActingagency {
+      edges {
+        node {
+          agencydescription
+          agencyimage {
+            url
+          }
+          agencytitle
+        }
+      }
+    }
+    allDatoCmsSpectacle {
+      edges {
+        node {
+          title
+          spectacleprice
+          spectacledescription
+          sexualorientation
+          sexGenderdiversity
+          religiousdiversity
+          racialdiversity
+          disability
+          culturaldiversity
+          agediversity
+          diverseattribute
+          actoragerange
+          driver
+          gender
+          passport
+          unionaffiliation
+          location
+          skill
+          skill2
+          skill3
+          skill4
+          skill5
+          skill6
+          ethnicity
+          eyeColour
+          hairColour
+          hairLength
+          height
+          weight
+          canColourHair
+          canCutHair
+          canwearcontacts
+          tatoos
+          visiblepiercings
+          writerdescription
+          writerdescriptionCopy1
+          writerdescriptionCopy2
+          writerdescriptionCopy3
+          writerprocesstwo
+          writerprocessthree
+          writerprocessone
+          writerprocessfour
+          writersixpageprice
+          writertwelvepageprice
+          availableprojectbriefdescription
+          availablescripttype
+          availablescriptcost
+          agenonactor
+          userhistorydescription1
+          userhistorydescription2
+          userhistorydescription3
+          userhistorydescription4
+          userhistorytitle1
+          userhistorytitle2
+          userhistorytitle3
+          userhistorytitle4
+          userhistorytype1
+          userhistorytype2
+          userhistorytype3
+          userhistorytype4
+          userhistoryyear1
+          userhistoryyear2
+          userhistoryyear3
+          userhistoryyear4
+          videoreelsrc
+          videoreeldescription
+          usertel
+          useremail
+          writerimage {
+            gatsbyImageData
+          }
+          physicalattributeimage {
+            gatsbyImageData
+          }
+          skillimage {
+            gatsbyImageData
+          }
+          spectacleurl {
+            url
+            gatsbyImageData
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default IndexPage
