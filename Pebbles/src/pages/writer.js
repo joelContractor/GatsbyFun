@@ -11,7 +11,7 @@ const WriterPage = ({data}) => (
   <Layout>
     <Seo title="Diverse Writer Page" />
 
-    <GalleryBanner  data={ data.allDatoCmsActorTemp.edges } /> {/* added -> comp now reusable -> search path added by page uniform field names after search term eg.'data.allDatoCmsActors.edges' */}
+    <GalleryBanner  data={ data.allDatoCmsWriter.edges } /> {/* added -> comp now reusable -> search path added by page uniform field names after search term eg.'data.allDatoCmsActors.edges' */}
     
     <Grid container sx={{marginBottom:'75px'}} spacing={3}>
       <Grid item xs={12}>
@@ -57,7 +57,7 @@ export const query = graphql`
         }
       }
     }
-    allDatoCmsActorTemp {
+    allDatoCmsWriter {
       edges {
         node {
           title

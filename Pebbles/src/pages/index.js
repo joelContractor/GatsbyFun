@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby'
 import * as React from "react"
-import GalleryBanner from "../components/galleryBanner"
 import SiteGallery from "../components/siteGallery"
+import FrontPageBanner from "../components/frontPageBanner"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Grid } from "@material-ui/core"
@@ -15,7 +15,9 @@ const IndexPage = ({data}) => (
 
     <Seo title="Diverse Pool Landing Page" />
       {/* Component */}
-    <GalleryBanner  data={ data.allDatoCmsSpectacle.edges } /> {/* added -> comp now reusable -> search path added by page uniform field names after search term eg.'data.allDatoCmsActors.edges' */}
+
+    <FrontPageBanner  data={ data.allDatoCmsFrontpagearticle.edges } /> 
+
     <Grid container sx={{marginBottom:'75px'}} spacing={2}>
       <Grid item xs={12}>
           <h2>Diverse Pool</h2>
@@ -34,6 +36,7 @@ const IndexPage = ({data}) => (
     </Grid>
     <SiteGallery  data={ data.allDatoCmsActingagency.edges } />
   
+    
   </Layout>
 )
 
@@ -57,6 +60,46 @@ export const query = graphql`
             url
           }
           agencytitle
+        }
+      }
+    }
+    allDatoCmsFrontpagearticle {
+      edges {
+        node {
+          id
+          articlep9
+          articlep8
+          articlep7
+          articlep6
+          articlep5
+          articlep4
+          articlep3
+          articlep2
+          articlep15
+          articlep14
+          articlep13
+          articlep12
+          articlep11
+          articlep10
+          articlep1
+          ability
+          age
+          cultural
+          diversegender
+          racial
+          religious
+          orientation
+          title
+          spectacleurl {
+            url
+            gatsbyImageData
+          }
+          articleimg1 {
+            gatsbyImageData
+          }
+          articleimg2 {
+            gatsbyImageData
+          }
         }
       }
     }

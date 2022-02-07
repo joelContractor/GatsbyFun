@@ -21,7 +21,7 @@ function UserGeneralDetails({ dats }) {
                 {(() => {
                     if(dats.node.actoragerange || dats.node.agenonactor){
 
-                        if(dats.node.actoragerange !== null && dats.node.actoragerange !== 'null'){
+                        if(dats.node.actoragerange !== null && dats.node.actoragerange !== ''){
                             Age = `${dats.node.actoragerange}`
                             AgeLabel = 'Age Range'
                         }else{

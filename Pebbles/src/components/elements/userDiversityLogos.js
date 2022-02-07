@@ -22,7 +22,7 @@ function UserDiversityLogos({ dats }) {
                 
                 {(() => {
 
-                    if(dats.node.racialdiversity && dats.node.racialdiversity === "yes"){
+                    if(dats.node.racial === true){
                         return <div style={ { paddingRight: `5px`, display:`inline` } }>
                             
                             <StaticImage
@@ -148,46 +148,7 @@ function UserDiversityLogos({ dats }) {
 
                 })()}
 
-                {(() => {
-
-                    switch (dats.node.title) {
-                        case "red":   return "#FF0000";
-                        case "Two Tone Glasses": return <div style={ { paddingRight: `0px`, display:`inline` } }>                                      
-                                            <StaticImage
-                                            src="../images/diverseGenderIcon.png"
-                                            width={25}
-                                            quality={95}
-                                            formats={["AUTO", "WEBP", "AVIF"]}
-                                            alt="A Gatsby astronaut"
-                                            style={{ marginBottom: `0px` }} 
-                                            />
-
-                                        </div>;
-                        case "Green Glasses":  return <div style={ { paddingRight: `0px`, display:`inline` } }>                                   
-                                            <StaticImage
-                                            src="../images/diverseGenderIcon.png"
-                                            width={25}
-                                            quality={95}
-                                            formats={["AUTO", "WEBP", "AVIF"]}
-                                            alt="A Gatsby astronaut"
-                                            style={{ marginBottom: `0px` }} 
-                                            />
-
-                                        </div>;
-                        default: return <div style={ { paddingRight: `0px`, display:`inline` } }>                                   
-                                            <StaticImage
-                                            src="../images/diverseGenderIcon.png"
-                                            width={25}
-                                            quality={95}
-                                            formats={["AUTO", "WEBP", "AVIF"]}
-                                            alt="A Gatsby astronaut"
-                                            style={{ marginBottom: `0px` }} 
-                                            />
-
-                                        </div>;
-                    }
-
-                })()}
+                
             
             </div>
         </Grid>

@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { getImage } from "gatsby-plugin-image"
 /*import { Link } from "gatsby"*/
 import { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -96,17 +95,17 @@ function GalleryBanner({ data }) {
                                 })()}                              
 
                                 {(() => {
-                                    if(dats.node.userhistorytitle1){
+                                    if(dats.node.videoreelsrc){
                                         return <>
-                                            <UserWorkHistory dats={ dats } />
+                                            <UserVideoPortfolio dats={ dats } />
                                         </>
                                     }
                                 })()}
 
                                 {(() => {
-                                    if(dats.node.videoreelsrc){
+                                    if(dats.node.userhistorytitle1){
                                         return <>
-                                            <UserVideoPortfolio dats={ dats } />
+                                            <UserWorkHistory dats={ dats } />
                                         </>
                                     }
                                 })()}

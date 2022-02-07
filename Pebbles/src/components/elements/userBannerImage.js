@@ -37,8 +37,8 @@ function UserBannerImage({ dats, show, showInfo}) {
                                 
                                 {(() => {
 
-                                    if(dats.node.racialdiversity && dats.node.racialdiversity === "yes"){
-                                        return <div style={ { paddingRight: `5px`, display:`inline` } }>
+                                    if(dats.node.racial){
+                                        return <div style={ { padding: `5px`, display:`inline` } }>
                                             
                                             <StaticImage
                                             src="../images/GenderDIcon.png"
@@ -57,8 +57,8 @@ function UserBannerImage({ dats, show, showInfo}) {
 
                                 {(() => {
 
-                                    if(dats.node.religiousdiversity && dats.node.religiousdiversity === "yes"){
-                                        return <div style={ { paddingRight: `5px`, display:`inline` } }>
+                                    if(dats.node.religious){
+                                        return <div style={ { padding: `5px`, display:`inline` } }>
                                             
                                             <StaticImage
                                             src="../images/diverseRelIcon.png"
@@ -77,8 +77,8 @@ function UserBannerImage({ dats, show, showInfo}) {
 
                                 {(() => {
 
-                                if(dats.node.culturaldiversity && dats.node.culturaldiversity === "yes"){
-                                    return <div style={ { paddingRight: `5px`, display:`inline` } }>
+                                if(dats.node.cultural){
+                                    return <div style={ { padding: `5px`, display:`inline` } }>
                                         
                                         <StaticImage
                                         src="../images/diverseRaceIcon.png"
@@ -96,8 +96,8 @@ function UserBannerImage({ dats, show, showInfo}) {
 
                                 {(() => {
 
-                                    if(dats.node.disability && dats.node.disability === "yes"){
-                                        return <div style={ { paddingRight: `5px`, display:`inline` } }>
+                                    if(dats.node.ability){
+                                        return <div style={ { padding: `5px`, display:`inline` } }>
                                             
                                             <StaticImage
                                             src="../images/gatsby-icon.png"
@@ -115,8 +115,8 @@ function UserBannerImage({ dats, show, showInfo}) {
 
                                 {(() => {
 
-                                    if(dats.node.agediversity && dats.node.agediversity === "yes"){
-                                        return <div style={ { paddingRight: `5px`, display:`inline` } }>
+                                    if(dats.node.age){
+                                        return <div style={ { padding: `5px`, display:`inline` } }>
                                             
                                             <StaticImage
                                             src="../images/diverseAgeIcon.png"
@@ -134,8 +134,8 @@ function UserBannerImage({ dats, show, showInfo}) {
 
                                 {(() => {
 
-                                if(dats.node.sexualorientation && dats.node.sexualorientation === "yes"){
-                                    return <div style={ { paddingRight: `5px`, display:`inline` } }>
+                                if(dats.node.orientation){
+                                    return <div style={ { padding: `5px`, display:`inline` } }>
                                         
                                         <StaticImage
                                         src="../images/gatsby-icon.png"
@@ -153,8 +153,8 @@ function UserBannerImage({ dats, show, showInfo}) {
 
                                 {(() => {
 
-                                if(dats.node.sexGenderdiversity && dats.node.sexGenderdiversity === "yes"){
-                                    return <div style={ { paddingRight: `5px`, display:`inline` } }>
+                                if(dats.node.diverseGender){
+                                    return <div style={ { padding: `5px`, display:`inline` } }>
                                         
                                         <StaticImage
                                         src="../images/diverseGenderIcon.png"
@@ -170,46 +170,6 @@ function UserBannerImage({ dats, show, showInfo}) {
 
                                 })()}
 
-                                {(() => {
-
-                                    switch (dats.node.title) {
-                                        case "red":   return "#FF0000";
-                                        case "Two Tone Glasses": return <div style={ { paddingRight: `0px`, display:`inline` } }>                                      
-                                                            <StaticImage
-                                                            src="../images/diverseGenderIcon.png"
-                                                            width={25}
-                                                            quality={95}
-                                                            formats={["AUTO", "WEBP", "AVIF"]}
-                                                            alt="A Gatsby astronaut"
-                                                            style={{ marginBottom: `0px` }} 
-                                                            />
-
-                                                        </div>;
-                                        case "Green Glasses":  return <div style={ { paddingRight: `0px`, display:`inline` } }>                                   
-                                                            <StaticImage
-                                                            src="../images/diverseGenderIcon.png"
-                                                            width={25}
-                                                            quality={95}
-                                                            formats={["AUTO", "WEBP", "AVIF"]}
-                                                            alt="A Gatsby astronaut"
-                                                            style={{ marginBottom: `0px` }} 
-                                                            />
-
-                                                        </div>;
-                                        default: return <div style={ { paddingRight: `0px`, display:`inline` } }>                                   
-                                                            <StaticImage
-                                                            src="../images/diverseGenderIcon.png"
-                                                            width={25}
-                                                            quality={95}
-                                                            formats={["AUTO", "WEBP", "AVIF"]}
-                                                            alt="A Gatsby astronaut"
-                                                            style={{ marginBottom: `0px` }} 
-                                                            />
-
-                                                        </div>;
-                                    }
-
-                                })()}
                             
                             </div>
                         </Grid>
