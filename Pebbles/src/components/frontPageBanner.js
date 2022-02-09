@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 /*import { Link } from "gatsby"*/
 import { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -11,9 +10,9 @@ import UserBannerImage from "./elements/userBannerImage";
 import FrontPageArticleParagraph from "./elements/frontPageArticleParagraph";
 import FrontPageArticleTitle from "./elements/frontPageArticleTitle";
 import FrontPageArticleWriterDetails from "./elements/frontPageArticleWriterDetails";
-
-
-
+import FrontPageArticleImage from "./elements/frontPageArticleImage";
+import FrontPageArticleInfoAndImage from "./elements/frontPageArticleInfoAndImage";
+import FrontPageArticleAboutAuthorParagraph from "./elements/frontPageArticleAboutAuthorParagraph";
 
 
 
@@ -28,7 +27,33 @@ function FrontPageBanner({ data }) {
         }else{setShow('none');}
     }
 
-    
+    function presentRace(){
+        alert('this Race');
+    }
+
+    function presentAbility(){
+        alert('this Ability');
+    }
+
+    function presentAge(){
+        alert('this Age');
+    }
+
+    function presentOrientation(){
+        alert('this Orientation');
+    }
+
+    function presentGender(){
+        alert('this Gender');
+    }
+
+    function presentCulture(){
+        alert('this Culture');
+    }
+
+    function presentReligion(){
+        alert('this Religion');
+    }
       
 
     const res =
@@ -49,7 +74,7 @@ function FrontPageBanner({ data }) {
                     {data.map((dats) => (
                         <SwiperSlide>
 
-                            <UserBannerImage  dats={ dats } show={show} showInfo={showInfo} />
+                            <UserBannerImage  dats={ dats } show={show} showInfo={showInfo} presentReligion={presentReligion} presentRace={presentRace} presentAbility={presentAbility} presentAge={presentAge} presentOrientation={presentOrientation} presentGender={presentGender} presentCulture={presentCulture}/>
 
                             <Grid item xs={12} style={ { marginTop:`10px`, zIndex:`1`, overflow:`hidden`, height:show === 'none'? `0px`: `100%`, opacity:show === 'none'? `0`: `1` , position: `relative`, top:show === 'none'? `-4900px`: `0px`, transition: `opacity 1.9s, top 0s, height 0s` }}>                            
 
@@ -58,7 +83,8 @@ function FrontPageBanner({ data }) {
                                         return <>
                                             <FrontPageArticleTitle dats={ dats.node.title } />
                                             <FrontPageArticleWriterDetails dats={ dats.node.title } />
-                                            <FrontPageArticleParagraph dats={ dats.node.articlep1 } />
+                                            <FrontPageArticleAboutAuthorParagraph dats={ dats.node.articleabouttheauthor } />
+                                            <FrontPageArticleParagraph dats={ dats.node.articlep1 } />   
                                         </>
                                     }
                                 })()}
@@ -96,9 +122,13 @@ function FrontPageBanner({ data }) {
                                 })()}
 
                                 {(() => {
-                                    if(dats.node.articleimg1){
+                                    if(dats.node.articleimg1 && dats.node.articlepwithimage){
                                         return <>
-                                            <GatsbyImage image={getImage(dats.node.articleimg1.gatsbyImageData)} alt={"article alt info taken from server"}/>
+                                            <FrontPageArticleInfoAndImage dats={ dats.node.articleimg1.gatsbyImageData } text={ dats.node.articlepwithimage } />
+                                        </>
+                                    } else if(dats.node.articleimg1){
+                                        return <>
+                                            <FrontPageArticleImage dats={ dats.node.articleimg1.gatsbyImageData } />
                                         </>
                                     }
                                 })()}
@@ -146,7 +176,7 @@ function FrontPageBanner({ data }) {
                                 {(() => {
                                     if(dats.node.articleimg2){
                                         return <>
-                                            <GatsbyImage image={getImage(dats.node.articleimg2.gatsbyImageData)} alt={"article alt info taken from server"}/>
+                                            <FrontPageArticleImage dats={ dats.node.articleimg2.gatsbyImageData } />
                                         </>
                                     }
                                 })()}
@@ -190,7 +220,7 @@ function FrontPageBanner({ data }) {
                                         </>
                                     }
                                 })()}
-
+                                <FrontPageArticleWriterDetails dats={ dats.node.title } />
                             </Grid>  
                                 
                         </SwiperSlide>

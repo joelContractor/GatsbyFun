@@ -39,7 +39,7 @@ function UserPhysicalAttributes({ dats }) {
                     if(dats.node.physicalattributeimage){
                         return <Grid item xs={6} sm={8}>
                                 
-                                <GatsbyImage image={getImage(dats.node.physicalattributeimage.gatsbyImageData)} alt={"physical attribute image"}/>
+                                <GatsbyImage style={{ borderRadius:"5px" }} image={getImage(dats.node.physicalattributeimage.gatsbyImageData)} alt={"physical attribute image"}/>
                             
                         </Grid>
                 }

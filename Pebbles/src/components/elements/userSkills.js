@@ -24,7 +24,7 @@ function UserSkills({ dats }) {
                                     if(dats.node.skillimage){
                                         return <Grid item xs={6} sm={8}>
                                                 
-                                                <GatsbyImage image={getImage(dats.node.skillimage.gatsbyImageData)} alt={"testimage"}/>
+                                                <GatsbyImage style={{ borderRadius:"5px" }} image={getImage(dats.node.skillimage.gatsbyImageData)} alt={"testimage"}/>
                                             
                                         </Grid>
                                     }

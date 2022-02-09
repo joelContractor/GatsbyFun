@@ -14,12 +14,12 @@ import UserWriterDescription from "../components/elements/userWriterDescription"
 import UserAvailableProject from "../components/elements/userAvailableProject"
 import UserWritersProcess from "../components/elements/userWritersProcess"
 import UserWorkHistory from "../components/elements/userWorkHistory"
-import UserImageGallery from "../components/elements/imageGallery"
 import UserBannerImage from "./elements/userBannerImage";
 import UserVideoPortfolio from "./elements/userVideoPortfolio";
 import UserContact from "./elements/userContact";
-
-
+import UserContactLinks from "./elements/userContactLinks";
+import FrontPageArticleTitle from "./elements/frontPageArticleTitle";
+import FrontPageFooterTitle from "./elements/frontPageFooterTitle";
 
 
 
@@ -34,7 +34,33 @@ function GalleryBanner({ data }) {
         }else{setShow('none');}
     }
 
-    
+    function presentRace(){
+        alert('this actor/director/writer Race');
+    }
+
+    function presentAbility(){
+        alert('this actor/director/writer Ability');
+    }
+
+    function presentAge(){
+        alert('this actor/director/writer Age');
+    }
+
+    function presentOrientation(){
+        alert('this actor/director/writer Orientation');
+    }
+
+    function presentGender(){
+        alert('this actor/director/writer Gender');
+    }
+
+    function presentCulture(){
+        alert('this  actor/director/writer Culture');
+    }
+
+    function presentReligion(){
+        alert('this actor/director/writer Religion');
+    }
       
 
     const res =
@@ -55,10 +81,10 @@ function GalleryBanner({ data }) {
                     {data.map((dats) => (
                         <SwiperSlide>
 
-                            <UserBannerImage  dats={ dats } show={show} showInfo={showInfo} />
+                            <UserBannerImage  dats={ dats } show={show} showInfo={showInfo} presentReligion={presentReligion} presentRace={presentRace} presentAbility={presentAbility} presentAge={presentAge} presentOrientation={presentOrientation} presentGender={presentGender} presentCulture={presentCulture}/>
 
                             <Grid item xs={12} style={ { marginTop:`10px`, zIndex:`1`, overflow:`hidden`, height:show === 'none'? `0px`: `100%`, opacity:show === 'none'? `0`: `1` , position: `relative`, top:show === 'none'? `-4900px`: `0px`, transition: `opacity 1.9s, top 0s, height 0s` }}>                                                             
-                                    
+
                                 <UserGeneralDetails  dats={ dats } />                              
 
                                 {(() => {
@@ -92,20 +118,20 @@ function GalleryBanner({ data }) {
                                             <UserWritersProcess dats={dats} />
                                         </>
                                     }
-                                })()}                              
-
-                                {(() => {
-                                    if(dats.node.videoreelsrc){
-                                        return <>
-                                            <UserVideoPortfolio dats={ dats } />
-                                        </>
-                                    }
                                 })()}
 
                                 {(() => {
                                     if(dats.node.userhistorytitle1){
                                         return <>
                                             <UserWorkHistory dats={ dats } />
+                                        </>
+                                    }
+                                })()}                             
+
+                                {(() => {
+                                    if(dats.node.videoreelsrc){
+                                        return <>
+                                            <UserVideoPortfolio dats={ dats } />
                                         </>
                                     }
                                 })()}
@@ -119,9 +145,9 @@ function GalleryBanner({ data }) {
                                 })()}
 
                                 {(() => {
-                                    if(dats.node.videoreelsrc){
+                                    if(dats.node.useremail){
                                         return <>
-                                            <UserContact dats={dats} />
+                                            <UserContactLinks dats={dats} />
                                         </>
                                     }
                                 })()}

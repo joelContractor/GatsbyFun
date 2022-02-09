@@ -19,20 +19,19 @@ const IndexPage = ({data}) => (
     <FrontPageBanner  data={ data.allDatoCmsFrontpagearticle.edges } /> 
 
     <Grid container sx={{marginBottom:'75px'}} spacing={2}>
+
       <Grid item xs={12}>
           <h2>Diverse Pool</h2>
       </Grid>
+      
       <Grid item xs={12} md={6}>
-        <Typography variant="body2" color="text.secondary">
-            <p>Recruit from diverse talent pools: In order to hire diverse candidates, you need to consider widening your talent pool. Try proactively sourcing and adding talent from diverse to your talent pool?</p>
-        </Typography>
+        <Typography variant="body2" color="text.secondary">Recruit from diverse talent pools: In order to hire diverse candidates, you need to consider widening your talent pool. Try proactively sourcing and adding talent from diverse to your talent pool?</Typography>
       </Grid>
-      <Grid item xs={12} md={6}>
-        <Typography variant="body2" color="text.secondary">
-            <p>Advertise your jobs through diverse channels: Make an effort to reach diverse candidates by placing your job ads in additional magazines, websites and forums visited by underrepresented groups or dedicated to minorities.</p>
-        </Typography>
 
+      <Grid item xs={12} md={6}>
+        <Typography variant="body2" color="text.secondary">Advertise your jobs through diverse channels: Make an effort to reach diverse candidates by placing your job ads in additional magazines, websites and forums visited by underrepresented groups or dedicated to minorities.</Typography>
       </Grid>
+
     </Grid>
     <SiteGallery  data={ data.allDatoCmsActingagency.edges } />
   
@@ -82,6 +81,8 @@ export const query = graphql`
           articlep11
           articlep10
           articlep1
+          articlepwithimage
+          articleabouttheauthor
           ability
           age
           cultural

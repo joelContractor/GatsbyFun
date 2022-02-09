@@ -12,7 +12,7 @@ import BackgroundImage from 'gatsby-background-image'
 
 
 
-function UserBannerImage({ dats, show, showInfo}) {
+function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, presentAge, presentOrientation, presentGender, presentCulture, presentReligion}) {
 
 
     
@@ -38,7 +38,7 @@ function UserBannerImage({ dats, show, showInfo}) {
                                 {(() => {
 
                                     if(dats.node.racial){
-                                        return <div style={ { padding: `5px`, display:`inline` } }>
+                                        return <div role="button" tabIndex={0} style={ { padding: `5px`, display:`inline` } } onClick={presentRace} onKeyDown={presentRace}>
                                             
                                             <StaticImage
                                             src="../images/GenderDIcon.png"
@@ -58,7 +58,7 @@ function UserBannerImage({ dats, show, showInfo}) {
                                 {(() => {
 
                                     if(dats.node.religious){
-                                        return <div style={ { padding: `5px`, display:`inline` } }>
+                                        return <div style={ { padding: `5px`, display:`inline` } } role="button" tabIndex={-1} onClick={presentReligion} onKeyDown={presentReligion}>
                                             
                                             <StaticImage
                                             src="../images/diverseRelIcon.png"
@@ -78,7 +78,7 @@ function UserBannerImage({ dats, show, showInfo}) {
                                 {(() => {
 
                                 if(dats.node.cultural){
-                                    return <div style={ { padding: `5px`, display:`inline` } }>
+                                    return <div style={ { padding: `5px`, display:`inline` } } role="button" tabIndex={-2} onClick={presentCulture} onKeyDown={presentCulture}>
                                         
                                         <StaticImage
                                         src="../images/diverseRaceIcon.png"
@@ -97,7 +97,7 @@ function UserBannerImage({ dats, show, showInfo}) {
                                 {(() => {
 
                                     if(dats.node.ability){
-                                        return <div style={ { padding: `5px`, display:`inline` } }>
+                                        return <div style={ { padding: `5px`, display:`inline` } } role="button" tabIndex={-3} onClick={presentAbility} onKeyDown={presentAbility}>
                                             
                                             <StaticImage
                                             src="../images/gatsby-icon.png"
@@ -116,7 +116,7 @@ function UserBannerImage({ dats, show, showInfo}) {
                                 {(() => {
 
                                     if(dats.node.age){
-                                        return <div style={ { padding: `5px`, display:`inline` } }>
+                                        return <div style={ { padding: `5px`, display:`inline` } } role="button" tabIndex={-4} onClick={presentAge} onKeyDown={presentAge}>
                                             
                                             <StaticImage
                                             src="../images/diverseAgeIcon.png"
@@ -135,7 +135,7 @@ function UserBannerImage({ dats, show, showInfo}) {
                                 {(() => {
 
                                 if(dats.node.orientation){
-                                    return <div style={ { padding: `5px`, display:`inline` } }>
+                                    return <div style={ { padding: `5px`, display:`inline` } } role="button" tabIndex={-5} onClick={presentOrientation} onKeyDown={presentOrientation}>
                                         
                                         <StaticImage
                                         src="../images/gatsby-icon.png"
@@ -154,7 +154,7 @@ function UserBannerImage({ dats, show, showInfo}) {
                                 {(() => {
 
                                 if(dats.node.diverseGender){
-                                    return <div style={ { padding: `5px`, display:`inline` } }>
+                                    return <div style={ { padding: `5px`, display:`inline` } } role="button" tabIndex={-6} onClick={presentGender} onKeyDown={presentGender}>
                                         
                                         <StaticImage
                                         src="../images/diverseGenderIcon.png"

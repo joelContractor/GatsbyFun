@@ -41,7 +41,7 @@ function UserWriterDescription({ dats }) {
                             if(dats.node.writerimage){
                                 return <Grid item xs={12} sm={4}>
                                         
-                                    <GatsbyImage image={getImage(dats.node.writerimage.gatsbyImageData)} alt={"testimage"}/>
+                                    <GatsbyImage style={{ borderRadius:"5px" }} image={getImage(dats.node.writerimage.gatsbyImageData)} alt={"testimage"}/>
                                     
                                 </Grid>
                         }
