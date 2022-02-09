@@ -30,10 +30,10 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                     preserveStackingContext
                 >   
                 
-                    <Grid container xs={12} style={{ padding: `50vh 10px 10px 10px` }}>
+                    <Grid container xs={12} style={{ padding: `64vh 10px 10px 10px` }}>
                         <Grid item xs={4} sm={4} >
                     
-                            <div style={ { position: `relative`, bottom: `20px`, textAlign: `left`, marginTop:`10px`, padding: `10px`, background: `rgba(255, 255, 255, 0.7)`, borderRadius: `50px`, border: `1px solid #d3d3d3`, width:`max-content`, marginLeft: `10px`} }>
+                            <div style={ { position: `relative`, bottom: `20px`, textAlign: `left`, marginTop:`10px`, padding: `10px 5px 10px 5px`, background: `rgba(255, 255, 255, 0.7)`, borderRadius: `50px`, border: `1px solid #d3d3d3`, width:`fit-content`, marginLeft: `10px`} }>
                                 
                                 {(() => {
 
@@ -175,7 +175,7 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                         </Grid>
                         <Grid item xs={12} sm={8} sx={{padding:`10px`}}>
 
-                            <Button style={ { textTransform: `none`, backgroundColor:`rgba(255, 255, 255, 0.7)`, width:`100%`, position: `relative`, bottom: `22px`, borderRadius: `50px`, color: `black`, fontWeight: `italic`, border: `1px solid #d3d3d3`, height: `50px`, padding: `4px 20px 4px 20px` } } onClick={showInfo}>
+                            <Button style={ { textShadow:"1px 1px #f1f1f1", fontSize:"16px", textTransform: `none`, backgroundColor:`rgba(255, 255, 255, 0.7)`, width:`100%`, position: `relative`, bottom: `22px`, borderRadius: `50px`, color: `black`, fontWeight: `normal`, border: `1px solid #d3d3d3`, height: `50px`, padding: `4px 20px 4px 20px`, fontFamily: 'georgia, serif' } } onClick={showInfo}>
                                 {show === 'none'? `More `: `Less `} about {dats.node.title}
                             </Button>
                         </Grid> 

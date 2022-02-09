@@ -15,15 +15,15 @@ const ArtistPage = ({data}) => (
     
     <Grid container sx={{marginBottom:'75px'}} spacing={3}>
       <Grid item xs={12}>
-          <h2>Find Diverse Actors</h2>
+          <p>Find Diverse Actors</p>
       </Grid>
       <Grid item xs={12} md={6}>
-        <Typography variant="body2" color="text.secondary">
+        <Typography style={{fontSize:"12px"}} variant="body2" color="text.secondary">
             When referring to Lorem ipsum, different expressions are used, namely fill text, fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
         </Typography>
       </Grid>
       <Grid item xs={12} md={6}>
-        <Typography variant="body2" color="text.secondary">
+        <Typography style={{fontSize:"12px"}} variant="body2" color="text.secondary">
             When referring to Lorem ipsum, different expressions are used, namely fill text, fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
         </Typography>
       </Grid>
@@ -50,6 +50,7 @@ export const query = graphql`
       edges {
         node {
           agencydescription
+          agencyurl
           agencyimage {
             url
           }

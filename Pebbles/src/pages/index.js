@@ -21,15 +21,15 @@ const IndexPage = ({data}) => (
     <Grid container sx={{marginBottom:'75px'}} spacing={2}>
 
       <Grid item xs={12}>
-          <h2>Diverse Pool</h2>
-      </Grid>
-      
-      <Grid item xs={12} md={6}>
-        <Typography variant="body2" color="text.secondary">Recruit from diverse talent pools: In order to hire diverse candidates, you need to consider widening your talent pool. Try proactively sourcing and adding talent from diverse to your talent pool?</Typography>
+          <p>Diverse Pool</p>
       </Grid>
 
       <Grid item xs={12} md={6}>
-        <Typography variant="body2" color="text.secondary">Advertise your jobs through diverse channels: Make an effort to reach diverse candidates by placing your job ads in additional magazines, websites and forums visited by underrepresented groups or dedicated to minorities.</Typography>
+        <Typography style={{fontSize:"12px"}} variant="body2" color="text.secondary">Recruit from diverse talent pools: In order to hire diverse candidates, you need to consider widening your talent pool. Try proactively sourcing and adding talent from diverse to your talent pool?</Typography>
+      </Grid>
+
+      <Grid item xs={12} md={6}>
+        <Typography style={{fontSize:"12px"}} variant="body2" color="text.secondary">Advertise your jobs through diverse channels: Make an effort to reach diverse candidates by placing your job ads in additional magazines, websites and forums visited by underrepresented groups or dedicated to minorities.</Typography>
       </Grid>
 
     </Grid>
@@ -55,6 +55,7 @@ export const query = graphql`
       edges {
         node {
           agencydescription
+          agencyurl
           agencyimage {
             url
           }

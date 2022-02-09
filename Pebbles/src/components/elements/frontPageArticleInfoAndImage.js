@@ -19,13 +19,13 @@ function FrontPageArticleInfoAndImage({ dats, text }) {
                 {(() => {
                     if(dats){
                         return <>
-                            <Grid item xs={12} md={6} >
+                            <Grid item xs={12} md={4} >
                                 
                                 <GatsbyImage style={{ borderRadius:"5px" }} image={getImage(dats)} alt={"article alt info taken from server"}/>
                   
                             </Grid>
 
-                            <Grid item xs={12} md={6} style={{ display: "flex", alignItems: "center" }} >
+                            <Grid item xs={12} md={4} style={{ display: "flex", alignItems: "center" }} >
                                 
                                 <p>{text}</p>
                   

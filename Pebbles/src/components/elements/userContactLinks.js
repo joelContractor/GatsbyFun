@@ -14,7 +14,7 @@ function userContactLinks({ dats }) {
 
     const res =
 
-        <Grid state={{dats}} container sx={{pt:"100px", mb:"110px", pb:"0px", fontSize:"13px", borderTop:"1px dashed grey"}}>
+        <Grid state={{dats}} container sx={{pt:"100px", mb:"100px", pb:"0px", fontSize:"13px", borderTop:"1px dashed grey"}}>
             <Grid container direction="row" spacing={6}>
                 {(() => {
                     if(dats){

@@ -19,7 +19,7 @@ function FrontPageArticleImage({ dats }) {
                 {(() => {
                     if(dats){
                         return <>
-                            <Grid item xs={12}>
+                            <Grid item xs={8}>
                                 
                                 <GatsbyImage style={{ borderRadius:"5px" }} image={getImage(dats)} alt={"article alt info taken from server"}/>
                   

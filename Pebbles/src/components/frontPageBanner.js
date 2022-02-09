@@ -58,7 +58,7 @@ function FrontPageBanner({ data }) {
 
     const res =
 
-        <Grid container style={ {fontSize:`14px`, fontFamily:`Arial`, marginBottom:"50px"} }>
+        <Grid container style={ {fontSize:`12px`, fontFamily:`Arial`, marginBottom:"50px"} }>
         
             <Grid item xs={12}>
                 <Swiper
