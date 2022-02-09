@@ -14,18 +14,18 @@ function FrontPageArticleInfoAndImage({ dats, text }) {
 
     const res =
 
-        <Grid state={{dats, text}} container sx={{pt:"20px", mt:"10px", pb:"40px"}}>
+        <Grid state={{dats, text}} container sx={{mt:"20px", mb:"20px"}}>
             <Grid container direction="row" spacing={6}>
                 {(() => {
                     if(dats){
                         return <>
-                            <Grid item xs={12} md={4} >
+                            <Grid item xs={12} sm={8} md={4} >
                                 
                                 <GatsbyImage style={{ borderRadius:"5px" }} image={getImage(dats)} alt={"article alt info taken from server"}/>
                   
                             </Grid>
 
-                            <Grid item xs={12} md={4} style={{ display: "flex", alignItems: "center" }} >
+                            <Grid item xs={12} sm={8} md={4} style={{ display: "flex", alignItems: "center" }} >
                                 
                                 <p>{text}</p>
                   

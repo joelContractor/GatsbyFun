@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => (
       <p style={ { margin: 0, float:`left` } }>
         <Link to="/" style={ {float:`left`, color: `white`, textDecoration: `none`, textShadow:`2px 1px black`, marginTop:'5px'} }> {siteTitle} </Link>
       </p>
-      <p style={{ float:`right`, textAlign:`right`, marginTop:"6px" }}>
+      <p style={{ float:`right`, textAlign:`right`, marginTop:"7px", fontSize: '14px' }}>
         <Link to="/artist/" activeStyle={{ color: "red" }} style={ {color: `#fff`,textDecoration: `none`, textShadow:`2px 1px black`} }> actors </Link>
         <Link to="/writer/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, textShadow:`2px 1px black`} }> writers </Link>
         <Link to="/director/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, textShadow:`2px 1px black`} }> directors </Link>

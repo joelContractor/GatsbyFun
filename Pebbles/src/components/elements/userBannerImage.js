@@ -175,7 +175,7 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                         </Grid>
                         <Grid item xs={12} sm={8} sx={{padding:`10px`}}>
 
-                            <Button style={ { textShadow:"1px 1px #f1f1f1", fontSize:"16px", textTransform: `none`, backgroundColor:`rgba(255, 255, 255, 0.7)`, width:`100%`, position: `relative`, bottom: `22px`, borderRadius: `50px`, color: `black`, fontWeight: `normal`, border: `1px solid #d3d3d3`, height: `50px`, padding: `4px 20px 4px 20px`, fontFamily: 'georgia, serif' } } onClick={showInfo}>
+                            <Button style={ { fontSize:"16px", textTransform: `none`, backgroundColor:`rgba(255, 255, 255, 0.7)`, width:`100%`, position: `relative`, bottom: `22px`, borderRadius: `50px`, color: `black`, fontWeight: `normal`, border: `1px solid #d3d3d3`, height: `50px`, padding: `4px 20px 4px 20px`, fontFamily: 'georgia, serif' } } onClick={showInfo}>
                                 {show === 'none'? `More `: `Less `} about {dats.node.title}
                             </Button>
                         </Grid> 

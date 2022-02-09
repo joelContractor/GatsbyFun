@@ -32,7 +32,7 @@ function UserVideoPortfolio({ dats }) {
                 {(() => {
                     if(dats.node.videoreelsrc){
                         return <Grid xs={12} style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }} >
-                            <iframe style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} src={dats.node.videoreelsrc} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+                            <iframe style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', paddingLeft: '2.7rem' }} src={dats.node.videoreelsrc} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
                             </iframe>      
                         </Grid>
                     }

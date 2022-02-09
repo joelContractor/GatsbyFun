@@ -18,14 +18,14 @@ const DirectorPage = ({data}) => (
           <p>Find Diverse Directors</p>
       </Grid>
       <Grid item xs={12} md={6}>
-        <Typography style={{fontSize:"12px"}} variant="body2" color="text.secondary">
+        <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.6)' }}>
             When referring to Lorem ipsum, different expressions are used, namely fill text, fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-        </Typography>
+        </p>
       </Grid>
       <Grid item xs={12} md={6}>
-        <Typography style={{fontSize:"12px"}} variant="body2" color="text.secondary">
+        <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.6)' }}>
             When referring to Lorem ipsum, different expressions are used, namely fill text, fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
-        </Typography>
+        </p>
       </Grid>
     </Grid>
 

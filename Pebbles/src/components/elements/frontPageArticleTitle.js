@@ -14,7 +14,7 @@ function FrontPageArticleTitle({ dats }) {
 
     const res =
 
-        <Grid state={{dats}} container sx={{pt:"50px", mt:"10px", pb:"0px"}}>
+        <Grid state={{dats}} container sx={{pt:"50px", pb:"0px"}}>
             <Grid container direction="row" spacing={6}>
                 {(() => {
                     if(dats){

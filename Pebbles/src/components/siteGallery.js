@@ -22,19 +22,19 @@ function SiteGallery({ data }) {
                                
                             <Grid item xs={6} sm={6} md={4} lg={3} state={dats} >
                                 
-                                <Card sx={{ border:"1px solid white", padding:"0px", height:"400px"}}>
+                                <Card sx={{ boxShadow: '0px 0px 0px 0px rgba(0,0,0,0.2),0px 0px 0px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12)', backgroundColor: '#f9f9f9', border:"1px solid white", padding:"0px"}}>
                                     <CardMedia
                                         component="img"
-                                        height="150"
+                                        height="200"
                                         image={dats.node.agencyimage.url}
                                         alt={dats.node.agencytitle}
-                                        sx={{border:"1px solid #d3d3d3", borderRadius:"3px"}}
+                                        sx={{  }}
                                     />
                                     <CardContent>
-                                        <h4>
+                                        <p>
                                             <a href={dats.node.agencyurl} target="_blank" rel="noreferrer" role="button">{dats.node.agencytitle}</a>
-                                        </h4>
-                                        <p style={{fontSize:"12px", color: "rgba(0, 0, 0, 0.6)"}}>
+                                        </p>
+                                        <p style={{fontFamily: 'Arial', fontSize:"12px", color: "rgba(0, 0, 0, 0.6)"}}>
                                             {dats.node.agencydescription}
                                         </p>
                                     </CardContent>
