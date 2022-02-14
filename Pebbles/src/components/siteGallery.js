@@ -7,6 +7,20 @@ import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
+import { styled } from "@mui/system";
+
+const StyledGalleryGrid = styled(Grid, {
+    name: "StyledGalleryGrid",
+    slot: "Wrapper",
+  })({
+    fontSize:`13px`,
+    fontFamily:`Arial`,
+    ".infoCard": { padding:"2px", height:"425px" },
+    ".cardButton": { textTransform: `none`, color:"white", fontWeight:"normal", fontSize:"12px", width:"100%", textAlign:"center", border: "1px white solid", marginBottom:"0px", background: "rgb(26, 36, 33)", padding: "20px 10px 15px 15px", borderBottomRightRadius: "0px", borderBottomLeftRadius:"0px", borderTopLeftRadius: "5px", borderTopRightRadius: "5px" },
+    ".cardMediaArea": {  marginBottom:"0px", border: "1px solid white", borderTop:"0px" },
+    ".cardContentArea": { background:"white", borderBottomLeftRadius: "3px", borderBottomRightRadius: "3px" },
+    ".cardContentPara.": { fontFamily: 'Arial', fontSize:"12px", color: "rgba(0, 0, 0, 0.6)", marginBottom:"0px" }
+  });
 
 function SiteGallery({ data }) {
 
@@ -15,15 +29,15 @@ function SiteGallery({ data }) {
         
 
  
-            <Grid container direction="row" spacing={3} sx={{ fontSize:`13px`, fontFamily:`Arial`}}>
+            <StyledGalleryGrid container direction="row" spacing={3}>
             
                 
                         {data.map((dats) => (
                                
                             <Grid item xs={6} sm={6} md={4} lg={4} state={dats} >
                                 
-                                <Card sx={{ padding:"2px", height:"425px"}}>
-                                    <Button href={dats.node.agencyurl} target="_blank" style={{ textTransform: `none`, color:"white", fontWeight:"normal", fontSize:"12px", width:"100%", textAlign:"center", border: "1px white solid", marginBottom:"0px", background: "rgba(0, 0, 0, 0.9)", padding: "20px 10px 15px 15px", borderBottomRightRadius: "0px", borderBottomLeftRadius:"0px", borderTopLeftRadius: "5px", borderTopRightRadius: "5px" }}>
+                                <Card className="infoCard">
+                                    <Button href={dats.node.agencyurl} target="_blank" className="cardButton">
                                         {dats.node.agencytitle}
                                     </Button>
                                     <CardMedia
@@ -31,13 +45,13 @@ function SiteGallery({ data }) {
                                         height="200"
                                         image={dats.node.agencyimage.url}
                                         alt={dats.node.agencytitle}
-                                        sx={{ mb:"0px", border: "1px solid white", borderTop:"0px" }}
+                                        className="cardMediaArea"
                                     />
                                     <CardContent
-                                        sx={{ background:"white", borderBottomLeftRadius: "3px", borderBottomRightRadius: "3px" }}
+                                        className="cardContentArea"
                                     >
                                         
-                                        <p style={{fontFamily: 'Arial', fontSize:"12px", color: "rgba(0, 0, 0, 0.6)", marginBottom:"0px"}}>
+                                        <p className="cardContentPara">
                                             {dats.node.agencydescription}
                                         </p>
                                         
@@ -52,7 +66,7 @@ function SiteGallery({ data }) {
                          
                         ))}
                                 
-            </Grid>
+            </StyledGalleryGrid>
             
     
         

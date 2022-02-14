@@ -5,7 +5,22 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
 import Button from '@mui/material/Button';
+import { styled } from "@mui/system";
 
+const StyledUserContactGrid = styled(Grid, {
+    name: "StyledUserContactGrid",
+    slot: "Wrapper",
+  })({
+    paddingTop:"100px", 
+    marginTop:"10px", 
+    paddingBottom:"100px", 
+    borderTop:"1px dotted grey",
+    ".userContactTitle": { display: "flex", justifyContent: "center", marginBottom:`35px` },
+    ".userContactTypeContainer": { display: "flex", justifyContent: "center" },
+    ".link": { textDecoration: `none` },
+    ".contactButton": { width:`160px`, textTransform: `none`, paddingTop:`65px`, paddingBottom:`65px`, borderRadius: `100px`, color: `rgba(22, 160, 133, 1)`, fontWeight: `italic`, border: `1px solid rgba(22, 160, 133, 1)` },
+
+  });
 
 
 
@@ -15,17 +30,17 @@ function UserContact({ dats }) {
 
     const res =
 
-        <Grid state={{dats}} container sx={{pt:"100px", mt:"10px", pb:"100px", borderTop:"1px dotted grey"}}>
-            <Grid item xs={12} sx={{ display: "flex", justifyContent: "center", mb:`35px` }}>
+        <StyledUserContactGrid state={{dats}} container>
+            <Grid className="userContactTitle" item xs={12}>
                 <h2>Contact {dats.node.title}</h2>
             </Grid>
             <Grid container direction="row" spacing={6}>
                 {(() => {
                     if(dats.node.videoreelsrc){
                         return <>
-                            <Grid item xs={6} sx={{ display: "flex", justifyContent: "center" }}>
-                                <a style={{ textDecoration: `none` }} href={"mailto:" + `${dats.node.useremail}` + "?cc=admin@diversepool.com&&subject=Diverse-Pool-Mail&body=Body-goes-here"}>
-                                    <Button style={ { width:`160px`, textTransform: `none`, paddingTop:`65px`, paddingBottom:`65px`, borderRadius: `100px`, color: `rgba(22, 160, 133, 1)`, fontWeight: `italic`, border: `1px solid rgba(22, 160, 133, 1)` }}>
+                            <Grid item xs={6} className="userContactTypeContainer">
+                                <a className="link" href={"mailto:" + `${dats.node.useremail}` + "?cc=admin@diversepool.com&&subject=Diverse-Pool-Mail&body=Body-goes-here"}>
+                                    <Button className="contactButton">
                                         Email
                                     </Button>
                                 </a>
@@ -36,9 +51,9 @@ function UserContact({ dats }) {
 
                 {(() => {
                     if(dats.node.videoreelsrc){
-                        return <Grid item xs={6} sx={{ display: "flex", justifyContent: "center" }}>
-                            <a style={{ textDecoration: `none`}} href={"tel:" + `${dats.node.usertel}`}>
-                                <Button sx={ { width:`160px`,textTransform: `none`, paddingTop:`65px`, paddingBottom:`65px`, borderRadius: `1000px`, color: `rgba(175, 65, 84, 0.8)`, fontWeight: `italic`, border: `1px solid rgba(175, 65, 84, 0.8)`}}>
+                        return <Grid item xs={6} className="userContactTypeContainer">
+                            <a className="link" href={"tel:" + `${dats.node.usertel}`}>
+                                <Button className="contactButton">
                                     Call
                                 </Button>
                             </a>
@@ -47,7 +62,7 @@ function UserContact({ dats }) {
                 })()}
             </Grid> 
 
-        </Grid>
+        </StyledUserContactGrid>
         
       
         

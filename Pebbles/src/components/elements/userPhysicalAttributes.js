@@ -5,7 +5,19 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
+import { styled } from "@mui/system";
 
+const StyledUserPhysicalAttributesGrid = styled(Grid, {
+    name: "StyledUserPhysicalAttributesGrid",
+    slot: "Wrapper",
+  })({
+    paddingTop:"100px", 
+    marginTop:"10px", 
+    paddingBottom:"50px",
+    borderTop:"1px dotted grey",
+    ".userPhysicalAttributesImage": { borderRadius:"5px" }
+
+  });
 
 
 
@@ -15,7 +27,7 @@ function UserPhysicalAttributes({ dats }) {
 
     const res =
 
-        <Grid state={{dats}} container  sx={{pt:"100px", mt:"10px", pb:"50px", borderTop:"1px dotted grey"}}>
+        <StyledUserPhysicalAttributesGrid state={{dats}} container>
             <Grid container direction="row"  spacing={6}>  
                 {(() => {
                     if(dats.node.hairColour){
@@ -39,13 +51,13 @@ function UserPhysicalAttributes({ dats }) {
                     if(dats.node.physicalattributeimage){
                         return <Grid item xs={6} sm={8}>
                                 
-                                <GatsbyImage style={{ borderRadius:"5px" }} image={getImage(dats.node.physicalattributeimage.gatsbyImageData)} alt={"physical attribute image"}/>
+                                <GatsbyImage className="userPhysicalAttributesImage" image={getImage(dats.node.physicalattributeimage.gatsbyImageData)} alt={"physical attribute image"}/>
                             
                         </Grid>
                 }
                 })()}
             </Grid>
-        </Grid>
+        </StyledUserPhysicalAttributesGrid>
         
       
         

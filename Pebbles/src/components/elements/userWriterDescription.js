@@ -5,7 +5,19 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
+import { styled } from "@mui/system";
 
+const StyledUserWriterDescriptionGrid = styled(Grid, {
+    name: "StyledUserWriterDescriptionGrid",
+    slot: "Wrapper",
+  })({
+    paddingTop:"100px", 
+    marginTop:"10px", 
+    paddingBottom:"50px",
+    borderTop:"1px dotted grey",
+    ".userWriterDescriptionImage": { borderRadius:"5px" }
+
+  });
 
 
 
@@ -15,7 +27,7 @@ function UserWriterDescription({ dats }) {
 
     const res =
 
-        <Grid state={{dats}} container sx={{pt:"100px", mt:"10px", pb:"50px", borderTop:"1px dotted grey"}}>
+        <StyledUserWriterDescriptionGrid state={{dats}} container>
             <Grid container direction="row" spacing={6}>
                     {(() => {
                         if(dats.node.writerdescription){
@@ -41,13 +53,13 @@ function UserWriterDescription({ dats }) {
                             if(dats.node.writerimage){
                                 return <Grid item xs={12} sm={4}>
                                         
-                                    <GatsbyImage style={{ borderRadius:"5px" }} image={getImage(dats.node.writerimage.gatsbyImageData)} alt={"testimage"}/>
+                                    <GatsbyImage className="userWriterDescriptionImage" image={getImage(dats.node.writerimage.gatsbyImageData)} alt={"testimage"}/>
                                     
                                 </Grid>
                         }
                     })()}
             </Grid> 
-        </Grid>
+        </StyledUserWriterDescriptionGrid>
         
       
         

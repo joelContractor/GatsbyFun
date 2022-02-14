@@ -4,7 +4,18 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
+import { styled } from "@mui/system";
 
+const StyledFrontPageFooterTitleGrid = styled(Grid, {
+    name: "StyledFrontPageFooterTitleGrid",
+    slot: "Wrapper",
+  })({
+    paddingTop:"70px", 
+    marginTop:"10px", 
+    paddingBottom:"0px", 
+    borderTop:"1px dashed grey",
+
+  });
 
 
 
@@ -14,7 +25,7 @@ function FrontPageFooterTitle({ dats }) {
 
     const res =
 
-        <Grid state={{dats}} container sx={{pt:"70px", mt:"10px", pb:"0px", borderTop:"1px dashed grey"}}>
+        <StyledFrontPageFooterTitleGrid state={{dats}} container>
             <Grid container direction="row" spacing={6}>
                 {(() => {
                     if(dats){
@@ -29,7 +40,7 @@ function FrontPageFooterTitle({ dats }) {
                     }
                 })()}
             </Grid>
-        </Grid>
+        </StyledFrontPageFooterTitleGrid>
         
       
         

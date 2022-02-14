@@ -5,7 +5,18 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
+import { styled } from "@mui/system";
 
+const StyledUserImageGalleryGrid = styled(Grid, {
+    name: "StyledUserImageGalleryGrid",
+    slot: "Wrapper",
+  })({
+    paddingTop:"50px", 
+    marginTop:"10px", 
+    paddingBottom:"50px", 
+    borderTop:"1px dotted grey"
+
+  });
 
 
 
@@ -15,7 +26,7 @@ function UserImageGallery({ dats }) {
 
     const res =
 
-        <Grid state={{dats}} container sx={{pt:"50px", mt:"10px", pb:"50px", borderTop:"1px dotted grey"}}>
+        <StyledUserImageGalleryGrid state={{dats}} container>
             <Grid container direction="row" spacing={6}>
                 {(() => {
                     if(dats.node.spectacleurl){
@@ -78,7 +89,7 @@ function UserImageGallery({ dats }) {
                 })()}
             </Grid>
             
-        </Grid>
+        </StyledUserImageGalleryGrid>
         
       
         

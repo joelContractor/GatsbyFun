@@ -5,7 +5,19 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
+import { styled } from "@mui/system";
 
+const StyledUserAvailableProjectGrid = styled(Grid, {
+    name: "StyledUserAvailableProjectGrid",
+    slot: "Wrapper",
+  })({
+    paddingTop:"100px", 
+    marginTop:"10px", pb:"50px", 
+    borderTop:"1px dotted grey",
+    ".bold": { fontWeight:"bold" },
+    ".normal": { fontWeight:"normal" }
+
+  });
 
 
 
@@ -15,7 +27,7 @@ function UserAvailableProject({ dats }) {
 
     const res =
 
-        <Grid state={{dats}} container sx={{pt:"100px", mt:"10px", pb:"50px", borderTop:"1px dotted grey"}}>
+        <StyledUserAvailableProjectGrid state={{dats}} container>
             <Grid container direction="row" spacing={6}>
                 {(() => {
                     if(dats.node.availableprojectbriefdescription){
@@ -25,9 +37,9 @@ function UserAvailableProject({ dats }) {
                                 <p>{dats.node.availableprojectbriefdescription}</p>
                                 <Grid item xs={12} container direction="row" spacing={0}>
                                     
-                                    <Grid item xs={12} sm={6} md={3}><p style={{fontWeight:"bold"}}>Paid: <span style={{fontWeight:"normal"}}>{dats.node.availablescriptcost}</span></p></Grid>
+                                    <Grid item xs={12} sm={6} md={3}><p className="bold">Paid: <span className="normal">{dats.node.availablescriptcost}</span></p></Grid>
                                    
-                                    <Grid item xs={12} sm={6} md={3}><p style={{fontWeight:"bold"}}>Type: <span style={{fontWeight:"normal"}}>{dats.node.availablescripttype}</span></p></Grid>
+                                    <Grid item xs={12} sm={6} md={3}><p className="bold">Type: <span className="normal">{dats.node.availablescripttype}</span></p></Grid>
                                     
                                     
                                 </Grid>
@@ -52,7 +64,7 @@ function UserAvailableProject({ dats }) {
                     }
                 })()}
             </Grid>
-        </Grid>
+        </StyledUserAvailableProjectGrid>
         
       
         

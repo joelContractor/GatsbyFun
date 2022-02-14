@@ -6,6 +6,15 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Grid } from "@material-ui/core"
 import Typography from '@mui/material/Typography'
+import { styled } from "@mui/system"
+
+const StyledP = styled(Grid, {
+  name: "StyledP",
+  slot: "Wrapper",
+})({
+  marginBottom: '75px',
+  ".pagePara": { fontFamily:"Arial", fontSize:"12px", color: "rgba(0, 0, 0, 0.6)" }
+});
 
 const DirectorPage = ({data}) => (
   <Layout>
@@ -13,21 +22,21 @@ const DirectorPage = ({data}) => (
 
     <GalleryBanner  data={ data.allDatoCmsDirector.edges } /> {/* added -> comp now reusable -> search path added by page uniform field names after search term eg.'data.allDatoCmsActors.edges' */}
     
-    <Grid container sx={{marginBottom:'75px'}} spacing={3}>
+    <StyledP container spacing={3}>
       <Grid item xs={12}>
-          <p>Find Diverse Directors</p>
+          <p className="title">Find Diverse Directors</p>
       </Grid>
       <Grid item xs={12} md={6}>
-        <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.6)' }}>
-            When referring to Lorem ipsum, different expressions are used, namely fill text, fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
+        <p className="pagePara">
+            Production companies, find your director here. Different expressions are used, namely fill text, fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
         </p>
       </Grid>
       <Grid item xs={12} md={6}>
-        <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.6)' }}>
-            When referring to Lorem ipsum, different expressions are used, namely fill text, fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
+        <p className="pagePara">
+          Diverse Directors, get your free Diverse Pool Director profile now - FREE for a limited time. Different expressions are used, namely fill text, fictitious text , blind text or placeholder text : in short, its meaning can also be zero.
         </p>
       </Grid>
-    </Grid>
+    </StyledP>
 
     <SiteGallery  data={ data.allDatoCmsActingagency.edges } />
 

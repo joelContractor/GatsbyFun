@@ -4,7 +4,15 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
+import { styled } from "@mui/system";
 
+const StyledUserGeneralDetailsGrid = styled(Grid, {
+    name: "StyledUserGeneralDetailsGrid",
+    slot: "Wrapper",
+  })({
+    paddingTop:"40px"
+
+  });
 
 
 
@@ -16,7 +24,7 @@ function UserGeneralDetails({ dats }) {
 
     const res =
 
-        <Grid state={{dats}} container  sx={{pt:"40px"}}>
+        <StyledUserGeneralDetailsGrid state={{dats}} container>
             <Grid container direction="row" spacing={6} >   
                 {(() => {
                     if(dats.node.actoragerange || dats.node.agenonactor){
@@ -83,7 +91,7 @@ function UserGeneralDetails({ dats }) {
                 })()}
             </Grid>
 
-        </Grid>
+        </StyledUserGeneralDetailsGrid>
         
       
         

@@ -5,7 +5,19 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
+import { styled } from "@mui/system";
 
+const StyledUserSkillsGrid = styled(Grid, {
+    name: "StyledUserSkillsGrid",
+    slot: "Wrapper",
+  })({
+    paddingTop:"100px", 
+    marginTop:"10px", 
+    paddingBottom:"50px",
+    borderTop:"1px dotted grey",
+    ".userSkillsImage": { borderRadius:"5px" }
+
+  });
 
 
 
@@ -15,7 +27,7 @@ function UserSkills({ dats }) {
 
     const res =
 
-        <Grid state={{dats}} container sx={{pt:"100px", mt:"10px", pb:"50px", borderTop:"1px dotted grey"}}> 
+        <StyledUserSkillsGrid state={{dats}} container> 
                 {(() => {
                     if(dats.node.skill){
 
@@ -24,7 +36,7 @@ function UserSkills({ dats }) {
                                     if(dats.node.skillimage){
                                         return <Grid item xs={6} sm={8}>
                                                 
-                                                <GatsbyImage style={{ borderRadius:"5px" }} image={getImage(dats.node.skillimage.gatsbyImageData)} alt={"testimage"}/>
+                                                <GatsbyImage className="userSkillsImage" image={getImage(dats.node.skillimage.gatsbyImageData)} alt={"testimage"}/>
                                             
                                         </Grid>
                                     }
@@ -84,7 +96,7 @@ function UserSkills({ dats }) {
                     }
                 })()}
             
-        </Grid>
+        </StyledUserSkillsGrid>
         
       
         

@@ -13,7 +13,18 @@ import FrontPageArticleWriterDetails from "./elements/frontPageArticleWriterDeta
 import FrontPageArticleImage from "./elements/frontPageArticleImage";
 import FrontPageArticleInfoAndImage from "./elements/frontPageArticleInfoAndImage";
 import FrontPageArticleAboutAuthorParagraph from "./elements/frontPageArticleAboutAuthorParagraph";
+import { styled } from "@mui/system";
 
+const StyledFrontPageBannerGrid = styled(Grid, {
+    name: "StyledFrontPageBannerGrid",
+    slot: "Wrapper",
+  })({
+    fontSize:`12px`,
+    fontFamily:`Arial`, 
+    marginBottom:"50px",
+    ".bannerData": { marginTop:`10px`, zIndex:`1`, overflow:`hidden`, position: `relative`, transition: `opacity 1.9s, top 0s, height 0s`}
+
+  });
 
 
 
@@ -58,7 +69,7 @@ function FrontPageBanner({ data }) {
 
     const res =
 
-        <Grid container style={ {fontSize:`12px`, fontFamily:`Arial`, marginBottom:"50px"} }>
+        <StyledFrontPageBannerGrid container>
         
             <Grid item xs={12}>
                 <Swiper
@@ -76,7 +87,7 @@ function FrontPageBanner({ data }) {
 
                             <UserBannerImage  dats={ dats } show={show} showInfo={showInfo} presentReligion={presentReligion} presentRace={presentRace} presentAbility={presentAbility} presentAge={presentAge} presentOrientation={presentOrientation} presentGender={presentGender} presentCulture={presentCulture}/>
 
-                            <Grid item xs={12} style={ { marginTop:`10px`, zIndex:`1`, overflow:`hidden`, height:show === 'none'? `0px`: `100%`, opacity:show === 'none'? `0`: `1` , position: `relative`, top:show === 'none'? `-4900px`: `0px`, transition: `opacity 1.9s, top 0s, height 0s` }}>                            
+                            <Grid item xs={12} className="bannerData" style={ { height:show === 'none'? `0px`: `100%`, opacity:show === 'none'? `0`: `1` , top:show === 'none'? `-4900px`: `0px` }}>                            
 
                                 {(() => {
                                     if(dats.node.articlep1){
@@ -228,7 +239,7 @@ function FrontPageBanner({ data }) {
                     
                 </Swiper>
             </Grid>
-        </Grid>
+        </StyledFrontPageBannerGrid>
 
     return res;
 }

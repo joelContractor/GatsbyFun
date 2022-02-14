@@ -5,7 +5,18 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { styled } from "@mui/system";
 
+const StyledFrontPageArticleInfoAndImageGrid = styled(Grid, {
+    name: "StyledFrontPageArticleInfoAndImageGrid",
+    slot: "Wrapper",
+  })({
+    marginTop:"20px", 
+    marginBottom:"20px",
+    ".frontPageArticleInfoAndImageImage": { borderRadius:"5px" },
+    ".frontPageArticleInfoAndImageInfo": { display: "flex", alignItems: "center" }
+
+  });
 
 
 
@@ -14,18 +25,18 @@ function FrontPageArticleInfoAndImage({ dats, text }) {
 
     const res =
 
-        <Grid state={{dats, text}} container sx={{mt:"20px", mb:"20px"}}>
+        <StyledFrontPageArticleInfoAndImageGrid state={{dats, text}} container>
             <Grid container direction="row" spacing={6}>
                 {(() => {
                     if(dats){
                         return <>
                             <Grid item xs={12} sm={8} md={4} >
                                 
-                                <GatsbyImage style={{ borderRadius:"5px" }} image={getImage(dats)} alt={"article alt info taken from server"}/>
+                                <GatsbyImage className="frontPageArticleInfoAndImageImage" image={getImage(dats)} alt={"article alt info taken from server"}/>
                   
                             </Grid>
 
-                            <Grid item xs={12} sm={8} md={4} style={{ display: "flex", alignItems: "center" }} >
+                            <Grid item xs={12} sm={8} md={4} className="frontPageArticleInfoAndImageInfo">
                                 
                                 <p>{text}</p>
                   
@@ -35,7 +46,7 @@ function FrontPageArticleInfoAndImage({ dats, text }) {
                     }
                 })()}
             </Grid>
-        </Grid>
+        </StyledFrontPageArticleInfoAndImageGrid>
         
       
         

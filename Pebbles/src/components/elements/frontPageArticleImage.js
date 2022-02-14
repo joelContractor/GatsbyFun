@@ -5,7 +5,18 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { styled } from "@mui/system";
 
+const StyledFrontPageArticleImageGrid = styled(Grid, {
+    name: "StyledFrontPageArticleImageGrid",
+    slot: "Wrapper",
+  })({
+    paddingTop:"20px", 
+    marginTop:"10px", 
+    paddingBottom:"40px",
+    ".frontPageArticleImage": { borderRadius:"5px" }
+
+  });
 
 
 
@@ -14,14 +25,14 @@ function FrontPageArticleImage({ dats }) {
 
     const res =
 
-        <Grid state={{dats}} container sx={{pt:"20px", mt:"10px", pb:"40px"}}>
+        <StyledFrontPageArticleImageGrid state={{dats}} container>
             <Grid container direction="row" spacing={6}>
                 {(() => {
                     if(dats){
                         return <>
                             <Grid item xs={12} sm={8}>
                                 
-                                <GatsbyImage style={{ borderRadius:"5px" }} image={getImage(dats)} alt={"article alt info taken from server"}/>
+                                <GatsbyImage className="frontPageArticleImage" image={getImage(dats)} alt={"article alt info taken from server"}/>
                   
                             </Grid>
 
@@ -29,7 +40,7 @@ function FrontPageArticleImage({ dats }) {
                     }
                 })()}
             </Grid>
-        </Grid>
+        </StyledFrontPageArticleImageGrid>
         
       
         

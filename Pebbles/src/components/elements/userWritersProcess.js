@@ -4,7 +4,19 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
+import { styled } from "@mui/system";
 
+const StyledUserWritersProcessGrid = styled(Grid, {
+    name: "StyledUserWritersProcessGrid",
+    slot: "Wrapper",
+  })({
+    paddingTop:"100px", 
+    marginTop:"10px", 
+    paddingBottom:"50px",
+    borderTop:"1px dotted grey",
+    ".bold": { fontWeight:"bold" }
+
+  });
 
 
 
@@ -14,7 +26,7 @@ function UserWritersProcess({ dats }) {
 
     const res =
 
-        <Grid state={{dats}} container sx={{pt:"100px", mt:"10px", pb:"50px", borderTop:"1px dotted grey"}}>
+        <StyledUserWritersProcessGrid state={{dats}} container>
             <Grid container direction="row" spacing={6}>
                 {(() => {
                     if(dats.node.writerprocessone){
@@ -41,17 +53,17 @@ function UserWritersProcess({ dats }) {
                         return <Grid container direction='row' item xs={12} sm={4} spacing={0}>
                             
                             <Grid item xs={4} sm={12}>
-                                <p style={{fontWeight:"bold"}}>6 Pages</p>
+                                <p className="bold">6 Pages</p>
                                 <p>{dats.node.writersixpageprice}</p>
                             </Grid>
 
                             <Grid item xs={4} sm={12}>
-                                <p style={{fontWeight:"bold"}}>12 Pages</p>
+                                <p className="bold">12 Pages</p>
                                 <p>{dats.node.writertwelvepageprice}</p>
                             </Grid>
 
                             <Grid item xs={4} sm={12}>
-                                <p style={{fontWeight:"bold"}}>More</p>
+                                <p className="bold">More</p>
                                 <p>Contact to discuss.</p>
                             </Grid>
                         
@@ -60,7 +72,7 @@ function UserWritersProcess({ dats }) {
                 })()}
             </Grid> 
 
-        </Grid>
+        </StyledUserWritersProcessGrid>
         
       
         

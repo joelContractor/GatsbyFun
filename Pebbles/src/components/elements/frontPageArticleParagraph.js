@@ -4,6 +4,17 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
+import { styled } from "@mui/system";
+
+const StyledFrontPageArticleParagraphGrid = styled(Grid, {
+    name: "StyledFrontPageArticleParagraphGrid",
+    slot: "Wrapper",
+  })({
+    paddingTop:"5px", 
+    marginTop:"10px", 
+    paddingBottom:"0px"
+
+  });
 
 
 
@@ -14,7 +25,7 @@ function FrontPageArticleParagraph({ dats }) {
 
     const res =
 
-        <Grid state={{dats}} container sx={{pt:"5px", mt:"10px", pb:"0px"}}>
+        <StyledFrontPageArticleParagraphGrid state={{dats}} container>
             <Grid container direction="row" spacing={6}>
                 {(() => {
                     if(dats){
@@ -26,7 +37,7 @@ function FrontPageArticleParagraph({ dats }) {
                     }
                 })()}
             </Grid>
-        </Grid>
+        </StyledFrontPageArticleParagraphGrid>
         
       
         

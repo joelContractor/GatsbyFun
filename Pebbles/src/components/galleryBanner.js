@@ -16,11 +16,19 @@ import UserWritersProcess from "../components/elements/userWritersProcess"
 import UserWorkHistory from "../components/elements/userWorkHistory"
 import UserBannerImage from "./elements/userBannerImage";
 import UserVideoPortfolio from "./elements/userVideoPortfolio";
-import UserContact from "./elements/userContact";
 import UserContactLinks from "./elements/userContactLinks";
-import FrontPageArticleTitle from "./elements/frontPageArticleTitle";
-import FrontPageFooterTitle from "./elements/frontPageFooterTitle";
+import { styled } from "@mui/system";
 
+const StyledGalleryBannerGrid = styled(Grid, {
+    name: "StyledGalleryBannerGrid",
+    slot: "Wrapper",
+  })({
+    fontSize:`12px`,
+    fontFamily:`Arial`, 
+    marginBottom:"50px",
+    ".bannerData": { marginTop:`10px`, zIndex:`1`, overflow:`hidden`, position: `relative`, transition: `opacity 1.9s, top 0s, height 0s`}
+
+  });
 
 
 
@@ -65,7 +73,7 @@ function GalleryBanner({ data }) {
 
     const res =
 
-        <Grid container style={ {fontSize:`12px`, fontFamily:`Arial`, marginBottom:"50px"} }>
+        <StyledGalleryBannerGrid container >
         
             <Grid item xs={12}>
                 <Swiper
@@ -83,7 +91,7 @@ function GalleryBanner({ data }) {
 
                             <UserBannerImage  dats={ dats } show={show} showInfo={showInfo} presentReligion={presentReligion} presentRace={presentRace} presentAbility={presentAbility} presentAge={presentAge} presentOrientation={presentOrientation} presentGender={presentGender} presentCulture={presentCulture}/>
 
-                            <Grid item xs={12} style={ { marginTop:`10px`, zIndex:`1`, overflow:`hidden`, height:show === 'none'? `0px`: `100%`, opacity:show === 'none'? `0`: `1` , position: `relative`, top:show === 'none'? `-4900px`: `0px`, transition: `opacity 1.9s, top 0s, height 0s`}}>                                                             
+                            <Grid className="bannerData" item xs={12} style={ { height:show === 'none'? `0px`: `100%`, opacity:show === 'none'? `0`: `1` , top:show === 'none'? `-4900px`: `0px` }}>                                                             
 
                                 <UserGeneralDetails  dats={ dats } />                              
 
@@ -161,7 +169,7 @@ function GalleryBanner({ data }) {
                     
                 </Swiper>
             </Grid>
-        </Grid>
+        </StyledGalleryBannerGrid>
 
     return res;
 }

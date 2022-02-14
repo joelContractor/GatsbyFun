@@ -4,7 +4,21 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
+import { styled } from "@mui/system";
 
+const StyledFrontPageArticleGrid = styled(Grid, {
+    name: "StyledFrontPageArticleGrid",
+    slot: "Wrapper",
+  })({
+    paddingTop:"30px", 
+    marginTop:"20px", 
+    marginBottom:"30px", 
+    paddingBottom:"10px", 
+    borderTop:"1px dashed grey", 
+    borderBottom:"1px dashed grey",
+    ".title": { fontWeight:"bold" }
+
+  });
 
 
 
@@ -14,19 +28,19 @@ function FrontPageArticleAboutAuthorParagraph({ dats }) {
 
     const res =
 
-        <Grid state={{dats}} container sx={{pt:"30px", mt:"20px", mb:"30px", pb:"10px", borderTop:"1px dashed grey", borderBottom:"1px dashed grey"}}>
+        <StyledFrontPageArticleGrid state={{dats}} container>
             <Grid container direction="row" spacing={6}>
                 {(() => {
                     if(dats){
                         return <Grid item xs={12} sm={8}>
                                 
-                                <p><span style={{fontWeight:"bold"}}>The Author: </span> {dats}</p>
+                                <p><span className="title">The Author: </span> {dats}</p>
                   
                         </Grid>
                     }
                 })()}
             </Grid>
-        </Grid>
+        </StyledFrontPageArticleGrid>
         
       
         

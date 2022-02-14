@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
+
 const Header = ({ siteTitle }) => (
   <header style={ {float:`left`, background: `#1A2421`, marginBottom: `0rem`, width:`100%`} }>
     <div style={ {margin: `0 auto`, maxWidth: 960, padding: `1.45rem 1.0875rem`,} }>
