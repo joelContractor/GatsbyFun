@@ -5,7 +5,7 @@ import FrontPageBanner from "../components/frontPageBanner"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Grid } from "@material-ui/core"
-import Typography from '@mui/material/Typography'
+
 
 const IndexPage = ({data}) => (
 
