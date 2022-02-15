@@ -62,7 +62,6 @@ function userContactLinks({ dats }) {
                                 
                                 <a className="contactLinks" href={`mailto:${dats.node.useremail}?cc=admin@diversepool.com&&subject=Diverse-Pool-Mail&body=Body-goes-here`}>
                                     Email
-
                                     <StaticImage
                                         src="../images/gatsby-icon.png"
                                         width={25}
