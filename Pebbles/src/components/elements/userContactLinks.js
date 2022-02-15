@@ -48,7 +48,7 @@ function userContactLinks({ dats }) {
                         
                                     <StaticImage
                                         src="../images/gatsby-icon.png"
-                                        width={25}
+                                        width={35}
                                         quality={95}
                                         formats={["AUTO", "WEBP", "AVIF"]}
                                         alt="A Gatsby astronaut"
@@ -64,7 +64,7 @@ function userContactLinks({ dats }) {
                                    
                                     <StaticImage
                                         src="../images/gatsby-icon.png"
-                                        width={25}
+                                        width={35}
                                         quality={95}
                                         formats={["AUTO", "WEBP", "AVIF"]}
                                         alt="A Gatsby astronaut"
@@ -80,7 +80,7 @@ function userContactLinks({ dats }) {
                                    
                                     <StaticImage
                                         src="../images/gatsby-icon.png"
-                                        width={25}
+                                        width={35}
                                         quality={95}
                                         formats={["AUTO", "WEBP", "AVIF"]}
                                         alt="A Gatsby astronaut"
