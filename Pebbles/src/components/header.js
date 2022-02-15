@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Header = ({ siteTitle }) => (
   <header style={ {float:`left`, background: `#1A2421`, marginBottom: `0rem`, width:`100%`} }>
-    <div style={ {margin: `0 auto`, maxWidth: 960, padding: `1.45rem 1.0875rem`,} }>
+    <div style={ {margin: `0 auto`, maxWidth: 900, padding: `1.45rem 1.0875rem`,} }>
       <div style={{ float:`left`, marginRight:`5px`, marginTop:"3px" }}>
         <StaticImage
             src="../images/diverseGenderIcon.png"
