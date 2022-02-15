@@ -17,7 +17,7 @@ const StyledUserContactLinksGrid = styled(Grid, {
     fontSize:"13px", 
     borderTop:"1px dashed grey",
     ".title": { fontWeight:"bold" },
-    ".contactLinks": { color:"#639", fontSize:"10px", width:"100%", textAlign:"right"},
+    ".contactLinks": { color:"#639", fontSize:"10px"},
     ".contactLinkContainer": { display: "flex", justifyContent: "flex-end" },
     ".contactLinkImage": { marginBottom: `0px`, marginLeft: `3px` },
 
