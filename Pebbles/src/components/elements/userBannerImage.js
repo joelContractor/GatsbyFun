@@ -20,6 +20,7 @@ const StyledUserBannerImageGrid = styled(Grid, {
     ".bannerButton": { fontSize:"16px", textTransform: `none`, backgroundColor:`rgba(255, 255, 255, 0.7)`, width:`100%`, borderRadius: `50px`, color: `black`, fontWeight: `normal`, border: `1px solid #d3d3d3`, height: `50px`, padding: `4px 20px 4px 20px`, fontFamily: 'georgia, serif', position: `relative`, bottom: `22px`},
     ".bannerButton:hover": { color: "black", backgroundColor:`rgba(255, 255, 255, 0.8)`},
     ".bannerButtonHousing": { padding:"10px" },
+    ".diversityLogoPadding": { padding:"0px 0px 30px 0px" }
   });
 
 
@@ -43,7 +44,7 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                 >   
                 
                     <Grid container xs={12} className="userBannerImage">
-                        <Grid item xs={4} sm={4} >
+                        <Grid item xs={12} sm={4} className="diversityLogoPadding">
                     
                             <div className="">
                                 
