@@ -45,7 +45,7 @@ function userContactLinks({ dats }) {
                             <Grid item xs={2} sm={2} className="contactLinkContainer">
 
                                 <a className="contactLinks" href={`sms:${dats.node.usertel}`}>
-                                    Text
+                                    Texts
                                     <StaticImage
                                         src="../images/gatsby-icon.png"
                                         width={25}
@@ -77,7 +77,7 @@ function userContactLinks({ dats }) {
                             <Grid item xs={2} sm={2} className="contactLinkContainer">
 
                                 <a className="contactLinks" href={`tel:${dats.node.usertel}`}>
-                                    Call
+                                    Calls
                                     <StaticImage
                                         src="../images/gatsby-icon.png"
                                         width={25}
