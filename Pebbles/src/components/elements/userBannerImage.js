@@ -15,8 +15,8 @@ const StyledUserBannerImageGrid = styled(Grid, {
     slot: "Wrapper",
   })({
     ".userBannerImage": { padding: `64vh 10px 10px 10px` },
-    ".diversityLogoArea": { position: `relative`, bottom: `20px`, textAlign: `left`, marginTop:`10px`, padding: `10px 5px 10px 5px`, background: `rgba(255, 255, 255, 0.7)`, borderRadius: `50px`, border: `1px solid #d3d3d3`, width:`fit-content`, marginLeft: `10px` },
-    ".diversityLogos": { padding: `5px`, display:`inline` },
+    ".diversityLogoArea": { position: `relative`, bottom: `-2px`, textAlign: `left`, marginTop:`10px`, background: `rgba(255, 255, 255, 0.7)`, borderRadius: `50px`, border: `1px solid #d3d3d3`, width:`fit-content`, marginLeft: `10px` },
+    ".diversityLogos": { padding: `15px 10px`, display:`inline` },
     ".bannerButton": { fontSize:"16px", textTransform: `none`, backgroundColor:`rgba(255, 255, 255, 0.7)`, width:`100%`, borderRadius: `50px`, color: `black`, fontWeight: `normal`, border: `1px solid #d3d3d3`, height: `50px`, padding: `4px 20px 4px 20px`, fontFamily: 'georgia, serif', position: `relative`, bottom: `22px`},
     ".bannerButton:hover": { color: "black", backgroundColor:`rgba(255, 255, 255, 0.8)`},
     ".bannerButtonHousing": { padding:"10px" },
@@ -45,12 +45,12 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                     <Grid container xs={12} className="userBannerImage">
                         <Grid item xs={4} sm={4} >
                     
-                            <div className="diversityLogoArea">
+                            <div className="">
                                 
                                 {(() => {
 
                                     if(dats.node.racial){
-                                        return <div role="button" tabIndex={0} className="diversityLogos" onClick={presentRace} onKeyDown={presentRace}>
+                                        return <div role="button" tabIndex={0} className="diversityLogoArea diversityLogos" onClick={presentRace} onKeyDown={presentRace}>
                                             
                                             <StaticImage
                                             src="../images/GenderDIcon.png"
@@ -70,7 +70,7 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                                 {(() => {
 
                                     if(dats.node.religious){
-                                        return <div className="diversityLogos" role="button" tabIndex={-1} onClick={presentReligion} onKeyDown={presentReligion}>
+                                        return <div className="diversityLogoArea diversityLogos" role="button" tabIndex={-1} onClick={presentReligion} onKeyDown={presentReligion}>
                                             
                                             <StaticImage
                                             src="../images/diverseRelIcon.png"
@@ -90,7 +90,7 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                                 {(() => {
 
                                 if(dats.node.cultural){
-                                    return <div className="diversityLogos" role="button" tabIndex={-2} onClick={presentCulture} onKeyDown={presentCulture}>
+                                    return <div className="diversityLogoArea diversityLogos" role="button" tabIndex={-2} onClick={presentCulture} onKeyDown={presentCulture}>
                                         
                                         <StaticImage
                                         src="../images/diverseRaceIcon.png"
@@ -109,7 +109,7 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                                 {(() => {
 
                                     if(dats.node.ability){
-                                        return <div className="diversityLogos" role="button" tabIndex={-3} onClick={presentAbility} onKeyDown={presentAbility}>
+                                        return <div className="diversityLogoArea diversityLogos" role="button" tabIndex={-3} onClick={presentAbility} onKeyDown={presentAbility}>
                                             
                                             <StaticImage
                                             src="../images/gatsby-icon.png"
@@ -128,7 +128,7 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                                 {(() => {
 
                                     if(dats.node.age){
-                                        return <div className="diversityLogos" role="button" tabIndex={-4} onClick={presentAge} onKeyDown={presentAge}>
+                                        return <div className="diversityLogoArea diversityLogos" role="button" tabIndex={-4} onClick={presentAge} onKeyDown={presentAge}>
                                             
                                             <StaticImage
                                             src="../images/diverseAgeIcon.png"
@@ -147,7 +147,7 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                                 {(() => {
 
                                 if(dats.node.orientation){
-                                    return <div className="diversityLogos" role="button" tabIndex={-5} onClick={presentOrientation} onKeyDown={presentOrientation}>
+                                    return <div className="diversityLogoArea diversityLogos" role="button" tabIndex={-5} onClick={presentOrientation} onKeyDown={presentOrientation}>
                                         
                                         <StaticImage
                                         src="../images/gatsby-icon.png"
@@ -166,7 +166,7 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                                 {(() => {
 
                                 if(dats.node.diverseGender){
-                                    return <div className="diversityLogos" role="button" tabIndex={-6} onClick={presentGender} onKeyDown={presentGender}>
+                                    return <div className="diversityLogoArea diversityLogos" role="button" tabIndex={-6} onClick={presentGender} onKeyDown={presentGender}>
                                         
                                         <StaticImage
                                         src="../images/diverseGenderIcon.png"
