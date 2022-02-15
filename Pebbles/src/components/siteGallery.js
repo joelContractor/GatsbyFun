@@ -15,11 +15,15 @@ const StyledGalleryGrid = styled(Grid, {
   })({
     fontSize:`13px`,
     fontFamily:`Arial`,
-    ".infoCard": { padding:"2px", height:"425px" },
-    ".cardButton": { textTransform: `none`, color:"white", fontWeight:"normal", fontSize:"12px", width:"100%", textAlign:"center", border: "1px white solid", marginBottom:"0px", background: "rgb(26, 36, 33)", padding: "20px 10px 15px 15px", borderBottomRightRadius: "0px", borderBottomLeftRadius:"0px", borderTopLeftRadius: "5px", borderTopRightRadius: "5px" },
+    ".infoCard": { padding:"2px" },
+    ".cardButton": { textTransform: `none`, color:"white", fontWeight:"normal", fontSize:"12px", width:"100%", textAlign:"center", border: "1px white solid", marginBottom:"0px", background: "rgb(26, 36, 33)", padding: "25px 10px 20px 15px", borderBottomRightRadius: "0px", borderBottomLeftRadius:"0px", borderTopLeftRadius: "5px", borderTopRightRadius: "5px" },
     ".cardMediaArea": {  marginBottom:"0px", border: "1px solid white", borderTop:"0px" },
-    ".cardContentArea": { background:"white", borderBottomLeftRadius: "3px", borderBottomRightRadius: "3px" },
-    ".cardContentPara.": { fontFamily: 'Arial', fontSize:"12px", color: "rgba(0, 0, 0, 0.6)", marginBottom:"0px" }
+    ".cardButtonBottom":{ width: "auto", padding: "20px", borderRadius: "100px", fontSize:"12px", color: "rgba(0, 0, 0, 0.3)", background: "#f1f1f1", border: "1px solid rgba(0, 0, 0, 0.1)", fontWeight:"normal", float:"right", alignSelf: "end", marginBottom:"15px"},
+    ".cardButtonBottom:hover": { background:"rgba(0, 0, 0, 0.1)", color:"rgba(0, 0, 0, 0.6)", border:"1px solid rgba(0, 0, 0, 0.3)", fontWeight: "bold"},
+    ".cardContentArea": { background:"white", borderBottomLeftRadius: "3px", borderBottomRightRadius: "3px", display: "flex", flexDirection: "column" },
+    ".cardContentPara": { fontFamily: 'Arial', fontSize:"12px", color: "rgba(0, 0, 0, 0.6)", marginBottom:"0px", maxHeight:"80px" },
+    ".MuiCardContent-root:last-child": { paddingBottom:"0px" }
+    
   });
 
 function SiteGallery({ data }) {
@@ -34,7 +38,7 @@ function SiteGallery({ data }) {
                 
                         {data.map((dats) => (
                                
-                            <Grid item xs={6} sm={6} md={4} lg={4} state={dats} >
+                            <Grid item xs={12} sm={6} md={4} lg={4} state={dats} >
                                 
                                 <Card className="infoCard">
                                     <Button href={dats.node.agencyurl} target="_blank" className="cardButton">
@@ -42,7 +46,7 @@ function SiteGallery({ data }) {
                                     </Button>
                                     <CardMedia
                                         component="img"
-                                        height="200"
+                                        height="185"
                                         image={dats.node.agencyimage.url}
                                         alt={dats.node.agencytitle}
                                         className="cardMediaArea"
@@ -54,13 +58,12 @@ function SiteGallery({ data }) {
                                         <p className="cardContentPara">
                                             {dats.node.agencydescription}
                                         </p>
+                                        <Button href={dats.node.agencyurl} target="_blank" className="cardButton cardButtonBottom">
+                                            Go
+                                        </Button>
                                         
                                     </CardContent>
-                                    {/*<CardActions sx={{justifyContent:'center', marginBottom:'8px', pt:"0px"}}>
-                                        
-                                        <Link to="/"><Button sx={{fontSize:"12px", color:'gray', borderColor:'#d3d3d3', borderRadius:'3px', height:'50px'}} variant="outlined" size="small">Go</Button></Link>
-                                        
-                                    </CardActions> */}
+
                                 </Card>               
                             </Grid>
                          

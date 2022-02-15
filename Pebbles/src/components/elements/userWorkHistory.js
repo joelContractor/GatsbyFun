@@ -35,7 +35,7 @@ function UserWorkHistory({ dats }) {
                             <Grid item xs={12}>
                                 <h2>My History</h2>
                             </Grid>
-                            <Grid item xs={12} sm={6} lg={4}>
+                            <Grid item xs={12} sm={6} md={4}>
                             
                                 <h2 className="normal">{dats.node.userhistorytitle1}</h2>
                                 <p>{dats.node.userhistorydescription1}</p>
@@ -51,7 +51,7 @@ function UserWorkHistory({ dats }) {
                 
                 {(() => {
                     if(dats.node.userhistorytitle2){
-                        return <Grid item  xs={12} sm={6} lg={4}>
+                        return <Grid item  xs={12} sm={6} md={4}>
                             
                             <h2 style={{fontWeight:"normal"}}>{dats.node.userhistorytitle2}</h2>
                             <p>{dats.node.userhistorydescription2}</p>
@@ -66,7 +66,7 @@ function UserWorkHistory({ dats }) {
                 
                 {(() => {
                     if(dats.node.userhistorytitle3){
-                        return <Grid item xs={12} sm={6} lg={4}>
+                        return <Grid item xs={12} sm={6} md={4}>
                             
                             <h2 style={{fontWeight:"normal"}}>{dats.node.userhistorytitle3}</h2>
                             <p>{dats.node.userhistorydescription3}</p>
@@ -81,7 +81,7 @@ function UserWorkHistory({ dats }) {
 
                 {(() => {
                     if(dats.node.userhistorytitle4){
-                        return <Grid item xs={12} sm={6} lg={4}>
+                        return <Grid item xs={12} sm={6} md={4}>
                             
                             <h2 style={{fontWeight:"normal"}}>{dats.node.userhistorytitle4}</h2>
                             <p>{dats.node.userhistorydescription4}</p>
@@ -96,7 +96,7 @@ function UserWorkHistory({ dats }) {
                 
                 {(() => {
                     if(dats.node.userhistorytitle5){
-                        return <Grid item xs={12} sm={6} lg={4}>
+                        return <Grid item xs={12} sm={6} md={4}>
                             
                             <h2 style={{fontWeight:"normal"}}>{dats.node.userhistorytitle5}</h2>
                             <p>{dats.node.userhistorydescription5}</p>
@@ -111,7 +111,7 @@ function UserWorkHistory({ dats }) {
                 
                 {(() => {
                     if(dats.node.userhistorytitle6){
-                        return <Grid item xs={12} sm={6} lg={4}>
+                        return <Grid item xs={12} sm={6} md={4}>
                             
                             <h2 style={{fontWeight:"normal"}}>{dats.node.userhistorytitle6}</h2>
                             <p>{dats.node.userhistorydescription6}</p>
