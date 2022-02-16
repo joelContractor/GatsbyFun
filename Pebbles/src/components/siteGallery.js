@@ -45,7 +45,7 @@ function SiteGallery({ data }) {
                                 
                                 <Card className="infoCard">
 
-                                    <Grid item xs={12} style={{ borderTopLeftRadius: "20px", borderTopRightRadius: "20px" }}>
+                                    <Grid item xs={12} style={{ marginTop:"20px", borderTopLeftRadius: "20px", borderTopRightRadius: "20px", overFlow:"hidden", webkitMaskImage: "webkitRadialGradient(white, black)" }}>
                                         <GatsbyImage className="cardMediaArea" image={getImage(dats.node.agencyimage.gatsbyImageData)} alt={"testimage"}/>
                                     </Grid>
 
