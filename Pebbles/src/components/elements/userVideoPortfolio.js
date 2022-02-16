@@ -5,6 +5,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
 import { styled } from "@mui/system";
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 
 const StyledUserVideoPortfolioGrid = styled(Grid, {
     name: "StyledUserVideoPortfolioGrid",
@@ -46,18 +48,17 @@ function UserVideoPortfolio({ dats }) {
                     if(dats.node.videoreelsrc){
                         return <Grid xs={12} className="videoContainer">
   
-
-                            <iframe
-                                loading="lazy"
+                            <LiteYouTubeEmbed 
                                 className="video" 
-                                src={dats.node.videoreelsrc}
-                                title="YouTube video player"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen="true"
-                                mozallowfullscreen="true"
-                                webkitallowfullscreen="true">
-                            </iframe>
+                                id={dats.node.videoreelsrc}
+                                adNetwork={true}
+                                params="" 
+                                playlist={false} 
+                                playlistCoverId="L2vS_050c-M" 
+                                poster="hqdefault" 
+                                title="Users Reel" 
+                                noCookie={true}
+                            />
 
                         </Grid>
                     }
