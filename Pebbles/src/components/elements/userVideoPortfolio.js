@@ -36,7 +36,7 @@ function UserVideoPortfolio({ dats }) {
                                 
                                 <h2>My Reel</h2>
                                 <p>{dats.node.videoreeldescription}</p>
-                            
+                                  
                             </Grid>
                         </>
                     }
@@ -45,8 +45,8 @@ function UserVideoPortfolio({ dats }) {
                 {(() => {
                     if(dats.node.videoreelsrc){
                         return <Grid xs={12} className="videoContainer">
-                            <iframe loading="lazy" className="video" src={dats.node.videoreelsrc} title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
-                            </iframe>      
+ 
+                            <embed allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" className="video" src={dats.node.videoreelsrc} width="100%"  title="Everytime You Go Away - Paul Young" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></embed>
                         </Grid>
                     }
                 })()}
