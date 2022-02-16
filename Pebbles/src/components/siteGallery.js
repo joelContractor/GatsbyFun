@@ -25,7 +25,8 @@ const StyledGalleryGrid = styled(Grid, {
     ".cardContentPara": { fontFamily: 'Arial', fontSize:"11px", color: "rgba(0, 0, 0, 0.4)", marginBottom:"0px", maxHeight:"80px", lineHeight:"1rem" },
     ".MuiCardContent-root:last-child": { paddingBottom:"0px" },
     ".buttonContainer": { display:"flex", justifyContent:"flex-end", marginTop: "0px" },
-    ".cardTitle": { marginBottom:"0.01rem" }
+    ".cardTitle": { marginBottom:"0.01rem" },
+    ".safariRounded": { webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)" }
     
   });
 
@@ -45,7 +46,7 @@ function SiteGallery({ data }) {
                                 
                                 <Card className="infoCard">
 
-                                    <Grid item xs={12} style={{overflow:"hidden", borderTopLeftRadius: "20px", borderTopRightRadius: "20px" }}>
+                                    <Grid item xs={12} className="safariRounded" style={{ borderTopLeftRadius: "20px", borderTopRightRadius: "20px" }}>
                                         <GatsbyImage className="cardMediaArea" image={getImage(dats.node.agencyimage.gatsbyImageData)} alt={"testimage"}/>
                                     </Grid>
 
