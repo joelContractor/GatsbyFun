@@ -18,6 +18,7 @@ const StyledGalleryGrid = styled(Grid, {
     fontFamily:`Arial`,
     ".infoCard": { padding:"2px" },
     ".cardButton": { textTransform: `none`, color:"white", fontWeight:"normal", fontSize:"12px", width:"100%", textAlign:"center", border: "1px white solid", marginBottom:"0px", background: "rgb(26, 36, 33)", padding: "25px 10px 20px 15px", borderBottomRightRadius: "0px", borderBottomLeftRadius:"0px", borderTopLeftRadius: "5px", borderTopRightRadius: "5px" },
+    ".cardButton:hover": { background: "rgb(26, 36, 33)", color:"orange" },
     ".cardMediaArea": {  height:"170px", marginBottom:"0px", border: "1px solid white", borderTop:"0px" },
     ".cardButtonBottom":{ width: "auto", padding: "20px", borderRadius: "100px", fontSize:"12px", color: "rgba(0, 0, 0, 0.3)", background: "#f1f1f1", border: "1px solid rgba(0, 0, 0, 0.1)", fontWeight:"normal", float:"right", alignSelf: "end", marginBottom:"15px"},
     ".cardButtonBottom:hover": { background:"rgba(0, 0, 0, 0.1)", color:"rgba(0, 0, 0, 0.6)", border:"1px solid rgba(0, 0, 0, 0.3)", fontWeight: "bold"},
