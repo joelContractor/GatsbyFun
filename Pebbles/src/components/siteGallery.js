@@ -26,7 +26,7 @@ const StyledGalleryGrid = styled(Grid, {
     ".MuiCardContent-root:last-child": { paddingBottom:"0px" },
     ".buttonContainer": { display:"flex", justifyContent:"flex-end", marginTop: "0px" },
     ".cardTitle": { marginBottom:"0.01rem" },
-    ".safariRounded": { webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)" }
+    ".safariRounded": { overflow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)" }
     
   });
 
