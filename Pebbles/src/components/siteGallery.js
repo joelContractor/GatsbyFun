@@ -23,7 +23,6 @@ const StyledGalleryGrid = styled(Grid, {
     ".cardButtonBottom:hover": { background:"rgba(0, 0, 1, 0.1)", color:"rgba(0, 0, 0, 0.4)" },
     ".cardContentArea": { background:"white", borderBottomLeftRadius: "3px", borderBottomRightRadius: "3px", display: "flex", flexDirection: "row" },
     ".cardContentPara": { fontFamily: 'Arial', fontSize:"11px", color: "rgba(0, 0, 0, 0.4)", marginBottom:"0px", maxHeight:"80px", lineHeight:"1rem" },
-    ".MuiCardContent-root:last-child": { paddingBottom:"0px" },
     ".buttonContainer": { display:"flex", justifyContent:"flex-end", marginTop: "0px" },
     ".cardTitle": { marginBottom:"0.01rem" }
     
