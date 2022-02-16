@@ -45,7 +45,7 @@ function UserVideoPortfolio({ dats }) {
                 {(() => {
                     if(dats.node.videoreelsrc){
                         return <Grid xs={12} className="videoContainer">
-                            <iframe className="video" src={dats.node.videoreelsrc} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+                            <iframe loading="lazy" className="video" src={dats.node.videoreelsrc} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
                             </iframe>      
                         </Grid>
                     }
