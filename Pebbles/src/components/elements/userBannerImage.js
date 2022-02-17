@@ -43,8 +43,8 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                     preserveStackingContext
                 >   
                 
-                    <Grid container xs={12} className="userBannerImage">
-                        <Grid item xs={12} sm={4} className="diversityLogoPadding">
+                   <Grid container xs={12} className="userBannerImage">
+                         <Grid item xs={12} sm={4} className="diversityLogoPadding">
                     
                             <div className="">
                                 
@@ -191,8 +191,8 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                             <Button className="bannerButton" onClick={showInfo}>
                                 {show === 'none'? `More `: `Less `} about {dats.node.title}
                             </Button>
-                        </Grid> 
-                    </Grid>
+                        </Grid>
+                            </Grid>
                 </BackgroundImage>
             </Grid>
         </StyledUserBannerImageGrid>

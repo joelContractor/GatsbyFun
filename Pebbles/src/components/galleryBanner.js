@@ -18,6 +18,8 @@ import UserBannerImage from "./elements/userBannerImage";
 import UserVideoPortfolio from "./elements/userVideoPortfolio";
 import UserContactLinks from "./elements/userContactLinks";
 import { styled } from "@mui/system";
+import Button from '@mui/material/Button';
+import { StaticImage } from "gatsby-plugin-image"
 
 const StyledGalleryBannerGrid = styled(Grid, {
     name: "StyledGalleryBannerGrid",
@@ -26,7 +28,13 @@ const StyledGalleryBannerGrid = styled(Grid, {
     fontSize:`12px`,
     fontFamily:`Arial`, 
     marginBottom:"50px",
-    ".bannerData": { marginTop:`10px`, zIndex:`1`, overflow:`hidden`, position: `relative`, transition: `opacity 1.9s, top 0s, height 0s`}
+    ".bannerData": { marginTop:`0px`, zIndex:`1`, overflow:`hidden`, position: `relative`, transition: `opacity 1.9s, top 0s, height 0s`},
+    ".diversityLogosBelow": { padding: `15px 10px`, display:`inline`, background:"red", borderRadius:"50px", marginLeft:"10px" },
+    ".bannerButtonBelow": { fontSize:"16px", textTransform: `none`, backgroundColor:`rgba(0, 0, 05, 0.1)`, width:`100%`, borderRadius: `50px`, color: `black`, fontWeight: `normal`, border: `1px solid #d3d3d3`, height: `50px`, padding: `4px 20px 4px 20px`, fontFamily: 'georgia, serif'},
+    ".bannerButton:hover": { color: "black", backgroundColor:`rgba(255, 255, 255, 0.8)`},
+    ".bannerButtonHousingBelow": { padding:"10px" },
+    ".diversityLogoPaddingBelow": { padding:"25px 20px 10px 0px"},
+    ".diversityLogoAreaBelow": { textAlign: `left`, background: `rgba(0, 0, 0, 0.1)`, borderRadius: `50px`, border: `1px solid #d3d3d3`, width:`fit-content`, marginLeft: `10px` },
 
   });
 
@@ -84,6 +92,7 @@ function GalleryBanner({ data }) {
                 pagination={{ clickable: true }}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
+                style={{ borderRadius:"20px", marginTop:"50px",  border:"0px solid black" }}
                 >
 
                     {data.map((dats) => (
@@ -163,7 +172,7 @@ function GalleryBanner({ data }) {
                                 {/*<UserImageGallery dats={ dats } />*/}
 
                             </Grid>  
-                                
+                            <Grid xs={12} style={{ background:"rgba(0,0,0,0.1)", width:"100%", height:"3rem" }}></Grid>
                         </SwiperSlide>
                     ))}
                     
