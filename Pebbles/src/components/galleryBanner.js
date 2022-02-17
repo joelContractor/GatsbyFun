@@ -172,7 +172,7 @@ function GalleryBanner({ data }) {
                                 {/*<UserImageGallery dats={ dats } />*/}
 
                             </Grid>  
-                            <Grid xs={12} style={{ background:"rgba(0,0,0,0.1)", width:"100%", height:"3.5rem" }}></Grid>
+                            <Grid xs={12} style={{ background:"rgba(0,0,0,0.8)", width:"100%", height:"3.5rem" }}></Grid>
                         </SwiperSlide>
                     ))}
                     
