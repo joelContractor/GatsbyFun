@@ -92,7 +92,7 @@ function GalleryBanner({ data }) {
                 pagination={{ clickable: true }}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
-                style={{ borderRadius:"20px", marginTop:"50px",  border:"0px solid black" }}
+                style={{ }}
                 >
 
                     {data.map((dats) => (
@@ -172,7 +172,7 @@ function GalleryBanner({ data }) {
                                 {/*<UserImageGallery dats={ dats } />*/}
 
                             </Grid>  
-                            <Grid xs={12} style={{ background:"rgba(0,0,0,0.8)", width:"100%", height:"3.5rem" }}></Grid>
+                            
                         </SwiperSlide>
                     ))}
                     
