@@ -15,7 +15,7 @@ const StyledUserBannerImageGrid = styled(Grid, {
     slot: "Wrapper",
   })({
     ".userBannerImage": { padding: `64vh 10px 10px 10px` },
-    ".diversityLogoArea": { position: `relative`, bottom: `-2px`, textAlign: `left`, marginTop:`0px`, background: `rgba(255, 255, 255, 0.8)`, borderRadius: `50px`, border: `1px solid #d3d3d3`, width:`fit-content`, marginLeft: `10px` },
+    ".diversityLogoArea": { position: `relative`, bottom: `-2px`, textAlign: `left`, marginTop:`0px`, background: `rgba(255, 255, 255, 0.8)`, borderRadius: `50px`, border: `1px solid #d3d3d3`, width:`auto`, marginLeft: `10px` },
     ".diversityLogos": { padding: `15px 10px`, display:`inline` },
     ".bannerButton": { fontSize:"16px", textTransform: `none`, backgroundColor:`rgba(255, 255, 255, 0.8)`, width:`100%`, borderRadius: `50px`, color: `black`, fontWeight: `normal`, border: `1px solid #d3d3d3`, height: `50px`, padding: `4px 20px 4px 20px`, fontFamily: 'georgia, serif', position: `relative`, bottom: `22px`},
     ".bannerButton:hover": { color: "black", backgroundColor:`rgba(255, 255, 255, 0.9)`},
