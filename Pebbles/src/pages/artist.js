@@ -12,7 +12,7 @@ const ArtistPage = ({data}) => (
     <Seo title="Diverse Actor Page" />
 
     
-    <Grid container sx={{marginBottom:'20px', paddingTop:"25px"}} spacing={3}>
+    <Grid container sx={{marginBottom:'10px', padding:"20px 10px 0px 10px"}} spacing={3}>
       <Grid item xs={12}>
           <p style={{ marginBottom:"0rem" }}>Find Diverse Actors</p>
       </Grid>
@@ -25,7 +25,7 @@ const ArtistPage = ({data}) => (
     </Grid>
 
     <GalleryBanner  data={ data.allDatoCmsActorTemp.edges } /> {/* added -> comp now reusable -> search path added by page uniform field names after search term eg.'data.allDatoCmsActors.edges' */}
-    <Grid container sx={{marginBottom:'20px', paddingTop:"5px"}} spacing={3}>
+    <Grid container sx={{marginBottom:'20px', padding:"0px 10px 0px 10px"}} spacing={3}>
       <Grid item xs={12}>
           <p style={{ marginBottom:"0rem" }}>Find Diverse Agencies</p>
       </Grid>
