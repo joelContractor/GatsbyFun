@@ -92,7 +92,7 @@ function GalleryBanner({ data }) {
                 pagination={{ clickable: true }}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
-                style={{ }}
+                style={{ fontFamily: "Arial" }}
                 >
 
                     {data.map((dats) => (
@@ -100,7 +100,7 @@ function GalleryBanner({ data }) {
 
                             <UserBannerImage  dats={ dats } show={show} showInfo={showInfo} presentReligion={presentReligion} presentRace={presentRace} presentAbility={presentAbility} presentAge={presentAge} presentOrientation={presentOrientation} presentGender={presentGender} presentCulture={presentCulture}/>
 
-                            <Grid className="bannerData" item xs={12} style={ { height:show === 'none'? `0px`: `100%`, opacity:show === 'none'? `0`: `1` , top:show === 'none'? `-4900px`: `0px` }}>                                                             
+                            <Grid className="bannerData" item xs={12} style={ { fontFamily: "Arial", height:show === 'none'? `0px`: `100%`, opacity:show === 'none'? `0`: `1` , top:show === 'none'? `-4900px`: `0px` }}>                                                             
 
                                 <UserGeneralDetails  dats={ dats } />                              
 

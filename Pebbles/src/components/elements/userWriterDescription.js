@@ -15,7 +15,8 @@ const StyledUserWriterDescriptionGrid = styled(Grid, {
     marginTop:"10px", 
     paddingBottom:"50px",
     borderTop:"1px dotted grey",
-    ".userWriterDescriptionImage": { borderRadius:"5px" }
+    ".userWriterDescriptionImage": { borderRadius:"5px" },
+    ".grey": { color:"rgba(0,0,0,0.5)" }
 
   });
 
@@ -37,7 +38,7 @@ function UserWriterDescription({ dats }) {
                                     <h2>{dats.node.title}</h2>
                                 
                                 </Grid>
-                                <Grid item xs={12} sm={8}>
+                                <Grid item xs={12} sm={8} className="grey">
 
                                     <p>{dats.node.writerdescription}</p>
                                     <p>{dats.node.writerdescriptionCopy1}</p>

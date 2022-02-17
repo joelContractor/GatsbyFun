@@ -10,7 +10,8 @@ const StyledUserGeneralDetailsGrid = styled(Grid, {
     name: "StyledUserGeneralDetailsGrid",
     slot: "Wrapper",
   })({
-    paddingTop:"40px"
+    paddingTop:"40px",
+    ".grey": { color:"rgba(0,0,0,0.5)" }
 
   });
 
@@ -39,7 +40,7 @@ function UserGeneralDetails({ dats }) {
 
                         return <Grid item xs={4} sm={3} md={2}>                               
                                     <h2>{AgeLabel}</h2>
-                                    <p>{Age}</p>                          
+                                    <p className="grey">{Age}</p>                          
                             </Grid>
 
                     }
@@ -49,7 +50,7 @@ function UserGeneralDetails({ dats }) {
                     if(dats.node.gender){
                         return <Grid item xs={4} sm={3} md={2}>                       
                             <h2>Gender</h2>
-                            <p>{dats.node.gender}</p>                    
+                            <p className="grey">{dats.node.gender}</p>                    
                         </Grid>
                     }
                 })()}
@@ -58,7 +59,7 @@ function UserGeneralDetails({ dats }) {
                     if(dats.node.location){
                         return <Grid item xs={4} sm={3} md={2}>                           
                             <h2>Location</h2>
-                            <p>{dats.node.location}</p>
+                            <p className="grey">{dats.node.location}</p>
                         </Grid>
                     }
                 })()}
@@ -67,7 +68,7 @@ function UserGeneralDetails({ dats }) {
                     if(dats.node.unionaffiliation){
                         return <Grid item xs={4} sm={3} md={2}>
                             <h2>Union</h2>
-                            <p>{dats.node.unionaffiliation}</p>
+                            <p className="grey">{dats.node.unionaffiliation}</p>
                         </Grid>
                     }
                 })()}
@@ -76,7 +77,7 @@ function UserGeneralDetails({ dats }) {
                     if(dats.node.driver){
                         return <Grid item xs={4} sm={3} md={2}>
                             <h2>Driver</h2>
-                            <p>{dats.node.driver}</p>
+                            <p className="grey">{dats.node.driver}</p>
                         </Grid>
                     }
                 })()}
@@ -85,7 +86,7 @@ function UserGeneralDetails({ dats }) {
                     if(dats.node.passport){
                         return <Grid item xs={4} sm={3} md={2}>
                             <h2>Passport</h2>
-                            <p>{dats.node.passport}</p>
+                            <p className="grey">{dats.node.passport}</p>
                         </Grid>
                     }
                 })()}

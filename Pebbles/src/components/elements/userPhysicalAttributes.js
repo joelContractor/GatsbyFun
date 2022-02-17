@@ -15,7 +15,9 @@ const StyledUserPhysicalAttributesGrid = styled(Grid, {
     marginTop:"10px", 
     paddingBottom:"50px",
     borderTop:"1px dotted grey",
-    ".userPhysicalAttributesImage": { borderRadius:"5px" }
+    ".userPhysicalAttributesImage": { borderRadius:"5px" },
+    ".grey": { color:"rgba(0,0,0,0.5)" },
+    ".titleColor": { color:"hsla(0, 0%, 0%, 0.8)" }
 
   });
 
@@ -31,9 +33,9 @@ function UserPhysicalAttributes({ dats }) {
             <Grid container direction="row"  spacing={6}>  
                 {(() => {
                     if(dats.node.hairColour){
-                        return <Grid item xs={6} sm={4}>
+                        return <Grid item xs={6} sm={4} className="grey">
                                 
-                                <h2>Physical Attributes</h2>
+                                <h2 className="titleColor">Physical Attributes</h2>
                                 <p>Ethnicity: {dats.node.ethnicity}</p>
                                 <p>Height: {dats.node.height}</p>
                                 <p>Weight: {dats.node.weight}</p>

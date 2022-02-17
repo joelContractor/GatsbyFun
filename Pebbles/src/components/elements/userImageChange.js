@@ -12,7 +12,8 @@ const StyledUserImageChangesGrid = styled(Grid, {
   })({
     paddingTop:"50px", 
     marginTop:"10px", 
-    borderTop:"1px dotted grey"
+    borderTop:"1px dotted grey",
+    ".grey": { color:"rgba(0,0,0,0.5)" }
 
   });
 
@@ -36,7 +37,7 @@ function UserImageChanges({ dats }) {
                                     return <Grid item xs={4}>
                                             
                                             <h2>Can Cut Hair?</h2>
-                                            <p>{dats.node.canCutHair}</p>
+                                            <p className="grey">{dats.node.canCutHair}</p>
                                         
                                     </Grid>
                                 }
@@ -47,7 +48,7 @@ function UserImageChanges({ dats }) {
                                     return <Grid item xs={4}>
                                             
                                             <h2>Can Colour Hair?</h2>
-                                            <p>{dats.node.canColourHair}</p>
+                                            <p className="grey">{dats.node.canColourHair}</p>
                                         
                                     </Grid>
                                 }
@@ -58,7 +59,7 @@ function UserImageChanges({ dats }) {
                                     return <Grid item xs={4}>
                                             
                                             <h2>Can Wear Contacts?</h2>
-                                            <p>{dats.node.canwearcontacts}</p>
+                                            <p className="grey">{dats.node.canwearcontacts}</p>
                                         
                                     </Grid>
                                 }

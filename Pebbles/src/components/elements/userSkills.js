@@ -15,7 +15,8 @@ const StyledUserSkillsGrid = styled(Grid, {
     marginTop:"10px", 
     paddingBottom:"50px",
     borderTop:"1px dotted grey",
-    ".userSkillsImage": { borderRadius:"5px" }
+    ".userSkillsImage": { borderRadius:"5px" },
+    ".grey": { color:"rgba(0,0,0,0.5)" }
 
   });
 
@@ -47,12 +48,12 @@ function UserSkills({ dats }) {
                                         return <Grid item xs={6} sm={4}>
                                             
                                             <h2>Skills </h2>
-                                            <p>{dats.node.skill}</p>
+                                            <p className="grey">{dats.node.skill}</p>
 
                                             {(() => {
                                                 if(dats.node.skill2){
                                                     return <>
-                                                        <p>{dats.node.skill2}</p>
+                                                        <p className="grey">{dats.node.skill2}</p>
                                                     </>
                                                 }
                                             })()}
@@ -60,7 +61,7 @@ function UserSkills({ dats }) {
                                             {(() => {
                                                 if(dats.node.skill3){
                                                     return <>
-                                                        <p>{dats.node.skill3}</p>
+                                                        <p className="grey">{dats.node.skill3}</p>
                                                     </>
                                                 }
                                             })()}
@@ -68,7 +69,7 @@ function UserSkills({ dats }) {
                                             {(() => {
                                                 if(dats.node.skill4){
                                                     return <>
-                                                        <p>{dats.node.skill4}</p>
+                                                        <p className="grey">{dats.node.skill4}</p>
                                                     </>
                                                 }
                                             })()}
@@ -76,7 +77,7 @@ function UserSkills({ dats }) {
                                             {(() => {
                                                 if(dats.node.skill5){
                                                     return <>
-                                                        <p>{dats.node.skill5}</p>
+                                                        <p className="grey">{dats.node.skill5}</p>
                                                     </>
                                                 }
                                             })()}
@@ -84,7 +85,7 @@ function UserSkills({ dats }) {
                                             {(() => {
                                                 if(dats.node.skill6){
                                                     return <>
-                                                        <p>{dats.node.skill6}</p>
+                                                        <p className="grey">{dats.node.skill6}</p>
                                                     </>
                                                 }
                                             })()}

@@ -17,7 +17,8 @@ const StyledUserVideoPortfolioGrid = styled(Grid, {
     paddingBottom:"100px",
     borderTop:"1px dotted grey",
     ".videoContainer": { position: 'relative', paddingBottom: '56.25%', height: 0  },
-    ".video": { position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', paddingLeft: '2.7rem' }
+    ".video": { position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', paddingLeft: '2.7rem' },
+    ".grey": { color:"rgba(0,0,0,0.5)" }
 
   });
 
@@ -37,7 +38,7 @@ function UserVideoPortfolio({ dats }) {
                             <Grid item xs={12}>
                                 
                                 <h2>My Reel</h2>
-                                <p>{dats.node.videoreeldescription}</p>
+                                <p className="grey">{dats.node.videoreeldescription}</p>
                                   
                             </Grid>
                         </>
