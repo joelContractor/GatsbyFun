@@ -38,7 +38,6 @@ function SiteGallery({ data }) {
 
  
             <StyledGalleryGrid container direction="row" spacing={3}>
-                        <Grid item xs={12}><p className="title">Site Gallery</p></Grid>
                 
                         {data.map((dats) => (
                                
