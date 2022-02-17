@@ -18,8 +18,6 @@ import UserBannerImage from "./elements/userBannerImage";
 import UserVideoPortfolio from "./elements/userVideoPortfolio";
 import UserContactLinks from "./elements/userContactLinks";
 import { styled } from "@mui/system";
-import Button from '@mui/material/Button';
-import { StaticImage } from "gatsby-plugin-image"
 
 const StyledGalleryBannerGrid = styled(Grid, {
     name: "StyledGalleryBannerGrid",
