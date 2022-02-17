@@ -90,7 +90,7 @@ function GalleryBanner({ data }) {
                 pagination={{ clickable: true }}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
-                style={{ fontFamily: "Arial" }}
+                style={{ borderRadius:"20px", fontFamily: "Arial" }}
                 >
 
                     {data.map((dats) => (

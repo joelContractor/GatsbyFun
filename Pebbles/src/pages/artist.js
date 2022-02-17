@@ -11,23 +11,24 @@ const ArtistPage = ({data}) => (
   <Layout>
     <Seo title="Diverse Actor Page" />
 
-    <GalleryBanner  data={ data.allDatoCmsActorTemp.edges } /> {/* added -> comp now reusable -> search path added by page uniform field names after search term eg.'data.allDatoCmsActors.edges' */}
     
-    <Grid container sx={{marginBottom:'75px'}} spacing={3}>
+    <Grid container sx={{marginBottom:'20px', paddingTop:"25px"}} spacing={3}>
       <Grid item xs={12}>
-          <p style={{  }}>Find Diverse Actors</p>
+          <p style={{ marginBottom:"0rem" }}>Find Diverse Actors</p>
       </Grid>
       <Grid item xs={12} md={6}>
         <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.4)' }}>
-            When referring to Lorem ipsum, different expressions are used, namely fill text, fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
+            When referring to Lorem ipsum, different expressions are used, namely fill text, fictitious text , blind text or placeholder text, in short, its meaning can also be zero..
         </p>
       </Grid>
       <Grid item xs={12} md={6}>
         <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.4)' }}>
-            When referring to Lorem ipsum, different expressions are used, namely fill text, fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
+            When referring to Lorem ipsum, different expressions are used, namely fill text, fictitious text , blind text or placeholder text, in short, its meaning can also be zero.
         </p>
       </Grid>
     </Grid>
+
+    <GalleryBanner  data={ data.allDatoCmsActorTemp.edges } /> {/* added -> comp now reusable -> search path added by page uniform field names after search term eg.'data.allDatoCmsActors.edges' */}
 
     <SiteGallery  data={ data.allDatoCmsActingagency.edges } />
 
