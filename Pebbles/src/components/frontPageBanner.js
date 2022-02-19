@@ -22,7 +22,7 @@ const StyledFrontPageBannerGrid = styled(Grid, {
     fontSize:`12px`,
     fontFamily:`Arial`, 
     marginBottom:"50px",
-    ".bannerData": { zIndex:`1`, overflow:`hidden`, position: `relative`, transition: `opacity 1.9s, top 0s, height 0s`}
+    ".bannerData": { zIndex:`1`, overflow:`hidden`, position: `relative`, transition: `opacity 1.9s, top 0s, height 0s`, paddingLeft:"20px", paddingRight:"20px", background:"white"}
 
   });
 
