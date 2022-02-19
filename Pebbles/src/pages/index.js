@@ -16,23 +16,34 @@ const IndexPage = ({data}) => (
     <Seo title="Diverse Pool Landing Page" />
       {/* Component */}
 
-    <FrontPageBanner  data={ data.allDatoCmsFrontpagearticle.edges } /> 
+    
 
-    <Grid container sx={{marginBottom:'75px'}} spacing={2}>
-
+    <Grid container sx={{marginBottom:'10px', padding:"20px 10px 0px 10px"}} spacing={3}>
       <Grid item xs={12}>
-        <p>Diverse Pool</p>
+          <p style={{ marginBottom:"0rem" }}>Diverse Pool</p>
       </Grid>
-
-      <Grid item xs={12} md={6}>
-        <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.6)' }}>Recruit from diverse talent pools: In order to hire diverse candidates, you need to consider widening your talent pool. Try proactively sourcing and adding talent from diverse to your talent pool?</p>
-      </Grid>
-
-      <Grid item xs={12} md={6}>
-        <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.6)' }}>Advertise your jobs through diverse channels: Make an effort to reach diverse candidates by placing your job ads in additional magazines, websites and forums visited by underrepresented groups or dedicated to minorities.</p>
+      <Grid item xs={12} md={12}>
+        <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.4)' }}>
+            Employing diverse crew can help you gain funding for your project. We provide you with access to diverse actors and agencies FREE. Swipe through our selection of featured actors or scroll down to find an agency to work with.
+        </p>
       </Grid>
 
     </Grid>
+
+    <FrontPageBanner  data={ data.allDatoCmsFrontpagearticle.edges } /> 
+
+    <Grid container sx={{marginBottom:'20px', padding:"0px 10px 0px 10px"}} spacing={3}>
+      <Grid item xs={12}>
+          <p style={{ marginBottom:"0rem" }}>Discover Diversity</p>
+      </Grid>
+      <Grid item xs={12} md={12}>
+        <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.4)' }}>
+            When referring to Lorem ipsum, different expressions are used, namely fill text, fictitious text , blind text or placeholder text, in short, its meaning can also be zero. When referring to Lorem ipsum, different expressions are used, namely fill text, fictitious text , blind text or placeholder text, in short, its meaning can also be zero.
+        </p>
+      </Grid>
+
+    </Grid>
+
     <SiteGallery  data={ data.allDatoCmsActingagency.edges } />
   
     
