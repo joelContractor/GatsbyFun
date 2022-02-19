@@ -5,37 +5,36 @@ import SiteGallery from "../components/siteGallery"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Grid } from "@material-ui/core"
-import { styled } from "@mui/system"
-
-const StyledP = styled(Grid, {
-  name: "StyledP",
-  slot: "Wrapper",
-})({
-  marginBottom: '75px',
-  ".pagePara": { fontFamily:"Arial", fontSize:"12px", color: "rgba(0, 0, 0, 0.6)" }
-});
 
 const DirectorPage = ({data}) => (
   <Layout>
     <Seo title="Diverse Director Page" />
+     
+    <Grid container sx={{marginBottom:'10px', padding:"20px 10px 0px 10px"}} spacing={3}>
+      <Grid item xs={12}>
+          <p style={{ marginBottom:"0rem" }}>Find Diverse Directors</p>
+      </Grid>
+      <Grid item xs={12} md={12}>
+        <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.4)' }}>
+            Employing diverse directors can add a new dynamic to performances, while helping you gain funding for your project. We provide you with access to diverse actors and agencies FREE. Swipe through our selection of featured actors or scroll down to find an agency to work with.
+        </p>
+      </Grid>
+
+    </Grid>
 
     <GalleryBanner  data={ data.allDatoCmsDirector.edges } /> {/* added -> comp now reusable -> search path added by page uniform field names after search term eg.'data.allDatoCmsActors.edges' */}
-    
-    <StyledP container spacing={3}>
+
+    <Grid container sx={{marginBottom:'20px', padding:"0px 10px 0px 10px"}} spacing={3}>
       <Grid item xs={12}>
-          <p className="title">Find Diverse Directors</p>
+          <p style={{ marginBottom:"0rem" }}>Find Diverse Agencies</p>
       </Grid>
-      <Grid item xs={12} md={6}>
-        <p className="pagePara">
-            Production companies, find your director here. Different expressions are used, namely fill text, fictitious text , blind text or placeholder text : in short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and modern versions that came with the arrival of the web.
+      <Grid item xs={12} md={12}>
+        <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.4)' }}>
+            When referring to Lorem ipsum, different expressions are used, namely fill text, fictitious text , blind text or placeholder text, in short, its meaning can also be zero. When referring to Lorem ipsum, different expressions are used, namely fill text, fictitious text , blind text or placeholder text, in short, its meaning can also be zero.
         </p>
       </Grid>
-      <Grid item xs={12} md={6}>
-        <p className="pagePara">
-          Diverse Directors, get your free Diverse Pool Director profile now - FREE for a limited time. Different expressions are used, namely fill text, fictitious text , blind text or placeholder text : in short, its meaning can also be zero.
-        </p>
-      </Grid>
-    </StyledP>
+
+    </Grid>
 
     <SiteGallery  data={ data.allDatoCmsActingagency.edges } />
 
