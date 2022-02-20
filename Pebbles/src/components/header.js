@@ -37,7 +37,7 @@ function Header ({ siteTitle }) {
         <Link to="/writer/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, textShadow:`2px 1px black`} }> writers </Link>
         <Link to="/director/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, textShadow:`2px 1px black`, paddingLeft:"1rem"} }> directors </Link></> 
       }
-      { !matches && <button  style={{ cursor:"pointer", background:"none", border:"none", color:"white", paddingRight:"0.5rem"}}  className="mobile" onClick={showInfo}>
+      { !matches && <button  style={{ cursor:"pointer", background:"none", border:"none", color:"white", paddingRight:"0rem"}}  className="mobile" onClick={showInfo}>
         <div className="mobileNav" style={{ border:"1px solid white", background:"white", borderRadius:"5px", width:"30px", marginTop:"0px"}}></div>
         <div className="mobileNav" style={{ border:"1px solid white", background:"white", borderRadius:"5px", width:"30px", marginTop:"8px" }}></div>
         <div className="mobileNav" style={{ border:"1px solid white", background:"white", borderRadius:"5px", width:"30px", marginTop:"8px" }}></div>
