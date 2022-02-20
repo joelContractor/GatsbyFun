@@ -43,7 +43,7 @@ function Header ({ siteTitle }) {
       </p>
       <p style={{ float:`right`, textAlign:`right`, marginTop:"7px", fontSize: '14px' }}>
         
-        {!matches && (
+        {matches && (
           <><Link to="/artist/" activeStyle={{ color: "red" }} style={{ color: `#fff`, textDecoration: `none`, textShadow: `2px 1px black` }}> actors </Link><Link to="/writer/" activeStyle={{ color: "red" }} style={{ color: `#fff`, textDecoration: `none`, textShadow: `2px 1px black` }}> writers </Link><Link to="/director/" activeStyle={{ color: "red" }} style={{ color: `#fff`, textDecoration: `none`, textShadow: `2px 1px black` }}> directors </Link></>
         )}
         {!matches && (<button className="mobile" onClick={showInfo}>mobile</button>)}
