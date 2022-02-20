@@ -96,6 +96,7 @@ export const query = graphql`
           articlep1
           articlepwithimage
           articleabouttheauthor
+          articleauthor
           ability
           age
           cultural

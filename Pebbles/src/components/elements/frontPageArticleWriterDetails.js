@@ -34,13 +34,13 @@ function FrontPageArticleWriterDetails({ dats }) {
                         return <>
                             <Grid item xs={6} sm={6}>
                                 
-                                <p><span className="title">Written By:</span> Joanne Callsburg</p>
+                                <p><span className="title">Written By:</span> {dats.node.articleauthor}</p>
                   
                             </Grid>
 
                             <Grid item xs={2} sm={2} className="shareLinks">
 
-                                <a href="https://twitter.com/intent/tweet" target="_blank" rel="noreferrer" >
+                                <a ariaLabel={`Tweet this article, ${dats.node.title}, written by ${dats.node.articleauthor}, on Twitter`} href="https://twitter.com/intent/tweet" target="_blank" rel="noreferrer" >
                                     Tweet
                                     <StaticImage
                                             src="../images/gatsby-icon.png"
@@ -56,7 +56,7 @@ function FrontPageArticleWriterDetails({ dats }) {
 
                             <Grid item xs={2} sm={2} className="shareLinks">
                                 
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=#url" target="_blank" rel="noreferrer">
+                                <a ariaLabel={`Share this article, ${dats.node.title}, written by ${dats.node.articleauthor}, on Facebook`}href="https://www.facebook.com/sharer/sharer.php?u=#url" target="_blank" rel="noreferrer">
                                     Share
                                     <StaticImage
                                             src="../images/gatsby-icon.png"
@@ -72,7 +72,7 @@ function FrontPageArticleWriterDetails({ dats }) {
 
                             <Grid item xs={2} sm={2} className="shareLinks">
 
-                                <a href="https://www.linkedin.com/sharing/share-offsite/?url={url}" target="_blank" rel="noreferrer">
+                                <a ariaLabel={`Post this article, ${dats.node.title}, written by ${dats.node.articleauthor}, on LinkedIn`} href="https://www.linkedin.com/sharing/share-offsite/?url={url}" target="_blank" rel="noreferrer">
                                     LinkedIn
                                     <StaticImage
                                             src="../images/gatsby-icon.png"

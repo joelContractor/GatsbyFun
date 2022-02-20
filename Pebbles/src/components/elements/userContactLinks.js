@@ -46,7 +46,7 @@ function userContactLinks({ dats }) {
 
                             <Grid item xs={2} sm={2} className="contactLinkContainer">
 
-                                <a className="contactLinks" href={`sms:0${dats.node.usertel}`}>
+                                <a ariaLabel={`Send a text to ${dats.node.title}`} className="contactLinks" href={`sms:0${dats.node.usertel}`}>
                                     Text
                                     <StaticImage
                                         src="../images/gatsby-icon.png"
@@ -62,7 +62,7 @@ function userContactLinks({ dats }) {
 
                             <Grid item xs={2} sm={2} className="contactLinkContainer">
                                 
-                                <a className="contactLinks" href={`mailto:${dats.node.useremail}?cc=admin@diversepool.com&&subject=Diverse-Pool-Mail&body=Body-goes-here`}>
+                                <a ariaLabel={`Send an email to ${dats.node.title}`} className="contactLinks" href={`mailto:${dats.node.useremail}?cc=admin@diversepool.com&&subject=Diverse-Pool-Mail&body=Body-goes-here`}>
                                     Mail
                                     <StaticImage
                                         src="../images/gatsby-icon.png"
@@ -78,7 +78,7 @@ function userContactLinks({ dats }) {
 
                             <Grid item xs={2} sm={2} className="contactLinkContainer">
 
-                                <a className="contactLinks" href={`tel:0${dats.node.usertel}`}>
+                                <a ariaLabel={`Call ${dats.node.title}`} className="contactLinks" href={`tel:0${dats.node.usertel}`}>
                                     Call
                                     <StaticImage
                                         src="../images/gatsby-icon.png"
