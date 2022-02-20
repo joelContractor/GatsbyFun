@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
@@ -6,16 +6,6 @@ import { StaticImage } from "gatsby-plugin-image"
 
 
 function Header ({ siteTitle }) {
-
-  const [matches, setMatches] = useState(
-    window.matchMedia("(min-width: 768px)").matches
-  )
-  
-  useEffect(() => {
-    window
-    .matchMedia("(min-width: 768px)")
-    .addEventListener('change', e => setMatches( e.matches ));
-  }, []);
 
   const [show, setShow] = useState('none')
 
@@ -42,11 +32,10 @@ function Header ({ siteTitle }) {
         <Link to="/" style={ {float:`left`, color: `white`, textDecoration: `none`, textShadow:`2px 1px black`, marginTop:'5px'} }> {siteTitle} </Link>
       </p>
       <p style={{ float:`right`, textAlign:`right`, marginTop:"7px", fontSize: '14px' }}>
-        
-        {matches && (
-          <><Link to="/artist/" activeStyle={{ color: "red" }} style={{ color: `#fff`, textDecoration: `none`, textShadow: `2px 1px black` }}> actors </Link><Link to="/writer/" activeStyle={{ color: "red" }} style={{ color: `#fff`, textDecoration: `none`, textShadow: `2px 1px black` }}> writers </Link><Link to="/director/" activeStyle={{ color: "red" }} style={{ color: `#fff`, textDecoration: `none`, textShadow: `2px 1px black` }}> directors </Link></>
-        )}
-        {!matches && (<button className="mobile" onClick={showInfo}>mobile</button>)}
+        <Link to="/artist/" activeStyle={{ color: "red" }} style={ {color: `#fff`,textDecoration: `none`, textShadow:`2px 1px black`} }> actors </Link>
+        <Link to="/writer/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, textShadow:`2px 1px black`} }> writers </Link>
+        <Link to="/director/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, textShadow:`2px 1px black`} }> directors </Link>
+        <button className="mobile" onClick={showInfo}>mobile</button>
       </p>
       <p style={{ clear:"both", textAlign:`center`, marginTop:"0px", marginBottom:"0.5rem", fontSize: '14px', display:show === 'none'? `none`: `block` }}>
         <Link to="/artist/" activeStyle={{ color: "red" }} style={ {color: `#fff`,textDecoration: `none`, textShadow:`2px 1px black`, paddingRight:"3rem"} }> actors </Link>
