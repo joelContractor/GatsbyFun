@@ -33,9 +33,9 @@ function Header ({ siteTitle }) {
         <Link to="/" style={ {float:`left`, color: `white`, textDecoration: `none`, textShadow:`2px 1px black`, marginTop:'5px'} }> {siteTitle} </Link>
  
       <div style={{ float:`right`, textAlign:`right`, marginTop:"5px", fontSize: '1rem', paddingRight:"0.5rem", paddingBottom:"1.4rem" }}>
-      { matches && <><Link to="/artist/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, textShadow:`2px 1px black`, paddingRight:"1rem" } }> actors </Link> 
-        <Link to="/writer/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, textShadow:`2px 1px black`} }> writers </Link>
-        <Link to="/director/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, textShadow:`2px 1px black`, paddingLeft:"1rem"} }> directors </Link></> 
+      { matches && <><Link to="/artist/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, paddingRight:"1rem" } }> actors </Link> 
+        <Link to="/writer/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`} }> writers </Link>
+        <Link to="/director/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, paddingLeft:"1rem"} }> directors </Link></> 
       }
       { !matches && <button  style={{ cursor:"pointer", background:"none", border:"none", color:"white", paddingRight:"0rem"}}  className="mobile" onClick={showInfo}>
         <div className="mobileNav" style={{ border:"1px solid white", background:"white", borderRadius:"5px", width:"30px", marginTop:"0px"}}></div>
@@ -43,7 +43,7 @@ function Header ({ siteTitle }) {
         <div className="mobileNav" style={{ border:"1px solid white", background:"white", borderRadius:"5px", width:"30px", marginTop:"8px" }}></div>
       </button> }
       </div>
-      <div style={{ clear:"both", textAlign:`right`, paddingTop:"5px", marginBottom:"0rem", marginRight:"4px", fontSize: '1rem', display:show === 'none'? `none`: `block` }}>
+      <div style={{ clear:"both", textAlign:`center`, paddingTop:"5px", marginBottom:"0rem", marginRight:"4px", fontSize: '1rem', display:show === 'none'? `none`: `block` }}>
         <Link to="/artist/" activeStyle={{ color: "red" }} style={ {padding:"10px 5px 10px 5px", borderRight:"1px dotted white", color: `#fff`,textDecoration: `none`, paddingRight:"1rem"} }> actors </Link>
         <Link to="/writer/" activeStyle={{ color: "red" }} style={ {padding:"10px 5px 10px 5px", borderRight:"1px dotted white", color: `#fff`, textDecoration: `none`, paddingLeft:"1rem", paddingRight:"1rem"} }> writers </Link>
         <Link to="/director/" activeStyle={{ color: "red" }} style={ {padding:"10px 5px 10px 5px", color: `#fff`, textDecoration: `none`, paddingLeft:"1rem"} }> directors </Link>
