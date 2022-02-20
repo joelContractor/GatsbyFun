@@ -94,7 +94,7 @@ function FrontPageBanner({ data }) {
                                     if(dats.node.articlep1){
                                         return <>
                                             <FrontPageArticleTitle dats={ dats.node.title } />
-                                            <FrontPageArticleWriterDetails dats={ dats.node.title } />
+                                            <FrontPageArticleWriterDetails title={ dats.node.title } dats={ dats.node.articleauthor } />
                                             <FrontPageArticleAboutAuthorParagraph dats={ dats.node.articleabouttheauthor } />
                                             <FrontPageArticleParagraph dats={ dats.node.articlep1 } />   
                                         </>
@@ -232,7 +232,7 @@ function FrontPageBanner({ data }) {
                                         </>
                                     }
                                 })()}
-                                <FrontPageArticleWriterDetails dats={ dats.node.title } />
+                                <FrontPageArticleWriterDetails title={ dats.node.title } dats={ dats.node.articleauthor }/>
                             </Grid>  
                                 
                         </SwiperSlide>
