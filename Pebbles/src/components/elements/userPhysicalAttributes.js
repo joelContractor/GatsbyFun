@@ -38,10 +38,8 @@ function UserPhysicalAttributes({ dats }) {
                         return <Grid item xs={12} sm={4} container className="grey">
                                 
                                 <Grid item xs={12} sm={12}><h2 className="titleColor">Physical Attributes</h2></Grid>
-                                <Grid item xs={3} sm={6}><p>Ethnicity: {dats.node.ethnicity}</p></Grid>
-                                <Grid item xs={3} sm={6}><p>{dats.node.ethnicity}</p></Grid>
-                                <Grid item xs={3} sm={6}><p>Height: </p></Grid>
-                                <Grid item xs={3} sm={6}><p>{dats.node.height}</p></Grid>
+                                <Grid item xs={6} sm={12}><p>Ethnicity: {dats.node.ethnicity}</p></Grid>
+                                <Grid item xs={6} sm={12}><p>Height: {dats.node.height}</p></Grid>
                                 <Grid item xs={6} sm={12}><p>Weight: {dats.node.weight}</p></Grid>
                                 <Grid item xs={6} sm={12}><p>Eye Colour: {dats.node.eyeColour}</p></Grid>
                                 <Grid item xs={6} sm={12}><p>Hair Colour: {dats.node.hairColour}</p></Grid>
