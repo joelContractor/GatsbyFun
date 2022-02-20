@@ -19,7 +19,7 @@ function Header ({ siteTitle }) {
 
   const res = 
   <header style={ {float:`left`, background: `#1A2421`, marginBottom: `0rem`, width:`100%`} }>
-    <div style={ {margin: `0 auto`, maxWidth: 900, padding: `1.45rem 1.0875rem`,} }>
+    <div style={ {margin: `0 auto`, maxWidth: 900, padding: `1.45rem 1.0875rem`, height:"5rem"} }>
       <div style={{ float:`left`, marginRight:`5px`, marginTop:"3px" }}>
         <StaticImage
             src="../images/diverseGenderIcon.png"
@@ -36,8 +36,18 @@ function Header ({ siteTitle }) {
       <p style={{ float:`right`, textAlign:`right`, marginTop:"7px", fontSize: '14px' }}>
       { matches && <><Link to="/artist/" activeStyle={{ color: "red" }} style={ {color: `#fff`,textDecoration: `none`, textShadow:`2px 1px black`} }> actors </Link> 
         <Link to="/writer/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, textShadow:`2px 1px black`} }> writers </Link>
-        <Link to="/director/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, textShadow:`2px 1px black`} }> directors </Link></> }
-        { !matches && <button className="mobile" onClick={showInfo}>mobile</button> }
+        <Link to="/director/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, textShadow:`2px 1px black`} }> directors </Link></> 
+      }
+      { !matches && <button style={{ background:"none", border:"none", position:"absolute", top:"25px", width:"50px", right:"10px" }}  className="mobile" onClick={showInfo}>
+        <StaticImage
+              src="../images/diverseGenderIcon.png"
+              width={30}
+              quality={95}
+              formats={["AUTO", "WEBP", "AVIF"]}
+              alt="A Gatsby astronaut"
+              style={{  }} 
+          />
+      </button> }
       </p>
       <p style={{ clear:"both", textAlign:`center`, marginTop:"0px", marginBottom:"0.5rem", fontSize: '14px', display:show === 'none'? `none`: `block` }}>
         <Link to="/artist/" activeStyle={{ color: "red" }} style={ {color: `#fff`,textDecoration: `none`, textShadow:`2px 1px black`, paddingRight:"3rem"} }> actors </Link>
