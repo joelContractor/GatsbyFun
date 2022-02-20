@@ -32,13 +32,13 @@ function Header ({ siteTitle }) {
       </div>
         <Link to="/" style={ {float:`left`, color: `white`, textDecoration: `none`, textShadow:`2px 1px black`, marginTop:'5px'} }> {siteTitle} </Link>
  
-      <p style={{ float:`right`, textAlign:`right`, marginTop:"5px", fontSize: '1rem' }}>
-      { matches && <><Link to="/artist/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, textShadow:`2px 1px black`} }> actors </Link> 
+      <p style={{ float:`right`, textAlign:`right`, marginTop:"5px", fontSize: '1rem', paddingRight:"0.5rem" }}>
+      { matches && <><Link to="/artist/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, textShadow:`2px 1px black`, paddingRight:"1rem" } }> actors </Link> 
         <Link to="/writer/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, textShadow:`2px 1px black`} }> writers </Link>
-        <Link to="/director/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, textShadow:`2px 1px black`} }> directors </Link></> 
+        <Link to="/director/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, textShadow:`2px 1px black`, paddingLeft:"1rem"} }> directors </Link></> 
       }
       { !matches && <button  style={{ cursor:"pointer", background:"none", border:"none", color:"white", paddingRight:"0.5rem"}}  className="mobile" onClick={showInfo}>
-        <div className="mobileNav" style={{ border:"1px solid white", background:"white", borderRadius:"5px", width:"30px", marginTop:"0px" }}></div>
+        <div className="mobileNav" style={{ border:"1px solid white", background:"white", borderRadius:"5px", width:"30px", marginTop:"0px"}}></div>
         <div className="mobileNav" style={{ border:"1px solid white", background:"white", borderRadius:"5px", width:"30px", marginTop:"8px" }}></div>
         <div className="mobileNav" style={{ border:"1px solid white", background:"white", borderRadius:"5px", width:"30px", marginTop:"8px" }}></div>
       </button> }
