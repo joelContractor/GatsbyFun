@@ -38,7 +38,9 @@ function Header ({ siteTitle }) {
         <Link to="/director/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, textShadow:`2px 1px black`} }> directors </Link></> 
       }
       { !matches && <button  style={{ cursor:"pointer", background:"none", border:"none", color:"white", paddingRight:"0.5rem"}}  className="mobile" onClick={showInfo}>
-        menu
+        <div className="mobileNav" style={{ border:"1px solid white", background:"white", borderRadius:"5px", width:"30px", marginTop:"0px" }}></div>
+        <div className="mobileNav" style={{ border:"1px solid white", background:"white", borderRadius:"5px", width:"30px", marginTop:"8px" }}></div>
+        <div className="mobileNav" style={{ border:"1px solid white", background:"white", borderRadius:"5px", width:"30px", marginTop:"8px" }}></div>
       </button> }
       </p>
       <p style={{ clear:"both", textAlign:`center`, marginTop:"0px", marginBottom:"0.5rem", fontSize: '1.1rem', display:show === 'none'? `none`: `block` }}>
