@@ -44,8 +44,8 @@ function Header ({ siteTitle }) {
       </button> }
       </div>
       <div style={{ clear:"both", textAlign:`center`, marginBottom:"0rem", marginRight:"4px", fontSize: '0.8rem', display:show === 'none'? `none`: `block`, borderTop: "1px dotted hsla(0,0%,90%,0.1)", paddingTop: "1.5rem" }}>
-        <Link to="/artist/" activeStyle={{ color: "red" }} style={ {padding:"10px 5px 10px 5px", borderRight:"1px dotted hsla(0,0%,90%,0.1)", color: `#fff`,textDecoration: `none`, paddingRight:"1rem"} }> actors </Link>
-        <Link to="/writer/" activeStyle={{ color: "red" }} style={ {padding:"10px 5px 10px 5px", borderRight:"1px dotted hsla(0,0%,90%,0.1)", color: `#fff`, textDecoration: `none`, paddingLeft:"1rem", paddingRight:"1rem"} }> writers </Link>
+        <Link to="/artist/" activeStyle={{ color: "red" }} style={ {padding:"10px 5px 10px 5px", borderRight:"1px dotted hsla(0,0%,50%,0.1)", color: `#fff`,textDecoration: `none`, paddingRight:"1rem"} }> actors </Link>
+        <Link to="/writer/" activeStyle={{ color: "red" }} style={ {padding:"10px 5px 10px 5px", borderRight:"1px dotted hsla(0,0%,70%,0.1)", color: `#fff`, textDecoration: `none`, paddingLeft:"1rem", paddingRight:"1rem"} }> writers </Link>
         <Link to="/director/" activeStyle={{ color: "red" }} style={ {padding:"10px 5px 10px 5px", color: `#fff`, textDecoration: `none`, paddingLeft:"1rem"} }> directors </Link>
       </div>
     </div>
