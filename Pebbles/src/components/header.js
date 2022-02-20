@@ -43,7 +43,7 @@ function Header ({ siteTitle }) {
         <div className="mobileNav" style={{ border:"1px solid white", background:"white", borderRadius:"5px", width:"25px", marginTop:"8px" }}></div>
       </button> }
       </div>
-      <div style={{ clear:"both", textAlign:`center`, paddingTop:"5px", marginBottom:"0rem", marginRight:"4px", fontSize: '0.8rem', display:show === 'none'? `none`: `block` }}>
+      <div style={{ clear:"both", textAlign:`center`, marginBottom:"0rem", marginRight:"4px", fontSize: '0.8rem', display:show === 'none'? `none`: `block`, borderTop: "1px dotted black", paddingTop: "1.5rem" }}>
         <Link to="/artist/" activeStyle={{ color: "red" }} style={ {padding:"10px 5px 10px 5px", borderRight:"1px dotted white", color: `#fff`,textDecoration: `none`, paddingRight:"1rem"} }> actors </Link>
         <Link to="/writer/" activeStyle={{ color: "red" }} style={ {padding:"10px 5px 10px 5px", borderRight:"1px dotted white", color: `#fff`, textDecoration: `none`, paddingLeft:"1rem", paddingRight:"1rem"} }> writers </Link>
         <Link to="/director/" activeStyle={{ color: "red" }} style={ {padding:"10px 5px 10px 5px", color: `#fff`, textDecoration: `none`, paddingLeft:"1rem"} }> directors </Link>
