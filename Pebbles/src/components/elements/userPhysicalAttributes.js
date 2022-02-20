@@ -35,17 +35,17 @@ function UserPhysicalAttributes({ dats }) {
             <Grid container direction="row"  spacing={6}>  
                 {(() => {
                     if(dats.node.hairColour){
-                        return <Grid item xs={6} sm={4} className="grey">
+                        return <Grid item xs={12} sm={4} container className="grey">
                                 
-                                <h2 className="titleColor">Physical Attributes</h2>
-                                <p>Ethnicity: {dats.node.ethnicity}</p>
-                                <p>Height: {dats.node.height}</p>
-                                <p>Weight: {dats.node.weight}</p>
-                                <p>Eye Colour: {dats.node.eyeColour}</p>
-                                <p>Hair Colour: {dats.node.hairColour}</p>
-                                <p>Hair Length: {dats.node.hairLength}</p>
-                                <p>Tatoos: {dats.node.tatoos}</p>
-                                <p>Visible Piercings: {dats.node.visiblepiercings}</p>
+                                <Grid item xs={12} sm={12} className="grey"><h2 className="titleColor">Physical Attributes</h2></Grid>
+                                <Grid item xs={6} sm={12}><p>Ethnicity: {dats.node.ethnicity}</p></Grid>
+                                <Grid item xs={6} sm={12}><p>Height: {dats.node.height}</p></Grid>
+                                <Grid item xs={6} sm={12}><p>Weight: {dats.node.weight}</p></Grid>
+                                <Grid item xs={6} sm={12}><p>Eye Colour: {dats.node.eyeColour}</p></Grid>
+                                <Grid item xs={6} sm={12}><p>Hair Colour: {dats.node.hairColour}</p></Grid>
+                                <Grid item xs={6} sm={12}><p>Hair Length: {dats.node.hairLength}</p></Grid>
+                                <Grid item xs={6} sm={12}><p>Tatoos: {dats.node.tatoos}</p></Grid>
+                                <Grid item xs={6} sm={12}><p>Visible Piercings: {dats.node.visiblepiercings}</p></Grid>
                             
                         </Grid>
                     }
@@ -53,7 +53,7 @@ function UserPhysicalAttributes({ dats }) {
 
                 {(() => {
                     if(dats.node.physicalattributeimage){
-                        return <Grid item xs={6} sm={8}>
+                        return <Grid item xs={12} sm={8}>
                                 
                                 <GatsbyImage className="userPhysicalAttributesImage" image={getImage(dats.node.physicalattributeimage.gatsbyImageData)} alt={"physical attribute image"}/>
                             
