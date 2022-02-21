@@ -30,7 +30,7 @@ const StyledHistorySwiperGrid = styled(Grid, {
     ".normal": { fontWeight:"normal" },
     ".bold": { fontWeight:"bold" },
     ".grey": { color:"grey" },
-    ".swiper-pagination-bullet": { width:"20px", height:"20px" }
+    ".swiper-pagination-bullet": { padding:"0.3rem" }
 
   });
 
