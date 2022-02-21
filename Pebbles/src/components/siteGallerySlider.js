@@ -31,9 +31,11 @@ const StyledHistorySwiperGrid = styled(Grid, {
     ".normal": { fontWeight:"normal" },
     ".bold": { fontWeight:"bold" },
     ".grey": { color:"grey" },
-    ".swiper-pagination-bullet": { padding:"0.3rem" },
-    ".swiper-button-prev": { color:"black", opacity:"0.1" },
-    ".swiper-button-next": { color:"black", opacity:"0.1" }
+    ".swiper-pagination-bullet": { padding:"0.1rem" },
+    ".swiper-button-prev": { color:"black", opacity:"0.3", marginTop:"110px" },
+    ".swiper-button-next": { color:"black", opacity:"0.3", marginTop:"110px" },
+    ".historyTitle": {  marginBottom:"30px" },
+    ".historySwiperTitle": {  marginBottom:"40px" }
 
   });
 
@@ -55,7 +57,7 @@ function SiteGallerySlider({ dats }) {
     const res =
 
         <>{ matches && <StyledHistorySwiperGrid container >
-            <Grid item xs={12}>
+            <Grid className="historyTitle" item xs={12}>
                 <h2>My History</h2>
             </Grid>
             <Grid item xs={12}>
@@ -67,7 +69,7 @@ function SiteGallerySlider({ dats }) {
                 pagination={{ clickable: true }}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
-                style={{ borderRadius:"20px", fontFamily: "Arial" }}
+                style={{ fontFamily: "Arial" }}
                 >
 
                     {myArray.map((dats) => (
@@ -75,8 +77,8 @@ function SiteGallerySlider({ dats }) {
 
                             <Grid item xs={12} sm={12} md={12} style={{ marginBottom:"5rem" }}>
                                 
-                                <h2 style={{fontWeight:"normal"}}>{dats[0]}</h2>
-                                <p className="normal grey">{dats[1]}</p>
+                                <h2 className="normal historySwiperTitle">{dats[0]}</h2>
+                                <p className="normal grey historySwiperTitle">{dats[1]}</p>
                                 <Grid item xs={12} container direction="row">
                                     <Grid item xs={3} sm={6}><p className="bold">Year: <span className="normal grey">{dats[2]}</span></p></Grid>
                                     <Grid item xs={9} sm={6}><p className="bold">Type: <span className="normal grey">{dats[3]}</span></p></Grid>   
