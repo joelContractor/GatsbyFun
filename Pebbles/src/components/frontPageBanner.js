@@ -23,8 +23,9 @@ const StyledFrontPageBannerGrid = styled(Grid, {
     fontFamily:`Arial`, 
     marginBottom:"50px",
     borderRadius:"20px",
-    boxShadow: "0px 1px 1px -1px rgba(0,0,0,0.1),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 1px 0px rgba(0,0,0,0.12)",
-    ".bannerData": { zIndex:`1`, overflow:`hidden`, position: `relative`, transition: `opacity 1.9s, top 0s, height 0s`, paddingLeft:"20px", paddingRight:"20px", background:"white"}
+    ".bannerData": { zIndex:`1`, overflow:`hidden`, position: `relative`, transition: `opacity 1.9s, top 0s, height 0s`, paddingLeft:"20px", paddingRight:"20px", background:"white"},
+    ".swiper-button-prev": { color:"black", opacity:"0.1" },
+    ".swiper-button-next": { color:"black", opacity:"0.1" }
 
   });
 

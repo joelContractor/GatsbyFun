@@ -37,6 +37,8 @@ const StyledGalleryBannerGrid = styled(Grid, {
     ".bannerButtonHousingBelow": { padding:"10px" },
     ".diversityLogoPaddingBelow": { padding:"25px 20px 10px 0px"},
     ".diversityLogoAreaBelow": { textAlign: `left`, background: `rgba(0, 0, 0, 0.1)`, borderRadius: `50px`, border: `1px solid #d3d3d3`, width:`fit-content`, marginLeft: `10px` },
+    ".swiper-button-prev": { color:"black", opacity:"0.1" },
+    ".swiper-button-next": { color:"black", opacity:"0.1" }
 
   });
 
