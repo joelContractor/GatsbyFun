@@ -137,6 +137,14 @@ function GalleryBanner({ data }) {
                                             <UserWritersProcess dats={dats} />
                                         </>
                                     }
+                                })()}                           
+
+                                {(() => {
+                                    if(dats.node.videoreelsrc){
+                                        return <>
+                                            <UserVideoPortfolio dats={ dats } />
+                                        </>
+                                    }
                                 })()}
 
                                 {(() => {
@@ -146,15 +154,7 @@ function GalleryBanner({ data }) {
                                             <SiteGallerySlider dats={ dats } />
                                         </>
                                     }
-                                })()}                             
-
-                                {(() => {
-                                    if(dats.node.videoreelsrc){
-                                        return <>
-                                            <UserVideoPortfolio dats={ dats } />
-                                        </>
-                                    }
-                                })()}
+                                })()}  
 
                                 {(() => {
                                     if(dats.node.availableprojectbriefdescription){
@@ -173,7 +173,7 @@ function GalleryBanner({ data }) {
                                 })()}
                                 
                                 {/*<UserImageGallery dats={ dats } />*/}
-                                <SiteGallerySlider dats={ dats } />
+                                
                             </Grid>  
                             
                         </SwiperSlide>
