@@ -20,7 +20,7 @@ const IndexPage = ({data}) => (
 
     <Grid container sx={{marginBottom:'10px', padding:"20px 10px 0px 10px"}} spacing={3}>
       <Grid item xs={12}>
-          <p style={{ marginBottom:"0rem" }}>Diverse Pool</p>
+          <p style={{ marginBottom:"0rem" }}>Find Diverse Crew Here.</p>
       </Grid>
       <Grid item xs={12} md={12}>
         <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.4)' }}>
@@ -34,7 +34,7 @@ const IndexPage = ({data}) => (
 
     <Grid container sx={{marginBottom:'20px', padding:"0px 10px 0px 10px"}} spacing={3}>
       <Grid item xs={12}>
-          <p style={{ marginBottom:"0rem" }}>Discover Diversity</p>
+          <p style={{ marginBottom:"0rem" }}>How Diversity Helps You.</p>
       </Grid>
       <Grid item xs={12} md={12}>
         <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.4)' }}>
