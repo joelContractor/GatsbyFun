@@ -19,7 +19,8 @@ const StyledUserVideoPortfolioGrid = styled(Grid, {
     ".videoContainer": { position: 'relative', paddingBottom: '56.25%', height: 0  },
     ".video": { position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', paddingLeft: '2.7rem' },
     ".grey": { color:"rgba(0,0,0,0.5)" },
-    ".paddedVideoReelRelatedContent": { marginLeft:"20px", marginRight:"20px"}
+    ".paddedVideoReelRelatedContent": { marginLeft:"20px", marginRight:"20px"},
+    ".yt-lite > .lty-playbtn, .yt-lite > .lty-playbtn::before": { left:"52%" }
   });
 
 
