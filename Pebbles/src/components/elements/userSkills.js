@@ -37,7 +37,7 @@ function UserSkills({ dats }) {
                         return <Grid container direction="row" spacing={6}> 
                                 {(() => {
                                     if(dats.node.skillimage){
-                                        return <Grid item xs={6} sm={8}>
+                                        return <Grid item xs={8} sm={8}>
                                                 
                                                 <GatsbyImage className="userSkillsImage" image={getImage(dats.node.skillimage.gatsbyImageData)} alt={"testimage"}/>
                                             
@@ -47,7 +47,7 @@ function UserSkills({ dats }) {
 
                                 {(() => {
                                     if(dats.node.skill){
-                                        return <Grid item xs={6} sm={4}>
+                                        return <Grid item xs={4} sm={4}>
                                             
                                             <h2>Skills </h2>
                                             <p className="grey">{dats.node.skill}</p>
