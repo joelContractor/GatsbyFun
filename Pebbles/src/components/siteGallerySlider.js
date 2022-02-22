@@ -73,22 +73,28 @@ function SiteGallerySlider({ dats }) {
                 >
 
                     {myArray.map((dats) => (
-                        <SwiperSlide>
+                        (() => {
+                            if(dats[0]){
+                                return <>
+                                    <SwiperSlide>
 
-                            <Grid item xs={12} sm={12} md={12} style={{ marginBottom:"5rem" }}>
-                                
-                                <h2 className="normal historySwiperTitle">{dats[0]}</h2>
-                                <p className="normal grey historySwiperTitle">{dats[1]}</p>
-                                <Grid item xs={12} container direction="row">
-                                    <Grid item xs={3} sm={6}><p className="bold">Year: <span className="normal grey">{dats[2]}</span></p></Grid>
-                                    <Grid item xs={9} sm={6}><p className="bold">Type: <span className="normal grey">{dats[3]}</span></p></Grid>   
-                                </Grid>
-                            
-                            </Grid>
-                    
+                                        <Grid item xs={12} sm={12} md={12} style={{ marginBottom:"5rem" }}>
+                                            
+                                            <h2 className="normal historySwiperTitle">{dats[0]}</h2>
+                                            <p className="normal grey historySwiperTitle">{dats[1]}</p>
+                                            <Grid item xs={12} container direction="row">
+                                                <Grid item xs={3} sm={6}><p className="bold">Year: <span className="normal grey">{dats[2]}</span></p></Grid>
+                                                <Grid item xs={9} sm={6}><p className="bold">Type: <span className="normal grey">{dats[3]}</span></p></Grid>   
+                                            </Grid>
 
-                            
-                        </SwiperSlide>
+                                        </Grid>
+
+
+
+                                    </SwiperSlide>
+                                </>
+                            }
+                        })()
                     ))}
                     
                 </Swiper>
