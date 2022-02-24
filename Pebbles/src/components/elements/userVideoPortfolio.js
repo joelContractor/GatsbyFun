@@ -20,7 +20,8 @@ const StyledUserVideoPortfolioGrid = styled(Grid, {
     ".video": { position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', paddingLeft: '2.7rem' },
     ".grey": { color:"rgba(0,0,0,0.5)" },
     ".paddedVideoReelRelatedContent": { marginLeft:"0px", marginRight:"0px"},
-    ".yt-lite > .lty-playbtn, .yt-lite > .lty-playbtn::before": { left:"50%" }
+    ".yt-lite > .lty-playbtn, .yt-lite > .lty-playbtn::before": { left:"50%" },
+    ".yt-lite": { borderRadius: "5px" }
   });
 
 
@@ -60,6 +61,7 @@ function UserVideoPortfolio({ dats }) {
                                 poster="hqdefault" 
                                 title="Users Reel" 
                                 noCookie={true}
+                                style={{borderRadius: "5px"}}
                             />
 
                         </Grid>
