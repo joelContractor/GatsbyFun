@@ -11,7 +11,8 @@ const StyledFrontPageArticleTitleGrid = styled(Grid, {
     slot: "Wrapper",
   })({
     paddingTop:"50px", 
-    paddingBottom:"0px"
+    paddingBottom:"0px", 
+    width:"100%"
 
   });
 

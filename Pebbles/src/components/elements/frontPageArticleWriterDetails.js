@@ -16,7 +16,7 @@ const StyledFrontPageArticleWriterDetailsGrid = styled(Grid, {
     paddingbottom:"0px", 
     fontSize:"11px",
     ".title": { fontWeight:"bold" },
-    ".shareLinks": { display: "flex", justifyContent: "flex-end", fontSize:"10px" }
+    ".shareLinks": { display: "flex", justifyContent: "flex-start", fontSize:"10px", paddingTop:"0px" }
 
   });
 
@@ -28,17 +28,17 @@ function FrontPageArticleWriterDetails({ dats, title }) {
     const res =
 
         <StyledFrontPageArticleWriterDetailsGrid state={{dats, title}} container>
-            <Grid container direction="row" spacing={6}>
+            <Grid container direction="row" spacing={6} >
                 {(() => {
                     if(dats){
                         return <>
-                            <Grid item xs={6} sm={6}>
+                            <Grid item xs={12} md={6}>
                                 
                                 <p><span className="title">Written By:</span> {dats}</p>
                   
                             </Grid>
 
-                            <Grid item xs={2} sm={2} className="shareLinks">
+                            <Grid item xs={4} sm={3} md={2} className="shareLinks">
 
                                 <a aria-label={`Tweet this article, ${title}, written by ${dats}, on Twitter`} href="https://twitter.com/intent/tweet" target="_blank" rel="noreferrer" >
                                     Tweet
@@ -54,7 +54,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                             
                             </Grid>
 
-                            <Grid item xs={2} sm={2} className="shareLinks">
+                            <Grid item xs={4} sm={3} md={2} className="shareLinks">
                                 
                                 <a aria-label={`Share this article, ${title}, written by ${dats}, on Facebook`}href="https://www.facebook.com/sharer/sharer.php?u=#url" target="_blank" rel="noreferrer">
                                     Share
@@ -70,7 +70,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
 
                             </Grid>
 
-                            <Grid item xs={2} sm={2} className="shareLinks">
+                            <Grid item xs={4} sm={3} md={2} className="shareLinks">
 
                                 <a aria-label={`Post this article, ${title}, written by ${dats}, on LinkedIn`} href="https://www.linkedin.com/sharing/share-offsite/?url={url}" target="_blank" rel="noreferrer">
                                     LinkedIn

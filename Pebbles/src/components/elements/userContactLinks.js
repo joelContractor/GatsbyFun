@@ -18,7 +18,7 @@ const StyledUserContactLinksGrid = styled(Grid, {
     borderTop:"1px dashed grey",
     ".title": { fontWeight:"bold", paddingTop:"4px" },
     ".contactLinks": { color:"#639", fontSize:"10px"},
-    ".contactLinkContainer": { display: "flex", justifyContent: "flex-end" },
+    ".contactLinkContainer": { display: "flex", justifyContent: "flex-start" },
     ".contactLinkImage": { marginBottom: `0px`, marginLeft: `3px` },
 
   });
@@ -36,13 +36,13 @@ function userContactLinks({ dats }) {
                     if(dats){
                         return <>
 
-                            <Grid item xs={6} sm={6}>
+                            <Grid item xs={12} sm={6}>
                                 
                                 <h2 className="title">Contact</h2>
                   
                             </Grid>
 
-                            <Grid item xs={2} sm={2} className="contactLinkContainer">
+                            <Grid item xs={4} sm={2} className="contactLinkContainer">
 
                                 <a aria-label={`Send a text to ${dats.node.title}`} className="contactLinks" href={`sms:0${dats.node.usertel}`}>
                                     Text
@@ -58,7 +58,7 @@ function userContactLinks({ dats }) {
                             
                             </Grid>
 
-                            <Grid item xs={2} sm={2} className="contactLinkContainer">
+                            <Grid item xs={4} sm={2} className="contactLinkContainer">
                                 
                                 <a aria-label={`Send an email to ${dats.node.title}`} className="contactLinks" href={`mailto:${dats.node.useremail}?cc=admin@diversepool.com&&subject=Diverse-Pool-Mail&body=Body-goes-here`}>
                                     Mail
@@ -74,7 +74,7 @@ function userContactLinks({ dats }) {
 
                             </Grid>
 
-                            <Grid item xs={2} sm={2} className="contactLinkContainer">
+                            <Grid item xs={4} sm={2} className="contactLinkContainer">
 
                                 <a aria-label={`Call ${dats.node.title}`} className="contactLinks" href={`tel:0${dats.node.usertel}`}>
                                     Call
