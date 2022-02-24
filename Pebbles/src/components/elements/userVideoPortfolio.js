@@ -16,7 +16,7 @@ const StyledUserVideoPortfolioGrid = styled(Grid, {
     marginTop:"10px", 
     paddingBottom:"100px",
     borderTop:"1px dotted grey",
-    ".videoContainer": { position: 'relative', left: 20, paddingBottom: '56.25%', height: 0  },
+    ".videoContainer": { position: 'relative', left: 0, paddingBottom: '56.25%', height: 0  },
     ".video": { position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', paddingLeft: '2.7rem' },
     ".grey": { color:"rgba(0,0,0,0.5)" },
     ".paddedVideoReelRelatedContent": { marginLeft:"0px", marginRight:"0px"},
@@ -48,7 +48,7 @@ function UserVideoPortfolio({ dats }) {
 
                 {(() => {
                     if(dats.node.videoreelsrc){
-                        return <Grid xs={12} className="videoContainer">
+                        return <Grid item xs={12} className="videoContainer">
   
                             <LiteYouTubeEmbed 
                                 className="video" 
