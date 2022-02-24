@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
 import { styled } from "@mui/system";
-import useMediaQuery from "@mui/material/useMediaQuery"
+
 
 const StyledHistorySwiperGrid = styled(Grid, {
     name: "StyledHistorySwiperGrid",
@@ -41,7 +41,7 @@ const StyledHistorySwiperGrid = styled(Grid, {
 
 function SiteGallerySlider({ dats }) {
 
-    const matches = useMediaQuery('(max-width:600px)');
+    
 
     const myArray = [
         [dats.node.userhistorytitle1, dats.node.userhistorydescription1, dats.node.userhistoryyear1, dats.node.userhistorytype1], 
@@ -54,7 +54,7 @@ function SiteGallerySlider({ dats }) {
 
     const res =
 
-        <>{ matches && <StyledHistorySwiperGrid container >
+        <StyledHistorySwiperGrid container >
             <Grid className="historyTitle" item xs={12}>
                 <h2>My History</h2>
             </Grid>
@@ -97,7 +97,7 @@ function SiteGallerySlider({ dats }) {
                     
                 </Swiper>
             </Grid>
-        </StyledHistorySwiperGrid> }</>
+        </StyledHistorySwiperGrid>
 
     return res;
 }

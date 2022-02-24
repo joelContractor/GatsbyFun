@@ -19,6 +19,7 @@ import UserVideoPortfolio from "./elements/userVideoPortfolio";
 import UserContactLinks from "./elements/userContactLinks";
 import SiteGallerySlider from "../components/siteGallerySlider";
 import { styled } from "@mui/system";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const StyledGalleryBannerGrid = styled(Grid, {
     name: "StyledGalleryBannerGrid",
@@ -46,6 +47,8 @@ const StyledGalleryBannerGrid = styled(Grid, {
 
 function GalleryBanner({ data }) {
 
+    const matchesOver = useMediaQuery('(min-width:600px)');
+    const matchesUnder = useMediaQuery('(max-width:600px)');
     const [show, setShow] = useState('none')
 
     function showInfo(){
@@ -152,8 +155,8 @@ function GalleryBanner({ data }) {
                                 {(() => {
                                     if(dats.node.userhistorytitle1){
                                         return <>
-                                            <UserWorkHistory dats={ dats } />              
-                                            <SiteGallerySlider dats={ dats } />
+                                            { matchesOver && <UserWorkHistory dats={ dats } /> }              
+                                            { matchesUnder && <SiteGallerySlider dats={ dats } /> }
                                         </>
                                     }
                                 })()}  

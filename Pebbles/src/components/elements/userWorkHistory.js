@@ -5,7 +5,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
 import { styled } from "@mui/system";
-import useMediaQuery from "@mui/material/useMediaQuery"
+
 
 const StyledUserWorkHistoryGrid = styled(Grid, {
     name: "StyledUserWorkHistoryGrid",
@@ -27,11 +27,10 @@ const StyledUserWorkHistoryGrid = styled(Grid, {
 
 function UserWorkHistory({ dats }) {
     
-    const matches = useMediaQuery('(min-width:600px)');
 
     const res =
 
-        <>{ matches && <StyledUserWorkHistoryGrid state={{dats}} container>
+        <StyledUserWorkHistoryGrid state={{dats}} container>
              <Grid container direction="row" spacing={6}>
                 {(() => {
                     if(dats.node.userhistorytitle1){
@@ -128,7 +127,7 @@ function UserWorkHistory({ dats }) {
                     }
                 })()}
             </Grid>
-        </StyledUserWorkHistoryGrid> } </> 
+        </StyledUserWorkHistoryGrid>
         
 
     return res;

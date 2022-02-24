@@ -1,8 +1,5 @@
 import React from "react"
 /*import { Link } from "gatsby"*/
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
 import { StaticImage } from "gatsby-plugin-image"
 import { styled } from "@mui/system";
@@ -16,7 +13,8 @@ const StyledFrontPageArticleWriterDetailsGrid = styled(Grid, {
     paddingbottom:"0px", 
     fontSize:"11px",
     ".title": { fontWeight:"bold" },
-    ".shareLinks": { display: "flex", justifyContent: "flex-start", fontSize:"10px", paddingTop:"0px" }
+    ".shareLinks": {  display:"flex", justifyContent: "flex-start", fontSize:"10px", color:"cornflowerblue" },
+    ".shareLinks > a": {  color:"cornflowerblue" }
 
   });
 
@@ -43,7 +41,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                                 <a aria-label={`Tweet this article, ${title}, written by ${dats}, on Twitter`} href="https://twitter.com/intent/tweet" target="_blank" rel="noreferrer" >
                                     Tweet
                                     <StaticImage
-                                            src="../images/gatsby-icon.png"
+                                            src="../images/tweetnoback.png"
                                             width={25}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
@@ -59,7 +57,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                                 <a aria-label={`Share this article, ${title}, written by ${dats}, on Facebook`}href="https://www.facebook.com/sharer/sharer.php?u=#url" target="_blank" rel="noreferrer">
                                     Share
                                     <StaticImage
-                                            src="../images/gatsby-icon.png"
+                                            src="../images/fb.png"
                                             width={25}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
@@ -75,7 +73,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                                 <a aria-label={`Post this article, ${title}, written by ${dats}, on LinkedIn`} href="https://www.linkedin.com/sharing/share-offsite/?url={url}" target="_blank" rel="noreferrer">
                                     LinkedIn
                                     <StaticImage
-                                            src="../images/gatsby-icon.png"
+                                            src="../images/linked.png"
                                             width={25}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
