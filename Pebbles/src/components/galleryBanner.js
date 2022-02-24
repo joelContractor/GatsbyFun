@@ -30,7 +30,7 @@ const StyledGalleryBannerGrid = styled(Grid, {
     background:"white",
     borderRadius:"20px",
    
-    ".bannerData": { marginTop:`0px`, zIndex:`1`, overflow:`hidden`, position: `relative`, transition: `opacity 1.9s, top 0s, height 0s`},
+    ".bannerData": { paddingRight:"20px", paddingLeft:"20px", marginTop:`0px`, zIndex:`1`, overflow:`hidden`, position: `relative`, transition: `opacity 1.9s, top 0s, height 0s`},
     ".diversityLogosBelow": { padding: `15px 10px`, display:`inline`, background:"red", borderRadius:"50px", marginLeft:"10px" },
     ".bannerButtonBelow": { fontSize:"16px", textTransform: `none`, backgroundColor:`rgba(0, 0, 05, 0.1)`, width:`100%`, borderRadius: `50px`, color: `black`, fontWeight: `normal`, border: `1px solid #d3d3d3`, height: `50px`, padding: `4px 20px 4px 20px`, fontFamily: 'georgia, serif'},
     ".bannerButton:hover": { color: "black", backgroundColor:`rgba(255, 255, 255, 0.8)`},
@@ -100,7 +100,7 @@ function GalleryBanner({ data }) {
                 >
 
                     {data.map((dats) => (
-                        <SwiperSlide>
+                        <SwiperSlide key={dats.node.title} >
 
                             <UserBannerImage  dats={ dats } show={show} showInfo={showInfo} presentReligion={presentReligion} presentRace={presentRace} presentAbility={presentAbility} presentAge={presentAge} presentOrientation={presentOrientation} presentGender={presentGender} presentCulture={presentCulture}/>
 

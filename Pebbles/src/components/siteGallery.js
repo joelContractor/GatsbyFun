@@ -41,7 +41,7 @@ function SiteGallery({ data }) {
                 
                         {data.map((dats) => (
                                
-                            <Grid item xs={12} sm={6} md={4} lg={4} state={dats} >
+                            <Grid key={dats.node.agencytitle} item xs={12} sm={6} md={4} lg={4} state={dats} >
                                 
                                 <Card className="infoCard">
 
@@ -53,7 +53,7 @@ function SiteGallery({ data }) {
                                         className="cardContentArea"
                                     >
                                       
-                                            <Grid xs={8}>
+                                            <Grid item xs={8}>
                                                 <p className="cardTitle">
                                                     {dats.node.agencytitle}
                                                 </p>
@@ -61,7 +61,7 @@ function SiteGallery({ data }) {
                                                     {dats.node.agencydescription}
                                                 </p>
                                             </Grid>
-                                            <Grid xs={4}>
+                                            <Grid item xs={4}>
                                                 <div className="buttonContainer">
                                                     <Button href={dats.node.agencyurl} target="_blank" className="cardButton cardButtonBottom">
                                                         Go

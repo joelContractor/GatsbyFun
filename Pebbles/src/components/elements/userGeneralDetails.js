@@ -11,8 +11,6 @@ const StyledUserGeneralDetailsGrid = styled(Grid, {
     slot: "Wrapper",
   })({
     paddingTop:"40px",
-    paddingRight:"20px", 
-    paddingLeft:"20px",
     ".grey": { color:"rgba(0,0,0,0.5)" }
 
   });

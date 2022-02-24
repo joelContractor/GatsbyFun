@@ -32,7 +32,7 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
     
     const res =
 
-        <StyledUserBannerImageGrid state={{dats}} container xs={12}>
+        <StyledUserBannerImageGrid state={{dats}} container>
             <Grid item xs={12}>
                 <BackgroundImage
                     Tag="section"
@@ -43,7 +43,7 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                     preserveStackingContext
                 >   
                 
-                   <Grid container xs={12} className="userBannerImage">
+                   <Grid container className="userBannerImage">
                          <Grid item xs={12} sm={4} className="diversityLogoPadding">
                     
                             <div className="">

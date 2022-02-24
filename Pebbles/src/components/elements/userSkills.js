@@ -15,8 +15,6 @@ const StyledUserSkillsGrid = styled(Grid, {
     marginTop:"10px", 
     paddingBottom:"50px",
     borderTop:"1px dotted grey",
-    paddingRight:"20px", 
-    paddingLeft:"20px",
     ".userSkillsImage": { borderRadius:"5px", willChange:"transform" },
     ".grey": { color:"rgba(0,0,0,0.5)" }
 

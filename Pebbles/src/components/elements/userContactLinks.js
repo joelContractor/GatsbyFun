@@ -16,8 +16,6 @@ const StyledUserContactLinksGrid = styled(Grid, {
     paddingBottom:"0px", 
     fontSize:"13px", 
     borderTop:"1px dashed grey",
-    paddingRight:"20px", 
-    paddingLeft:"20px",
     ".title": { fontWeight:"bold", paddingTop:"4px" },
     ".contactLinks": { color:"#639", fontSize:"10px"},
     ".contactLinkContainer": { display: "flex", justifyContent: "flex-end" },
@@ -46,7 +44,7 @@ function userContactLinks({ dats }) {
 
                             <Grid item xs={2} sm={2} className="contactLinkContainer">
 
-                                <a ariaLabel={`Send a text to ${dats.node.title}`} className="contactLinks" href={`sms:0${dats.node.usertel}`}>
+                                <a aria-label={`Send a text to ${dats.node.title}`} className="contactLinks" href={`sms:0${dats.node.usertel}`}>
                                     Text
                                     <StaticImage
                                         src="../images/gatsby-icon.png"
@@ -62,7 +60,7 @@ function userContactLinks({ dats }) {
 
                             <Grid item xs={2} sm={2} className="contactLinkContainer">
                                 
-                                <a ariaLabel={`Send an email to ${dats.node.title}`} className="contactLinks" href={`mailto:${dats.node.useremail}?cc=admin@diversepool.com&&subject=Diverse-Pool-Mail&body=Body-goes-here`}>
+                                <a aria-label={`Send an email to ${dats.node.title}`} className="contactLinks" href={`mailto:${dats.node.useremail}?cc=admin@diversepool.com&&subject=Diverse-Pool-Mail&body=Body-goes-here`}>
                                     Mail
                                     <StaticImage
                                         src="../images/gatsby-icon.png"
@@ -78,7 +76,7 @@ function userContactLinks({ dats }) {
 
                             <Grid item xs={2} sm={2} className="contactLinkContainer">
 
-                                <a ariaLabel={`Call ${dats.node.title}`} className="contactLinks" href={`tel:0${dats.node.usertel}`}>
+                                <a aria-label={`Call ${dats.node.title}`} className="contactLinks" href={`tel:0${dats.node.usertel}`}>
                                     Call
                                     <StaticImage
                                         src="../images/gatsby-icon.png"

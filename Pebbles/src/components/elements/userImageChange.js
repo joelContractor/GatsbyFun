@@ -13,8 +13,6 @@ const StyledUserImageChangesGrid = styled(Grid, {
     paddingTop:"50px", 
     marginTop:"10px", 
     borderTop:"1px dotted grey",
-    paddingRight:"20px", 
-    paddingLeft:"20px",
     ".grey": { color:"rgba(0,0,0,0.5)" }
 
   });

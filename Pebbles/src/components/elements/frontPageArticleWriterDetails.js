@@ -40,7 +40,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
 
                             <Grid item xs={2} sm={2} className="shareLinks">
 
-                                <a ariaLabel={`Tweet this article, ${title}, written by ${dats}, on Twitter`} href="https://twitter.com/intent/tweet" target="_blank" rel="noreferrer" >
+                                <a aria-label={`Tweet this article, ${title}, written by ${dats}, on Twitter`} href="https://twitter.com/intent/tweet" target="_blank" rel="noreferrer" >
                                     Tweet
                                     <StaticImage
                                             src="../images/gatsby-icon.png"
@@ -56,7 +56,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
 
                             <Grid item xs={2} sm={2} className="shareLinks">
                                 
-                                <a ariaLabel={`Share this article, ${title}, written by ${dats}, on Facebook`}href="https://www.facebook.com/sharer/sharer.php?u=#url" target="_blank" rel="noreferrer">
+                                <a aria-label={`Share this article, ${title}, written by ${dats}, on Facebook`}href="https://www.facebook.com/sharer/sharer.php?u=#url" target="_blank" rel="noreferrer">
                                     Share
                                     <StaticImage
                                             src="../images/gatsby-icon.png"
@@ -72,7 +72,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
 
                             <Grid item xs={2} sm={2} className="shareLinks">
 
-                                <a ariaLabel={`Post this article, ${title}, written by ${dats}, on LinkedIn`} href="https://www.linkedin.com/sharing/share-offsite/?url={url}" target="_blank" rel="noreferrer">
+                                <a aria-label={`Post this article, ${title}, written by ${dats}, on LinkedIn`} href="https://www.linkedin.com/sharing/share-offsite/?url={url}" target="_blank" rel="noreferrer">
                                     LinkedIn
                                     <StaticImage
                                             src="../images/gatsby-icon.png"

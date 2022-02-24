@@ -76,7 +76,7 @@ function SiteGallerySlider({ dats }) {
                         (() => {
                             if(dats[0]){
                                 return <>
-                                    <SwiperSlide>
+                                    <SwiperSlide key={dats[0]} >
 
                                         <Grid item xs={12} sm={12} md={12} style={{ marginBottom:"5rem" }}>
                                             

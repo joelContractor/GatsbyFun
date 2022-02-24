@@ -87,7 +87,7 @@ function FrontPageBanner({ data }) {
                 >
 
                     {data.map((dats) => (
-                        <SwiperSlide>
+                        <SwiperSlide key={dats.node.title} >
 
                             <UserBannerImage  dats={ dats } show={show} showInfo={showInfo} presentReligion={presentReligion} presentRace={presentRace} presentAbility={presentAbility} presentAge={presentAge} presentOrientation={presentOrientation} presentGender={presentGender} presentCulture={presentCulture}/>
 
