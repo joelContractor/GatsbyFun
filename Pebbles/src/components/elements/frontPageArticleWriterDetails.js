@@ -39,7 +39,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                             <Grid item xs={4} sm={3} md={2} className="shareLinks">
 
                                 <a aria-label={`Tweet this article, ${title}, written by ${dats}, on Twitter`} href="https://twitter.com/intent/tweet" target="_blank" rel="noreferrer" >
-                                    Tweet
+                                  
                                     <StaticImage
                                             src="../images/tweetnoback.png"
                                             width={25}
@@ -55,7 +55,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                             <Grid item xs={4} sm={3} md={2} className="shareLinks">
                                 
                                 <a aria-label={`Share this article, ${title}, written by ${dats}, on Facebook`}href="https://www.facebook.com/sharer/sharer.php?u=#url" target="_blank" rel="noreferrer">
-                                    Share
+                                   
                                     <StaticImage
                                             src="../images/fb.png"
                                             width={25}
@@ -71,7 +71,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                             <Grid item xs={4} sm={3} md={2} className="shareLinks">
 
                                 <a aria-label={`Post this article, ${title}, written by ${dats}, on LinkedIn`} href="https://www.linkedin.com/sharing/share-offsite/?url={url}" target="_blank" rel="noreferrer">
-                                    LinkedIn
+                                    
                                     <StaticImage
                                             src="../images/linked.png"
                                             width={25}
