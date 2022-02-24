@@ -41,7 +41,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                                 <a aria-label={`Tweet this article, ${title}, written by ${dats}, on Twitter`} href="https://twitter.com/intent/tweet" target="_blank" rel="noreferrer" >
                                   
                                     <StaticImage
-                                            src="../images/tweetnoback.png"
+                                            src="../images/tweetround.png"
                                             width={25}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
