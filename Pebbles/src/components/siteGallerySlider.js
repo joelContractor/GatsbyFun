@@ -17,8 +17,6 @@ const StyledHistorySwiperGrid = styled(Grid, {
     fontFamily:`Arial`, 
     marginBottom:"40px",
     background:"white",
-    paddingLeft:"20px",
-    paddingRight:"20px",
     paddingTop:"100px",
     borderTop:"1px dotted grey",
     ".bannerData": { marginTop:`0px`, zIndex:`1`, overflow:`hidden`, position: `relative`, transition: `opacity 1.9s, top 0s, height 0s`},
