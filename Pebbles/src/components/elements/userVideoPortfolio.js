@@ -21,7 +21,7 @@ const StyledUserVideoPortfolioGrid = styled(Grid, {
     ".grey": { color:"rgba(0,0,0,0.5)" },
     ".paddedVideoReelRelatedContent": { marginLeft:"0px", marginRight:"0px"},
     ".yt-lite > .lty-playbtn, .yt-lite > .lty-playbtn::before": { left:"50%" },
-    ".yt-lite": { borderRadius: "5px" }
+    ".yt-lite, .yt-lite::after, .yt-lite::before": { borderRadius: "5px" }
   });
 
 
