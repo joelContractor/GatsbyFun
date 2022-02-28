@@ -1,8 +1,5 @@
 import React from "react"
 /*import { Link } from "gatsby"*/
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
 import { styled } from "@mui/system";
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
@@ -21,7 +18,7 @@ const StyledUserVideoPortfolioGrid = styled(Grid, {
     ".grey": { color:"rgba(0,0,0,0.5)" },
     ".paddedVideoReelRelatedContent": { marginLeft:"0px", marginRight:"0px"},
     ".yt-lite > .lty-playbtn, .yt-lite > .lty-playbtn::before": { left:"50%" },
-    ".yt-lite, .yt-lite::after, .yt-lite::before": { borderRadius: "5px" }
+    ".yt-lite, .yt-lite::before": { borderRadius: "5px" }
   });
 
 

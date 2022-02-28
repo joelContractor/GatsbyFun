@@ -1,9 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 /*import { Link } from "gatsby"*/
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
 import { styled } from "@mui/system";
 
