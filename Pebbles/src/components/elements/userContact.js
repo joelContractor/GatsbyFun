@@ -9,7 +9,7 @@ const StyledUserContactGrid = styled(Grid, {
     slot: "Wrapper",
   })({
     paddingTop:"100px", 
-    marginTop:"11px", 
+    marginTop:"10px", 
     paddingBottom:"100px", 
     borderTop:"1px dotted grey",
     ".userContactTitle": { display: "flex", justifyContent: "center", marginBottom:`35px` },
