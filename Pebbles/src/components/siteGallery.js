@@ -1,7 +1,4 @@
 import React from "react"
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
@@ -46,7 +43,7 @@ function SiteGallery({ data }) {
                                 <Card className="infoCard">
 
                                     <Grid item xs={12} className="safariRounded">
-                                        <GatsbyImage className="cardMediaArea" image={getImage(dats.node.agencyimage.gatsbyImageData)} alt={"testimage"}/>
+                                        <GatsbyImage className="cardMediaArea" image={getImage(dats.node.agencyimage.gatsbyImageData)} alt={dats.node.title}/>
                                     </Grid>
 
                                     <CardContent
