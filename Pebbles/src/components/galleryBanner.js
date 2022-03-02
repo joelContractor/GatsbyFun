@@ -58,31 +58,31 @@ function GalleryBanner({ data }) {
     }
 
     function presentRace(){
-        alert('this actor/director/writer Race');
+        alert('Join the push toward \'Racial Diversity\' in Film by working with this person.');
     }
 
     function presentAbility(){
-        alert('this actor/director/writer Ability');
+        alert('Help proove that \'Ability Diversity\' is beneficial to Film by working with this person.');
     }
 
     function presentAge(){
-        alert('this actor/director/writer Age');
+        alert('Decrease the requirement for \'Age Diversity\' in Film by working with this person.');
     }
 
     function presentOrientation(){
-        alert('this actor/director/writer Orientation');
+        alert('Help normalise \'Diversity of Sexual Orientation\' in Film by working with this person.');
     }
 
     function presentGender(){
-        alert('this actor/director/writer Gender');
+        alert('Increase awareness of \'Gender Diversity\' in Film by working with this person.');
     }
 
     function presentCulture(){
-        alert('this  actor/director/writer Culture');
+        alert('Promote \'Cultural Diversity\' in Film by working with this person.');
     }
 
     function presentReligion(){
-        alert('this actor/director/writer Religion');
+        alert('Increase \'Religious Diversity\' in Film by working with this person.');
     }
       
 
