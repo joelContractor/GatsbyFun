@@ -20,7 +20,7 @@ const StyledGalleryGrid = styled(Grid, {
     ".cardButtonBottom:hover": { background:"rgba(0, 0, 1, 0.1)", color:"rgba(0, 0, 0, 0.4)" },
     ".cardContentArea": { background:"white", borderBottomLeftRadius: "3px", borderBottomRightRadius: "3px", display: "flex", flexDirection: "row" },
     ".cardContentPara": { fontFamily: 'Arial', fontSize:"11px", color: "rgba(0, 0, 0, 0.4)", marginBottom:"0px", maxHeight:"80px", lineHeight:"1rem" },
-    ".MuiCardContent-root:last-child": { paddingBottom:"0px" },
+    ".MuiCardContent-root:last-child": { paddingBottom:"25pxpx" },
     ".buttonContainer": { display:"flex", justifyContent:"flex-end", marginTop: "0px" },
     ".cardTitle": { marginBottom:"0.01rem", color: `hsla(0, 0%, 0%, 0.7)` },
     ".safariRounded": { willChange:"transform", borderTopLeftRadius: "20px", borderTopRightRadius: "20px", overflow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" }
@@ -43,7 +43,7 @@ function SiteGallery({ data }) {
                                 <Card className="infoCard">
 
                                     <Grid item xs={12} className="safariRounded">
-                                        <GatsbyImage className="cardMediaArea" image={getImage(dats.node.agencyimage.gatsbyImageData)} alt={dats.node.title}/>
+                                        <GatsbyImage className="cardMediaArea" image={getImage(dats.node.agencyimage.gatsbyImageData)} alt={dats.node.agencytitle}/>
                                     </Grid>
 
                                     <CardContent
