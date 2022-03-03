@@ -38,7 +38,7 @@ const IndexPage = ({data}) => (
       </Grid>
       <Grid item xs={12} md={12}>
         <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.4)' }}>
-            When referring to Lorem ipsum, different expressions are used, namely fill text, fictitious text , blind text or placeholder text, in short, its meaning can also be zero. When referring to Lorem ipsum, different expressions are used, namely fill text, fictitious text , blind text or placeholder text, in short, its meaning can also be zero.
+          Diversity is lucrative. Researchers at UCLA\'s Center for Scholars And Storytellers analyzed over 100 films released from 2016 to 2019. They found that films with diverse characters and authentic stories actually make more money at the box office. It seems, when people go to the movies, they hope to relate to characters that resemble them. They want their experiences to be truly represented. They want their experiences to be seen, heard, and valued for what they actually are.
         </p>
       </Grid>
 

@@ -17,7 +17,7 @@ const WriterPage = ({data}) => (
         </Grid>
         <Grid item xs={12} md={12}>
           <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.4)' }}>
-              Employing diverse writers can add a new dynamic to performances, while helping you gain funding for your project. We provide you with access to diverse actors and agencies FREE. Swipe through our selection of featured actors or scroll down to find an agency to work with.
+              Employing diverse writers can add a new dynamic to performances, while helping you gain funding for your project. We provide you with access to diverse writers and agencies FREE. Swipe through our selection of featured actors or scroll down to find an agency to work with.
           </p>
         </Grid>
 
@@ -31,7 +31,7 @@ const WriterPage = ({data}) => (
       </Grid>
       <Grid item xs={12} md={12}>
         <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.4)' }}>
-            When referring to Lorem ipsum, different expressions are used, namely fill text, fictitious text , blind text or placeholder text, in short, its meaning can also be zero. When referring to Lorem ipsum, different expressions are used, namely fill text, fictitious text , blind text or placeholder text, in short, its meaning can also be zero.
+            Haven't found the perfect writer? We continually look out for and add the best agencies to our list below.
         </p>
       </Grid>
 

@@ -16,7 +16,7 @@ const DirectorPage = ({data}) => (
       </Grid>
       <Grid item xs={12} md={12}>
         <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.4)' }}>
-            Employing diverse directors can add a new dynamic to performances, while helping you gain funding for your project. We provide you with access to diverse actors and agencies FREE. Swipe through our selection of featured actors or scroll down to find an agency to work with.
+            Employing diverse directors can add a new dynamic to performances, while helping you gain funding for your project. We provide you with access to diverse directors and agencies FREE. Swipe through our selection of featured actors or scroll down to find an agency to work with.
         </p>
       </Grid>
 
@@ -30,7 +30,7 @@ const DirectorPage = ({data}) => (
       </Grid>
       <Grid item xs={12} md={12}>
         <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.4)' }}>
-            When referring to Lrem ipsum, different expressions are used, namely fill text, fictitious text , blind text or placeholder text, in short, its meaning can also be zero. When referring to Lorem ipsum, different expressions are used, namely fill text, fictitious text , blind text or placeholder text, in short, its meaning can also be zero.
+        Haven't found the perfect director? Check out our list below. We continually look out for and add the best agencies that represent diverse talent.
         </p>
       </Grid>
 
