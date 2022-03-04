@@ -69,7 +69,7 @@ export const query = graphql`
           agencyurl
           agencyimage {
             url
-            gatsbyImageData
+            gatsbyImageData(width: 420)
           }
           agencytitle
         }
