@@ -23,7 +23,7 @@ const IndexPage = ({data}) => (
           <p style={{ marginBottom:"0rem" }}>Find Diverse Crew Here</p>
       </Grid>
       <Grid item xs={12} md={12}>
-        <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.4)' }}>
+        <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.6)' }}>
             Employing diverse crew can help you gain funding for your project. We provide you with access to diverse actors and agencies FREE. Swipe through our selection of featured actors or scroll down to find an agency to work with.
         </p>
       </Grid>
@@ -37,7 +37,7 @@ const IndexPage = ({data}) => (
           <p style={{ marginBottom:"0rem" }}>How Diversity Helps You</p>
       </Grid>
       <Grid item xs={12} md={12}>
-        <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.4)' }}>
+        <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.6)' }}>
           Diversity is lucrative. Researchers at UCLA\'s Center for Scholars And Storytellers analyzed over 100 films released from 2016 to 2019. They found that films with diverse characters and authentic stories actually make more money at the box office.
         </p>
       </Grid>

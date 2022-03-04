@@ -17,7 +17,7 @@ const ArtistPage = ({data}) => (
           <p style={{ marginBottom:"0rem" }}>Find Diverse Actors</p>
       </Grid>
       <Grid item xs={12} md={12}>
-        <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.4)' }}>
+        <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.6)' }}>
             Employing diverse actors can add a new dynamic to performances, while helping you gain funding for your project. We provide you with access to diverse actors and agencies FREE. Swipe through our selection of featured actors or scroll down to find an agency to work with.
         </p>
       </Grid>
@@ -30,7 +30,7 @@ const ArtistPage = ({data}) => (
           <p style={{ marginBottom:"0rem" }}>Find Diverse Agencies</p>
       </Grid>
       <Grid item xs={12} md={12}>
-        <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.4)' }}>
+        <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.6)' }}>
         Haven't found the perfect actor? Check out our list below. We continually look out for and add the best agencies that represent diverse talent.
         </p>
       </Grid>
