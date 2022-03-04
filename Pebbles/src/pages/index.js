@@ -59,7 +59,7 @@ export const query = graphql`
       spectacledescription
       spectacleurl {
         url
-        gatsbyImageData
+        gatsbyImageData(width: 1000)
       }
     }
     allDatoCmsActingagency {
@@ -107,13 +107,13 @@ export const query = graphql`
           title
           spectacleurl {
             url
-            gatsbyImageData
+            gatsbyImageData(width: 1000)
           }
           articleimg1 {
-            gatsbyImageData
+            gatsbyImageData(width: 1000)
           }
           articleimg2 {
-            gatsbyImageData
+            gatsbyImageData(width: 1000)
           }
         }
       }
@@ -190,17 +190,17 @@ export const query = graphql`
           usertel
           useremail
           writerimage {
-            gatsbyImageData
+            gatsbyImageData(width: 600)
           }
           physicalattributeimage {
-            gatsbyImageData
+            gatsbyImageData(width: 600)
           }
           skillimage {
-            gatsbyImageData
+            gatsbyImageData(width: 600)
           }
           spectacleurl {
             url
-            gatsbyImageData
+            gatsbyImageData(width: 1000)
           }
         }
       }
