@@ -35,9 +35,9 @@ function UserGeneralDetails({ dats }) {
                             Age = `${dats.node.agenonactor}`
                         }
 
-                        return <Grid item xs={4} sm={3} md={2}>                               
+                        return <Grid item xs={6} sm={4} md={2}>                               
                                     <h2>{AgeLabel}</h2>
-                                    <p className="grey">{Age}</p>                          
+                                    <p className="grey">{Age}</p>                           
                             </Grid>
 
                     }
@@ -45,7 +45,7 @@ function UserGeneralDetails({ dats }) {
 
                 {(() => {
                     if(dats.node.gender){
-                        return <Grid item xs={4} sm={3} md={2}>                       
+                        return <Grid item xs={6} sm={4} md={2}>                       
                             <h2>Gender</h2>
                             <p className="grey">{dats.node.gender}</p>                    
                         </Grid>
@@ -54,7 +54,7 @@ function UserGeneralDetails({ dats }) {
 
                 {(() => {
                     if(dats.node.location){
-                        return <Grid item xs={4} sm={3} md={2}>                           
+                        return <Grid item xs={6} sm={4} md={2}>                           
                             <h2>Location</h2>
                             <p className="grey">{dats.node.location}</p>
                         </Grid>
@@ -63,7 +63,7 @@ function UserGeneralDetails({ dats }) {
 
                 {(() => {
                     if(dats.node.unionaffiliation){
-                        return <Grid item xs={4} sm={3} md={2}>
+                        return <Grid item xs={6} sm={4} md={2}>
                             <h2>Union</h2>
                             <p className="grey">{dats.node.unionaffiliation}</p>
                         </Grid>
@@ -72,7 +72,7 @@ function UserGeneralDetails({ dats }) {
 
                 {(() => {
                     if(dats.node.driver){
-                        return <Grid item xs={4} sm={3} md={2}>
+                        return <Grid item xs={6} sm={4} md={2}>
                             <h2>Driver</h2>
                             <p className="grey">{dats.node.driver}</p>
                         </Grid>
@@ -81,7 +81,7 @@ function UserGeneralDetails({ dats }) {
 
                 {(() => {
                     if(dats.node.passport){
-                        return <Grid item xs={4} sm={3} md={2}>
+                        return <Grid item xs={6} sm={4} md={2}>
                             <h2>Passport</h2>
                             <p className="grey">{dats.node.passport}</p>
                         </Grid>

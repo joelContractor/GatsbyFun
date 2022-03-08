@@ -39,7 +39,8 @@ const StyledGalleryBannerGrid = styled(Grid, {
     ".diversityLogoPaddingBelow": { padding:"25px 20px 10px 0px"},
     ".diversityLogoAreaBelow": { textAlign: `left`, background: `rgba(0, 0, 0, 0.1)`, borderRadius: `50px`, border: `1px solid #d3d3d3`, width:`fit-content`, marginLeft: `10px` },
     ".swiper-button-prev": { color:"white", opacity:"0.2" },
-    ".swiper-button-next": { color:"white", opacity:"0.2" }
+    ".swiper-button-next": { color:"white", opacity:"0.2" },
+    ".swiper-pagination-bullet": { padding:"8px" }
 
   });
 
