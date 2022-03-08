@@ -40,8 +40,8 @@ function UserWorkHistory({ dats }) {
                                 <h2 className="normal">{dats.node.userhistorytitle1}</h2>
                                 <p className="normal grey">{dats.node.userhistorydescription1}</p>
                                 <Grid item xs={12} container direction="row">
-                                    <Grid item xs={3} sm={6}><p className="bold">Year: <span className="normal grey">{dats.node.userhistoryyear1}</span></p></Grid>
-                                    <Grid item xs={9} sm={6}><p className="bold">Type: <span className="normal grey">{dats.node.userhistorytype1}</span></p></Grid>    
+                                    <Grid item xs={3} sm={6}><p className="normal">Year: <span className="normal grey">{dats.node.userhistoryyear1}</span></p></Grid>
+                                    <Grid item xs={9} sm={6}><p className="normal">Type: <span className="normal grey">{dats.node.userhistorytype1}</span></p></Grid>    
                                 </Grid>
                             
                             </Grid>
@@ -56,8 +56,8 @@ function UserWorkHistory({ dats }) {
                             <h2 style={{fontWeight:"normal"}}>{dats.node.userhistorytitle2}</h2>
                             <p className="normal grey">{dats.node.userhistorydescription2}</p>
                             <Grid item xs={12} container direction="row">
-                                <Grid item xs={3} sm={6}><p className="bold">Year: <span className="normal grey">{dats.node.userhistoryyear2}</span></p></Grid>  
-                                <Grid item xs={9} sm={6}><p className="bold">Type: <span className="normal grey">{dats.node.userhistorytype2}</span></p></Grid> 
+                                <Grid item xs={3} sm={6}><p className="normal">Year: <span className="normal grey">{dats.node.userhistoryyear2}</span></p></Grid>  
+                                <Grid item xs={9} sm={6}><p className="normal">Type: <span className="normal grey">{dats.node.userhistorytype2}</span></p></Grid> 
                             </Grid>
                         
                         </Grid>
@@ -71,8 +71,8 @@ function UserWorkHistory({ dats }) {
                             <h2 style={{fontWeight:"normal"}}>{dats.node.userhistorytitle3}</h2>
                             <p className="normal grey">{dats.node.userhistorydescription3}</p>
                             <Grid item xs={12} container direction="row">
-                                <Grid item xs={3} sm={6}><p className="bold">Year: <span className="normal grey">{dats.node.userhistoryyear3}</span></p></Grid>   
-                                <Grid item xs={9} sm={6}><p className="bold">Type: <span className="normal grey">{dats.node.userhistorytype3}</span></p></Grid>   
+                                <Grid item xs={3} sm={6}><p className="normal">Year: <span className="normal grey">{dats.node.userhistoryyear3}</span></p></Grid>   
+                                <Grid item xs={9} sm={6}><p className="normal">Type: <span className="normal grey">{dats.node.userhistorytype3}</span></p></Grid>   
                             </Grid>
                         
                         </Grid>
@@ -86,8 +86,8 @@ function UserWorkHistory({ dats }) {
                             <h2 style={{fontWeight:"normal"}}>{dats.node.userhistorytitle4}</h2>
                             <p className="normal grey">{dats.node.userhistorydescription4}</p>
                             <Grid item xs={12} container direction="row">
-                                <Grid item xs={3} sm={6}><p className="bold">Year: <span className="normal grey">{dats.node.userhistoryyear4}</span></p></Grid>   
-                                <Grid item xs={9} sm={6}><p className="bold">Type: <span className="normal grey">{dats.node.userhistorytype4}</span></p></Grid>   
+                                <Grid item xs={3} sm={6}><p className="normal">Year: <span className="normal grey">{dats.node.userhistoryyear4}</span></p></Grid>   
+                                <Grid item xs={9} sm={6}><p className="normal">Type: <span className="normal grey">{dats.node.userhistorytype4}</span></p></Grid>   
                             </Grid>
                         
                         </Grid>
@@ -101,8 +101,8 @@ function UserWorkHistory({ dats }) {
                             <h2 style={{fontWeight:"normal"}}>{dats.node.userhistorytitle5}</h2>
                             <p className="normal grey">{dats.node.userhistorydescription5}</p>
                             <Grid item xs={12} container direction="row">
-                                <Grid item xs={3} sm={6}><p className="bold">Year: <span className="normal grey">{dats.node.userhistoryyear5}</span></p></Grid>   
-                                <Grid item xs={9} sm={6}><p className="bold">Type: <span className="normal grey">{dats.node.userhistorytype5}</span></p></Grid>    
+                                <Grid item xs={3} sm={6}><p className="normal">Year: <span className="normal grey">{dats.node.userhistoryyear5}</span></p></Grid>   
+                                <Grid item xs={9} sm={6}><p className="normal">Type: <span className="normal grey">{dats.node.userhistorytype5}</span></p></Grid>    
                             </Grid>
                         
                         </Grid>
@@ -116,8 +116,8 @@ function UserWorkHistory({ dats }) {
                             <h2 style={{fontWeight:"normal"}}>{dats.node.userhistorytitle6}</h2>
                             <p className="normal grey">{dats.node.userhistorydescription6}</p>
                             <Grid item xs={12} container direction="row">
-                                <Grid item xs={3} sm={6}><p className="bold">Year: <span className="normal grey">{dats.node.userhistoryyear6}</span></p></Grid>
-                                <Grid item xs={9} sm={6}><p className="bold">Type: <span className="normal grey">{dats.node.userhistorytype6}</span></p></Grid>   
+                                <Grid item xs={3} sm={6}><p className="normal">Year: <span className="normal grey">{dats.node.userhistoryyear6}</span></p></Grid>
+                                <Grid item xs={9} sm={6}><p className="normal">Type: <span className="normal grey">{dats.node.userhistorytype6}</span></p></Grid>   
                             </Grid>
                         
                         </Grid>

@@ -29,9 +29,9 @@ const StyledHistorySwiperGrid = styled(Grid, {
     ".normal": { fontWeight:"normal" },
     ".bold": { fontWeight:"bold" },
     ".grey": { color:"grey" },
-    ".swiper-pagination-bullet": { padding:"0.1rem" },
-    ".swiper-button-prev": { color:"black", opacity:"0.3", marginTop:"130px" },
-    ".swiper-button-next": { color:"black", opacity:"0.3", marginTop:"130px" },
+    ".swiper-pagination-bullet": { padding:"0.3rem" },
+    ".swiper-button-prev": { color:"black", opacity:"0.3", marginTop:"125px" },
+    ".swiper-button-next": { color:"black", opacity:"0.3", marginTop:"125px" },
     ".historyTitle": {  marginBottom:"30px" },
     ".historySwiperTitle": {  marginBottom:"40px" }
 
@@ -81,8 +81,8 @@ function SiteGallerySlider({ dats }) {
                                             <h2 className="normal historySwiperTitle">{dats[0]}</h2>
                                             <p className="normal grey historySwiperTitle">{dats[1]}</p>
                                             <Grid item xs={12} container direction="row">
-                                                <Grid item xs={3} sm={6}><p className="bold">Year: <span className="normal grey">{dats[2]}</span></p></Grid>
-                                                <Grid item xs={9} sm={6}><p className="bold">Type: <span className="normal grey">{dats[3]}</span></p></Grid>   
+                                                <Grid item xs={3} sm={6}><p className="normal">Year: <span className="normal grey">{dats[2]}</span></p></Grid>
+                                                <Grid item xs={9} sm={6}><p className="normal">Type: <span className="normal grey">{dats[3]}</span></p></Grid>   
                                             </Grid>
 
                                         </Grid>

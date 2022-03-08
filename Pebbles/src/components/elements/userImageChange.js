@@ -31,10 +31,11 @@ function UserImageChanges({ dats }) {
                     return <Grid container direction="row" spacing={6}> 
                             {(() => {
                                 if(dats.node.canCutHair){
-                                    return <Grid item xs={4}>
-                                            
+                                    return <Grid item xs={6} md={4}>
+       
                                             <h2>Can Cut Hair?</h2>
                                             <p className="grey">{dats.node.canCutHair}</p>
+                                           
                                         
                                     </Grid>
                                 }
@@ -42,7 +43,7 @@ function UserImageChanges({ dats }) {
 
                             {(() => {
                                 if(dats.node.canColourHair){
-                                    return <Grid item xs={4}>
+                                    return <Grid item xs={6} md={4}>
                                             
                                             <h2>Can Colour Hair?</h2>
                                             <p className="grey">{dats.node.canColourHair}</p>
@@ -53,7 +54,7 @@ function UserImageChanges({ dats }) {
                             
                             {(() => {
                                 if(dats.node.canwearcontacts){
-                                    return <Grid item xs={4}>
+                                    return <Grid item xs={6} md={4}>
                                             
                                             <h2>Can Wear Contacts?</h2>
                                             <p className="grey">{dats.node.canwearcontacts}</p>
