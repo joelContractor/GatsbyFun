@@ -81,8 +81,8 @@ function SiteGallerySlider({ dats }) {
                                             <h2 className="normal historySwiperTitle">{dats[0]}</h2>
                                             <p className="normal grey historySwiperTitle">{dats[1]}</p>
                                             <Grid item xs={12} container direction="row">
-                                                <Grid item xs={3} sm={6}><p className="normal">Year: <span className="normal grey">{dats[2]}</span></p></Grid>
-                                                <Grid item xs={9} sm={6}><p className="normal">Type: <span className="normal grey">{dats[3]}</span></p></Grid>   
+                                                <Grid item xs={4} sm={6}><p className="normal">Year: <span className="normal grey">{dats[2]}</span></p></Grid>
+                                                <Grid item xs={8} sm={6}><p className="normal">Type: <span className="normal grey">{dats[3]}</span></p></Grid>   
                                             </Grid>
 
                                         </Grid>

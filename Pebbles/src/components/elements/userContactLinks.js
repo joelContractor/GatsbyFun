@@ -17,6 +17,7 @@ const StyledUserContactLinksGrid = styled(Grid, {
     ".contactLinks": { color:"#639", fontSize:"10px"},
     ".contactLinkContainer": { display: "flex", justifyContent: "flex-start" },
     ".contactLinkImage": { marginBottom: `0px`, marginLeft: `3px` },
+    ".contactTitle": { display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }
 
   });
 
@@ -33,7 +34,7 @@ function userContactLinks({ dats }) {
                     if(dats){
                         return <>
 
-                            <Grid item xs={12} sm={6}>
+                            <Grid item xs={12} sm={6} className="contactTitle">
                                 
                                 <h2 className="title">Contact</h2>
                   
@@ -42,10 +43,10 @@ function userContactLinks({ dats }) {
                             <Grid item xs={4} sm={2} className="contactLinkContainer">
 
                                 <a aria-label={`Send a text to ${dats.node.title}`} className="contactLinks" href={`sms:0${dats.node.usertel}`}>
-                                    Text
+                                    
                                     <StaticImage
-                                        src="../images/gatsby-icon.png"
-                                        width={25}
+                                        src="../images/text.png"
+                                        width={70}
                                         quality={95}
                                         formats={["AUTO", "WEBP", "AVIF"]}
                                         alt="A Gatsby astronaut"
@@ -58,10 +59,10 @@ function userContactLinks({ dats }) {
                             <Grid item xs={4} sm={2} className="contactLinkContainer">
                                 
                                 <a aria-label={`Send an email to ${dats.node.title}`} className="contactLinks" href={`mailto:${dats.node.useremail}?cc=admin@diversepool.com&&subject=Diverse-Pool-Mail&body=Body-goes-here`}>
-                                    Mail
+                                    
                                     <StaticImage
-                                        src="../images/gatsby-icon.png"
-                                        width={25}
+                                        src="../images/email.png"
+                                        width={70}
                                         quality={95}
                                         formats={["AUTO", "WEBP", "AVIF"]}
                                         alt="A Gatsby astronaut"
@@ -74,10 +75,10 @@ function userContactLinks({ dats }) {
                             <Grid item xs={4} sm={2} className="contactLinkContainer">
 
                                 <a aria-label={`Call ${dats.node.title}`} className="contactLinks" href={`tel:0${dats.node.usertel}`}>
-                                    Call
+                                    
                                     <StaticImage
-                                        src="../images/gatsby-icon.png"
-                                        width={25}
+                                        src="../images/phone.png"
+                                        width={70}
                                         quality={95}
                                         formats={["AUTO", "WEBP", "AVIF"]}
                                         alt="A Gatsby astronaut"

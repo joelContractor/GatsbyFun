@@ -186,7 +186,7 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                         <Grid item xs={12} sm={8} className="bannerButtonHousing">
 
                             <Button className="bannerButton" onClick={showInfo}>
-                                {show === 'none'? `More `: `Less `} about {dats.node.title}
+                                {show === 'none'? `More `: `Less `} {dats.node.title}
                             </Button>
                         </Grid>
                             </Grid>

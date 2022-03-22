@@ -22,8 +22,8 @@ function Header ({ siteTitle }) {
     <div style={ {margin: `0 auto`, maxWidth: 900, padding: `1.45rem 1.0875rem`} }>
       <div style={{ float:`left`, marginRight:`5px`, marginTop:"3px", width:"30px" }}>
         <StaticImage
-            src="../images/diverseGenderIcon.png"
-            width={30}
+            src="../images/headerlogo.png"
+            width={55}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="A Gatsby astronaut"
