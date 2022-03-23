@@ -12,8 +12,8 @@ const StyledUserBannerImageGrid = styled(Grid, {
     slot: "Wrapper",
   })({
     ".userBannerImage": { padding: `64vh 10px 10px 10px` },
-    ".diversityLogoArea": { position: `relative`, bottom: `10px`, textAlign: `left`, marginTop:`0px`, background: `rgba(255, 255, 255, 0.8)`, borderRadius: `50px`, border: `1px solid #d3d3d3`, width:`auto`, marginLeft: `10px` },
-    ".diversityLogos": { padding: `10px 10px`, display: "inline-flex", flexDirection:`row`, justifyContent: "space-around", width: "fit-content" },
+    ".diversityLogoArea": { position: `relative`, bottom: `13px`, textAlign: `left`, marginTop:`0px`, background: `rgba(255, 255, 255, 0.8)`, borderRadius: `50px`, border: `0px solid #d3d3d3`, width:`auto`, marginLeft: `10px` },
+    ".diversityLogos": { padding: `0px 0px`, display: "inline-flex", flexDirection:`row`, justifyContent: "space-around", width: "fit-content" },
     ".bannerButton": { fontSize:"14px", textTransform: `none`, backgroundColor:`rgba(255, 255, 255, 0.8)`, width:`100%`, borderRadius: `50px`, color: `hsla(0, 0%, 0%, 0.7)`, fontWeight: `normal`, border: `1px solid #d3d3d3`, height: `50px`, padding: `4px 20px 4px 20px`, fontFamily: 'Arial', position: `relative`, bottom: `22px`},
     ".bannerButton:hover": { color: "black", backgroundColor:`rgba(255, 255, 255, 0.9)`},
     ".bannerButtonHousing": { padding:"10px" },
@@ -51,11 +51,11 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                                         return <div role="button" tabIndex={0} className="diversityLogoArea diversityLogos" onClick={presentRace} onKeyDown={presentRace}>
                                             
                                             <StaticImage
-                                            src="../images/GenderDIcon.png"
-                                            width={25}
+                                            src="../images/racial.png"
+                                            width={50}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
-                                            alt="A Gatsby astronaut"
+                                            alt="Racial Diversity Icon"
                                             style={{ marginBottom: `0px` }} 
                                             />
 
@@ -71,8 +71,8 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                                         return <div className="diversityLogoArea diversityLogos" role="button" tabIndex={-1} onClick={presentReligion} onKeyDown={presentReligion}>
                                             
                                             <StaticImage
-                                            src="../images/diverseRelIcon.png"
-                                            width={25}
+                                            src="../images/religion.png"
+                                            width={50}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
                                             alt="A Gatsby astronaut"
@@ -91,8 +91,8 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                                     return <div className="diversityLogoArea diversityLogos" role="button" tabIndex={-2} onClick={presentCulture} onKeyDown={presentCulture}>
                                         
                                         <StaticImage
-                                        src="../images/diverseRaceIcon.png"
-                                        width={25}
+                                        src="../images/culture.png"
+                                        width={50}
                                         quality={95}
                                         formats={["AUTO", "WEBP", "AVIF"]}
                                         alt="A Gatsby icon"
@@ -110,8 +110,8 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                                         return <div className="diversityLogoArea diversityLogos" role="button" tabIndex={-3} onClick={presentAbility} onKeyDown={presentAbility}>
                                             
                                             <StaticImage
-                                            src="../images/gatsby-icon.png"
-                                            width={25}
+                                            src="../images/ability.png"
+                                            width={50}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
                                             alt="A Gatsby icon"
@@ -129,8 +129,8 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                                         return <div className="diversityLogoArea diversityLogos" role="button" tabIndex={-4} onClick={presentAge} onKeyDown={presentAge}>
                                             
                                             <StaticImage
-                                            src="../images/diverseAgeIcon.png"
-                                            width={25}
+                                            src="../images/age.png"
+                                            width={50}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
                                             alt="A Gatsby astronaut"
@@ -148,8 +148,8 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                                     return <div className="diversityLogoArea diversityLogos" role="button" tabIndex={-5} onClick={presentOrientation} onKeyDown={presentOrientation}>
                                         
                                         <StaticImage
-                                        src="../images/gatsby-icon.png"
-                                        width={25}
+                                        src="../images/orientation.png"
+                                        width={50}
                                         quality={95}
                                         formats={["AUTO", "WEBP", "AVIF"]}
                                         alt="A Gatsby icon"
@@ -167,8 +167,8 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                                     return <div className="diversityLogoArea diversityLogos" role="button" tabIndex={-6} onClick={presentGender} onKeyDown={presentGender}>
                                         
                                         <StaticImage
-                                        src="../images/diverseGenderIcon.png"
-                                        width={25}
+                                        src="../images/gender.png"
+                                        width={50}
                                         quality={95}
                                         formats={["AUTO", "WEBP", "AVIF"]}
                                         alt="A Gatsby astronaut"

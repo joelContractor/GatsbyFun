@@ -23,7 +23,7 @@ function Header ({ siteTitle }) {
       <div style={{ float:`left`, marginRight:`5px`, marginTop:"3px", width:"30px" }}>
         <StaticImage
             src="../images/headerlogo.png"
-            width={55}
+            width={51}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="A Gatsby astronaut"
