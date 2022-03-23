@@ -4,8 +4,8 @@ import { Grid } from "@material-ui/core";
 import { StaticImage } from "gatsby-plugin-image"
 import { styled } from "@mui/system";
 
-const StyledFrontPageArticleWriterDetailsGrid = styled(Grid, {
-    name: "StyledFrontPageArticleWriterDetailsGrid",
+const StyledFrontPageArticleWriterDetailsSmallGrid = styled(Grid, {
+    name: "StyledFrontPageArticleWriterDetailsSmallGrid",
     slot: "Wrapper",
   })({
     paddingTop:"0px", 
@@ -13,7 +13,7 @@ const StyledFrontPageArticleWriterDetailsGrid = styled(Grid, {
     paddingbottom:"0px", 
     fontSize:"11px",
     ".title": { fontWeight:"bold" },
-    ".shareLinks": {  display:"flex", justifyContent: "center", fontSize:"10px", color:"cornflowerblue"},
+    ".shareLinksSmall": {  display:"flex", justifyContent: "flex-start", fontSize:"10px", color:"cornflowerblue", paddingTop:'0px', marginBottom:"30px"},
  
 
   });
@@ -21,11 +21,11 @@ const StyledFrontPageArticleWriterDetailsGrid = styled(Grid, {
 
 
 
-function FrontPageArticleWriterDetails({ dats, title }) {
+function FrontPageArticleWriterDetailsSmall({ dats, title }) {
 
     const res =
 
-        <StyledFrontPageArticleWriterDetailsGrid state={{dats, title}}>
+        <StyledFrontPageArticleWriterDetailsSmallGrid state={{dats, title}}>
             <Grid container direction="row" spacing={6} >
                 {(() => {
                     if(dats){
@@ -36,7 +36,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                   
                             </Grid>
 
-                            <Grid item xs={4} sm={2} md={2} className="shareLinks">
+                            <Grid item xs={4} sm={2} md={2} className="shareLinksSmall">
 
                                 <a aria-label={`Tweet this article, ${title}, written by ${dats}, on Twitter`} href="https://twitter.com/intent/tweet" target="_blank" rel="noreferrer" >
                                   
@@ -52,7 +52,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                             
                             </Grid>
 
-                            <Grid item xs={4} sm={2} md={2} className="shareLinks">
+                            <Grid item xs={4} sm={2} md={2} className="shareLinksSmall">
                                 
                                 <a aria-label={`Share this article, ${title}, written by ${dats}, on Facebook`}href="https://www.facebook.com/sharer/sharer.php?u=#url" target="_blank" rel="noreferrer">
                                    
@@ -68,7 +68,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
 
                             </Grid>
 
-                            <Grid item xs={4} sm={2} md={2} className="shareLinks">
+                            <Grid item xs={4} sm={2} md={2} className="shareLinksSmall">
 
                                 <a aria-label={`Post this article, ${title}, written by ${dats}, on LinkedIn`} href="https://www.linkedin.com/sharing/share-offsite/?url={url}" target="_blank" rel="noreferrer">
                                     
@@ -88,11 +88,11 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                     }
                 })()}
             </Grid>
-        </StyledFrontPageArticleWriterDetailsGrid>
+        </StyledFrontPageArticleWriterDetailsSmallGrid>
         
       
         
 
     return res;
 }
-export default FrontPageArticleWriterDetails
+export default FrontPageArticleWriterDetailsSmall

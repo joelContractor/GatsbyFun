@@ -13,7 +13,9 @@ import FrontPageArticleWriterDetails from "./elements/frontPageArticleWriterDeta
 import FrontPageArticleImage from "./elements/frontPageArticleImage";
 import FrontPageArticleInfoAndImage from "./elements/frontPageArticleInfoAndImage";
 import FrontPageArticleAboutAuthorParagraph from "./elements/frontPageArticleAboutAuthorParagraph";
+import FrontPageArticleWriterDetailsSmall from "./elements/frontPageArticleWriterDetailsSmall";
 import { styled } from "@mui/system";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const StyledFrontPageBannerGrid = styled(Grid, {
     name: "StyledFrontPageBannerGrid",
@@ -34,6 +36,7 @@ const StyledFrontPageBannerGrid = styled(Grid, {
 
 function FrontPageBanner({ data }) {
 
+    const matchesUnder = useMediaQuery('(max-width:600px)');
     const [show, setShow] = useState('none')
 
     function showInfo(){
@@ -98,7 +101,8 @@ function FrontPageBanner({ data }) {
                                     if(dats.node.articlep1){
                                         return <>
                                             <FrontPageArticleTitle dats={ dats.node.title } />
-                                            <FrontPageArticleWriterDetails title={ dats.node.title } dats={ dats.node.articleauthor } />
+                                            { matchesUnder && <FrontPageArticleWriterDetailsSmall title={ dats.node.title } dats={ dats.node.articleauthor }/> }
+                                            { !matchesUnder && <FrontPageArticleWriterDetails title={ dats.node.title } dats={ dats.node.articleauthor }/> }
                                             <FrontPageArticleAboutAuthorParagraph dats={ dats.node.articleabouttheauthor } />
                                             <FrontPageArticleParagraph dats={ dats.node.articlep1 } />   
                                         </>
@@ -236,7 +240,9 @@ function FrontPageBanner({ data }) {
                                         </>
                                     }
                                 })()}
-                                <FrontPageArticleWriterDetails title={ dats.node.title } dats={ dats.node.articleauthor }/>
+                                { matchesUnder && <FrontPageArticleWriterDetailsSmall title={ dats.node.title } dats={ dats.node.articleauthor }/> }
+                                { !matchesUnder && <FrontPageArticleWriterDetails title={ dats.node.title } dats={ dats.node.articleauthor }/> }
+                                
                             </Grid>  
                                 
                         </SwiperSlide>

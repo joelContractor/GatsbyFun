@@ -9,7 +9,7 @@ const StyledFrontPageArticleTitleGrid = styled(Grid, {
   })({
     paddingTop:"50px", 
     paddingBottom:"0px", 
-    width:"100%"
+    width:"100%",
 
   });
 
