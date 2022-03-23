@@ -13,7 +13,7 @@ const StyledFrontPageArticleWriterDetailsSmallGrid = styled(Grid, {
     paddingbottom:"0px", 
     fontSize:"11px",
     ".title": { fontWeight:"bold" },
-    ".shareLinksSmall": {  display:"flex", justifyContent: "center", fontSize:"10px", color:"cornflowerblue", paddingTop:'0px', marginBottom:"10px"},
+    ".shareLinksSmall": {  display:"flex", justifyContent: "flex-start", fontSize:"10px", color:"cornflowerblue", paddingTop:'0px', marginBottom:"10px"},
  
 
   });
