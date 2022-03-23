@@ -32,7 +32,7 @@ function Header ({ siteTitle }) {
           />
         </Link>
       </div>
-        <Link to="/" style={ {float:`left`, color: `white`, textDecoration: `none`, marginTop:'20px'} }> {siteTitle} </Link>
+      { matches && <Link to="/" style={ {float:`left`, color: `white`, textDecoration: `none`, marginTop:'20px'} }> {siteTitle} </Link> }
  
       <div style={{ float:`right`, textAlign:`right`, marginTop:"22px", fontSize: '0.8rem', paddingRight:"0.5rem", paddingBottom:"1.4rem" }}>
       { matches && <><Link to="/artist/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`, paddingRight:"0.5rem" } }> actors </Link> 
