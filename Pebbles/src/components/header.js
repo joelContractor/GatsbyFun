@@ -20,10 +20,10 @@ function Header ({ siteTitle }) {
   const res = 
   <header style={ {float:`left`, background: `#1A2421`, marginBottom: `0rem`, width:`100%`} }>
     <div style={ {margin: `0 auto`, maxWidth: 900, padding: `1.45rem 1.0875rem`} }>
-      <div style={{ float:`left`, marginRight:`5px`, marginTop:"3px", width:"30px" }}>
+      <div style={{ float:`left`, marginRight:`5px`, marginTop:"0px", width:"37px" }}>
         <StaticImage
             src="../images/headerlogo.png"
-            width={51}
+            width={100}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="A Gatsby astronaut"
@@ -32,7 +32,7 @@ function Header ({ siteTitle }) {
       </div>
         <Link to="/" style={ {float:`left`, color: `white`, textDecoration: `none`, textShadow:`2px 1px black`, marginTop:'5px'} }> {siteTitle} </Link>
  
-      <div style={{ float:`right`, textAlign:`right`, marginTop:"5px", fontSize: '1rem', paddingRight:"0.5rem", paddingBottom:"1.4rem" }}>
+      <div style={{ float:`right`, textAlign:`right`, marginTop:"7px", fontSize: '0.8rem', paddingRight:"0.5rem", paddingBottom:"1.4rem" }}>
       { matches && <><Link to="/artist/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, paddingRight:"0.5rem" } }> actors </Link> 
         <Link to="/writer/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`} }> writers </Link>
         <Link to="/director/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, paddingLeft:"0.5rem"} }> directors </Link></> 
