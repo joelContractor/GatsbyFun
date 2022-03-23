@@ -14,7 +14,7 @@ const StyledFrontPageArticleWriterDetailsGrid = styled(Grid, {
     fontSize:"11px",
     ".title": { fontWeight:"bold" },
     ".shareLinks": {  display:"flex", justifyContent: "center", fontSize:"10px", color:"cornflowerblue" },
-    ".shareLinks > a": {  color:"cornflowerblue" }
+ 
 
   });
 
@@ -30,13 +30,13 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                 {(() => {
                     if(dats){
                         return <>
-                            <Grid item xs={12} md={6}>
+                            <Grid item xs={6} sm={6}>
                                 
                                 <p><span className="title">Written By:</span> {dats}</p>
                   
                             </Grid>
 
-                            <Grid item xs={4} sm={3} md={2} className="shareLinks">
+                            <Grid item xs={2} sm={2} md={2} className="shareLinks">
 
                                 <a aria-label={`Tweet this article, ${title}, written by ${dats}, on Twitter`} href="https://twitter.com/intent/tweet" target="_blank" rel="noreferrer" >
                                   
@@ -52,7 +52,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                             
                             </Grid>
 
-                            <Grid item xs={4} sm={3} md={2} className="shareLinks">
+                            <Grid item xs={2} sm={2} md={2} className="shareLinks">
                                 
                                 <a aria-label={`Share this article, ${title}, written by ${dats}, on Facebook`}href="https://www.facebook.com/sharer/sharer.php?u=#url" target="_blank" rel="noreferrer">
                                    
@@ -68,7 +68,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
 
                             </Grid>
 
-                            <Grid item xs={4} sm={3} md={2} className="shareLinks">
+                            <Grid item xs={2} sm={2} md={2} className="shareLinks">
 
                                 <a aria-label={`Post this article, ${title}, written by ${dats}, on LinkedIn`} href="https://www.linkedin.com/sharing/share-offsite/?url={url}" target="_blank" rel="noreferrer">
                                     
