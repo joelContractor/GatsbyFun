@@ -13,7 +13,7 @@ const StyledFrontPageArticleWriterDetailsSmallGrid = styled(Grid, {
     paddingbottom:"0px", 
     fontSize:"11px",
     ".title": { fontWeight:"bold" },
-    ".shareLinksSmall": {  display:"flex", justifyContent: "flex-start", fontSize:"10px", color:"cornflowerblue", paddingTop:'0px', marginBottom:"30px"},
+    ".shareLinksSmall": {  display:"flex", justifyContent: "center", fontSize:"10px", color:"cornflowerblue", paddingTop:'0px', marginBottom:"10px"},
  
 
   });
@@ -42,7 +42,7 @@ function FrontPageArticleWriterDetailsSmall({ dats, title }) {
                                   
                                     <StaticImage
                                             src="../images/tweetround.png"
-                                            width={35}
+                                            width={50}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
                                             alt="A Gatsby astronaut"
@@ -58,7 +58,7 @@ function FrontPageArticleWriterDetailsSmall({ dats, title }) {
                                    
                                     <StaticImage
                                             src="../images/fb.png"
-                                            width={35}
+                                            width={50}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
                                             alt="A Gatsby astronaut"
@@ -74,7 +74,7 @@ function FrontPageArticleWriterDetailsSmall({ dats, title }) {
                                     
                                     <StaticImage
                                             src="../images/linked.png"
-                                            width={35}
+                                            width={50}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
                                             alt="LinkedIn share link"

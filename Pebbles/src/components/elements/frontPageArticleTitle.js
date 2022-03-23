@@ -10,6 +10,7 @@ const StyledFrontPageArticleTitleGrid = styled(Grid, {
     paddingTop:"50px", 
     paddingBottom:"0px", 
     width:"100%",
+    "h2": { fontSize:"1.2rem" }
 
   });
 
