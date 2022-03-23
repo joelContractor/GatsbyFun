@@ -20,10 +20,10 @@ function Header ({ siteTitle }) {
   const res = 
   <header style={ {float:`left`, background: `#1A2421`, marginBottom: `0rem`, width:`100%`} }>
     <div style={ {margin: `0 auto`, maxWidth: 900, padding: `1.45rem 1.0875rem`} }>
-      <div style={{ float:`left`, marginRight:`5px`, marginTop:"0px", width:"37px" }}>
+      <div style={{ float:`left`, marginRight:`5px`, marginTop:"0px", width:"35px" }}>
         <StaticImage
-            src="../images/headerlogo.png"
-            width={100}
+            src="../images/dc.png"
+            width={50}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="A Gatsby astronaut"
