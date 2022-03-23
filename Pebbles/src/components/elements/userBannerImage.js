@@ -51,7 +51,7 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                                         return <div role="button" tabIndex={0} className="diversityLogoArea diversityLogos" onClick={presentRace} onKeyDown={presentRace}>
                                             
                                             <StaticImage
-                                            src="../images/racial.png"
+                                            src="../images/race.png"
                                             width={50}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
