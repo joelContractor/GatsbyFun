@@ -9,11 +9,11 @@ const StyledFrontPageArticleWriterDetailsGrid = styled(Grid, {
     slot: "Wrapper",
   })({
     paddingTop:"0px", 
-    marginTop:"0px", 
+    marginTop:"0px",
     paddingbottom:"0px", 
     fontSize:"11px",
     ".title": { fontWeight:"bold" },
-    ".shareLinks": {  display:"flex", justifyContent: "flex-start", fontSize:"10px", color:"cornflowerblue" },
+    ".shareLinks": {  display:"flex", justifyContent: "center", fontSize:"10px", color:"cornflowerblue" },
     ".shareLinks > a": {  color:"cornflowerblue" }
 
   });
@@ -42,7 +42,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                                   
                                     <StaticImage
                                             src="../images/tweetround.png"
-                                            width={25}
+                                            width={35}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
                                             alt="A Gatsby astronaut"
@@ -58,7 +58,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                                    
                                     <StaticImage
                                             src="../images/fb.png"
-                                            width={25}
+                                            width={35}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
                                             alt="A Gatsby astronaut"
@@ -74,7 +74,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                                     
                                     <StaticImage
                                             src="../images/linked.png"
-                                            width={25}
+                                            width={35}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
                                             alt="A Gatsby astronaut"

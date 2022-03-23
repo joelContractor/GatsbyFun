@@ -18,21 +18,23 @@ function Header ({ siteTitle }) {
   }
 
   const res = 
-  <header style={ {float:`left`, background: `#1A2421`, marginBottom: `0rem`, width:`100%`} }>
+  <header style={ {float:`left`, background: `#1A2421`, marginBottom: `0rem`, width:`100%`, paddingBottom:"13px"} }>
     <div style={ {margin: `0 auto`, maxWidth: 900, padding: `1.45rem 1.0875rem`} }>
-      <div style={{ float:`left`, marginRight:`5px`, marginTop:"0px", width:"35px" }}>
-        <StaticImage
-            src="../images/dc.png"
-            width={50}
-            quality={95}
-            formats={["AUTO", "WEBP", "AVIF"]}
-            alt="A Gatsby astronaut"
-            style={{ marginBottom: `0px` }} 
-        />
+      <div style={{ float:`left`, marginRight:`5px`, marginTop:"0px", width:"60px" }}>
+        <Link to="/" >
+          <StaticImage
+              src="../images/dc.png"
+              width={60}
+              quality={95}
+              formats={["AUTO", "WEBP", "AVIF"]}
+              alt="A Gatsby astronaut"
+              style={{ marginBottom: `0px` }} 
+          />
+        </Link>
       </div>
-        <Link to="/" style={ {float:`left`, color: `white`, textDecoration: `none`, textShadow:`2px 1px black`, marginTop:'5px'} }> {siteTitle} </Link>
+        <Link to="/" style={ {float:`left`, color: `white`, textDecoration: `none`, textShadow:`2px 1px black`, marginTop:'20px'} }> {siteTitle} </Link>
  
-      <div style={{ float:`right`, textAlign:`right`, marginTop:"7px", fontSize: '0.8rem', paddingRight:"0.5rem", paddingBottom:"1.4rem" }}>
+      <div style={{ float:`right`, textAlign:`right`, marginTop:"22px", fontSize: '0.8rem', paddingRight:"0.5rem", paddingBottom:"1.4rem" }}>
       { matches && <><Link to="/artist/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, paddingRight:"0.5rem" } }> actors </Link> 
         <Link to="/writer/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`} }> writers </Link>
         <Link to="/director/" activeStyle={{ color: "red" }} style={ {color: `#fff`, textDecoration: `none`, paddingLeft:"0.5rem"} }> directors </Link></> 
