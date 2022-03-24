@@ -22,7 +22,7 @@ const StyledGalleryGrid = styled(Grid, {
     ".cardContentPara": { fontFamily: 'Arial', fontSize:"12px", color: "rgba(0, 0, 0, 0.4)", marginBottom:"0px", maxHeight:"80px", lineHeight:"1rem" },
     ".MuiCardContent-root:last-child": { paddingBottom:"25pxpx" },
     ".buttonContainer": { display:"flex", justifyContent:"flex-end", marginTop: "0px" },
-    ".cardTitle": { marginBottom:"0.01rem", color: `hsla(0, 0%, 0%, 0.9)`, fontSize:"15px" },
+    ".cardTitle": { marginBottom:"0.01rem", color: `hsla(0, 0%, 0%, 0.9)`, fontSize:"12px" },
     ".safariRounded": { willChange:"transform", borderTopLeftRadius: "20px", borderTopRightRadius: "20px", overflow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" }
     
   });
