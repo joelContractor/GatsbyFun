@@ -46,11 +46,11 @@ function Header ({ siteTitle }) {
         <div className="mobileNav" style={{ border:"1px solid white", background:"white", borderRadius:"5px", width:"25px", marginTop:"8px" }}></div>
       </button> }
       </div>
-      <div style={{ clear:"both", textAlign:`center`, marginBottom:"0rem", marginRight:"4px", fontSize: '0.8rem', display:show === 'none'? `none`: `block`, paddingTop: "1.5rem" }}>
-        <Link to="/artist/" activeStyle={{ color: "#d55e5e" }} style={ {padding:"10px 5px 10px 5px", borderRight:"1px dotted hsla(0,0%,50%,0.1)", color: `#fff`,textDecoration: `none`, paddingRight:"1rem"} }> Actors </Link>
-        <Link to="/writer/" activeStyle={{ color: "#d55e5e" }} style={ {padding:"10px 5px 10px 5px", borderRight:"1px dotted hsla(0,0%,70%,0.1)", color: `#fff`, textDecoration: `none`, paddingLeft:"1rem", paddingRight:"1rem"} }> Writers </Link>
-        <Link to="/director/" activeStyle={{ color: "#d55e5e" }} style={ {padding:"10px 5px 10px 5px", color: `#fff`, textDecoration: `none`, paddingLeft:"1rem"} }> Directors </Link>
-        <Link to="/page-2/" activeStyle={{ color: "#d55e5e" }} style={ {padding:"10px 5px 10px 5px", color: `#fff`, textDecoration: `none`, paddingLeft:"1rem"} }> Agencies </Link>
+      <div style={{ clear:"both", textAlign:`right`, marginBottom:"0rem", marginRight:"4px", fontSize: '0.8rem', display:show === 'none'? `none`: `block`, paddingTop: "1.5rem" }}>
+        <Link to="/artist/" activeStyle={{ color: "#d55e5e" }} style={ {width:'100%', float:'right', padding:"10px 5px 10px 5px", borderRight:"1px dotted hsla(0,0%,50%,0.1)", color: `#fff`,textDecoration: `none`} }> Actors </Link>
+        <Link to="/writer/" activeStyle={{ color: "#d55e5e" }} style={ {width:'100%', float:'right', padding:"10px 5px 10px 5px", borderRight:"1px dotted hsla(0,0%,70%,0.1)", color: `#fff`, textDecoration: `none`} }> Writers </Link>
+        <Link to="/director/" activeStyle={{ color: "#d55e5e" }} style={ {width:'100%', float:'right', padding:"10px 5px 10px 5px", color: `#fff`, textDecoration: `none`} }> Directors </Link>
+        <Link to="/page-2/" activeStyle={{ color: "#d55e5e" }} style={ {width:'100%', float:'right', padding:"10px 5px 10px 5px", color: `#fff`, textDecoration: `none`} }> Agencies </Link>
       </div>
     </div>
   </header>
