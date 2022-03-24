@@ -16,13 +16,13 @@ const StyledGalleryGrid = styled(Grid, {
     ".cardButton": { textTransform: `none`, color:"white", fontWeight:"normal", fontSize:"12px", width:"100%", textAlign:"center", border: "1px white solid", marginBottom:"0px", background: "rgb(26, 36, 33)", padding: "25px 10px 20px 15px", borderBottomRightRadius: "0px", borderBottomLeftRadius:"0px", borderTopLeftRadius: "5px", borderTopRightRadius: "5px" },
     ".cardButton:hover": { background: "rgb(26, 36, 33)", color:"orange" },
     ".cardMediaArea": {  height:"190px", marginBottom:"0px", borderTopLeftRadius: "20px", borderTopRightRadius: "20px" },
-    ".cardButtonBottom":{ width: "auto", padding: "20px 15px", borderRadius: "100px", fontSize:"12px", color: "white", background: "rgb(129, 184, 207, 0.8)", border: "none", fontWeight:"bold", alignSelf: "end", marginTop:"20px", height:'64px'},
+    ".cardButtonBottom":{ width: "auto", padding: "20px 15px", borderRadius: "100px", fontSize:"12px", color: "white", background: "rgb(129, 184, 207, 0.8)", fontWeight:"normal", alignSelf: "end", marginTop:"20px", height:'64px'},
     ".cardButtonBottom:hover": { background:"rgba(129, 184, 207, 0.2)", color:"rgb(129, 184, 207)", textShadow: '1px 1px 1px rgb(255,255,255,0.9)', },
     ".cardContentArea": { background:"white", borderBottomLeftRadius: "3px", borderBottomRightRadius: "3px", display: "flex", flexDirection: "row" },
-    ".cardContentPara": { fontFamily: 'Arial', fontSize:"12px", color: "rgba(0, 0, 0, 0.5)", marginBottom:"0px", maxHeight:"80px", lineHeight:"1rem" },
+    ".cardContentPara": { fontFamily: 'Arial', fontSize:"12px", color: "#808080", marginBottom:"0px", maxHeight:"80px", lineHeight:"1rem" },
     ".MuiCardContent-root:last-child": { paddingBottom:"25pxpx" },
     ".buttonContainer": { display:"flex", justifyContent:"flex-end", marginTop: "0px" },
-    ".cardTitle": { marginBottom:"0.01rem", color: `hsla(0, 0%, 0%, 0.9)`, fontSize:"12px" },
+    ".cardTitle": { marginBottom:"0.01rem", color: `#141414`, fontSize:"12px" },
     ".safariRounded": { willChange:"transform", borderTopLeftRadius: "20px", borderTopRightRadius: "20px", overflow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" }
     
   });
