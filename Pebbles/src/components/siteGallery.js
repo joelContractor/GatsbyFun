@@ -19,10 +19,10 @@ const StyledGalleryGrid = styled(Grid, {
     ".cardButtonBottom":{ width: "auto", padding: "20px 15px", borderRadius: "100px", fontSize:"12px", color: "rgba(0, 0, 0, 0.5)", background: "#f1f1f1", border: "1px solid rgba(0, 0, 0, 0.2)", fontWeight:"normal", alignSelf: "end", marginTop:"20px"},
     ".cardButtonBottom:hover": { background:"rgba(0, 0, 1, 0.1)", color:"rgba(0, 0, 0, 0.4)" },
     ".cardContentArea": { background:"white", borderBottomLeftRadius: "3px", borderBottomRightRadius: "3px", display: "flex", flexDirection: "row" },
-    ".cardContentPara": { fontFamily: 'Arial', fontSize:"11px", color: "rgba(0, 0, 0, 0.4)", marginBottom:"0px", maxHeight:"80px", lineHeight:"1rem" },
+    ".cardContentPara": { fontFamily: 'Arial', fontSize:"12px", color: "rgba(0, 0, 0, 0.4)", marginBottom:"0px", maxHeight:"80px", lineHeight:"1rem" },
     ".MuiCardContent-root:last-child": { paddingBottom:"25pxpx" },
     ".buttonContainer": { display:"flex", justifyContent:"flex-end", marginTop: "0px" },
-    ".cardTitle": { marginBottom:"0.01rem", color: `hsla(0, 0%, 0%, 0.9)` },
+    ".cardTitle": { marginBottom:"0.01rem", color: `hsla(0, 0%, 0%, 0.9)`, fontSize:"15px" },
     ".safariRounded": { willChange:"transform", borderTopLeftRadius: "20px", borderTopRightRadius: "20px", overflow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" }
     
   });
