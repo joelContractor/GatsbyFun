@@ -12,11 +12,11 @@ const StyledGalleryGrid = styled(Grid, {
   })({
     fontSize:`13px`,
     fontFamily:`Arial`,
-    ".infoCard": { willChange:"transform", borderRadius:"20px", overFlow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
+    ".infoCard": { margin:'0 auto', maxWidth:"380px", willChange:"transform", borderRadius:"20px", overFlow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
     ".cardButton": { textTransform: `none`, color:"white", fontWeight:"normal", fontSize:"12px", width:"100%", textAlign:"center", border: "1px white solid", marginBottom:"0px", background: "rgb(26, 36, 33)", padding: "25px 10px 20px 15px", borderBottomRightRadius: "0px", borderBottomLeftRadius:"0px", borderTopLeftRadius: "5px", borderTopRightRadius: "5px" },
     ".cardButton:hover": { background: "rgb(26, 36, 33)", color:"orange" },
     ".cardMediaArea": {  height:"190px", marginBottom:"0px", borderTopLeftRadius: "20px", borderTopRightRadius: "20px" },
-    ".cardButtonBottom":{ width: "auto", padding: "20px 15px", borderRadius: "100px", fontSize:"12px", color: "white", background: "#719fb2", border:'none', fontWeight:"normal", alignSelf: "end", marginTop:"20px", height:'64px'},
+    ".cardButtonBottom":{ width: "auto", padding: "20px 15px", borderRadius: "100px", fontSize:"12px", color: "white", background: "#719fb2", border:'none', fontWeight:"bold", alignSelf: "end", marginTop:"20px", height:'64px'},
     ".cardButtonBottom:hover": { background:"rgba(129, 184, 207, 0.2)", color:"rgb(129, 184, 207)", textShadow: '1px 1px 1px rgb(255,255,255,0.9)', },
     ".cardContentArea": { background:"white", borderBottomLeftRadius: "3px", borderBottomRightRadius: "3px", display: "flex", flexDirection: "row" },
     ".cardContentPara": { fontFamily: 'Arial', fontSize:"12px", color: "#808080", marginBottom:"0px", maxHeight:"80px", lineHeight:"1rem" },
@@ -34,7 +34,7 @@ function SiteGallery({ data }) {
         
 
  
-            <StyledGalleryGrid container direction="row" spacing={3}>
+            <StyledGalleryGrid container direction="row" spacing={3} >
                 
                         {data.map((dats) => (
                                
