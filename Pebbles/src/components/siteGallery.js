@@ -15,7 +15,7 @@ const StyledGalleryGrid = styled(Grid, {
     ".infoCard": { willChange:"transform", borderRadius:"20px", overFlow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
     ".cardButton": { textTransform: `none`, color:"white", fontWeight:"normal", fontSize:"12px", width:"100%", textAlign:"center", border: "1px white solid", marginBottom:"0px", background: "rgb(26, 36, 33)", padding: "25px 10px 20px 15px", borderBottomRightRadius: "0px", borderBottomLeftRadius:"0px", borderTopLeftRadius: "5px", borderTopRightRadius: "5px" },
     ".cardButton:hover": { background: "rgb(26, 36, 33)", color:"orange" },
-    ".cardMediaArea": {  height:"210px", marginBottom:"0px", borderTopLeftRadius: "20px", borderTopRightRadius: "20px" },
+    ".cardMediaArea": {  height:"190px", marginBottom:"0px", borderTopLeftRadius: "20px", borderTopRightRadius: "20px" },
     ".cardButtonBottom":{ width: "auto", padding: "20px 15px", borderRadius: "100px", fontSize:"12px", color: "rgba(0, 0, 0, 0.5)", background: "#f1f1f1", border: "1px solid rgba(0, 0, 0, 0.2)", fontWeight:"normal", alignSelf: "end", marginTop:"20px"},
     ".cardButtonBottom:hover": { background:"rgba(0, 0, 1, 0.1)", color:"rgba(0, 0, 0, 0.4)" },
     ".cardContentArea": { background:"white", borderBottomLeftRadius: "3px", borderBottomRightRadius: "3px", display: "flex", flexDirection: "row" },

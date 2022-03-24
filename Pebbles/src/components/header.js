@@ -37,7 +37,8 @@ function Header ({ siteTitle }) {
       <div style={{ float:`right`, textAlign:`right`, marginTop:"22px", fontSize: '0.8rem', paddingRight:"0.5rem", paddingBottom:"1.4rem" }}>
       { matches && <><Link to="/artist/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`, paddingRight:"0.5rem" } }> actors </Link> 
         <Link to="/writer/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`} }> writers </Link>
-        <Link to="/director/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`, paddingLeft:"0.5rem"} }> directors </Link></> 
+        <Link to="/director/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`, paddingLeft:"0.5rem"} }> directors </Link>
+        <Link to="/page-2/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`, paddingLeft:"0.5rem"} }> agencies </Link></> 
       }
       { !matches && <button  aria-label="Menu" style={{ cursor:"pointer", background:"none", border:"none", color:"white", paddingRight:"0rem"}}  className="mobile" onClick={showInfo}>
         <div className="mobileNav" style={{ border:"1px solid white", background:"white", borderRadius:"5px", width:"25px", marginTop:"0px"}}></div>
@@ -49,6 +50,7 @@ function Header ({ siteTitle }) {
         <Link to="/artist/" activeStyle={{ color: "#d55e5e" }} style={ {padding:"10px 5px 10px 5px", borderRight:"1px dotted hsla(0,0%,50%,0.1)", color: `#fff`,textDecoration: `none`, paddingRight:"1rem"} }> Actors </Link>
         <Link to="/writer/" activeStyle={{ color: "#d55e5e" }} style={ {padding:"10px 5px 10px 5px", borderRight:"1px dotted hsla(0,0%,70%,0.1)", color: `#fff`, textDecoration: `none`, paddingLeft:"1rem", paddingRight:"1rem"} }> Writers </Link>
         <Link to="/director/" activeStyle={{ color: "#d55e5e" }} style={ {padding:"10px 5px 10px 5px", color: `#fff`, textDecoration: `none`, paddingLeft:"1rem"} }> Directors </Link>
+        <Link to="/page-2/" activeStyle={{ color: "#d55e5e" }} style={ {padding:"10px 5px 10px 5px", color: `#fff`, textDecoration: `none`, paddingLeft:"1rem"} }> Agencies </Link>
       </div>
     </div>
   </header>

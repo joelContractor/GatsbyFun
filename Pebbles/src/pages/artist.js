@@ -1,7 +1,6 @@
 import { graphql } from 'gatsby'
 import * as React from "react"
 import GalleryBanner from "../components/galleryBanner"
-import SiteGallery from "../components/siteGallery"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Grid } from "@material-ui/core"
@@ -25,18 +24,8 @@ const ArtistPage = ({data}) => (
     </Grid>
 
     <GalleryBanner  data={ data.allDatoCmsActorTemp.edges } /> {/* added -> comp now reusable -> search path added by page uniform field names after search term eg.'data.allDatoCmsActors.edges' */}
-    <Grid container sx={{marginBottom:'20px', padding:"0px 10px 0px 10px"}} spacing={3}>
-      <Grid item xs={12}>
-          <p style={{ marginBottom:"0rem" }}>Find Diverse Agencies</p>
-      </Grid>
-      <Grid item xs={12} md={12}>
-        <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.6)' }}>
-        Haven't found the perfect actor? Check out our list below. We continually look out for and add the best agencies that represent diverse talent.
-        </p>
-      </Grid>
-
-    </Grid>
-    <SiteGallery  data={ data.allDatoCmsActingagency.edges } />
+    
+    
 
   </Layout>
 )
@@ -51,19 +40,6 @@ export const query = graphql`
       spectacleurl {
         url
         gatsbyImageData(width: 1000)
-      }
-    }
-    allDatoCmsActingagency {
-      edges {
-        node {
-          agencydescription
-          agencyurl
-          agencyimage {
-            url
-            gatsbyImageData(width: 450)
-          }
-          agencytitle
-        }
       }
     }
     allDatoCmsActorTemp {
