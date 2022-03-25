@@ -37,8 +37,8 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                             </Grid>
 
                             <Grid item xs={4} sm={2} md={2} className="shareLinks">
-                                <a className="twitter-share-button" aria-label={`Tweet this article, ${title}, written by ${dats}, on Twitter`} href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank" rel="noreferrer" data-show-count="false" data-size="large">
-                                
+                                <a className="twitter-share-button" aria-label={`Tweet this article, ${title}, written by ${dats}, on Twitter`} href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank" rel="noreferrer" data-size="large" data-show-count="false" >
+                                  
                                     <StaticImage
                                             src="../images/twt.png"
                                             width={50}
