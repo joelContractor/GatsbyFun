@@ -37,8 +37,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                             </Grid>
 
                             <Grid item xs={4} sm={2} md={2} className="shareLinks">
-
-                                <a className="twitter-share-button" aria-label={`Tweet this article, ${title}, written by ${dats}, on Twitter`} href="https://twitter.com/intent/tweet" target="_blank" rel="noreferrer" >
+                                <a className="twitter-share-button" aria-label={`Tweet this article, ${title}, written by ${dats}, on Twitter`} href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank" rel="noreferrer" data-show-count="false" >
                                   
                                     <StaticImage
                                             src="../images/twt.png"
@@ -48,7 +47,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                                             alt="A Gatsby astronaut"
                                             style={{ marginBottom: `0px`, marginLeft: `3px` }} 
                                             />
-                                </a>
+                                </a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                             
                             </Grid>
 
@@ -69,7 +68,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                             </Grid>
 
                             <Grid item xs={4} sm={2} md={2} className="shareLinks">
-
+                                
                                 <a aria-label={`Post this article, ${title}, written by ${dats}, on LinkedIn`} href="https://www.linkedin.com/shareArticle?url=https://xenodochial-torvalds-99149d.netlify.app&title=Diverse-Crew" target="_blank" rel="noreferrer">
                                     
                                     <StaticImage
