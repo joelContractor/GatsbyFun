@@ -38,11 +38,11 @@ function FrontPageArticleWriterDetails({ dats, title }) {
 
                             <Grid item xs={4} sm={2} md={2} className="shareLinks">
 
-                                <a aria-label={`Tweet this article, ${title}, written by ${dats}, on Twitter`} href="https://twitter.com/intent/tweet" target="_blank" rel="noreferrer" >
+                                <a className="twitter-share-button" aria-label={`Tweet this article, ${title}, written by ${dats}, on Twitter`} href="https://twitter.com/intent/tweet" target="_blank" rel="noreferrer" >
                                   
                                     <StaticImage
-                                            src="../images/tweetround.png"
-                                            width={35}
+                                            src="../images/twt.png"
+                                            width={50}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
                                             alt="A Gatsby astronaut"
@@ -54,11 +54,11 @@ function FrontPageArticleWriterDetails({ dats, title }) {
 
                             <Grid item xs={4} sm={2} md={2} className="shareLinks">
                                 
-                                <a aria-label={`Share this article, ${title}, written by ${dats}, on Facebook`}href="https://www.facebook.com/sharer/sharer.php?u=#url" target="_blank" rel="noreferrer">
+                                <a aria-label={`Share this article, ${title}, written by ${dats}, on Facebook`}href="https://www.facebook.com/sharer/sharer.php?u=https://xenodochial-torvalds-99149d.netlify.app" target="_blank" rel="noreferrer">
                                    
                                     <StaticImage
-                                            src="../images/fb.png"
-                                            width={35}
+                                            src="../images/fbk.png"
+                                            width={50}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
                                             alt="A Gatsby astronaut"
@@ -70,11 +70,11 @@ function FrontPageArticleWriterDetails({ dats, title }) {
 
                             <Grid item xs={4} sm={2} md={2} className="shareLinks">
 
-                                <a aria-label={`Post this article, ${title}, written by ${dats}, on LinkedIn`} href="https://www.linkedin.com/sharing/share-offsite/?url={url}" target="_blank" rel="noreferrer">
+                                <a aria-label={`Post this article, ${title}, written by ${dats}, on LinkedIn`} href="https://www.linkedin.com/shareArticle?url=https://xenodochial-torvalds-99149d.netlify.app&title=Diverse-Crew" target="_blank" rel="noreferrer">
                                     
                                     <StaticImage
-                                            src="../images/linked.png"
-                                            width={35}
+                                            src="../images/li.png"
+                                            width={50}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
                                             alt="LinkedIn share link"

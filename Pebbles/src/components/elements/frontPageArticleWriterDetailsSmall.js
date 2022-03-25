@@ -41,7 +41,7 @@ function FrontPageArticleWriterDetailsSmall({ dats, title }) {
                                 <a aria-label={`Tweet this article, ${title}, written by ${dats}, on Twitter`} href="https://twitter.com/intent/tweet" target="_blank" rel="noreferrer" >
                                   
                                     <StaticImage
-                                            src="../images/tweetround.png"
+                                            src="../images/twt.png"
                                             width={50}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
@@ -57,7 +57,7 @@ function FrontPageArticleWriterDetailsSmall({ dats, title }) {
                                 <a aria-label={`Share this article, ${title}, written by ${dats}, on Facebook`}href="https://www.facebook.com/sharer/sharer.php?u=#url" target="_blank" rel="noreferrer">
                                    
                                     <StaticImage
-                                            src="../images/fb.png"
+                                            src="../images/fbk.png"
                                             width={50}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
@@ -73,7 +73,7 @@ function FrontPageArticleWriterDetailsSmall({ dats, title }) {
                                 <a aria-label={`Post this article, ${title}, written by ${dats}, on LinkedIn`} href="https://www.linkedin.com/sharing/share-offsite/?url={url}" target="_blank" rel="noreferrer">
                                     
                                     <StaticImage
-                                            src="../images/linked.png"
+                                            src="../images/li.png"
                                             width={50}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}

@@ -45,7 +45,7 @@ function userContactLinks({ dats }) {
                                 <a aria-label={`Send a text to ${dats.node.title}`} className="contactLinks" href={`sms:0${dats.node.usertel}`}>
                                     
                                     <StaticImage
-                                        src="../images/text.png"
+                                        src="../images/txt.png"
                                         width={70}
                                         quality={95}
                                         formats={["AUTO", "WEBP", "AVIF"]}
