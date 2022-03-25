@@ -37,17 +37,17 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                             </Grid>
 
                             <Grid item xs={4} sm={2} md={2} className="shareLinks">
-                                <a className="twitter-share-button" aria-label={`Tweet this article, ${title}, written by ${dats}, on Twitter`} href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank" rel="noreferrer" data-size="large" data-show-count="false" >
+                                <a className="twitter-share-button" aria-label={`Tweet this article, ${title}, written by ${dats}, on Twitter`} href="https://twitter.com/intent/tweet/?text=A groundbreaking article about diversity in film:&url=https://xenodochial-torvalds-99149d.netlify.app/" target="_blank" rel="noreferrer" data-size="large" data-show-count="false" >
                                   
-                                    {/*<StaticImage
+                                    <StaticImage
                                             src="../images/twt.png"
                                             width={50}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
                                             alt="A Gatsby astronaut"
                                             style={{ marginBottom: `0px`, marginLeft: `3px` }} 
-                                            />*/}
-                                </a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                            />
+                                </a>
                             
                             </Grid>
 
