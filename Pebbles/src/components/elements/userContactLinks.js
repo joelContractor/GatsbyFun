@@ -61,7 +61,7 @@ function userContactLinks({ dats }) {
                                 <a aria-label={`Send an email to ${dats.node.title}`} className="contactLinks" href={`mailto:${dats.node.useremail}?cc=admin@diversepool.com&&subject=Diverse-Pool-Mail&body=Body-goes-here`}>
                                     
                                     <StaticImage
-                                        src="../images/em.png"
+                                        src="../images/ma.png"
                                         width={55}
                                         quality={95}
                                         formats={["AUTO", "WEBP", "AVIF"]}
