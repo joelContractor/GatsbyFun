@@ -41,10 +41,10 @@ const Layout = ({ children }) => {
           style={{
             marginTop: `2rem`,
             background:"rgb(26, 36, 33) none repeat scroll 0% 0%",
-            padding: `1.5rem 0 1.0875rem 0`
+            padding: `1.5rem 0 0 0`
           }}
         >
-        <div style={{ margin: `0 auto`, maxWidth: 900, padding: `0 1.0875rem 1.45rem`, color:"grey", fontSize:"0.8rem"}} >
+        <div style={{ margin: `0 auto`, maxWidth: 900, padding: `0 1.0875rem 1.45rem`, color:"#7e7e7e", fontSize:"0.8rem"}} >
           <Grid container direction="row" spacing={3}>
 
           <Grid item xs={6} sm={3} style={{ textAlign:"center" }}>
@@ -101,7 +101,7 @@ const Layout = ({ children }) => {
             </Grid>
 
             <Grid item xs={12} >
-              <p style={{ textAlign:"center", padding:"30px 0px 30px 0px" }}>© {new Date().getFullYear()}, Built By Joel White</p>
+              <p style={{ textAlign:"center", padding:"20px 0px 0px 0px" }}>© {new Date().getFullYear()}, Built By Joel White</p>
             </Grid>
 
           </Grid>
