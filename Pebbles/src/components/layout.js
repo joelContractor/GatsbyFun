@@ -53,13 +53,28 @@ const Layout = ({ children }) => {
               <p>FREE!</p>
             </Grid>
 
+            <Grid item xs={6} sm={3} style={{ textAlign:"center" }}>
+              <h5>Text</h5>
+              <a aria-label={`Send us a text`} href={`sms:07402180192`}>
+                                      
+                  <StaticImage
+                      src="../images/txr.png"
+                      width={55}
+                      quality={95}
+                      formats={["AUTO", "WEBP", "AVIF"]}
+                      alt="Text Us Link"
+                      className="contactLinkImage"
+                  />
+              </a>
+            </Grid>
+
             <Grid item xs={6} sm={3} style={{ textAlign:"center" }} >
               <h5>Email</h5>
               <a aria-label={`Email us`} href={`mailto:admin@diversepool.com?cc=admin@diversepool.com&&subject=Diverse-Pool-Mail&body=Body-goes-here`}>
                                       
                   <StaticImage
-                      src="../images/ma.png"
-                      width={50}
+                      src="../images/emr.png"
+                      width={55}
                       quality={95}
                       formats={["AUTO", "WEBP", "AVIF"]}
                       alt="Email Us Link"
@@ -69,28 +84,13 @@ const Layout = ({ children }) => {
               </a>
             </Grid>
 
-            <Grid item xs={6} sm={3} style={{ textAlign:"center" }}>
-              <h5>Text</h5>
-              <a aria-label={`Send us a text`} href={`sms:07402180192`}>
-                                      
-                  <StaticImage
-                      src="../images/tx.png"
-                      width={50}
-                      quality={95}
-                      formats={["AUTO", "WEBP", "AVIF"]}
-                      alt="Text Us Link"
-                      className="contactLinkImage"
-                  />
-              </a>
-            </Grid>
-
             <Grid item xs={6} sm={3} style={{ textAlign:"center" }}>  
               <h5>Call</h5>
               <a aria-label={`Call Us`} href={`tel:07402180192`}>
                                       
                   <StaticImage
-                      src="../images/ca.png"
-                      width={50}
+                      src="../images/car.png"
+                      width={55}
                       quality={95}
                       formats={["AUTO", "WEBP", "AVIF"]}
                       alt="Call Us Link"

@@ -45,7 +45,7 @@ function userContactLinks({ dats }) {
                                 <a aria-label={`Send a text to ${dats.node.title}`} className="contactLinks" href={`sms:0${dats.node.usertel}`}>
                                     
                                     <StaticImage
-                                        src="../images/tx.png"
+                                        src="../images/txb.png"
                                         width={55}
                                         quality={95}
                                         formats={["AUTO", "WEBP", "AVIF"]}
@@ -61,7 +61,7 @@ function userContactLinks({ dats }) {
                                 <a aria-label={`Send an email to ${dats.node.title}`} className="contactLinks" href={`mailto:${dats.node.useremail}?cc=admin@diversepool.com&&subject=Diverse-Pool-Mail&body=Body-goes-here`}>
                                     
                                     <StaticImage
-                                        src="../images/ma.png"
+                                        src="../images/emb.png"
                                         width={55}
                                         quality={95}
                                         formats={["AUTO", "WEBP", "AVIF"]}
@@ -77,7 +77,7 @@ function userContactLinks({ dats }) {
                                 <a aria-label={`Call ${dats.node.title}`} className="contactLinks" href={`tel:0${dats.node.usertel}`}>
                                     
                                     <StaticImage
-                                        src="../images/ca.png"
+                                        src="../images/cab.png"
                                         width={55}
                                         quality={95}
                                         formats={["AUTO", "WEBP", "AVIF"]}
