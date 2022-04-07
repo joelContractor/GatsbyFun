@@ -58,6 +58,7 @@ export const query = graphql`
           diverseattribute
           actoragerange
           driver
+          nationality
           gender
           passport
           unionaffiliation

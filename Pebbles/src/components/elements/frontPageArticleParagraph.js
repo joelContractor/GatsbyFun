@@ -9,7 +9,8 @@ const StyledFrontPageArticleParagraphGrid = styled(Grid, {
   })({
     paddingTop:"5px", 
     marginTop:"10px", 
-    paddingBottom:"0px"
+    paddingBottom:"0px",
+    fontSize:"1rem"
 
   });
 

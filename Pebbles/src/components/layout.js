@@ -49,8 +49,7 @@ const Layout = ({ children }) => {
 
           <Grid item xs={6} sm={3} style={{ textAlign:"center" }}>
               <h5>Participate</h5>
-              <p>Be found on this site!</p>
-              <p>FREE!</p>
+              <p>We aim to help highlight diverse talent. Be found on this site free!</p>
             </Grid>
 
             <Grid item xs={6} sm={3} style={{ textAlign:"center" }}>

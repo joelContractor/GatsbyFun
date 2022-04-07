@@ -64,17 +64,17 @@ function UserGeneralDetails({ dats }) {
                 {(() => {
                     if(dats.node.unionaffiliation){
                         return <Grid item xs={6} sm={4} md={2}>
-                            <h2>Union</h2>
+                            <h2>Agent</h2>
                             <p className="grey">{dats.node.unionaffiliation}</p>
                         </Grid>
                     }
                 })()}
 
                 {(() => {
-                    if(dats.node.driver){
+                    if(dats.node.nationality){
                         return <Grid item xs={6} sm={4} md={2}>
-                            <h2>Driver</h2>
-                            <p className="grey">{dats.node.driver}</p>
+                            <h2>Nationality</h2>
+                            <p className="grey">{dats.node.nationality}</p>
                         </Grid>
                     }
                 })()}
