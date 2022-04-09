@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+/*import { StaticImage } from "gatsby-plugin-image"*/
 /*import { Link } from "gatsby"*/
 import { Grid } from "@material-ui/core";
 import { styled } from "@mui/system";
@@ -8,8 +8,9 @@ const StyledUserAvailableProjectGrid = styled(Grid, {
     name: "StyledUserAvailableProjectGrid",
     slot: "Wrapper",
   })({
-    paddingTop:"100px", 
-    marginTop:"10px", pb:"50px", 
+    paddingTop:"50px", 
+    marginTop:"10px",
+    paddingBottom:"20px", 
     borderTop:"1px dotted grey",
     ".bold": { fontWeight:"bold" },
     ".normal": { fontWeight:"normal" }
@@ -28,7 +29,7 @@ function UserAvailableProject({ dats }) {
             <Grid container direction="row" spacing={6}>
                 {(() => {
                     if(dats.node.availableprojectbriefdescription){
-                        return <Grid item xs={8}>
+                        return <Grid item xs={12}>
                                 
                                 <h2>Available Script </h2>
                                 <p>{dats.node.availableprojectbriefdescription}</p>
@@ -45,21 +46,6 @@ function UserAvailableProject({ dats }) {
                     }
                 })()}
 
-                {(() => {
-                    if(dats.node.availableprojectbriefdescription){
-                        return <Grid item xs={4}>
-                                
-                            <StaticImage
-                                src="../images/diverseGenderIcon.png"
-                                width={200}
-                                quality={95}
-                                formats={["AUTO", "WEBP", "AVIF"]}
-                                alt="A Gatsby astronaut"
-                            />
-                            
-                        </Grid>
-                    }
-                })()}
             </Grid>
         </StyledUserAvailableProjectGrid>
         
