@@ -171,7 +171,7 @@ function GalleryBanner({ data }) {
                                 })()}
 
                                 {(() => {
-                                    if(dats.node.useremail){
+                                    if(dats.node.useremail || dats.node.usertel){
                                         return <>
                                             <UserContactLinks dats={dats} />
                                         </>

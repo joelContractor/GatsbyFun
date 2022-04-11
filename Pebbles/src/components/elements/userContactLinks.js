@@ -40,11 +40,11 @@ function userContactLinks({ dats }) {
                   
                             </Grid>
 
-                            {(() => {
-                                if(dats.node.usertel){
-                                    return <>
-                                        <Grid item xs={4} sm={2} className="contactLinkContainer">
-
+                            
+                            <Grid item xs={4} sm={2} className="contactLinkContainer">
+                                {(() => {
+                                    if(dats.node.usertel){
+                                        return <>
                                             <a aria-label={`Send a text to ${dats.node.title}`} className="contactLinks" href={`sms:0${dats.node.usertel}`}>
                                                 
                                                 <StaticImage
@@ -56,36 +56,58 @@ function userContactLinks({ dats }) {
                                                     className="contactLinkImage"
                                                 />
                                             </a>
-
-                                        </Grid>
-                                    </>
-                                }
-                            })()}
-                            
-
-                            <Grid item xs={4} sm={2} className="contactLinkContainer">
-                                
-                                <a aria-label={`Send an email to ${dats.node.title}`} className="contactLinks" href={`mailto:${dats.node.useremail}?cc=admin@diversepool.com&&subject=Diverse-Pool-Mail&body=Body-goes-here`}>
-                                    
-                                    <StaticImage
-                                        src="../images/emb.png"
-                                        width={55}
-                                        quality={95}
-                                        formats={["AUTO", "WEBP", "AVIF"]}
-                                        alt="A Gatsby astronaut"
-                                        className="contactLinkImage"
-                                    />
-                                </a>
+                                        </>
+                                    }else{
+                                        return<>
+                                            <StaticImage
+                                                src="../images/age.png"
+                                                width={55}
+                                                quality={95}
+                                                formats={["AUTO", "WEBP", "AVIF"]}
+                                                alt="A Gatsby astronaut"
+                                                className="contactLinkImage"
+                                            /></>
+                                        }
+                                })()}
 
                             </Grid>
 
-                            
 
+                            <Grid item xs={4} sm={2} className="contactLinkContainer">
                             {(() => {
-                                if(dats.node.usertel){
+                                if(dats.node.useremail){
                                     return <>
-                                        <Grid item xs={4} sm={2} className="contactLinkContainer">
+                                        <a aria-label={`Send an email to ${dats.node.title}`} className="contactLinks" href={`mailto:${dats.node.useremail}?cc=admin@diversepool.com&&subject=Diverse-Pool-Mail&body=Body-goes-here`}>
+                                            
+                                            <StaticImage
+                                                src="../images/emb.png"
+                                                width={55}
+                                                quality={95}
+                                                formats={["AUTO", "WEBP", "AVIF"]}
+                                                alt="A Gatsby astronaut"
+                                                className="contactLinkImage"
+                                            />
+                                        </a>
+                                    </>
+                                }else{
+                                    return<>
+                                        <StaticImage
+                                            src="../images/age.png"
+                                            width={55}
+                                            quality={95}
+                                            formats={["AUTO", "WEBP", "AVIF"]}
+                                            alt="A Gatsby astronaut"
+                                            className="contactLinkImage"
+                                        /></>
+                                }
+                            })()} 
+                            </Grid>
 
+                            
+                            <Grid item xs={4} sm={2} className="contactLinkContainer">
+                                {(() => {
+                                    if(dats.node.usertel){
+                                        return <>
                                             <a aria-label={`Call ${dats.node.title}`} className="contactLinks" href={`tel:0${dats.node.usertel}`}>
                                                 
                                                 <StaticImage
@@ -97,11 +119,20 @@ function userContactLinks({ dats }) {
                                                     className="contactLinkImage"
                                                 />
                                             </a>
-
-                                        </Grid>
-                                    </>
-                                }
-                            })()}
+                                        </>
+                                    }else{
+                                        return<>
+                                            <StaticImage
+                                                src="../images/age.png"
+                                                width={55}
+                                                quality={95}
+                                                formats={["AUTO", "WEBP", "AVIF"]}
+                                                alt="A Gatsby astronaut"
+                                                className="contactLinkImage"
+                                            /></>
+                                    }
+                                })()}
+                            </Grid>            
                            
                         </>
                     }

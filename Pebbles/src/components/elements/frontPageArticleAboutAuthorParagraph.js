@@ -7,13 +7,15 @@ const StyledFrontPageArticleGrid = styled(Grid, {
     name: "StyledFrontPageArticleGrid",
     slot: "Wrapper",
   })({
+    fontFamily:`georgia`,
     paddingTop:"30px", 
     marginTop:"20px", 
     marginBottom:"30px", 
     paddingBottom:"10px", 
     borderTop:"1px dashed grey", 
     borderBottom:"1px dashed grey",
-    ".title": { fontWeight:"bold" }
+    fontSize:"0.8rem",
+    ".title": { fontWeight:"bold", fontFamily:`Arial`, fontSize:"0.8rem" }
 
   });
 

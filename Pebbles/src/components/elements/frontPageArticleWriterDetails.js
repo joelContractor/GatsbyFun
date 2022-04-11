@@ -11,9 +11,10 @@ const StyledFrontPageArticleWriterDetailsGrid = styled(Grid, {
     paddingTop:"0px", 
     marginTop:"0px",
     paddingbottom:"0px", 
-    fontSize:"11px",
-    ".title": { fontWeight:"bold" },
-    ".shareLinks": {  display:"flex", justifyContent: "center", fontSize:"10px", color:"cornflowerblue"},
+    fontSize:"0.8rem",
+    fontFamily:`georgia`,
+    ".title": { fontWeight:"bold", fontFamily:`Arial` },
+    ".shareLinks": {  display:"flex", justifyContent: "center", fontSize:"0.8rem", color:"cornflowerblue"},
  
 
   });
@@ -32,7 +33,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                         return <>
                             <Grid item xs={12} sm={6}>
                                 
-                                <p><span className="title">Written By:</span> {dats}</p>
+                                <p><span className="title">Written by:</span> {dats}</p>
                   
                             </Grid>
 

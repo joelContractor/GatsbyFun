@@ -47,12 +47,12 @@ const Layout = ({ children }) => {
         <div style={{ margin: `0 auto`, maxWidth: 900, padding: `0 1.0875rem 1.45rem`, color:"#7e7e7e", fontSize:"0.8rem"}} >
           <Grid container direction="row" spacing={3}>
 
-          <Grid item xs={12} sm={3} style={{ textAlign:"center" }}>
+          <Grid item xs={12} style={{ textAlign:"center", paddingTop:"60px", fontSize:"0.9rem" }}>
               <h5>Participate</h5>
               <p>We aim to help highlight diverse talent. Be found on this site free!</p>
             </Grid>
 
-            <Grid item xs={4} sm={3} style={{ textAlign:"center" }}>
+            <Grid item xs={4} style={{ textAlign:"center" }}>
               <h5>Text</h5>
               <a aria-label={`Send us a text`} href={`sms:07402180192`}>
                                       
@@ -67,7 +67,7 @@ const Layout = ({ children }) => {
               </a>
             </Grid>
 
-            <Grid item xs={4} sm={3} style={{ textAlign:"center" }} >
+            <Grid item xs={4} style={{ textAlign:"center" }} >
               <h5>Email</h5>
               <a aria-label={`Email us`} href={`mailto:admin@diversepool.com?cc=admin@diversepool.com&&subject=Diverse-Pool-Mail&body=Body-goes-here`}>
                                       
@@ -83,7 +83,7 @@ const Layout = ({ children }) => {
               </a>
             </Grid>
 
-            <Grid item xs={4} sm={3} style={{ textAlign:"center" }}>  
+            <Grid item xs={4} style={{ textAlign:"center" }}>  
               <h5>Call</h5>
               <a aria-label={`Call Us`} href={`tel:07402180192`}>
                                       
