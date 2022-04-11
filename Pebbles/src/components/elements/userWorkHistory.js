@@ -33,7 +33,7 @@ function UserWorkHistory({ dats }) {
                     if(dats.node.userhistorytitle1){
                         return <>
                             <Grid item xs={12}>
-                                <h2>My History</h2>
+                                <h2>History</h2>
                             </Grid>
                             <Grid item xs={12} sm={6} md={4}>
                             

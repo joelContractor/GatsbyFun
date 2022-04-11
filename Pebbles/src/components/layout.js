@@ -49,7 +49,7 @@ const Layout = ({ children }) => {
 
           <Grid item xs={12} style={{ textAlign:"center", paddingTop:"60px", fontSize:"0.9rem" }}>
               <h5>Participate</h5>
-              <p>We aim to help highlight diverse talent. Be found on this site free!</p>
+              <p>We aim to collate and help highlight diverse talent in the film industry. Be found on this site free! We ONLY feature publicly available contact details used for business (numbers/emails to agents or self-promoting talent). We are not an agency, any contact will be direct from production company to agent/talent.</p>
             </Grid>
 
             <Grid item xs={4} style={{ textAlign:"center" }}>

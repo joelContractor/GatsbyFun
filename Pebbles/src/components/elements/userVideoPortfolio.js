@@ -36,7 +36,7 @@ function UserVideoPortfolio({ dats }) {
                         return <>
                             <Grid className="paddedVideoReelRelatedContent" item xs={12}>
                                 
-                                <h2>My Reel</h2>
+                                <h2>Showreel</h2>
                                 <p className="grey">{dats.node.videoreeldescription}</p>
                                   
                             </Grid>
