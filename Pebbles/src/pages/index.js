@@ -20,10 +20,10 @@ const IndexPage = ({data}) => (
 
     <Grid container sx={{marginBottom:'10px', padding:"20px 10px 0px 10px"}} spacing={3}>
       <Grid item xs={12}>
-          <p style={{ marginBottom:"0rem" }}>Diverse Crew News</p>
+          <p style={{ marginBottom:"0rem", fontSize:"1.2rem" }}>Diverse Crew News</p>
       </Grid>
       <Grid item xs={12} md={12}>
-        <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.6)' }}>
+        <p style={{ fontSize:"0.9rem", color: 'rgba(0, 0, 0, 0.6)' }}>
             Employing diverse crew can help you gain funding for your project. We provide you with access to diverse actors and agencies FREE. Swipe through our selection of featured actors or scroll down to find an agency to work with.
         </p>
       </Grid>
@@ -34,10 +34,10 @@ const IndexPage = ({data}) => (
 
     <Grid container sx={{marginBottom:'20px', padding:"0px 10px 0px 10px"}} spacing={3}>
       <Grid item xs={12}>
-          <p style={{ marginBottom:"0rem" }}>How Diversity Helps You</p>
+          <p style={{ marginBottom:"0rem", fontSize:"1.2rem" }}>How Diversity Helps You</p>
       </Grid>
       <Grid item xs={12} md={12}>
-        <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.6)' }}>
+        <p style={{ fontSize:"0.9rem", color: 'rgba(0, 0, 0, 0.6)' }}>
           Diversity is lucrative. Researchers at UCLA\'s Center for Scholars And Storytellers analyzed over 100 films released from 2016 to 2019. They found that films with diverse characters and authentic stories actually make more money at the box office.
         </p>
       </Grid>

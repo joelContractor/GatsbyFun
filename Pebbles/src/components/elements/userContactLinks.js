@@ -60,7 +60,7 @@ function userContactLinks({ dats }) {
                                     }else{
                                         return<>
                                             <StaticImage
-                                                src="../images/age.png"
+                                                src="../images/notext.png"
                                                 width={55}
                                                 quality={95}
                                                 formats={["AUTO", "WEBP", "AVIF"]}
@@ -92,7 +92,7 @@ function userContactLinks({ dats }) {
                                 }else{
                                     return<>
                                         <StaticImage
-                                            src="../images/age.png"
+                                            src="../images/noemail.png"
                                             width={55}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
@@ -123,7 +123,7 @@ function userContactLinks({ dats }) {
                                     }else{
                                         return<>
                                             <StaticImage
-                                                src="../images/age.png"
+                                                src="../images/nocall.png"
                                                 width={55}
                                                 quality={95}
                                                 formats={["AUTO", "WEBP", "AVIF"]}

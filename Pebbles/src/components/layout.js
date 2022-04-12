@@ -47,7 +47,7 @@ const Layout = ({ children }) => {
         <div style={{ margin: `0 auto`, maxWidth: 900, padding: `0 1.0875rem 1.45rem`, color:"#7e7e7e", fontSize:"0.8rem"}} >
           <Grid container direction="row" spacing={3}>
 
-          <Grid item xs={12} style={{ textAlign:"center", paddingTop:"60px", fontSize:"0.9rem" }}>
+          <Grid item xs={12} style={{ textAlign:"center", paddingTop:"60px", fontSize:"0.8rem" }}>
               <h5>Participate</h5>
               <p>We aim to collate and help highlight diverse talent in the film industry. Be found on this site free! We ONLY feature publicly available contact details used for business (numbers/emails to agents or self-promoting talent). We are not an agency, any contact will be direct from production company to agent/talent.</p>
             </Grid>

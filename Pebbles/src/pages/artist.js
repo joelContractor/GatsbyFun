@@ -13,10 +13,10 @@ const ArtistPage = ({data}) => (
     
     <Grid container sx={{marginBottom:'10px', padding:"20px 10px 0px 10px"}} spacing={3}>
       <Grid item xs={12}>
-          <p style={{ marginBottom:"0rem" }}>Find Diverse Actors</p>
+          <p style={{ marginBottom:"0rem", fontSize:"1.2rem" }}>Find Diverse Actors</p>
       </Grid>
       <Grid item xs={12} md={12}>
-        <p style={{ fontFamily:"Arial", fontSize:"12px", color: 'rgba(0, 0, 0, 0.6)' }}>
+        <p style={{ fontSize:"0.9rem", color: 'rgba(0, 0, 0, 0.6)' }}>
             Employing diverse actors can add a new dynamic to performances, while helping you gain funding for your project. We provide you with access to diverse actors and agencies FREE. Swipe through our selection of featured actors or scroll down to find an agency to work with.
         </p>
       </Grid>
