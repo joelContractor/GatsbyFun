@@ -2,6 +2,7 @@ import React from "react"
 /*import { Link } from "gatsby"*/
 import { Grid } from "@material-ui/core";
 import { styled } from "@mui/system";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const StyledUserImageChangesGrid = styled(Grid, {
     name: "StyledUserImageChangesGrid",
@@ -19,7 +20,9 @@ const StyledUserImageChangesGrid = styled(Grid, {
 
 
 function UserImageChanges({ dats }) {
-
+    const matches = useMediaQuery('(max-width:600px)');
+    var space = 6;
+    if(matches){space = 1}
     const res =
 
         <StyledUserImageChangesGrid state={{dats}} container>
@@ -28,7 +31,7 @@ function UserImageChanges({ dats }) {
             {(() => {
                 if(dats.node.canwearcontacts){
 
-                    return <Grid container direction="row" spacing={6}> 
+                    return <Grid container direction="row" spacing={space}> 
                             {(() => {
                                 if(dats.node.canCutHair){
                                     return <Grid item xs={6} md={4}>

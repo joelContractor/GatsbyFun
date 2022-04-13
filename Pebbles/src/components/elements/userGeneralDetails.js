@@ -2,6 +2,7 @@ import React from "react"
 /*import { Link } from "gatsby"*/
 import { Grid } from "@material-ui/core";
 import { styled } from "@mui/system";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const StyledUserGeneralDetailsGrid = styled(Grid, {
     name: "StyledUserGeneralDetailsGrid",
@@ -17,13 +18,17 @@ const StyledUserGeneralDetailsGrid = styled(Grid, {
 
 
 function UserGeneralDetails({ dats }) {
+    const matches = useMediaQuery('(max-width:600px)');
+    var space = 6;
+    if(matches){space = 1}
+
     let AgeLabel = 'Age'
     let Age = ''
 
     const res =
 
         <StyledUserGeneralDetailsGrid state={{dats}} container>
-            <Grid container direction="row" spacing={1} >   
+            <Grid container direction="row" spacing={space} >   
                 {(() => {
                     if(dats.node.actoragerange || dats.node.agenonactor){
 
