@@ -15,7 +15,7 @@ const StyledFrontPageArticleWriterDetailsGrid = styled(Grid, {
     fontFamily:`georgia`,
     ".title": { fontWeight:"bold", fontFamily:`Arial` },
     ".shareLinks": {  display:"flex", justifyContent: "center", fontSize:"0.8rem", color:"cornflowerblue"},
- 
+    p: {  marginTop:"10px" }
 
   });
 

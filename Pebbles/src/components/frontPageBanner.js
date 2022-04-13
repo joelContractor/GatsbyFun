@@ -22,7 +22,7 @@ const StyledFrontPageBannerGrid = styled(Grid, {
     name: "StyledFrontPageBannerGrid",
     slot: "Wrapper",
   })({
-    fontSize:`12px`,
+    fontSize:`0.8rem`,
     fontFamily:`Arial`, 
     marginBottom:"50px",
     borderRadius:"20px",
@@ -30,7 +30,7 @@ const StyledFrontPageBannerGrid = styled(Grid, {
     ".swiper-button-prev": { color:"black", opacity:"0.1" },
     ".swiper-button-next": { color:"black", opacity:"0.1" },
     ".swiper-pagination-bullet": { padding:"6px" },
-    ".spacer": { padding:"20px" }
+    ".spacer": { padding:"10px 0px 30px 0px"}
 
   });
 
@@ -242,6 +242,7 @@ function FrontPageBanner({ data }) {
                                         </>
                                     }
                                 })()}
+                                <Grid item xs={12} className="spacer"></Grid>
                                 { matchesUnder && <FrontPageArticleWriterDetailsSmall title={ dats.node.title } dats={ dats.node.articleauthor }/> }
                                 { !matchesUnder && <FrontPageArticleWriterDetails title={ dats.node.title } dats={ dats.node.articleauthor }/> }
                                 <Grid item xs={12} className="spacer"></Grid>
