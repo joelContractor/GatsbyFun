@@ -15,7 +15,7 @@ const WriterPage = ({data}) => (
             <p style={{ marginBottom:"0rem", fontSize:"1.2rem" }}>Find Diverse Writers</p>
         </Grid>
         <Grid item xs={12} md={12}>
-          <p style={{ fontSize:"0.9rem", color: 'rgba(0, 0, 0, 0.6)' }}>
+          <p style={{ fontSize:"0.85rem", color: 'rgba(0, 0, 0, 0.6)' }}>
               Employing diverse writers can add a new dynamic to performances, while helping you gain funding for your project. We proactively collate diverse writers and agencies FREE. Swipe through our selection of featured actors or scroll down to find an agency to work with.
           </p>
         </Grid>
