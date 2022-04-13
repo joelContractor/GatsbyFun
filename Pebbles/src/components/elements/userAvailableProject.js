@@ -8,12 +8,14 @@ const StyledUserAvailableProjectGrid = styled(Grid, {
     name: "StyledUserAvailableProjectGrid",
     slot: "Wrapper",
   })({
+    color: "rgba(0,0,0,0.5)",
     paddingTop:"50px", 
     marginTop:"10px",
     paddingBottom:"20px", 
     borderTop:"1px dotted grey",
-    ".bold": { fontWeight:"bold" },
-    ".normal": { fontWeight:"normal" }
+    ".bold": { fontWeight:"bold", color: "hsla(0, 0%, 0%, 0.8)"},
+    ".normal": { fontWeight:"normal", color: "rgba(0,0,0,0.5)" },
+    h2: { color: "hsla(0, 0%, 0%, 0.8)" }
 
   });
 

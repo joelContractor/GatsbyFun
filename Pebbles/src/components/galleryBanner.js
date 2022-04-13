@@ -25,7 +25,7 @@ const StyledGalleryBannerGrid = styled(Grid, {
     name: "StyledGalleryBannerGrid",
     slot: "Wrapper",
   })({
-    fontSize:`12px`,
+    fontSize:`0.8rem`,
     fontFamily:`Arial`, 
     marginBottom:"50px",
     background:"white",
@@ -108,7 +108,7 @@ function GalleryBanner({ data }) {
 
                             <UserBannerImage  dats={ dats } show={show} showInfo={showInfo} presentReligion={presentReligion} presentRace={presentRace} presentAbility={presentAbility} presentAge={presentAge} presentOrientation={presentOrientation} presentGender={presentGender} presentCulture={presentCulture}/>
 
-                            <Grid className="bannerData" item xs={12} style={ { fontFamily: "Arial", height:show === 'none'? `0px`: `100%`, opacity:show === 'none'? `0`: `1` , top:show === 'none'? `-4900px`: `0px` }}>                                                             
+                            <Grid className="bannerData" item xs={12} style={ { fontSize:"0.8rem", fontFamily: "Arial", height:show === 'none'? `0px`: `100%`, opacity:show === 'none'? `0`: `1` , top:show === 'none'? `-4900px`: `0px` }}>                                                             
 
                                 <UserGeneralDetails  dats={ dats } />                              
 
