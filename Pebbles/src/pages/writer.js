@@ -16,7 +16,7 @@ const WriterPage = ({data}) => (
         </Grid>
         <Grid item xs={12} md={12}>
           <p style={{ fontSize:"0.9rem", color: 'rgba(0, 0, 0, 0.6)' }}>
-              Employing diverse writers can add a new dynamic to performances, while helping you gain funding for your project. We provide you with access to diverse writers and agencies FREE. Swipe through our selection of featured actors or scroll down to find an agency to work with.
+              Employing diverse writers can add a new dynamic to performances, while helping you gain funding for your project. We proactively collate diverse writers and agencies FREE. Swipe through our selection of featured actors or scroll down to find an agency to work with.
           </p>
         </Grid>
 
