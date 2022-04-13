@@ -3,6 +3,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 /*import { Link } from "gatsby"*/
 import { Grid } from "@material-ui/core";
 import { styled } from "@mui/system";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const StyledUserSkillsGrid = styled(Grid, {
     name: "StyledUserSkillsGrid",
@@ -22,6 +23,9 @@ const StyledUserSkillsGrid = styled(Grid, {
 
 
 function UserSkills({ dats }) {
+    const matches = useMediaQuery('(max-width:600px)');
+    var space = 6;
+    if(matches){space = 3}
 
     const res =
 
@@ -29,7 +33,7 @@ function UserSkills({ dats }) {
                 {(() => {
                     if(dats.node.skill){
 
-                        return <Grid container direction="row" spacing={6}> 
+                        return <Grid container direction="row" spacing={space}> 
                                 {(() => {
                                     if(dats.node.skillimage){
                                         return <Grid item xs={6} sm={8}>

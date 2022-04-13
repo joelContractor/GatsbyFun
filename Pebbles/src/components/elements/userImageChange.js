@@ -57,7 +57,7 @@ function UserImageChanges({ dats }) {
                             
                             {(() => {
                                 if(dats.node.canwearcontacts){
-                                    return <Grid item xs={6} md={4}>
+                                    return <Grid item xs={12} md={4}>
                                             
                                             <h2>Can Wear Contacts?</h2>
                                             <p className="grey">{dats.node.canwearcontacts}</p>
