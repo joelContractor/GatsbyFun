@@ -25,7 +25,7 @@ const StyledUserSkillsGrid = styled(Grid, {
 function UserSkills({ dats }) {
     const matches = useMediaQuery('(max-width:600px)');
     var space = 6;
-    if(matches){space = 3}
+    if(matches){space = 2}
 
     const res =
 
