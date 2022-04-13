@@ -8,6 +8,7 @@ import 'swiper/css/pagination';
 import { Grid } from "@material-ui/core";
 import UserBannerImage from "./elements/userBannerImage";
 import FrontPageArticleParagraph from "./elements/frontPageArticleParagraph";
+import FrontPageArticleParagraphTeaser from "./elements/frontPageArticleParagraphTeaser";
 import FrontPageArticleTitle from "./elements/frontPageArticleTitle";
 import FrontPageArticleWriterDetails from "./elements/frontPageArticleWriterDetails";
 import FrontPageArticleImage from "./elements/frontPageArticleImage";
@@ -105,7 +106,7 @@ function FrontPageBanner({ data }) {
                                             { matchesUnder && <FrontPageArticleWriterDetailsSmall title={ dats.node.title } dats={ dats.node.articleauthor }/> }
                                             { !matchesUnder && <FrontPageArticleWriterDetails title={ dats.node.title } dats={ dats.node.articleauthor }/> }
                                             <FrontPageArticleAboutAuthorParagraph dats={ dats.node.articleabouttheauthor } />
-                                            <FrontPageArticleParagraph dats={ dats.node.articlep1 } />   
+                                            <FrontPageArticleParagraphTeaser dats={ dats.node.articlep1 } />   
                                         </>
                                     }
                                 })()}

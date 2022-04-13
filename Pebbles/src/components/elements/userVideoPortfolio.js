@@ -4,7 +4,6 @@ import { Grid } from "@material-ui/core";
 import { styled } from "@mui/system";
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
-import useMediaQuery from "@mui/material/useMediaQuery";
 
 const StyledUserVideoPortfolioGrid = styled(Grid, {
     name: "StyledUserVideoPortfolioGrid",
@@ -27,9 +26,6 @@ const StyledUserVideoPortfolioGrid = styled(Grid, {
 
 
 function UserVideoPortfolio({ dats }) {
-    const matches = useMediaQuery('(max-width:600px)');
-    var space = `1.45rem`;
-    if(matches){space = `0`}
 
     const res =
 
