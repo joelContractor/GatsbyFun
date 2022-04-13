@@ -23,7 +23,7 @@ function UserGeneralDetails({ dats }) {
     const res =
 
         <StyledUserGeneralDetailsGrid state={{dats}} container>
-            <Grid container direction="row" spacing={6} >   
+            <Grid container direction="row" spacing={1} >   
                 {(() => {
                     if(dats.node.actoragerange || dats.node.agenonactor){
 
