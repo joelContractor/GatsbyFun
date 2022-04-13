@@ -28,7 +28,7 @@ function FrontPageArticleParagraph({ dats }) {
             <Grid container direction="row" spacing={6}>
                 {(() => {
                     if(dats){
-                        return <Grid item xs={12} sm={8}>
+                        return <Grid item xs={12} md={8}>
                                 
                                 <p>{dats}</p>
                   

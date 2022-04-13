@@ -23,7 +23,7 @@ function Header ({ siteTitle }) {
       <div style={{ float:`left`, marginRight:`5px`, marginTop:"0px", width:"70px" }}>
         <Link to="/" >
           <StaticImage
-              src="../images/mdcl.png"
+              src="../images/mdc.png"
               width={70}
               quality={95}
               formats={["AUTO", "WEBP", "AVIF"]}

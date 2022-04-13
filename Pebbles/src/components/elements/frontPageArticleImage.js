@@ -27,7 +27,7 @@ function FrontPageArticleImage({ dats }) {
                 {(() => {
                     if(dats){
                         return <>
-                            <Grid item xs={12} sm={8}>
+                            <Grid item xs={12} md={8}>
                                 
                                 <GatsbyImage className="frontPageArticleImage" image={getImage(dats)} alt={"article alt info taken from server"}/>
                   

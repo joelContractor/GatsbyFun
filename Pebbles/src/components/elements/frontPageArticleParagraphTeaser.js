@@ -11,7 +11,8 @@ const StyledFrontPageArticleParagraphTeaserGrid = styled(Grid, {
     marginTop:"10px", 
     paddingBottom:"0px",
     fontSize:"1.1rem",
-    fontFamily:`georgia`
+    fontFamily:`georgia`,
+    color: "hsla(0, 0%, 0%, 0.9)"
 
   });
 
@@ -28,7 +29,7 @@ function FrontPageArticleParagraphTeaser({ dats }) {
             <Grid container direction="row" spacing={6}>
                 {(() => {
                     if(dats){
-                        return <Grid item xs={12} sm={8}>
+                        return <Grid item xs={12} md={8}>
                                 
                                 <p>{dats}</p>
                   

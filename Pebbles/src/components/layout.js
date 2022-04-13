@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
       </div>
       <footer
           style={{
-            marginTop: `2rem`,
+            marginTop: `6rem`,
             background:"rgb(26, 36, 33) none repeat scroll 0% 0%",
             padding: `1.5rem 0 0 0`
           }}

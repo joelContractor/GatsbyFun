@@ -31,7 +31,7 @@ function FrontPageArticleAboutAuthorParagraph({ dats }) {
             <Grid container direction="row" spacing={6}>
                 {(() => {
                     if(dats){
-                        return <Grid item xs={12} sm={8}>
+                        return <Grid item xs={10} sm={8}>
                                 
                                 <p><span className="title">The Author: </span> {dats}</p>
                   
