@@ -14,7 +14,7 @@ const StyledUserAvailableProjectGrid = styled(Grid, {
     paddingBottom:"20px", 
     borderTop:"1px dotted grey",
     ".bold": { fontWeight:"bold", color: "hsla(0, 0%, 0%, 0.8)"},
-    ".normal": { fontWeight:"normal", color: "rgba(0,0,0,0.5)" },
+    ".normal": { fontWeight:"normal", color: "rgba(0,0,0,0.6)" },
     h2: { color: "hsla(0, 0%, 0%, 0.8)" }
 
   });

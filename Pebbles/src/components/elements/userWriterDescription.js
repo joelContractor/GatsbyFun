@@ -13,7 +13,7 @@ const StyledUserWriterDescriptionGrid = styled(Grid, {
     paddingBottom:"50px",
     borderTop:"1px dotted grey",
     ".userWriterDescriptionImage": {willChange:"transform", borderRadius:"5px" },
-    ".grey": { color:"rgba(0,0,0,0.5)" }
+    ".grey": { color:"rgba(0,0,0,0.6)" }
 
   });
 

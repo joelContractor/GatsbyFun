@@ -30,14 +30,7 @@ const StyledGalleryBannerGrid = styled(Grid, {
     marginBottom:"50px",
     background:"white",
     borderRadius:"20px",
-   
     ".bannerData": { paddingRight:"20px", paddingLeft:"20px", marginTop:`0px`, zIndex:`1`, overflow:`hidden`, position: `relative`, transition: `opacity 1.9s, top 0s, height 0s`},
-    ".diversityLogosBelow": { padding: `15px 10px`, display:`inline`, background:"red", borderRadius:"50px", marginLeft:"10px" },
-    ".bannerButtonBelow": { fontSize:"16px", textTransform: `none`, backgroundColor:`rgba(0, 0, 05, 0.1)`, width:`100%`, borderRadius: `50px`, color: `black`, fontWeight: `normal`, border: `1px solid #d3d3d3`, height: `50px`, padding: `4px 20px 4px 20px`, fontFamily: 'georgia, serif'},
-    ".bannerButton:hover": { color: "black", backgroundColor:`rgba(255, 255, 255, 0.8)`},
-    ".bannerButtonHousingBelow": { padding:"10px" },
-    ".diversityLogoPaddingBelow": { padding:"25px 20px 10px 0px"},
-    ".diversityLogoAreaBelow": { textAlign: `left`, background: `rgba(0, 0, 0, 0.1)`, borderRadius: `50px`, border: `1px solid #d3d3d3`, width:`fit-content`, marginLeft: `10px` },
     ".swiper-button-prev": { color:"white", opacity:"0.2" },
     ".swiper-button-next": { color:"white", opacity:"0.2" },
     ".swiper-pagination-bullet": { padding:"6px" }
