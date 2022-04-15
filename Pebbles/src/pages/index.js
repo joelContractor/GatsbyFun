@@ -1,15 +1,17 @@
 import { graphql } from 'gatsby'
 import * as React from "react"
-import SiteGallery from "../components/siteGallery"
+import ArticleGallery from "../components/articleGallery"
+import ResponsiveArticleSlider from "../components/responsiveArticleSlider"
 import FrontPageBanner from "../components/frontPageBanner"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Grid } from "@material-ui/core"
+import useMediaQuery from "@mui/material/useMediaQuery"
 
 
-const IndexPage = ({data}) => (
-
-  
+function IndexPage({data}) {
+  const matchesUnder = useMediaQuery('(max-width:600px)');
+  const res =
 
   <Layout>
 
@@ -24,7 +26,7 @@ const IndexPage = ({data}) => (
       </Grid>
       <Grid item xs={12} md={12}>
         <p style={{ fontSize:"0.9rem", color: 'rgba(0, 0, 0, 0.6)' }}>
-            Employing diverse crew can help you gain funding for your project. We provide you with access to diverse actors and agencies FREE. Swipe through our selection of featured actors or scroll down to find an agency to work with.
+          Find articles on diversity-in-the-performance-industry based topics, issues and performances here. We highlight the diverse talent available in the TV, Film, Movie and Theatre sectors on the other pages.  
         </p>
       </Grid>
 
@@ -34,21 +36,24 @@ const IndexPage = ({data}) => (
 
     <Grid container sx={{marginBottom:'20px', padding:"0px 10px 0px 10px"}} spacing={3}>
       <Grid item xs={12}>
-          <p style={{ marginBottom:"0rem", fontSize:"1.2rem" }}>How Diversity Helps You</p>
+          <p style={{ marginBottom:"0rem", fontSize:"1.2rem" }}>Diversity In The News</p>
       </Grid>
       <Grid item xs={12} md={12}>
         <p style={{ fontSize:"0.9rem", color: 'rgba(0, 0, 0, 0.6)' }}>
-          Diversity is lucrative. Researchers at UCLA\'s Center for Scholars And Storytellers analyzed over 100 films released from 2016 to 2019. They found that films with diverse characters and authentic stories actually make more money at the box office.
+          We collate interesting articles about diversity in the TV, Film, Movie and Theatre sectors. Hopefully we can help shed light on a few issues, while pointing you to a good read. 
         </p>
       </Grid>
 
     </Grid>
 
-    <SiteGallery  data={ data.allDatoCmsActingagency.edges } />
+    { !matchesUnder && <ArticleGallery  data={ data.allDatoCmsDiversityarticle.edges } /> }
+    { matchesUnder && <ResponsiveArticleSlider  data={ data.allDatoCmsDiversityarticle.edges } /> }
   
     
   </Layout>
-)
+
+  return res;
+}
 
 export const query = graphql`
   query MyLandingPageQuery {
@@ -115,6 +120,18 @@ export const query = graphql`
           articleimg2 {
             gatsbyImageData(width: 1000)
           }
+        }
+      }
+    }
+    allDatoCmsDiversityarticle {
+      edges {
+        node {
+          articledescription
+          articleimage {
+            gatsbyImageData
+          }
+          articletitle
+          articleurl
         }
       }
     }

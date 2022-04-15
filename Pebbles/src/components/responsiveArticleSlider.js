@@ -15,7 +15,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 
 
-const StyledHistorySwiperGrid = styled(Grid, {
+const StyledArticleSwiperGrid = styled(Grid, {
     name: "StyledHistorySwiperGrid",
     slot: "Wrapper",
   })({
@@ -50,12 +50,12 @@ const StyledHistorySwiperGrid = styled(Grid, {
 
 
 
-function responsiveSiteSlider({ data }) {
+function responsiveArticleSlider({ data }) {
 
 
     const res =
 
-        <StyledHistorySwiperGrid container spacing={0}>
+        <StyledArticleSwiperGrid container spacing={0}>
 
             <Grid item xs={12}>
                 <Swiper
@@ -74,14 +74,14 @@ function responsiveSiteSlider({ data }) {
                         
 
                         
-                        <SwiperSlide key={dats.node.agencytitle} >
+                        <SwiperSlide key={dats.node.articletitle} >
 
-                            <Grid key={dats.node.agencytitle} item xs={12} sm={6} md={4} lg={4} state={data} >
+                            <Grid key={dats.node.articletitle} item xs={12} sm={6} md={4} lg={4} state={data} >
                         
                                 <Card className="infoCard">
 
                                     <Grid item xs={12} className="safariRounded">
-                                        <GatsbyImage className="cardMediaArea" image={getImage(dats.node.agencyimage.gatsbyImageData)} alt={dats.node.agencytitle}/>
+                                        <GatsbyImage className="cardMediaArea" image={getImage(dats.node.articleimage.gatsbyImageData)} alt={dats.node.articletitle}/>
                                     </Grid>
 
                                     <CardContent
@@ -90,16 +90,16 @@ function responsiveSiteSlider({ data }) {
                                     
                                             <Grid item xs={8}>
                                                 <p className="cardTitle">
-                                                    {dats.node.agencytitle}
+                                                    {dats.node.articletitle}
                                                 </p>
                                                 <p className="cardContentPara">
-                                                    {dats.node.agencydescription}
+                                                    {dats.node.articledescription}
                                                 </p>
                                             </Grid>
                                             <Grid item xs={4}>
                                                 <div className="buttonContainer">
                                                     
-                                                    <Button href={dats.node.agencyurl} target="_blank" className="cardButton cardButtonBottom">
+                                                    <Button href={dats.node.articleurl} target="_blank" className="cardButton cardButtonBottom">
                                                         Visit
                                                     </Button>
                                                 </div>
@@ -116,8 +116,8 @@ function responsiveSiteSlider({ data }) {
                     
                 </Swiper>
             </Grid>
-        </StyledHistorySwiperGrid>
+        </StyledArticleSwiperGrid>
 
     return res;
 }
-export default responsiveSiteSlider
+export default responsiveArticleSlider
