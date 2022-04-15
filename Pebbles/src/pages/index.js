@@ -40,7 +40,7 @@ function IndexPage({data}) {
       </Grid>
       <Grid item xs={12} md={12}>
         <p style={{ fontSize:"0.9rem", color: 'rgba(0, 0, 0, 0.6)' }}>
-          We collate interesting articles about diversity in the TV, Film, Movie and Theatre sectors. Hopefully we can help shed light on a few issues, while pointing you to a good read. 
+          We collate and provide links to interesting articles about diversity in the TV, Film, Movie and Theatre sectors. Hopefully we can help shed light on a few issues, while pointing you to a good read. 
         </p>
       </Grid>
 
