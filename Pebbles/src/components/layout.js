@@ -48,12 +48,12 @@ const Layout = ({ children }) => {
           <Grid container direction="row" spacing={3}>
 
           <Grid item xs={12} style={{ textAlign:"center", paddingTop:"60px", fontSize:"0.8rem" }}>
-              <h5>Participate</h5>
-              <p>We aim to collate and help highlight diverse talent in the film industry. Be found on this site free! We ONLY feature publicly available contact details used for business (numbers/emails to agents or self-promoting talent). We are not an agency, any contact will be direct from production company to agent/talent.</p>
+              <h5 style={{ width:"80%", margin:"0 auto", paddingBottom:"3rem", fontSize:"0.9rem"}}>Participate:</h5>
+              <p style={{ width:"90%", margin:"0 auto", paddingBottom:"2rem"}}>We aim to collate and help highlight diverse talent in the film industry. Be found on this site free! We ONLY feature publicly available contact details used for business (numbers/emails to agents or self-promoting talent). We are not an agency, any contact will be direct from production company to agent/talent.</p>
             </Grid>
 
             <Grid item xs={4} style={{ textAlign:"center" }}>
-              <h5>Text</h5>
+              <h5>Text Us</h5>
               <a aria-label={`Send us a text`} href={`sms:07402180192`}>
                                       
                   <StaticImage
@@ -68,7 +68,7 @@ const Layout = ({ children }) => {
             </Grid>
 
             <Grid item xs={4} style={{ textAlign:"center" }} >
-              <h5>Email</h5>
+              <h5>Email Us</h5>
               <a aria-label={`Email us`} href={`mailto:admin@diversepool.com?cc=admin@diversepool.com&&subject=Diverse-Pool-Mail&body=Body-goes-here`}>
                                       
                   <StaticImage
@@ -84,7 +84,7 @@ const Layout = ({ children }) => {
             </Grid>
 
             <Grid item xs={4} style={{ textAlign:"center" }}>  
-              <h5>Call</h5>
+              <h5>Call Us</h5>
               <a aria-label={`Call Us`} href={`tel:07402180192`}>
                                       
                   <StaticImage
@@ -100,7 +100,7 @@ const Layout = ({ children }) => {
             </Grid>
 
             <Grid item xs={12} >
-              <p style={{ textAlign:"center", padding:"20px 0px 0px 0px" }}>© {new Date().getFullYear()}, Built By Joel White</p>
+              <p style={{ textAlign:"center", padding:"100px 0px 0px 0px" }}>© {new Date().getFullYear()}, Built By Joel White</p>
             </Grid>
 
           </Grid>
