@@ -1,14 +1,17 @@
 import { graphql } from 'gatsby'
 import * as React from "react"
 import SiteGallery from "../components/siteGallery"
+import ResponsiveSiteSlider from "../components/responsiveSiteSlider"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Grid } from "@material-ui/core"
+import useMediaQuery from "@mui/material/useMediaQuery";
 
-const SecondPage = ({data}) => (
 
+function SecondPage({data}) {
+  const matchesUnder = useMediaQuery('(max-width:600px)');
   
-
+  const res = 
   <Layout>
 
     <Seo title="Diverse Artist Page" />
@@ -24,10 +27,12 @@ const SecondPage = ({data}) => (
       </Grid>
 
     </Grid>
-    <SiteGallery  data={ data.allDatoCmsActingagency.edges } />
+    { !matchesUnder && <SiteGallery  data={ data.allDatoCmsActingagency.edges } /> }
+    { matchesUnder && <ResponsiveSiteSlider  data={ data.allDatoCmsActingagency.edges } /> }
   
   </Layout>
-)
+  return res;
+}
 
 export const query = graphql`
   query MyQuery {
