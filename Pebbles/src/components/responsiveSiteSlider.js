@@ -21,7 +21,8 @@ const StyledHistorySwiperGrid = styled(Grid, {
   })({
     fontSize:`0.8rem`,
     fontFamily:`Arial`, 
-    marginBottom:"40px",
+    marginBottom:"0px",
+    marginTop:"0px",
     paddingTop:"0px",
     ".normal": { fontWeight:"normal" },
     ".bold": { fontWeight:"bold" },
@@ -53,7 +54,7 @@ function responsiveSiteSlider({ data }) {
     
     const res =
 
-        <StyledHistorySwiperGrid container >
+        <StyledHistorySwiperGrid container spacing={0}>
 
             <Grid item xs={12}>
                 <Swiper
@@ -71,7 +72,7 @@ function responsiveSiteSlider({ data }) {
                         
                         <SwiperSlide key={dats[0]} >
 
-                            <Grid key={dats.node.agencytitle} item xs={12} sm={6} md={4} lg={4} state={dats} >
+                            <Grid key={dats.node.agencytitle} item xs={12} sm={6} md={4} lg={4} state={data} >
                         
                                 <Card className="infoCard">
 
