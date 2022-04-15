@@ -22,7 +22,7 @@ const StyledHistorySwiperGrid = styled(Grid, {
     fontSize:`0.8rem`,
     fontFamily:`Arial`, 
     marginBottom:"0px",
-    marginTop:"0px",
+    marginTop:"-45px",
     paddingTop:"0px",
     ".normal": { fontWeight:"normal" },
     ".bold": { fontWeight:"bold" },
@@ -31,7 +31,7 @@ const StyledHistorySwiperGrid = styled(Grid, {
     ".swiper-button-prev": { color:"black", opacity:"0.3", position:"relative", bottom:"-420px", left:"0px"},
     ".swiper-button-next": { color:"black", opacity:"0.3", position:"relative", bottom:"-400px", right:"-90%"},
     ".historyTitle": {  marginBottom:"10px" },
-    ".historySwiperTitle": {  marginBottom:"40px", marginTop:"40px" },
+    ".historySwiperTitle": {  marginBottom:"40px", marginTop:"0px" },
     ".infoCard": { margin:'0 auto', maxWidth:"380px", willChange:"transform", borderRadius:"20px", overFlow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
     ".cardButton": { textTransform: `none`, color:"white", fontWeight:"normal", fontSize:"0.8rem", width:"100%", textAlign:"center", border: "1px white solid", marginBottom:"0px", background: "rgb(26, 36, 33)", padding: "25px 10px 20px 15px", borderBottomRightRadius: "0px", borderBottomLeftRadius:"0px", borderTopLeftRadius: "5px", borderTopRightRadius: "5px" },
     ".cardButton:hover": { background: "rgb(26, 36, 33)", color:"orange" },
@@ -70,7 +70,7 @@ function responsiveSiteSlider({ data }) {
 
                     {data.map((dats) => (
                         
-                        <SwiperSlide key={dats[0]} >
+                        <SwiperSlide key={dats.node.agencytitle} >
 
                             <Grid key={dats.node.agencytitle} item xs={12} sm={6} md={4} lg={4} state={data} >
                         
