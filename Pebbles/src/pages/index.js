@@ -26,7 +26,7 @@ function IndexPage({data}) {
       </Grid>
       <Grid item xs={12} md={12}>
         <p style={{ fontSize:"0.9rem", color: 'rgba(0, 0, 0, 0.6)' }}>
-          Find articles on diversity-in-the-performance-industry based topics, issues and performances here. We highlight the diverse talent available in the TV, Film, Movie and Theatre sectors on the other pages.  
+          Find articles on diversity-in-the-performance-industry based topics, issues and performances here. We highlight (and celebrate) the diverse talent available in the TV, Film, Movie and Theatre sectors on the other pages.  
         </p>
       </Grid>
 
