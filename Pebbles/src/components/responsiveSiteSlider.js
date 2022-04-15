@@ -27,8 +27,8 @@ const StyledHistorySwiperGrid = styled(Grid, {
     ".bold": { fontWeight:"bold" },
     ".grey": { color:"grey" },
     ".swiper-pagination-bullet": { padding:"0.3rem" },
-    ".swiper-button-prev": { color:"black", opacity:"0.3", position:"relative", bottom:"-21px", left:"0px"},
-    ".swiper-button-next": { color:"black", opacity:"0.3", position:"relative", bottom:"2px", right:"-90%"},
+    ".swiper-button-prev": { color:"black", opacity:"0.3", position:"relative", bottom:"-420px", left:"0px"},
+    ".swiper-button-next": { color:"black", opacity:"0.3", position:"relative", bottom:"-400px", right:"-90%"},
     ".historyTitle": {  marginBottom:"10px" },
     ".historySwiperTitle": {  marginBottom:"40px", marginTop:"40px" },
     ".infoCard": { margin:'0 auto', maxWidth:"380px", willChange:"transform", borderRadius:"20px", overFlow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
@@ -64,7 +64,7 @@ function responsiveSiteSlider({ data }) {
                 pagination={{ clickable: true }}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
-                style={{ fontFamily: "Arial", paddingBottom:"3rem" }}
+                style={{ fontFamily: "Arial", paddingBottom:"7rem" }}
                 >
 
                     {data.map((dats) => (
