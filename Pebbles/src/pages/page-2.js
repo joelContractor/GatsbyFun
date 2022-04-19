@@ -22,7 +22,7 @@ function SecondPage({data}) {
       </Grid>
       <Grid item xs={12} md={12}>
         <p style={{ fontSize:"0.9rem", color: 'rgba(0, 0, 0, 0.6)' }}>
-            Employing diverse actors can add a new dynamic to performances, while helping you gain funding for your project. We proactively collate diverse actors and agencies FREE. Swipe through our selection of featured actors or scroll down to find an agency to work with.
+            Employing diverse actors can add a new dynamic to performances, while helping you gain funding for your project. We proactively collate diverse actors and agencies FREE. Swipe through our selection of featured agencies.
         </p>
       </Grid>
 
@@ -48,8 +48,7 @@ export const query = graphql`
           agencytitle
         }
       }
-    }
-   
+    } 
   }
 `;
 
