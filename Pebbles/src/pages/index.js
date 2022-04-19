@@ -22,11 +22,11 @@ function IndexPage({data}) {
 
     <Grid container sx={{marginBottom:'10px', padding:"20px 10px 0px 10px"}} spacing={3}>
       <Grid item xs={12}>
-          <p style={{ marginBottom:"0rem", fontSize:"1.2rem" }}>Diverse Crew News</p>
+          <p style={{ marginBottom:"0rem", fontSize:"1.2rem" }}>Voices of Diversity</p>
       </Grid>
       <Grid item xs={12} md={12}>
         <p style={{ fontSize:"0.9rem", color: 'rgba(0, 0, 0, 0.6)' }}>
-          Find articles on diversity-in-the-performance-industry based topics, issues and performances here. We highlight (and celebrate) the diverse talent available in the TV, Film, Movie and Theatre sectors on the other pages.  
+          Find articles on diversity-in-the-performance-industry based topics, issues and performances here. We feature articles written by writers, performers and crew from the diverse sector, allowing the honest opinions of those at root-level to be heard.  
         </p>
       </Grid>
 
