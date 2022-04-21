@@ -34,7 +34,7 @@ function IndexPage({data}) {
 
     <FrontPageBanner  data={ data.allDatoCmsFrontpagearticle.edges } /> 
 
-    <Grid container sx={{marginBottom:'20px', padding:"0px 10px 0px 10px"}} spacing={3}>
+    <Grid container sx={{marginTop:"4rem", marginBottom:'20px', padding:"0px 10px 0px 10px"}} spacing={3}>
       <Grid item xs={12}>
           <p style={{ marginBottom:"0rem", fontSize:"1.2rem" }}>Diversity In The News</p>
       </Grid>
