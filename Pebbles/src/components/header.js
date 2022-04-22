@@ -18,7 +18,7 @@ function Header ({ siteTitle }) {
   }
 
   const res = 
-  <header style={ {float:`left`, background: `#1A2421`, marginBottom: `0rem`, width:`100%`, paddingBottom:"13px"} }>
+  <header style={ {float:`left`, background: `#1A2421`, marginBottom: `0rem`, width:`100%`, paddingBottom:"18px"} }>
     <div style={ {margin: `0 auto`, maxWidth: 900, padding: `1.45rem 1.0875rem`} }>
       <div style={{ float:`left`, marginRight:`5px`, marginTop:"0px", width:"70px" }}>
         <Link to="/" >
