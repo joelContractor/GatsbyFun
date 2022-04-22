@@ -10,7 +10,7 @@ const StyledFrontPageArticleParagraphTeaserGrid = styled(Grid, {
     paddingTop:"5px", 
     marginTop:"10px", 
     paddingBottom:"0px",
-    fontSize:"1.1rem",
+    fontSize:"1.2rem",
     fontFamily:`georgia`,
     color: "hsla(0, 0%, 0%, 0.9)"
 
