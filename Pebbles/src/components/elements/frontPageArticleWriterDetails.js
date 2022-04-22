@@ -38,7 +38,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                             </Grid>
 
                             <Grid item xs={4} sm={2} md={2} className="shareLinks">
-                                <a className="twitter-share-button" aria-label={`Tweet this article, ${title}, written by ${dats}, on Twitter`} href="https://twitter.com/intent/tweet/?text=A groundbreaking article from diverse talent in the TV, Theatre or Film Industry:&url=https://www.diversecrew.com/" target="_blank" rel="noreferrer" data-size="large" data-show-count="false" >
+                                <a className="twitter-share-button" aria-label={`Tweet this article, ${title}, written by ${dats}, on Twitter`} href="https://twitter.com/intent/tweet/?text=Groundbreaking articles from and about diverse talent in the TV, Theatre or Film Industry, all hosted on the HUB for diverse actors, writers, directors and agencies:&url=https://www.diversecrew.com/" target="_blank" rel="noreferrer" data-size="large" data-show-count="false" >
                                   
                                     <StaticImage
                                             src="../images/twt.png"
