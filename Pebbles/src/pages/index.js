@@ -26,7 +26,7 @@ function IndexPage({data}) {
       </Grid>
       <Grid item xs={12} md={12}>
         <p style={{ fontSize:"0.9rem", color: 'rgba(0, 0, 0, 0.6)' }}>
-          Find articles on diversity-in-the-performance-industry based topics, issues and performances here. We feature articles written by writers, performers and crew from the diverse sector, allowing the honest opinions of those at root-level to be heard.  
+          Find articles from diverse performers and journalists on industry based topics, issues and performances here. We feature articles written by writers, performers and crew from the diverse sector, allowing the honest opinions of those at root-level to be heard.  
         </p>
       </Grid>
 
