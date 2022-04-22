@@ -38,7 +38,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
                             </Grid>
 
                             <Grid item xs={4} sm={2} md={2} className="shareLinks">
-                                <a className="twitter-share-button" aria-label={`Tweet this article, ${title}, written by ${dats}, on Twitter`} href="https://twitter.com/intent/tweet/?text=A groundbreaking article about diversity in film:&url=https://xenodochial-torvalds-99149d.netlify.app/" target="_blank" rel="noreferrer" data-size="large" data-show-count="false" >
+                                <a className="twitter-share-button" aria-label={`Tweet this article, ${title}, written by ${dats}, on Twitter`} href="https://twitter.com/intent/tweet/?text=A groundbreaking article from diverse talent in the TV, Theatre or Film Industry:&url=https://www.diversecrew.com/" target="_blank" rel="noreferrer" data-size="large" data-show-count="false" >
                                   
                                     <StaticImage
                                             src="../images/twt.png"
@@ -54,7 +54,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
 
                             <Grid item xs={4} sm={2} md={2} className="shareLinks">
                                 
-                                <a aria-label={`Share this article, ${title}, written by ${dats}, on Facebook`}href="https://www.facebook.com/sharer/sharer.php?u=https://xenodochial-torvalds-99149d.netlify.app" target="_blank" rel="noreferrer">
+                                <a aria-label={`Share this article, ${title}, written by ${dats}, on Facebook`}href="https://www.facebook.com/sharer/sharer.php?u=https://www.diversecrew.com/" target="_blank" rel="noreferrer">
                                    
                                     <StaticImage
                                             src="../images/fbk.png"
@@ -70,7 +70,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
 
                             <Grid item xs={4} sm={2} md={2} className="shareLinks">
                                 
-                                <a aria-label={`Post this article, ${title}, written by ${dats}, on LinkedIn`} href="https://www.linkedin.com/shareArticle?url=https://xenodochial-torvalds-99149d.netlify.app&title=Diverse-Crew" target="_blank" rel="noreferrer">
+                                <a aria-label={`Post this article, ${title}, written by ${dats}, on LinkedIn`} href="https://www.linkedin.com/shareArticle?url=https://www.diversecrew.com/&title=Diverse-Crew" target="_blank" rel="noreferrer">
                                     
                                     <StaticImage
                                             src="../images/li.png"

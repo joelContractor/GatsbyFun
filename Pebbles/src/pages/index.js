@@ -15,7 +15,7 @@ function IndexPage({data}) {
 
   <Layout>
 
-    <Seo title="Diverse Pool Landing Page" />
+    <Seo title="Diverse Crew News" />
       {/* Component */}
 
     

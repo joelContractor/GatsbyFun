@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Diverse Crew`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    description: `We aim to collate and help highlight diverse talent in the film industry. Be found on this site free! We ONLY feature publicly available contact details used for business (numbers/emails to agents or self-promoting talent). We are not an agency, any contact will be direct from production company to agent/talent.`,
+    author: `Joel White`,
+    siteUrl: `https://www.diversecrew.com`,
   },
   plugins: [
 	{
