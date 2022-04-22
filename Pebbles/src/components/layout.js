@@ -53,7 +53,7 @@ const Layout = ({ children }) => {
             </Grid>
 
             <Grid item xs={4} style={{ textAlign:"center" }}>
-              <h4>Text Us</h4>
+              <h5>Text Us</h5>
               <a aria-label={`Send us a text`} href={`sms:07402180192`}>
                                       
                   <StaticImage
@@ -68,7 +68,7 @@ const Layout = ({ children }) => {
             </Grid>
 
             <Grid item xs={4} style={{ textAlign:"center" }} >
-              <h4>Email Us</h4>
+              <h5>Email Us</h5>
               <a aria-label={`Email us`} href={`mailto:admin@diversepool.com?cc=admin@diversepool.com&&subject=Diverse-Pool-Mail&body=Body-goes-here`}>
                                       
                   <StaticImage
@@ -84,7 +84,7 @@ const Layout = ({ children }) => {
             </Grid>
 
             <Grid item xs={4} style={{ textAlign:"center" }}>  
-              <h4>Call Us</h4>
+              <h5>Call Us</h5>
               <a aria-label={`Call Us`} href={`tel:07402180192`}>
                                       
                   <StaticImage
