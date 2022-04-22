@@ -14,7 +14,7 @@ function SecondPage({data}) {
   const res = 
   <Layout>
 
-    <Seo title="Diverse Artist Page" />
+    <Seo title="Diverse Actors Page" />
       {/* Component */}
       <Grid container sx={{marginBottom:'10px', padding:"20px 10px 0px 10px"}} spacing={3}>
       <Grid item xs={12}>
