@@ -33,7 +33,7 @@ function UserPhysicalAttributes({ dats }) {
                         return <><Grid item xs={12} className="">
                                 <Grid item xs={12} sm={12}><h2 className="titleColor">Physical Attributes</h2></Grid>
                             </Grid>
-                        <Grid item xs={12} sm={4} container className="grey">
+                        <Grid item xs={12} sm={4}  className="grey">
                                 
                                 
                                 <Grid item xs={6} sm={12}><p>Ethnicity: {dats.node.ethnicity}</p></Grid>
