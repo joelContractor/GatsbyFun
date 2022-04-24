@@ -19,14 +19,15 @@ const StyledHistorySwiperGrid = styled(Grid, {
     background:"white",
     paddingTop:"100px",
     borderTop:"1px dotted grey",
-    ".normal": { fontWeight:"normal" },
+    ".normal": { fontWeight:"normal", fontSize:"0.7rem" },
     ".bold": { fontWeight:"bold" },
-    ".grey": { color:"grey" },
+    ".grey": { color:"grey", fontSize:"0.8rem" },
     ".swiper-pagination-bullet": { padding:"0.3rem" },
     ".swiper-button-prev": { color:"black", opacity:"0.3", position:"relative", bottom:"-25px", left:"0px"},
     ".swiper-button-next": { color:"black", opacity:"0.3", position:"relative", bottom:"-2px", right:"-90%"},
     ".historyTitle": {  marginBottom:"10px" },
-    ".historySwiperTitle": {  marginBottom:"40px", marginTop:"40px" }
+    ".historySwiperTitle": {  marginBottom:"40px", marginTop:"40px" },
+    ".title": { fontSize:"0.9rem"  }
 
   });
 
@@ -71,11 +72,11 @@ function SiteGallerySlider({ dats }) {
 
                                         <Grid item xs={12} sm={12} md={12} style={{ marginBottom:"5rem" }}>
                                             
-                                            <h2 className="normal historySwiperTitle">{dats[0]}</h2>
-                                            <p className="normal grey historySwiperTitle">{dats[1]}</p>
+                                            <h2 className="normal historySwiperTitle title">{dats[0]}</h2>
+                                            <p className="normal historySwiperTitle grey">{dats[1]}</p>
                                             <Grid item xs={12} container direction="row">
-                                                <Grid item xs={4} sm={6}><p className="normal">Year: <span className="normal grey">{dats[2]}</span></p></Grid>
-                                                <Grid item xs={8} sm={6}><p className="normal">Type: <span className="normal grey">{dats[3]}</span></p></Grid>   
+                                                <Grid item xs={4} sm={6}><p className="normal">Year: <span className="normal">{dats[2]}</span></p></Grid>
+                                                <Grid item xs={8} sm={6}><p className="normal">Type: <span className="normal">{dats[3]}</span></p></Grid>   
                                             </Grid>
 
                                         </Grid>
