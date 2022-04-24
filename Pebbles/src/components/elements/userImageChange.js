@@ -36,10 +36,10 @@ function UserImageChanges({ dats }) {
                             {(() => {
                                 if(dats.node.canCutHair){
                                     return <Grid item xs={12} md={4} container direction="row">
-                                            <Grid item xs={6} md={12}>
+                                            <Grid item xs={10} md={12}>
                                                 <h2 className="optionHeading">Can Cut Hair?</h2>
                                             </Grid>
-                                            <Grid item xs={6} md={12}>
+                                            <Grid item xs={2} md={12}>
                                                 <p className="grey">{dats.node.canCutHair}</p>
                                             </Grid>
                                            
@@ -51,10 +51,10 @@ function UserImageChanges({ dats }) {
                             {(() => {
                                 if(dats.node.canColourHair){
                                     return <Grid item xs={12} md={4} container direction="row">
-                                        <Grid item xs={6} md={12}>
+                                        <Grid item xs={10} md={12}>
                                             <h2 className="optionHeading">Can Colour Hair?</h2>
                                         </Grid>
-                                        <Grid item xs={6} md={12}>
+                                        <Grid item xs={2} md={12}>
                                             <p className="grey">{dats.node.canColourHair}</p>
                                         </Grid>
                                     
@@ -68,10 +68,10 @@ function UserImageChanges({ dats }) {
                             {(() => {
                                 if(dats.node.canwearcontacts){
                                     return <Grid item xs={12} md={4} container direction="row">
-                                    <Grid item xs={6} md={12}>
+                                    <Grid item xs={10} md={12}>
                                         <h2 className="optionHeading">Can Wear Contacts?</h2>
                                     </Grid>
-                                    <Grid item xs={6} md={12}>
+                                    <Grid item xs={2} md={12}>
                                         <p className="grey">{dats.node.canwearcontacts}</p>
                                     </Grid>
                                 
