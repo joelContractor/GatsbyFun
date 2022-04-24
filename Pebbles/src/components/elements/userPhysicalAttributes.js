@@ -40,10 +40,10 @@ function UserPhysicalAttributes({ dats }) {
                                 <Grid item xs={6} sm={12}><p>Height: {dats.node.height}</p></Grid>
                                 <Grid item xs={6} sm={12}><p>Weight: {dats.node.weight}</p></Grid>
                                 <Grid item xs={6} sm={12}><p>Eye Colour: {dats.node.eyeColour}</p></Grid>
-                                <Grid item xs={6} sm={12}><p>Hair Colour: {dats.node.hairColour}</p></Grid>
-                                <Grid item xs={6} sm={12}><p>Hair Length: {dats.node.hairLength}</p></Grid>
                                 <Grid item xs={6} sm={12}><p>Tatoos: {dats.node.tatoos}</p></Grid>
                                 <Grid item xs={6} sm={12}><p>Visible Piercings: {dats.node.visiblepiercings}</p></Grid>
+                                <Grid item xs={6} sm={12}><p>Hair Length: {dats.node.hairLength}</p></Grid>
+                                <Grid item xs={12} sm={12}><p>Hair Colour: {dats.node.hairColour}</p></Grid>
                             
                         </Grid></>
                     }
