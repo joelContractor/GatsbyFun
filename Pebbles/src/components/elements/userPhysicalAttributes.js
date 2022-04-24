@@ -15,7 +15,7 @@ const StyledUserPhysicalAttributesGrid = styled(Grid, {
     ".userPhysicalAttributesImage": { willChange:"transform", borderRadius:"5px" },
     ".grey": { color:"rgba(0,0,0,0.6)", fontSize:"0.7rem" },
     ".titleColor": { color:"hsla(0, 0%, 0%, 0.8)", marginBottom:"0" },
-    ".subHeadedVal": { fontSize:"0.6rem" }
+    ".subHeadedVal": { fontSize:"0.6rem", color:"hsla(0, 0%, 0%, 0.9)" }
 
   });
 
