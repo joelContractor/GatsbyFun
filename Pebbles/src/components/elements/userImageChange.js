@@ -8,7 +8,7 @@ const StyledUserImageChangesGrid = styled(Grid, {
     name: "StyledUserImageChangesGrid",
     slot: "Wrapper",
   })({
-    paddingTop:"50px", 
+    paddingTop:"2.5rem", 
     marginTop:"10px", 
     borderTop:"1px dotted grey",
     ".grey": { color:"rgba(0,0,0,0.6)", fontSize:"0.8rem", marginTop:"-0.3rem" },
