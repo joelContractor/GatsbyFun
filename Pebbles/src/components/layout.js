@@ -59,13 +59,13 @@ const Layout = ({ children }) => {
 
             <Grid item xs={12} md={6} style={{ textAlign:"left", fontSize:"0.7rem" }}>
               <h4 style={{ color:"white", fontWeight:"normal", width:"90%", margin:"0 auto", paddingBottom:"2rem", fontSize:"0.8rem"}}>Writer?</h4>
-              <p style={{ fontFamily:"Arial", width:"90%", margin:"0 auto", paddingBottom:"2rem"}}>We feature articles written by diverse writers, performers and crew from the TV, Film and Theatre industries - You. Get in touch about any issues you'd like to see discussed, or have your say internationally by publishing your very own article on diversecrew.com</p>
+              <p style={{ fontFamily:"Arial", width:"90%", margin:"0 auto", paddingBottom:"2rem"}}>We feature articles written by diverse writers, performers and crew from the TV, Film and Theatre industries - You. Get in touch about any issues you'd like to see discussed, or have your say internationally by publishing your very own article on diversecrew.com!</p>
             </Grid>
 
             <Grid item xs={12} md={6} style={{ textAlign:"left", fontSize:"0.7rem" }}>
             </Grid>
 
-            <Grid item xs={4} style={{ textAlign:"center", marginTop:"2rem", borderTop:"1px dotted white", paddingTop:"4rem", borderBottom:"1px dotted white", paddingBottom:"4rem"  }}>
+            <Grid item xs={4} style={{ textAlign:"center", marginTop:"2rem", borderTop:"1px dotted white", paddingTop:"4rem", paddingBottom:"4rem"  }}>
               <h5 style={{ color:"white", fontWeight:"normal", fontSize:"0.6rem" }}>Text Us</h5>
               <a aria-label={`Send us a text`} href={`sms:07375510650`}>
                                       
@@ -80,7 +80,7 @@ const Layout = ({ children }) => {
               </a>
             </Grid>
 
-            <Grid item xs={4} style={{ textAlign:"center", marginTop:"2rem", borderTop:"1px dotted white", paddingTop:"4rem", borderBottom:"1px dotted white", paddingBottom:"4rem"  }} >
+            <Grid item xs={4} style={{ textAlign:"center", marginTop:"2rem", borderTop:"1px dotted white", paddingTop:"4rem", paddingBottom:"4rem"  }} >
               <h5 style={{ color:"white", fontWeight:"normal", fontSize:"0.6rem" }}>Email Us</h5>
               <a aria-label={`Email us`} href={`mailto:diversecrew.com@gmail.com?&subject=DiverseCrewEnquiry&body=Hi Diverse Crew, I'd like a free profile`}>
                                       
@@ -96,7 +96,7 @@ const Layout = ({ children }) => {
               </a>
             </Grid>
 
-            <Grid item xs={4} style={{ textAlign:"center", marginTop:"2rem", borderTop:"1px dotted white", paddingTop:"4rem", borderBottom:"1px dotted white", paddingBottom:"4rem" }}>  
+            <Grid item xs={4} style={{ textAlign:"center", marginTop:"2rem", borderTop:"1px dotted white", paddingTop:"4rem", paddingBottom:"4rem" }}>  
               <h5 style={{ color:"white", fontWeight:"normal", fontSize:"0.6rem" }}>Call Us</h5>
               <a aria-label={`Call Us`} href={`tel:07375510650`}>
                                       
@@ -113,7 +113,7 @@ const Layout = ({ children }) => {
             </Grid>
 
             <Grid item xs={12} >
-              <p style={{ color:"white", textAlign:"center", padding:"100px 0px 0px 0px", fontSize:"0.5rem" }}>© {new Date().getFullYear()}, Built By Joel White</p>
+              <p style={{ textAlign:"center", padding:"100px 0px 0px 0px", fontSize:"0.5rem" }}>© {new Date().getFullYear()}, Built By Joel White</p>
             </Grid>
 
           </Grid>
