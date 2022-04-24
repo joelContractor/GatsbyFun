@@ -54,7 +54,7 @@ const Layout = ({ children }) => {
 
             <Grid item xs={4} style={{ textAlign:"center" }}>
               <h5>Text Us</h5>
-              <a aria-label={`Send us a text`} href={`sms:07402180192`}>
+              <a aria-label={`Send us a text`} href={`sms:07375510650`}>
                                       
                   <StaticImage
                       src="../images/txr.png"
