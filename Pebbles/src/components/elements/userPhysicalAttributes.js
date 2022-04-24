@@ -8,12 +8,12 @@ const StyledUserPhysicalAttributesGrid = styled(Grid, {
     name: "StyledUserPhysicalAttributesGrid",
     slot: "Wrapper",
   })({
-    paddingTop:"100px", 
+    paddingTop:"60px", 
     marginTop:"10px", 
     paddingBottom:"50px",
     borderTop:"1px dotted grey",
     ".userPhysicalAttributesImage": { willChange:"transform", borderRadius:"5px" },
-    ".grey": { color:"rgba(0,0,0,0.6)", fontSize:"0.7rem", paddingTop:"2rem" },
+    ".grey": { color:"rgba(0,0,0,0.6)", fontSize:"0.7rem" },
     ".titleColor": { color:"hsla(0, 0%, 0%, 0.8)", marginBottom:"0" }
 
   });
@@ -30,7 +30,7 @@ function UserPhysicalAttributes({ dats }) {
             <Grid container direction="row"  spacing={6}>  
                 {(() => {
                     if(dats.node.hairColour){
-                        return <><Grid item xs={12} className="">
+                        return <><Grid item xs={12} className="" >
                                 <Grid item xs={12} sm={12}><h2 className="titleColor">Physical Attributes</h2></Grid>
                             </Grid>
                         <Grid item xs={12} sm={4} container className="grey">
