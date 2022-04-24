@@ -11,7 +11,8 @@ const StyledUserImageChangesGrid = styled(Grid, {
     paddingTop:"50px", 
     marginTop:"10px", 
     borderTop:"1px dotted grey",
-    ".grey": { color:"rgba(0,0,0,0.6)", fontSize:"0.7rem" }
+    ".grey": { color:"rgba(0,0,0,0.6)", fontSize:"0.8rem", marginTop:"-0.3rem" },
+    ".optionHeading": { fontSize:"0.8rem" }
 
   });
 
@@ -34,10 +35,13 @@ function UserImageChanges({ dats }) {
                     return <Grid container direction="row" spacing={space}> 
                             {(() => {
                                 if(dats.node.canCutHair){
-                                    return <Grid item xs={6} md={4}>
-       
-                                            <h2>Can Cut Hair?</h2>
-                                            <p className="grey">{dats.node.canCutHair}</p>
+                                    return <Grid item xs={12} md={4} container direction="row">
+                                            <Grid item xs={6} md={12}>
+                                                <h2 className="optionHeading">Can Cut Hair?</h2>
+                                            </Grid>
+                                            <Grid item xs={6} md={12}>
+                                                <p className="grey">{dats.node.canCutHair}</p>
+                                            </Grid>
                                            
                                         
                                     </Grid>
@@ -46,23 +50,34 @@ function UserImageChanges({ dats }) {
 
                             {(() => {
                                 if(dats.node.canColourHair){
-                                    return <Grid item xs={6} md={4}>
-                                            
-                                            <h2>Can Colour Hair?</h2>
+                                    return <Grid item xs={12} md={4} container direction="row">
+                                        <Grid item xs={6} md={12}>
+                                            <h2 className="optionHeading">Can Colour Hair?</h2>
+                                        </Grid>
+                                        <Grid item xs={6} md={12}>
                                             <p className="grey">{dats.node.canColourHair}</p>
-                                        
-                                    </Grid>
+                                        </Grid>
+                                    
+                                    
+                                </Grid>
+                                    
+                            
                                 }
                             })()}
                             
                             {(() => {
                                 if(dats.node.canwearcontacts){
-                                    return <Grid item xs={12} md={4}>
-                                            
-                                            <h2>Can Wear Contacts?</h2>
-                                            <p className="grey">{dats.node.canwearcontacts}</p>
-                                        
+                                    return <Grid item xs={12} md={4} container direction="row">
+                                    <Grid item xs={6} md={12}>
+                                        <h2 className="optionHeading">Can Wear Contacts?</h2>
                                     </Grid>
+                                    <Grid item xs={6} md={12}>
+                                        <p className="grey">{dats.node.canwearcontacts}</p>
+                                    </Grid>
+                                
+                                
+                            </Grid>
+
                                 }
                             })()}
 
