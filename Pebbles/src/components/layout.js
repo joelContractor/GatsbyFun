@@ -57,6 +57,14 @@ const Layout = ({ children }) => {
               <p style={{ fontFamily:"Arial", width:"90%", margin:"0 auto", paddingBottom:"2rem"}}>Under 18's without representation to handle queries are not permitted to be featured on this site. All data featured is publically available. We do not store any private user details. We do not process any data for any reason. Talent featured can request removal or modification of their profile at any time.</p>
             </Grid>
 
+            <Grid item xs={12} md={6} style={{ textAlign:"left", fontSize:"0.8rem" }}>
+              <h4 style={{ fontWeight:"normal", width:"90%", margin:"0 auto", paddingBottom:"2rem", fontSize:"0.8rem"}}>Writer?</h4>
+              <p style={{ fontFamily:"Arial", width:"90%", margin:"0 auto", paddingBottom:"2rem"}}>We feature articles written by diverse writers, performers and crew from the TV, Film and Theatre industries - You. Get in touch about any issues you'd like to see discussed, or 'have your say' internationally by having your very own article published in diversecrew.com</p>
+            </Grid>
+
+            <Grid item xs={12} md={6} style={{ textAlign:"left", fontSize:"0.8rem" }}>
+            </Grid>
+
             <Grid item xs={4} style={{ textAlign:"center", marginTop:"2rem" }}>
               <h5 style={{ fontWeight:"normal", fontSize:"0.6rem" }}>Text Us</h5>
               <a aria-label={`Send us a text`} href={`sms:07375510650`}>
