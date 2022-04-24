@@ -47,9 +47,14 @@ const Layout = ({ children }) => {
         <div style={{ margin: `0 auto`, maxWidth: 900, padding: `0 1.0875rem 1.45rem`, color:"#7e7e7e", fontSize:"0.8rem"}} >
           <Grid container direction="row" spacing={3}>
 
-          <Grid item xs={12} style={{ textAlign:"center", paddingTop:"60px", fontSize:"0.8rem" }}>
-              <h4 style={{ width:"80%", margin:"0 auto", paddingBottom:"3rem", fontSize:"0.9rem"}}>Participate:</h4>
+            <Grid item xs={6} style={{ textAlign:"right", paddingTop:"60px", fontSize:"0.8rem" }}>
+              <h4 style={{ width:"90%", margin:"0 auto", paddingBottom:"3rem", fontSize:"0.9rem"}}>Participate</h4>
               <p style={{ width:"90%", margin:"0 auto", paddingBottom:"2rem"}}>We aim to collate and help highlight diverse talent in the film industry. Be found on this site free! We ONLY feature publicly available contact details used for business (numbers/emails to agents or self-promoting talent). We are not an agency, any contact will be direct from production company to agent/talent.</p>
+            </Grid>
+
+            <Grid item xs={6} style={{ textAlign:"left", paddingTop:"60px", fontSize:"0.8rem" }}>
+              <h4 style={{ width:"90%", margin:"0 auto", paddingBottom:"3rem", fontSize:"0.9rem"}}>Be Aware</h4>
+              <p style={{ width:"90%", margin:"0 auto", paddingBottom:"2rem"}}>Under 18's without representation to handle queries are not permitted to be featured on this site. All data featured is publically available. We do not store any private user details. We do not process any data for any reason. Talent featured can request removal or modification of their profile at any time.</p>
             </Grid>
 
             <Grid item xs={4} style={{ textAlign:"center" }}>
