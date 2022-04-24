@@ -38,7 +38,7 @@ function UserWorkHistory({ dats }) {
                             </Grid>
                             <Grid item xs={12} sm={6} md={4}>
                             
-                                <h3 className="normal">{dats.node.userhistorytitle1}</h3>
+                                <h3 style={{fontWeight:"normal"}}>{dats.node.userhistorytitle1}</h3>
                                 <p className="normal grey">{dats.node.userhistorydescription1}</p>
                                 <Grid item xs={12} container direction="row">
                                     <Grid item xs={3} sm={6}><p className="normal">Year: <span className="normal grey">{dats.node.userhistoryyear1}</span></p></Grid>
