@@ -11,7 +11,8 @@ const StyledUserWritersProcessGrid = styled(Grid, {
     marginTop:"10px", 
     paddingBottom:"50px",
     borderTop:"1px dotted grey",
-    ".bold": { fontWeight:"bold" }
+    ".bold": { fontWeight:"bold" },
+    p: { fontSize:"0.7rem" }
 
   });
 

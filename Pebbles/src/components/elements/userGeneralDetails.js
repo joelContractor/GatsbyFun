@@ -9,7 +9,7 @@ const StyledUserGeneralDetailsGrid = styled(Grid, {
     slot: "Wrapper",
   })({
     paddingTop:"40px",
-    ".grey": { color:"rgba(0,0,0,0.6)" }
+    ".grey": { color:"rgba(0,0,0,0.6)", fontSize:"0.7rem" }
 
   });
 

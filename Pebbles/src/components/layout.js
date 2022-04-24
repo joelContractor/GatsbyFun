@@ -69,7 +69,7 @@ const Layout = ({ children }) => {
 
             <Grid item xs={4} style={{ textAlign:"center" }} >
               <h5>Email Us</h5>
-              <a aria-label={`Email us`} href={`mailto:diversecrew.com@gmail.com?&subject=DiverseCrewEnquiry&body=Hi, I'd likw a free profile`}>
+              <a aria-label={`Email us`} href={`mailto:diversecrew.com@gmail.com?&subject=DiverseCrewEnquiry&body=Hi Diverse Crew, I'd like a free profile`}>
                                       
                   <StaticImage
                       src="../images/emr.png"

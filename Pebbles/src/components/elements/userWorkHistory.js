@@ -14,7 +14,7 @@ const StyledUserWorkHistoryGrid = styled(Grid, {
     borderTop:"1px dotted grey",
     ".normal": { fontWeight:"normal" },
     ".bold": { fontWeight:"bold" },
-    ".grey": { color:"rgba(0,0,0,0.6)" },
+    ".grey": { color:"rgba(0,0,0,0.6)", fontSize:"0.7rem" },
     h3: {fontSize:"0.9rem"}
 
   });
