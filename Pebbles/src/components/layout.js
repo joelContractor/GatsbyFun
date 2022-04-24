@@ -59,7 +59,7 @@ const Layout = ({ children }) => {
 
             <Grid item xs={12} md={6} style={{ textAlign:"left", fontSize:"0.7rem" }}>
               <h4 style={{ color:"white", fontWeight:"normal", width:"90%", margin:"0 auto", paddingBottom:"2rem", fontSize:"0.8rem"}}>Writer?</h4>
-              <p style={{ fontFamily:"Arial", width:"90%", margin:"0 auto", paddingBottom:"2rem"}}>We feature articles written by diverse writers, performers and crew from the TV, Film and Theatre industries - You. Get in touch about any issues you'd like to see discussed, or 'have your say' internationally by having your very own article published in diversecrew.com</p>
+              <p style={{ fontFamily:"Arial", width:"90%", margin:"0 auto", paddingBottom:"2rem"}}>We feature articles written by diverse writers, performers and crew from the TV, Film and Theatre industries - You. Get in touch about any issues you'd like to see discussed, or have your say internationally by publishing your very own article on diversecrew.com</p>
             </Grid>
 
             <Grid item xs={12} md={6} style={{ textAlign:"left", fontSize:"0.7rem" }}>
