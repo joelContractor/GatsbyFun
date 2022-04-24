@@ -14,7 +14,7 @@ const StyledUserPhysicalAttributesGrid = styled(Grid, {
     borderTop:"1px dotted grey",
     ".userPhysicalAttributesImage": { willChange:"transform", borderRadius:"5px" },
     ".grey": { color:"rgba(0,0,0,0.6)", fontSize:"0.7rem" },
-    ".titleColor": { color:"hsla(0, 0%, 0%, 0.8)" }
+    ".titleColor": { color:"hsla(0, 0%, 0%, 0.8)", marginBottom:"0" }
 
   });
 
@@ -30,9 +30,12 @@ function UserPhysicalAttributes({ dats }) {
             <Grid container direction="row"  spacing={6}>  
                 {(() => {
                     if(dats.node.hairColour){
-                        return <Grid item xs={12} sm={4} container className="grey">
-                                
+                        return <><Grid item xs={12} className="">
                                 <Grid item xs={12} sm={12}><h2 className="titleColor">Physical Attributes</h2></Grid>
+                            </Grid>
+                        <Grid item xs={12} sm={4} container className="grey">
+                                
+                                
                                 <Grid item xs={6} sm={12}><p>Ethnicity: {dats.node.ethnicity}</p></Grid>
                                 <Grid item xs={6} sm={12}><p>Height: {dats.node.height}</p></Grid>
                                 <Grid item xs={6} sm={12}><p>Weight: {dats.node.weight}</p></Grid>
@@ -42,7 +45,7 @@ function UserPhysicalAttributes({ dats }) {
                                 <Grid item xs={6} sm={12}><p>Tatoos: {dats.node.tatoos}</p></Grid>
                                 <Grid item xs={6} sm={12}><p>Visible Piercings: {dats.node.visiblepiercings}</p></Grid>
                             
-                        </Grid>
+                        </Grid></>
                     }
                 })()}
 
