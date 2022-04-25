@@ -66,7 +66,7 @@ function responsiveArticleSlider({ data }) {
                 pagination={{ clickable: true }}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
-                style={{ fontFamily: "Arial", paddingBottom:"7rem" }}
+                style={{ fontFamily: "Arial", paddingBottom:"4rem" }}
                 >
 
 
