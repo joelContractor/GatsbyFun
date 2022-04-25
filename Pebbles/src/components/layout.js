@@ -62,7 +62,7 @@ const Layout = ({ children }) => {
               <p style={{ fontFamily:"Arial", width:"90%", margin:"0 auto", paddingBottom:"2rem"}}>We feature articles written by diverse writers, performers and crew from the TV, Film and Theatre industries - You. Get in touch about any issues you'd like to see discussed, or have your say internationally by publishing your very own article on diversecrew.com!</p>
             </Grid>
 
-            <Grid item xs={12} style={{ paddingBottom:"1rem", textAlign:"left", fontSize:"0.7rem", borderBottom:"1px dotted white", marginLeft:"35px", marginRight:"25px"  }}>
+            <Grid item xs={12} style={{ paddingBottom:"1.5rem", textAlign:"left", fontSize:"0.7rem", borderBottom:"1px dotted white", marginLeft:"35px", marginRight:"25px"  }}>
             </Grid>
 
             <Grid item xs={2} style={{ textAlign:"center", marginTop:"0rem", paddingTop:"4rem", paddingBottom:"4rem"  }}>
