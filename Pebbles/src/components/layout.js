@@ -65,7 +65,54 @@ const Layout = ({ children }) => {
             <Grid item xs={12} style={{ paddingBottom:"2rem", textAlign:"left", fontSize:"0.7rem", borderBottom:"1px dotted white", marginLeft:"35px", marginRight:"25px"  }}>
             </Grid>
 
-            <Grid item xs={4} style={{ textAlign:"center", marginTop:"2rem", paddingTop:"4rem", paddingBottom:"4rem"  }}>
+            <Grid item xs={2} style={{ textAlign:"center", marginTop:"2rem", paddingTop:"4rem", paddingBottom:"4rem"  }}>
+              <h5 style={{ color:"white", fontWeight:"normal", fontSize:"0.6rem" }}>Follow Us</h5>
+              <a aria-label={`Follow Us`} href={`https://twitter.com/Diverse_Crew`} target="_blank" rel="noreferrer">
+                                      
+                  <StaticImage
+                      src="../images/twt.png"
+                      width={55}
+                      quality={95}
+                      formats={["AUTO", "WEBP", "AVIF"]}
+                      alt="Text Us Link"
+                      className="contactLinkImage"
+                  />
+              </a>
+            </Grid>
+
+            <Grid item xs={2} style={{ textAlign:"center", marginTop:"2rem", paddingTop:"4rem", paddingBottom:"4rem"  }} >
+              <h5 style={{ color:"white", fontWeight:"normal", fontSize:"0.6rem" }}>Befriend Us</h5>
+              <a aria-label={`Befriend Us`} href={`https://www.facebook.com/profile.php?id=100079784120636`} target="_blank" rel="noreferrer">
+                                      
+                  <StaticImage
+                      src="../images/fbk.png"
+                      width={55}
+                      quality={95}
+                      formats={["AUTO", "WEBP", "AVIF"]}
+                      alt="Email Us Link"
+                      className="contactLinkImage"
+                  />
+                  
+              </a>
+            </Grid>
+
+            <Grid item xs={2} style={{ textAlign:"center", marginTop:"2rem", paddingTop:"4rem", paddingBottom:"4rem" }}>  
+              <h5 style={{ color:"white", fontWeight:"normal", fontSize:"0.6rem" }}>Link Us</h5>
+              <a aria-label={`Link Us`} href={`https://www.linkedin.com/company/81362179/admin/`} target="_blank" rel="noreferrer">
+                                      
+                  <StaticImage
+                      src="../images/li.png"
+                      width={55}
+                      quality={95}
+                      formats={["AUTO", "WEBP", "AVIF"]}
+                      alt="Call Us Link"
+                      className="contactLinkImage"
+                  />
+              </a>
+
+            </Grid>
+
+            <Grid item xs={2} style={{ textAlign:"center", marginTop:"2rem", paddingTop:"4rem", paddingBottom:"4rem"  }}>
               <h5 style={{ color:"white", fontWeight:"normal", fontSize:"0.6rem" }}>Text Us</h5>
               <a aria-label={`Send us a text`} href={`sms:07375510650`}>
                                       
@@ -80,7 +127,7 @@ const Layout = ({ children }) => {
               </a>
             </Grid>
 
-            <Grid item xs={4} style={{ textAlign:"center", marginTop:"2rem", paddingTop:"4rem", paddingBottom:"4rem"  }} >
+            <Grid item xs={2} style={{ textAlign:"center", marginTop:"2rem", paddingTop:"4rem", paddingBottom:"4rem"  }} >
               <h5 style={{ color:"white", fontWeight:"normal", fontSize:"0.6rem" }}>Email Us</h5>
               <a aria-label={`Email us`} href={`mailto:diversecrew.com@gmail.com?&subject=DiverseCrewEnquiry&body=Hi Diverse Crew, I'd like a free profile`}>
                                       
@@ -96,7 +143,7 @@ const Layout = ({ children }) => {
               </a>
             </Grid>
 
-            <Grid item xs={4} style={{ textAlign:"center", marginTop:"2rem", paddingTop:"4rem", paddingBottom:"4rem" }}>  
+            <Grid item xs={2} style={{ textAlign:"center", marginTop:"2rem", paddingTop:"4rem", paddingBottom:"4rem" }}>  
               <h5 style={{ color:"white", fontWeight:"normal", fontSize:"0.6rem" }}>Call Us</h5>
               <a aria-label={`Call Us`} href={`tel:07375510650`}>
                                       
@@ -111,6 +158,7 @@ const Layout = ({ children }) => {
               </a>
 
             </Grid>
+
 
             <Grid item xs={12} >
               <p style={{ fontWeight:"normal", textAlign:"center", padding:"100px 0px 0px 0px", fontSize:"0.6rem" }}>© {new Date().getFullYear()}, Built By Joel White</p>

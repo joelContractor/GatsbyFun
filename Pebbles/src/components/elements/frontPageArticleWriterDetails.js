@@ -54,7 +54,7 @@ function FrontPageArticleWriterDetails({ dats, title }) {
 
                             <Grid item xs={4} sm={2} md={2} className="shareLinks">
                                 
-                                <a aria-label={`Share this article, ${title}, written by ${dats}, on Facebook`}href="https://www.facebook.com/sharer/sharer.php?u=https://www.diversecrew.com/" target="_blank" rel="noreferrer">
+                                <a aria-label={`Share this article, ${title}, written by ${dats}, on Facebook`} href="https://www.facebook.com/sharer/sharer.php?u=https://www.diversecrew.com/" target="_blank" rel="noreferrer">
                                    
                                     <StaticImage
                                             src="../images/fbk.png"
