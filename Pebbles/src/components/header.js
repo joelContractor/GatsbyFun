@@ -18,7 +18,7 @@ function Header ({ siteTitle }) {
   }
 
   const res = 
-  <header style={ {float:`left`, background: `#1A2421`, marginBottom: `0rem`, width:`100%`, paddingBottom:"10px"} }>
+  <header style={ {float:`left`, background: `#1A2421`, marginBottom: `0rem`, width:`100%`, paddingBottom:"0px"} }>
     <div style={ {margin: `0 auto`, maxWidth: 3800, padding: `1.45rem 1.0875rem`} }>
       <div style={{ float:`left`, marginRight:`5px`, marginTop:"0px", width:"50px" }}>
         <Link to="/" >
@@ -40,7 +40,7 @@ function Header ({ siteTitle }) {
         <Link to="/director/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`, paddingLeft:"0.5rem"} }> directors </Link>
         <Link to="/page-2/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`, paddingLeft:"0.5rem"} }> agencies </Link></> 
       }
-      { !matches && <button  aria-label="Menu" style={{ cursor:"pointer", background:"none", border:"none", color:"white", paddingRight:"0rem"}}  className="mobile" onClick={showInfo}>
+      { !matches && <button  aria-label="Menu" style={{ cursor:"pointer", background:"none", border:"none", color:"white", paddingRight:"0rem", paddingTop:"0px", marginTop:"1px", paddingBottom:"11px"}}  className="mobile" onClick={showInfo}>
         <div className="mobileNav" style={{ border:"1px solid white", background:"white", borderRadius:"5px", width:"25px", marginTop:"0px"}}></div>
         <div className="mobileNav" style={{ border:"1px solid white", background:"white", borderRadius:"5px", width:"25px", marginTop:"8px" }}></div>
         <div className="mobileNav" style={{ border:"1px solid white", background:"white", borderRadius:"5px", width:"25px", marginTop:"8px" }}></div>
