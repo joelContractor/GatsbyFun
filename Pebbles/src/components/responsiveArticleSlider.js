@@ -23,13 +23,13 @@ const StyledArticleSwiperGrid = styled(Grid, {
     fontFamily:`Arial`, 
     marginBottom:"0px",
     marginTop:"-45px",
-    paddingTop:"0px",
+    paddingTop:"3rem",
     ".normal": { fontWeight:"normal" },
     ".bold": { fontWeight:"bold" },
     ".grey": { color:"grey" },
     ".swiper-pagination-bullet": { padding:"0.3rem" },
-    ".swiper-button-prev": { color:"black", opacity:"0.3", position:"relative", bottom:"-220px", left:"0px"},
-    ".swiper-button-next": { color:"black", opacity:"0.3", position:"relative", bottom:"-200px", right:"-90%"},
+    ".swiper-button-prev": { color:"black", opacity:"0.3"},
+    ".swiper-button-next": { color:"black", opacity:"0.3"},
     ".historyTitle": {  marginBottom:"10px" },
     ".historySwiperTitle": {  marginBottom:"40px", marginTop:"0px" },
     ".infoCard": {  marginRight:"10px", marginLeft:"10px", margin:'0 auto', maxWidth:"380px", willChange:"transform", borderRadius:"20px", overFlow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
@@ -76,7 +76,7 @@ function responsiveArticleSlider({ data }) {
                         
                         <SwiperSlide key={dats.node.articletitle} >
 
-                            <Grid key={dats.node.articletitle} item xs={12} sm={6} md={4} lg={4} state={data} style={{width:"80%", margin:"0 auto"}}>
+                            <Grid key={dats.node.articletitle} item xs={12} sm={6} md={4} lg={4} state={data}>
                         
                                 <Card className="infoCard">
 
