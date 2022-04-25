@@ -38,7 +38,7 @@ function SiteGallery({ data }) {
                 
                         {data.map((dats) => (
                                
-                            <Grid key={dats.node.agencytitle} item xs={12} sm={6} md={4} lg={4} state={dats} >
+                            <Grid key={dats.node.agencytitle} item xs={12} sm={6} md={4} lg={4} state={dats}>
                                 
                                 <Card className="infoCard">
 
