@@ -18,13 +18,13 @@ function Header ({ siteTitle }) {
   }
 
   const res = 
-  <header style={ {float:`left`, background: `#1A2421`, marginBottom: `0rem`, width:`100%`, paddingBottom:"18px"} }>
-    <div style={ {margin: `0 auto`, maxWidth: 800, padding: `1.45rem 1.0875rem`} }>
-      <div style={{ float:`left`, marginRight:`5px`, marginTop:"0px", width:"70px" }}>
+  <header style={ {float:`left`, background: `#1A2421`, marginBottom: `0rem`, width:`100%`, paddingBottom:"10px"} }>
+    <div style={ {margin: `0 auto`, maxWidth: 3800, padding: `1.45rem 1.0875rem`} }>
+      <div style={{ float:`left`, marginRight:`5px`, marginTop:"0px", width:"50px" }}>
         <Link to="/" >
           <StaticImage
               src="../images/mdc.png"
-              width={70}
+              width={50}
               quality={95}
               formats={["AUTO", "WEBP", "AVIF"]}
               alt="A Gatsby astronaut"
@@ -32,9 +32,9 @@ function Header ({ siteTitle }) {
           />
         </Link>
       </div>
-      { matches && <Link to="/" style={ {float:`left`, color: `white`, textDecoration: `none`, marginTop:'20px'} }> <h1 style={{ fontSize:"1rem", fontFamily:"georgia", fontWeight:"normal", marginTop:"0.3rem" }}>{siteTitle}</h1> </Link> }
+      { matches && <Link to="/" style={ {float:`left`, color: `white`, textDecoration: `none`, marginTop:'15px'} }> <h1 style={{ fontSize:"1rem", fontFamily:"georgia", fontWeight:"normal", marginTop:"0rem" }}>{siteTitle}</h1> </Link> }
  
-      <div style={{ float:`right`, textAlign:`right`, marginTop:"25px", fontSize: '0.8rem', paddingRight:"0.5rem", paddingBottom:"1.4rem" }}>
+      <div style={{ float:`right`, textAlign:`right`, marginTop:"14px", fontSize: '0.8rem', paddingRight:"0.5rem", paddingBottom:"1.4rem" }}>
       { matches && <><Link to="/artist/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`, paddingRight:"0.5rem" } }> actors </Link> 
         <Link to="/writer/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`} }> writers </Link>
         <Link to="/director/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`, paddingLeft:"0.5rem"} }> directors </Link>
