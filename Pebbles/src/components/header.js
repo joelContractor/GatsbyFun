@@ -34,7 +34,7 @@ function Header ({ siteTitle }) {
       </div>
       { matches && <Link to="/" style={ {float:`left`, color: `white`, textDecoration: `none`, marginTop:'15px'} }> <h1 style={{ fontSize:"1rem", fontFamily:"georgia", fontWeight:"normal", marginTop:"0rem" }}>{siteTitle}</h1> </Link> }
  
-      <div style={{ float:`right`, textAlign:`right`, marginTop:"14px", fontSize: '0.8rem', paddingRight:"0.5rem", paddingBottom:"1.4rem" }}>
+      <div style={{ float:`right`, textAlign:`right`, marginTop:"12px", fontSize: '0.9rem', paddingRight:"0.5rem", paddingBottom:"1.4rem" }}>
       { matches && <><Link to="/artist/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`, paddingRight:"0.5rem" } }> actors </Link> 
         <Link to="/writer/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`} }> writers </Link>
         <Link to="/director/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`, paddingLeft:"0.5rem"} }> directors </Link>

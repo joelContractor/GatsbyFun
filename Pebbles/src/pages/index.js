@@ -39,7 +39,7 @@ function IndexPage({data}) {
           <h2 style={{ marginBottom:"0rem", fontSize:"1.2rem", fontFamily:"georgia", fontWeight:"normal" }}>Diversity In The News</h2>
       </Grid>
       <Grid item xs={12} md={12}>
-        <p style={{ fontSize:"0.9rem", color: 'rgba(0, 0, 0, 0.6)' }}>
+        <p style={{ fontSize:"0.9rem", color: 'rgba(0, 0, 0, 0.6)', marginBottom:"0px" }}>
           We collate and provide links to interesting articles about diversity in the TV, Film, Movie and Theatre sectors. Hopefully we can help shed light on a few issues, while pointing you to a good read. 
         </p>
       </Grid>
