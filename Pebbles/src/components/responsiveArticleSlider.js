@@ -76,7 +76,7 @@ function responsiveArticleSlider({ data }) {
                         
                         <SwiperSlide key={dats.node.articletitle} >
 
-                            <Grid key={dats.node.articletitle} item xs={12} sm={6} md={4} lg={4} state={data} style={{width:"75%", marginLeft:"2.8rem"}}>
+                            <Grid key={dats.node.articletitle} item xs={12} sm={6} md={4} lg={4} state={data} style={{width:"80%", margin:"0 auto"}}>
                         
                                 <Card className="infoCard">
 
