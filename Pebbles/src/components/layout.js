@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 900,
+          maxWidth: 800,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
             padding: `1.5rem 0 0 0`
           }}
         >
-        <div style={{ margin: `0 auto`, maxWidth: 900, padding: `0 1.0875rem 1.45rem`, color:"#adadad", fontSize:"0.8rem"}} >
+        <div style={{ margin: `0 auto`, maxWidth: 800, padding: `0 1.0875rem 1.45rem`, color:"#adadad", fontSize:"0.8rem"}} >
           <Grid container direction="row" spacing={2} style={{ paddingTop:"60px"}}>
 
             <Grid item xs={12} md={6} style={{ textAlign:"left", fontSize:"0.7rem" }}>
@@ -62,7 +62,7 @@ const Layout = ({ children }) => {
               <p style={{ fontFamily:"Arial", width:"90%", margin:"0 auto", paddingBottom:"2rem"}}>We feature articles written by diverse writers, performers and crew from the TV, Film and Theatre industries - You. Get in touch about any issues you'd like to see discussed, or have your say internationally by publishing your very own article on diversecrew.com!</p>
             </Grid>
 
-            <Grid item xs={12} style={{ paddingBottom:"1.5rem", textAlign:"left", fontSize:"0.7rem", borderBottom:"1px dotted white", marginLeft:"35px", marginRight:"25px"  }}>
+            <Grid item xs={12} style={{ paddingBottom:"1rem", textAlign:"left", fontSize:"0.7rem", borderBottom:"1px dotted white", marginLeft:"35px", marginRight:"25px"  }}>
             </Grid>
 
             <Grid item xs={2} style={{ textAlign:"center", marginTop:"0rem", paddingTop:"4rem", paddingBottom:"4rem"  }}>
