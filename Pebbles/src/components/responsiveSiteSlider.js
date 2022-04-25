@@ -23,13 +23,13 @@ const StyledHistorySwiperGrid = styled(Grid, {
     fontFamily:`Arial`, 
     marginBottom:"0px",
     marginTop:"-45px",
-    paddingTop:"0px",
+    paddingTop:"3rem",
     ".normal": { fontWeight:"normal" },
     ".bold": { fontWeight:"bold" },
     ".grey": { color:"grey" },
     ".swiper-pagination-bullet": { padding:"0.3rem" },
-    ".swiper-button-prev": { color:"black", opacity:"0.3", position:"relative", bottom:"-420px", left:"0px"},
-    ".swiper-button-next": { color:"black", opacity:"0.3", position:"relative", bottom:"-400px", right:"-90%"},
+    ".swiper-button-prev": { color:"black", opacity:"0.3"},
+    ".swiper-button-next": { color:"black", opacity:"0.3"},
     ".historyTitle": {  marginBottom:"10px" },
     ".historySwiperTitle": {  marginBottom:"40px", marginTop:"0px" },
     ".infoCard": {  marginRight:"10px", marginLeft:"10px", margin:'0 auto', maxWidth:"380px", willChange:"transform", borderRadius:"20px", overFlow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
@@ -66,7 +66,7 @@ function responsiveSiteSlider({ data }) {
                 pagination={{ clickable: true }}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
-                style={{ fontFamily: "Arial", paddingBottom:"7rem" }}
+                style={{ fontFamily: "Arial", paddingBottom:"4rem" }}
                 >
 
 
