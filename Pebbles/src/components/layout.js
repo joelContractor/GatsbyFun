@@ -37,14 +37,10 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         
       </div>
-      <footer
-          style={{
-            marginTop: `6rem`,
-            background:"rgb(26, 36, 33) none repeat scroll 0% 0%",
-            padding: `1.5rem 0 0 0`
-          }}
-        >
-        <div style={{ margin: `0 auto`, maxWidth: 800, padding: `0 1.0875rem 1.45rem`, color:"#adadad", fontSize:"0.8rem"}} >
+
+      <div style={{ marginTop: `6rem`, background:"rgb(26, 36, 33) none repeat scroll 0% 0%", padding: `1.5rem 0 0 0`, width: '100%' }} >
+        
+      <div style={{ margin: `0 auto`, maxWidth: 800, padding: `0 1.0875rem 1.45rem`, color:"#adadad", fontSize:"0.8rem"}} >
           <Grid container direction="row" spacing={2} style={{ paddingTop:"60px"}}>
 
             <Grid item xs={12} md={6} style={{ textAlign:"left", fontSize:"0.7rem" }}>
@@ -62,7 +58,7 @@ const Layout = ({ children }) => {
               <p style={{ fontFamily:"Arial", width:"90%", margin:"0 auto", paddingBottom:"2rem"}}>We feature articles written by diverse writers, performers and crew from the TV, Film and Theatre industries - You. Get in touch about any issues you'd like to see discussed, or have your say internationally by publishing your very own article on diversecrew.com!</p>
             </Grid>
 
-            <Grid item xs={12} style={{ paddingBottom:"1rem", textAlign:"left", fontSize:"0.7rem", borderBottom:"1px dotted white", marginLeft:"35px", marginRight:"25px"  }}>
+            <Grid item xs={12} style={{ paddingBottom:"0rem", textAlign:"left", fontSize:"0.7rem", borderBottom:"0px dotted white", marginLeft:"55px", marginRight:"45px"  }}>
             </Grid>
 
             <Grid item xs={2} style={{ textAlign:"center", marginTop:"0rem", paddingTop:"4rem", paddingBottom:"4rem"  }}>
@@ -159,9 +155,26 @@ const Layout = ({ children }) => {
 
             </Grid>
 
+          </Grid>
+
+          
+          
+        </div>
+
+      </div>
+
+      <footer
+          style={{
+            marginTop: `0rem`,
+            background: 'black',
+            padding: `1.5rem 0 0 0`
+          }}
+        >
+        <div style={{ margin: `0 auto`, maxWidth: 3800, padding: `0 1.0875rem 1.45rem`, color:"#adadad", fontSize:"0.8rem"}} >
+          <Grid container direction="row" spacing={1} style={{ paddingTop:"0px"}}>
 
             <Grid item xs={12} >
-              <p style={{ fontWeight:"normal", textAlign:"center", padding:"100px 0px 0px 0px", fontSize:"0.6rem" }}>© {new Date().getFullYear()}, Built By Joel White</p>
+              <p style={{ fontWeight:"normal", textAlign:"center", padding:"10px 0px 0px 0px", fontSize:"0.5rem", marginBottom:"0px" }}>© {new Date().getFullYear()}, Built By Joel White</p>
             </Grid>
 
           </Grid>
