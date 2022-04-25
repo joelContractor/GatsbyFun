@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
         
       </div>
 
-      <div style={{ marginTop: `6rem`, background:"rgb(26, 36, 33) none repeat scroll 0% 0%", padding: `1.5rem 0 1.5rem 0`, width: '100%' }} >
+      <div style={{ marginTop: `6rem`, background:"rgb(26, 36, 33) none repeat scroll 0% 0%", padding: `1.5rem 0 2rem 0`, width: '100%' }} >
         
         <div style={{ margin: `0 auto`, maxWidth: 800, padding: `0 1.0875rem 1.45rem`, color:"#adadad", fontSize:"0.8rem"}} >
             <Grid container direction="row" spacing={2} style={{ paddingTop:"60px"}}>
@@ -72,13 +72,12 @@ const Layout = ({ children }) => {
       <div style={{ marginTop: `0rem`, background:"#f1f1f1", padding: `0rem 0 0 0`, width: '100%' }} >
         
         <div style={{ margin: `0 auto`, maxWidth: 800, padding: `0 1.0875rem 0rem`, color:"#adadad", fontSize:"0.8rem"}} >
-            <Grid container direction="row" spacing={2} style={{ paddingTop:"1rem"}}>
+            <Grid container direction="row" spacing={2} style={{ paddingTop:"2rem"}}>
 
-              <Grid item xs={12} style={{ paddingBottom:"0rem", textAlign:"left", fontSize:"0.7rem", borderBottom:"0px dotted white", marginLeft:"105px", marginRight:"95px"  }}>
-              </Grid>
+
 
               <Grid item xs={2} style={{ textAlign:"center", marginTop:"0rem", paddingTop:"2rem", paddingBottom:"4rem"  }}>
-                <h5 style={{ color:"hsla(0, 0%, 0%, 0.6)", fontWeight:"bold", fontSize:"0.6rem" }}>Follow</h5>
+                <h5 style={{ color:"hsla(0, 0%, 0%, 0.7)", fontWeight:"bold", fontSize:"0.6rem" }}>Follow</h5>
                 <a aria-label={`Follow Us`} href={`https://twitter.com/Diverse_Crew`} target="_blank" rel="noreferrer">
                                         
                     <StaticImage
@@ -93,7 +92,7 @@ const Layout = ({ children }) => {
               </Grid>
 
               <Grid item xs={2} style={{ textAlign:"center", marginTop:"0rem", paddingTop:"2rem", paddingBottom:"4rem"  }} >
-                <h5 style={{ color:"hsla(0, 0%, 0%, 0.6)", fontWeight:"bold", fontSize:"0.6rem" }}>Friend</h5>
+                <h5 style={{ color:"hsla(0, 0%, 0%, 0.7)", fontWeight:"bold", fontSize:"0.6rem" }}>Friend</h5>
                 <a aria-label={`Befriend Us`} href={`https://www.facebook.com/profile.php?id=100079784120636`} target="_blank" rel="noreferrer">
                                         
                     <StaticImage
@@ -109,7 +108,7 @@ const Layout = ({ children }) => {
               </Grid>
 
               <Grid item xs={2} style={{ textAlign:"center", marginTop:"0rem", paddingTop:"2rem", paddingBottom:"4rem" }}>  
-                <h5 style={{ color:"hsla(0, 0%, 0%, 0.6)", fontWeight:"bold", fontSize:"0.6rem" }}>Link</h5>
+                <h5 style={{ color:"hsla(0, 0%, 0%, 0.7)", fontWeight:"bold", fontSize:"0.6rem" }}>Link</h5>
                 <a aria-label={`Link Us`} href={`https://www.linkedin.com/company/81362179/admin/`} target="_blank" rel="noreferrer">
                                         
                     <StaticImage
@@ -125,7 +124,7 @@ const Layout = ({ children }) => {
               </Grid>
 
               <Grid item xs={2} style={{ textAlign:"center", marginTop:"0rem", paddingTop:"2rem", paddingBottom:"4rem"  }}>
-                <h5 style={{ color:"hsla(0, 0%, 0%, 0.6)", fontWeight:"bold", fontSize:"0.6rem" }}>Text</h5>
+                <h5 style={{ color:"hsla(0, 0%, 0%, 0.7)", fontWeight:"bold", fontSize:"0.6rem" }}>Text</h5>
                 <a aria-label={`Send us a text`} href={`sms:07375510650`}>
                                         
                     <StaticImage
@@ -140,7 +139,7 @@ const Layout = ({ children }) => {
               </Grid>
 
               <Grid item xs={2} style={{ textAlign:"center", marginTop:"0rem", paddingTop:"2rem", paddingBottom:"4rem"  }} >
-                <h5 style={{ color:"hsla(0, 0%, 0%, 0.6)", fontWeight:"bold", fontSize:"0.6rem" }}>Email</h5>
+                <h5 style={{ color:"hsla(0, 0%, 0%, 0.7)", fontWeight:"bold", fontSize:"0.6rem" }}>Email</h5>
                 <a aria-label={`Email us`} href={`mailto:diversecrew.com@gmail.com?&subject=DiverseCrewEnquiry&body=Hi Diverse Crew, I'd like a free profile`}>
                                         
                     <StaticImage
@@ -156,7 +155,7 @@ const Layout = ({ children }) => {
               </Grid>
 
               <Grid item xs={2} style={{ textAlign:"center", marginTop:"0rem", paddingTop:"2rem", paddingBottom:"4rem" }}>  
-                <h5 style={{ color:"hsla(0, 0%, 0%, 0.6)", fontWeight:"bold", fontSize:"0.6rem" }}>Call</h5>
+                <h5 style={{ color:"hsla(0, 0%, 0%, 0.7)", fontWeight:"bold", fontSize:"0.6rem" }}>Call</h5>
                 <a aria-label={`Call Us`} href={`tel:07375510650`}>
                                         
                     <StaticImage
