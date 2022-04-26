@@ -4,6 +4,7 @@ module.exports = {
     description: `We aim to collate and help highlight diverse talent in the film industry. Be found on this site free! We ONLY feature publicly available contact details used for business (numbers/emails to agents or self-promoting talent). We are not an agency, any contact will be direct from production company to agent/talent.`,
     author: `Joel White`,
     siteUrl: `https://www.diversecrew.com`,
+    keywords: ["diverse film crew, diverse actor, diverse writer, diverse director, black actor, disabled actor, old actor, new actor, black writer, disabled writer, old writer, new writer, black director, disabled director, old director, new director"],
   },
   plugins: [
 	{
