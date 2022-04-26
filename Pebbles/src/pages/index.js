@@ -26,7 +26,7 @@ function IndexPage({data}) {
       </Grid>
       <Grid item xs={12} md={12}>
         <p style={{ fontSize:"0.9rem", color: 'rgba(0, 0, 0, 0.6)' }}>
-          We feature articles written by diverse writers, performers and crew from the TV, Film and Theatre industries, allowing the honest opinions of those at root-level to be heard.  
+          Insightful, thoughtful, creative read anyone? We feature articles written by diverse writers, performers and crew from the TV, Film and Theatre industries, allowing the honest opinions of those at root-level to be heard.  
         </p>
       </Grid>
 
@@ -34,7 +34,7 @@ function IndexPage({data}) {
 
     <FrontPageBanner  data={ data.allDatoCmsFrontpagearticle.edges } /> 
 
-    <Grid container sx={{marginTop:"4rem", marginBottom:'2.5rem', padding:"0px 10px 0px 10px"}} spacing={3}>
+    <Grid container sx={{marginTop:"3rem", marginBottom:'2.5rem', padding:"0px 10px 0px 10px"}} spacing={3}>
       <Grid item xs={12}>
           <h2 style={{ marginBottom:"0rem", fontSize:"1.2rem", fontFamily:"georgia", fontWeight:"normal" }}>Diversity In The News</h2>
       </Grid>
