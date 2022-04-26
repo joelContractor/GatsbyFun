@@ -19,7 +19,7 @@ function Header ({ siteTitle }) {
 
   const res = 
   <header style={ {float:`left`, background: `#1A2421`, marginBottom: `0rem`, width:`100%`, paddingBottom:"0px"} }>
-    <div style={ {margin: `0 auto`, maxWidth: 3800, padding: `1.45rem 1.0875rem`} }>
+    <div style={ {margin: `0 auto`, maxWidth: 3800, padding: `0.8rem 1.0875rem`} }>
       <div style={{ float:`left`, marginRight:`5px`, marginTop:"0px", width:"50px" }}>
         <Link to="/" >
           <StaticImage
