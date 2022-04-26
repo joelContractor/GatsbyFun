@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
         
       </div>
 
-      <div style={{ marginTop: `6rem`, background:"rgb(26, 36, 33) none repeat scroll 0% 0%", padding: `1.5rem 0 2rem 0`, width: '100%' }} >
+      <div style={{ marginTop: `3rem`, background:"rgb(26, 36, 33) none repeat scroll 0% 0%", padding: `1.5rem 0 2rem 0`, width: '100%' }} >
         
         <div style={{ margin: `0 auto`, maxWidth: 800, padding: `0 1.0875rem 1.45rem`, color:"#adadad", fontSize:"0.8rem"}} >
             <Grid container direction="row" spacing={2} style={{ paddingTop:"60px"}}>

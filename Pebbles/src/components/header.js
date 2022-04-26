@@ -35,7 +35,8 @@ function Header ({ siteTitle }) {
       { matches && <Link to="/" style={ {float:`left`, color: `white`, textDecoration: `none`, marginTop:'15px'} }> <h1 style={{ fontSize:"1rem", fontFamily:"georgia", fontWeight:"normal", marginTop:"0rem" }}>{siteTitle}</h1> </Link> }
  
       <div style={{ float:`right`, textAlign:`right`, marginTop:"12px", fontSize: '0.9rem', paddingRight:"0.5rem", paddingBottom:"1.4rem" }}>
-      { matches && <><Link to="/artist/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`, paddingRight:"0.5rem" } }> actors </Link> 
+      { matches && <><Link to="/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`, paddingRight:"0.5rem" } }> news </Link>
+        <Link to="/artist/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`, paddingRight:"0.5rem" } }> actors </Link> 
         <Link to="/writer/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`} }> writers </Link>
         <Link to="/director/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`, paddingLeft:"0.5rem"} }> directors </Link>
         <Link to="/page-2/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`, paddingLeft:"0.5rem"} }> agencies </Link></> 
@@ -47,6 +48,7 @@ function Header ({ siteTitle }) {
       </button> }
       </div>
       <div style={{ clear:"both", textAlign:`right`, marginBottom:"0rem", marginRight:"4px", fontSize: '0.8rem', display:show === 'none'? `none`: `block`, paddingTop: "1.5rem" }}>
+        <Link to="/" activeStyle={{ color: "#d55e5e" }} style={ {width:'100%', float:'right', padding:"10px 5px 10px 5px", borderBottom:"1px dotted hsla(0,0%,50%,0.1)", color: `#fff`,textDecoration: `none`} }> News </Link>
         <Link to="/artist/" activeStyle={{ color: "#d55e5e" }} style={ {width:'100%', float:'right', padding:"10px 5px 10px 5px", borderBottom:"1px dotted hsla(0,0%,50%,0.1)", color: `#fff`,textDecoration: `none`} }> Actors </Link>
         <Link to="/writer/" activeStyle={{ color: "#d55e5e" }} style={ {width:'100%', float:'right', padding:"10px 5px 10px 5px", borderBottom:"1px dotted hsla(0,0%,70%,0.1)", color: `#fff`, textDecoration: `none`} }> Writers </Link>
         <Link to="/director/" activeStyle={{ color: "#d55e5e" }} style={ {width:'100%', float:'right', padding:"10px 5px 10px 5px", borderBottom:"1px dotted hsla(0,0%,50%,0.1)", color: `#fff`, textDecoration: `none`} }> Directors </Link>
