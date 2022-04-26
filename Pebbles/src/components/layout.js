@@ -54,6 +54,11 @@ const Layout = ({ children }) => {
               </Grid>
 
               <Grid item xs={12} md={6} style={{ textAlign:"left", fontSize:"0.7rem" }}>
+                <h4 style={{ color:"white", fontWeight:"normal", width:"90%", margin:"0 auto", paddingBottom:"2rem", fontSize:"0.8rem"}}>Get In Touch</h4>
+                <p style={{ fontFamily:"Arial", width:"90%", margin:"0 auto", paddingBottom:"2rem"}}>We are on social media, find and join us using the Facebook, Twitter or LinkedIn buttons, or contact us between 11am and 5pm [Monday - Friday] using the Text, Email or Call buttons. Any emails or texts received outside of our business hours will be followed up upon on the next business day.</p>
+              </Grid>
+
+              <Grid item xs={12} md={6} style={{ textAlign:"left", fontSize:"0.7rem" }}>
                 <h4 style={{ color:"white", fontWeight:"normal", width:"90%", margin:"0 auto", paddingBottom:"2rem", fontSize:"0.8rem"}}>Be Aware</h4>
                 <p style={{ fontFamily:"Arial", width:"90%", margin:"0 auto", paddingBottom:"2rem"}}>Under 18's without representation to handle queries are not permitted to be featured on this site. All data featured is publically available. We do not store any private user details. We do not process any data for any reason. Talent featured can request removal or modification of their profile at any time.</p>
               </Grid>
