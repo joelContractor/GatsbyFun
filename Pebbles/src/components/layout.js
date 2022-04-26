@@ -130,7 +130,7 @@ const Layout = ({ children }) => {
 
               <Grid item xs={2} style={{ textAlign:"center", marginTop:"0rem", paddingTop:"2rem", paddingBottom:"4rem"  }}>
                 <h5 style={{ textShadow: '1px 1px 2px white', color:"hsla(0, 0%, 0%, 0.8)", fontWeight:"normal", fontSize:"0.7rem" }}>Text</h5>
-                <a aria-label={`Send us a text`} href={`sms:07375510650`}>
+                <a aria-label={`Send us a text`} href={`sms:07376219008`}>
                                         
                     <StaticImage
                         src="../images/txr.png"
@@ -161,7 +161,7 @@ const Layout = ({ children }) => {
 
               <Grid item xs={2} style={{ textAlign:"center", marginTop:"0rem", paddingTop:"2rem", paddingBottom:"4rem" }}>  
                 <h5 style={{ textShadow: '1px 1px 2px white', color:"hsla(0, 0%, 0%, 0.8)", fontWeight:"normal", fontSize:"0.7rem" }}>Call</h5>
-                <a aria-label={`Call Us`} href={`tel:07375510650`}>
+                <a aria-label={`Call Us`} href={`tel:07376219008`}>
                                         
                     <StaticImage
                         src="../images/car.png"
