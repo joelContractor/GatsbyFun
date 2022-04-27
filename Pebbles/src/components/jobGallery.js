@@ -100,7 +100,7 @@ function JobGallery({ data }) {
 
                             
 
-                            <form className="formWidth" name="Contact Form" method="POST" data-netlify-recaptcha="true" netlify-honeypot="entryField" data-netlify="true">
+                            <form className="formWidth" name="Contact Form" method="POST" netlify-honeypot="entryField" data-netlify="true">
                                 <input type="hidden" name="form-name" value="Contact Form" />
                                 <Grid xs={12}>
                                     <h3 className="white">Apply</h3>
@@ -128,7 +128,6 @@ function JobGallery({ data }) {
                                     <label htmlFor="employer-email" >Employer Email:<input className="monowidth" type="email" name="employer-email" id="employer-email" value={dats.node.employerEmail} /></label>
                                     
                                 </Grid>
-                                <div data-netlify-recaptcha="true"></div>
                                 <Grid xs={12} style={{textAlign:"center", marginBottom:"0.3rem"}}>
                                     <Button style={{ borderRadius:"50px", padding:"1.3rem 1rem", background:"white", color:"black", fontSize:"0.5rem" }} type="submit">Send</Button>
                                 </Grid>
