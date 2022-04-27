@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `DIVERSE CREW`,
+    title: `Diverse Crew`,
     description: `We aim to collate and help highlight diverse talent in the film industry. Be found on this site free! We ONLY feature publicly available contact details used for business (numbers/emails to agents or self-promoting talent). We are not an agency, any contact will be direct from production company to agent/talent.`,
     author: `Joel White`,
     siteUrl: `https://www.diversecrew.com`,
