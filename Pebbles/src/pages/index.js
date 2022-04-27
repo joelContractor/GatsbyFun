@@ -48,7 +48,6 @@ function IndexPage({data}) {
 
     { !matchesUnder && <ArticleGallery  data={ data.allDatoCmsDiversityarticle.edges } /> }
     { matchesUnder && <ResponsiveArticleSlider  data={ data.allDatoCmsDiversityarticle.edges } /> }
-  
     
   </Layout>
 
