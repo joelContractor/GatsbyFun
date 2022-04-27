@@ -191,7 +191,7 @@ const Layout = ({ children }) => {
           }}
         >
         <div style={{ margin: `0 auto`, maxWidth: 3800, padding: `0 1.0875rem 1.45rem`, color:"#adadad", fontSize:"0.8rem"}} >
-          <Grid container direction="row" spacing={1} style={{ paddingTop:"2rem", maxWidth:"800px", margin:"0 auto" }}>
+          <Grid container direction="row" spacing={1} style={{ paddingTop:"3rem", maxWidth:"800px", margin:"0 auto" }}>
 
             <Grid item xs={12} style={{ textAlign:"left", fontSize:"0.7rem"}}>
               <h4 style={{ color:"white", fontWeight:"normal", width:"90%", margin:"0 auto", paddingBottom:"2rem", fontSize:"0.8rem"}}>Be Aware</h4>
