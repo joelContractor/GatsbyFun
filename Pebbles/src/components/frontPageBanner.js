@@ -68,7 +68,7 @@ function FrontPageBanner({ data }) {
     }
 
     function presentCulture(){
-        alert('This article is about \'Cultural Diversity\'. The casting of predominantly white actors in movies and TV shows to play affluent characters is typically the industry norm. However, that does not do an accurate job of depicting a real life representation of the world.');
+        alert('This article is about Cultural Diversity, or has been written by a culturally diverse author.');
     }
 
     function presentReligion(){
