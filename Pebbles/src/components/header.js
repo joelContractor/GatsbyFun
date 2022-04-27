@@ -20,11 +20,11 @@ function Header ({ siteTitle }) {
   const res = 
   <header style={ {float:`left`, background: `#1A2421`, marginBottom: `0rem`, width:`100%`, paddingBottom:"0px"} }>
     <div style={ {margin: `0 auto`, maxWidth: 3800, padding: `0.8rem 1.0875rem`} }>
-      <div style={{ float:`left`, marginRight:`5px`, marginTop:"0px", width:"50px" }}>
+      <div style={{ float:`left`, marginRight:`5px`, marginTop:"1px", width:"30px" }}>
         <Link to="/" >
           <StaticImage
-              src="../images/mdc.png"
-              width={50}
+              src="../images/bt.png"
+              width={29}
               quality={95}
               formats={["AUTO", "WEBP", "AVIF"]}
               alt="A Gatsby astronaut"
