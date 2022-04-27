@@ -22,7 +22,7 @@ function JobsPage({data}) {
       </Grid>
       <Grid item xs={12} md={12}>
         <p style={{ fontSize:"0.9rem", color: 'rgba(0, 0, 0, 0.6)' }}>
-            Employing diverse actors can add a new dynamic to performances, while helping you gain funding for your project. We proactively collate diverse actors and agencies FREE. Browse our selection of featured agencies.
+            Employing diverse actors, writers and / or directors is great, production companies want you! Searching can be hard, costly and time-consuming though. We work hard to collate job oppurtunities that you can apply to directly, killing the costly search and saving everyone some time. 
         </p>
       </Grid>
 

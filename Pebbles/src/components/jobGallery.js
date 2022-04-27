@@ -85,7 +85,7 @@ function JobGallery({ data }) {
                                                 <div className="buttonContainer">
                                                     
                                                     <Button onClick={showForm} className="cardButton cardButtonBottom">
-                                                        Apply
+                                                        {show === 'none'? 'Apply' : 'Cancel'}
                                                     </Button>
                                                 </div>
                                             </Grid>
