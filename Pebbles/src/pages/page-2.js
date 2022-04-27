@@ -18,7 +18,7 @@ function SecondPage({data}) {
       {/* Component */}
       <Grid container sx={{marginBottom:'10px', padding:"20px 10px 0px 10px"}} spacing={3}>
       <Grid item xs={12}>
-          <p style={{ marginBottom:"0rem", fontSize:"1.2rem" }}>Discover Diverse Agencies</p>
+          <p style={{ marginBottom:"0rem", fontSize:"1.3rem" }}>Discover Diverse Agencies</p>
       </Grid>
       <Grid item xs={12} md={12}>
         <p style={{ fontSize:"0.9rem", color: 'rgba(0, 0, 0, 0.6)' }}>
