@@ -120,7 +120,7 @@ function ResponsiveJobSlider({ data }) {
                                                 <div className="buttonContainer">
                                                     
                                                     <Button onClick={showResForm}  className="cardButton cardButtonBottom">
-                                                        Apply
+                                                        {show === 'none'? 'Apply' : 'Back'}
                                                     </Button>
                                                 </div>
                                             </Grid>

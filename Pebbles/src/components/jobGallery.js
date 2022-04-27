@@ -15,13 +15,13 @@ const StyledJobGalleryGrid = styled(Grid, {
     ".infoCard": { margin:'0 auto', maxWidth:"380px", willChange:"transform", borderRadius:"20px", overFlow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
     ".cardButton": { textTransform: `none`, color:"white", fontWeight:"normal", fontSize:"0.8rem", width:"100%", textAlign:"center", border: "1px white solid", marginBottom:"0px", background: "rgb(26, 36, 33)", padding: "25px 10px 20px 15px", borderBottomRightRadius: "0px", borderBottomLeftRadius:"0px", borderTopLeftRadius: "5px", borderTopRightRadius: "5px" },
     ".cardButton:hover": { background: "rgb(26, 36, 33)", color:"orange" },
-    ".cardMediaArea": {  height:"190px", marginBottom:"0px", borderTopLeftRadius: "20px", borderTopRightRadius: "20px" },
+    ".cardMediaArea": {  height:"140px", marginBottom:"0px", borderTopLeftRadius: "20px", borderTopRightRadius: "20px" },
     ".cardButtonBottom":{ fontFamily: 'Georgia', width: "auto", padding: "20px 12px", borderRadius: "100px", fontSize:"0.8rem", color: "#719fb2", background: "rgba(129, 184, 207, 0.2)", border:'none', fontWeight:"normal", alignSelf: "end", marginTop:"20px", height:'64px', textShadow: '1px 1px 1px rgb(255,255,255,0.9)'},
     ".cardButtonBottom:hover": { background:"#719fb2", color:"white", textShadow: 'none' },
     ".cardContentArea": { background:"white", borderBottomLeftRadius: "3px", borderBottomRightRadius: "3px", display: "flex", flexDirection: "row" },
-    ".cardContentPara": { fontFamily: 'Arial', fontSize:"0.6rem", color: "#808080", marginBottom:"0px", maxHeight:"80px", lineHeight:"1rem" },
+    ".cardContentPara": { fontFamily: 'Arial', fontSize:"0.6rem", color: "#808080", marginTop:"0.3rem", marginBottom:"0px", maxHeight:"80px", lineHeight:"1rem" },
     ".MuiCardContent-root:last-child": { paddingBottom:"25pxpx" },
-    ".buttonContainer": { display:"flex", justifyContent:"flex-end", marginTop: "0px" },
+    ".buttonContainer": { position:"relative", top:"90px", display:"flex", justifyContent:"flex-end", marginTop: "0px" },
     ".cardTitle": { marginBottom:"0.01rem", color: `#141414`, fontSize:"0.8rem" },
     ".safariRounded": { willChange:"transform", borderTopLeftRadius: "20px", borderTopRightRadius: "20px", overflow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
     ".monowidth": { width:"100%", borderRadius:"5px", marginBottom:"1rem", marginTop:"0.2rem" },
@@ -77,7 +77,10 @@ function JobGallery({ data }) {
                                                 </p>
 
                                                 <p className="cardContentPara">
-                                                    Description: {dats.node.jobDescription}
+                                                    Description:
+                                                </p>
+                                                <p className="cardContentPara">
+                                                    {dats.node.jobDescription}
                                                 </p>
 
                                             </Grid>
@@ -85,7 +88,7 @@ function JobGallery({ data }) {
                                                 <div className="buttonContainer">
                                                     
                                                     <Button onClick={showForm} className="cardButton cardButtonBottom">
-                                                        {show === 'none'? 'Apply' : 'Cancel'}
+                                                        {show === 'none'? 'Apply' : 'Back'}
                                                     </Button>
                                                 </div>
                                             </Grid>
