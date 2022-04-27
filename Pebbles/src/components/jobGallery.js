@@ -90,6 +90,9 @@ function JobGallery({ data }) {
                                             <p className="cardContentPara">
                                                 Location: {dats.node.location}
                                             </p>
+                                            <p className="cardContentPara">
+                                                End Date: {dats.node.endDate}
+                                            </p>
 
                                         </Grid>
                                         <Grid item xs={12} style={{display:"flex", justifyContent:"flex-end"}}>

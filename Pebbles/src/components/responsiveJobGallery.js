@@ -123,6 +123,9 @@ function ResponsiveJobSlider({ data }) {
                                                 <p className="resCardContentPara">
                                                     Location: {dats.node.location}
                                                 </p>
+                                                <p className="resCardContentPara">
+                                                    End Date: {dats.node.endDate}
+                                                </p>
                                             </Grid>
                                             <Grid item xs={12} style={{ display:"flex", justifyContent:"flex-end"}}>
                                                

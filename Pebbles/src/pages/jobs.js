@@ -45,6 +45,7 @@ export const query = graphql`
                 jobTitle
                 location
                 malesNeeded
+                endDate
                 jobImage {
                     gatsbyImageData
                 }
