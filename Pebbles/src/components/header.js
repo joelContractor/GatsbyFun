@@ -21,7 +21,7 @@ function Header ({ siteTitle }) {
   <header style={ {float:`left`, background: `#1A2421`, marginBottom: `0rem`, width:`100%`, paddingBottom:"0px"} }>
     <div style={ {margin: `0 auto`, maxWidth: 3800, padding: `0.8rem 1.0875rem`} }>
       <div style={{ float:`left`, marginRight:`5px`, marginTop:"1px", width:"26px" }}>
-        <Link to="/" >
+      { matches && <Link to="/" >
           <StaticImage
               src="../images/bt.png"
               width={26}
@@ -30,7 +30,19 @@ function Header ({ siteTitle }) {
               alt="A Gatsby astronaut"
               style={{ marginBottom: `0px` }} 
           />
-        </Link>
+        </Link> }
+
+        { !matches && <Link to="/" >
+          <StaticImage
+              src="../images/adc.png"
+              width={26}
+              quality={95}
+              formats={["AUTO", "WEBP", "AVIF"]}
+              alt="A Gatsby astronaut"
+              style={{ marginBottom: `0px` }} 
+          />
+        </Link> }
+
       </div>
       { matches && <Link to="/" style={ {float:`left`, color: `white`, textDecoration: `none`, marginTop:'15px'} }> <h1 style={{ fontSize:"0.8rem", fontFamily:"georgia", fontWeight:"normal", marginTop:"0rem" }}>{siteTitle}</h1> </Link> }
  
