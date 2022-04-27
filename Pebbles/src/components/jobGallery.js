@@ -100,13 +100,17 @@ function JobGallery({ data }) {
 
                             
 
-                            <form className="formWidth" name="Contact Form" method="POST" data-netlify="true">
+                            <form className="formWidth" name="Contact Form" method="POST" data-netlify-recaptcha="true" netlify-honeypot="entryField" data-netlify="true">
                                 <input type="hidden" name="form-name" value="Contact Form" />
                                 <Grid xs={12}>
                                     <h3 className="white">Apply</h3>
                                 </Grid>
                                 <Grid xs={12} className="left">
                                     <label className="white" htmlFor="email" >Your Email:<input className="monowidth" placeholder="you@gmail.com"type="email" name="email" id="email" /></label>
+                                    
+                                </Grid>
+                                <Grid xs={12} style={{ display:"none" }}>
+                                    <label className="white" htmlFor="entryField" >Your Key:<input className="monowidth" placeholder="your-secret-userkey" type="text" name="entryField" id="entryField" /></label>
                                     
                                 </Grid>
                                 <Grid xs={12} className="left">
@@ -124,6 +128,7 @@ function JobGallery({ data }) {
                                     <label htmlFor="employer-email" >Employer Email:<input className="monowidth" type="email" name="employer-email" id="employer-email" value={dats.node.employerEmail} /></label>
                                     
                                 </Grid>
+                                <div data-netlify-recaptcha="true"></div>
                                 <Grid xs={12} style={{textAlign:"center", marginBottom:"0.3rem"}}>
                                     <Button style={{ borderRadius:"50px", padding:"1.3rem 1rem", background:"white", color:"black", fontSize:"0.5rem" }} type="submit">Send</Button>
                                 </Grid>
