@@ -22,7 +22,7 @@ function IndexPage({data}) {
 
     <Grid container sx={{marginBottom:'10px', padding:"20px 10px 0px 10px"}} spacing={3}>
       <Grid item xs={12}>
-          <h2 style={{ marginBottom:"0rem", fontSize:"1.3rem", fontFamily:"georgia", fontWeight:"normal" }}>Diverse Crew News</h2>
+          <h2 style={{ marginBottom:"0rem", fontSize:"1.4rem", fontFamily:"georgia", fontWeight:"normal" }}>Diverse Crew News</h2>
       </Grid>
       <Grid item xs={12} md={12}>
         <p style={{ fontSize:"0.9rem", color: 'rgba(0, 0, 0, 0.6)' }}>
@@ -36,7 +36,7 @@ function IndexPage({data}) {
 
     <Grid container sx={{marginTop:"3rem", marginBottom:'2.5rem', padding:"0px 10px 0px 10px"}} spacing={3}>
       <Grid item xs={12}>
-          <h2 style={{ marginBottom:"0rem", fontSize:"1.3rem", fontFamily:"georgia", fontWeight:"normal" }}>Diversity In The News</h2>
+          <h2 style={{ marginBottom:"0rem", fontSize:"1.4rem", fontFamily:"georgia", fontWeight:"normal" }}>Diversity In The News</h2>
       </Grid>
       <Grid item xs={12} md={12}>
         <p style={{ fontSize:"0.9rem", color: 'rgba(0, 0, 0, 0.6)', marginBottom:"0px" }}>
