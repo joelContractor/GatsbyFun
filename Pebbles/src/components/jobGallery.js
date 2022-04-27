@@ -16,18 +16,20 @@ const StyledJobGalleryGrid = styled(Grid, {
     ".cardButton": { textTransform: `none`, color:"white", fontWeight:"normal", fontSize:"0.8rem", width:"100%", textAlign:"center", border: "1px white solid", marginBottom:"0px", background: "rgb(26, 36, 33)", padding: "25px 10px 20px 15px", borderBottomRightRadius: "0px", borderBottomLeftRadius:"0px", borderTopLeftRadius: "5px", borderTopRightRadius: "5px" },
     ".cardButton:hover": { background: "rgb(26, 36, 33)", color:"orange" },
     ".cardMediaArea": {  height:"140px", marginBottom:"0px", borderTopLeftRadius: "20px", borderTopRightRadius: "20px" },
-    ".cardButtonBottom":{ fontFamily: 'Georgia', width: "auto", padding: "20px 12px", borderRadius: "100px", fontSize:"0.8rem", color: "#719fb2", background: "rgba(129, 184, 207, 0.2)", border:'none', fontWeight:"normal", alignSelf: "end", marginTop:"20px", height:'64px', textShadow: '1px 1px 1px rgb(255,255,255,0.9)'},
+    ".cardButtonBottom":{ fontFamily: 'Georgia', width: "auto", padding: "20px 12px", borderRadius: "100px", fontSize:"0.8rem", color: "#719fb2", background: "rgba(129, 184, 207, 0.2)", border:'none', fontWeight:"normal", alignSelf: "end", marginTop:"0px", height:'64px', textShadow: '1px 1px 1px rgb(255,255,255,0.9)'},
     ".cardButtonBottom:hover": { background:"#719fb2", color:"white", textShadow: 'none' },
-    ".cardContentArea": { background:"white", borderBottomLeftRadius: "3px", borderBottomRightRadius: "3px", display: "flex", flexDirection: "row" },
-    ".cardContentPara": { fontFamily: 'Arial', fontSize:"0.6rem", color: "#808080", marginTop:"0.3rem", marginBottom:"0px", maxHeight:"80px", lineHeight:"1rem" },
+    ".cardContentArea": {  background:"white", borderBottomLeftRadius: "3px", borderBottomRightRadius: "3px" },
+    ".cardContentPara": { fontFamily: 'Arial', fontSize:"0.6rem", color: "#808080", marginTop:"0.5rem", marginBottom:"0px", maxHeight:"80px", lineHeight:"1rem" },
     ".MuiCardContent-root:last-child": { paddingBottom:"25pxpx" },
-    ".buttonContainer": { position:"relative", top:"90px", display:"flex", justifyContent:"flex-end", marginTop: "0px" },
-    ".cardTitle": { marginBottom:"0.01rem", color: `#141414`, fontSize:"0.8rem" },
+    ".buttonContainer": { marginTop: "0px" },
+    ".cardTitle": { marginTop:"0.5rem", marginBottom:"1rem", color: `#141414`, fontSize:"0.8rem" },
     ".safariRounded": { willChange:"transform", borderTopLeftRadius: "20px", borderTopRightRadius: "20px", overflow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
     ".monowidth": { width:"100%", borderRadius:"5px", marginBottom:"1rem", marginTop:"0.2rem" },
     ".formWidth": { width:"50%", margin:"0 auto", background:"rgb(26, 36, 33) none repeat scroll 0% 0%", padding:"1rem", borderRadius:"20px", marginTop:"2rem" },
     ".white": { color:"white", marginTop:"1rem" },
-    ".left": { textAlign:"left" }
+    ".left": { textAlign:"left" },
+    ".seperator": { marginTop:"1.5rem" },
+    ".MuiCardContent-root:last-child": { paddingBottom:"0.7rem" }
 
     
   });
@@ -59,43 +61,49 @@ function JobGallery({ data }) {
                                     <Grid item xs={12} className="safariRounded">
                                         <GatsbyImage className="cardMediaArea" image={getImage(dats.node.jobImage.gatsbyImageData)} alt={dats.node.agencytitle}/>
                                     </Grid>
-
+                                    <Grid item xs={12} direction="row" onClick={showForm}>
                                     <CardContent
                                         className="cardContentArea"
                                     >
                                       
-                                            <Grid item xs={8} onClick={showForm}>
-                                                <p className="cardTitle">
-                                                    {dats.node.jobTitle}
-                                                </p>
-                                                <p className="cardContentPara">
-                                                    Females Needed: {dats.node.femalesNeeded}
-                                                </p>
+                                            
+                                        <Grid item xs={12}>
+                                            <p className="cardTitle">
+                                                {dats.node.jobTitle}
+                                            </p>
+                                            
+                                            <p className="cardContentPara">
+                                                Description:
+                                            </p>
+                                            <p className="cardContentPara desc">
+                                                {dats.node.jobDescription}
+                                            </p>
+                                        </Grid>
+                                        <Grid item xs={8}>
+                                            <p className="cardContentPara seperator">
+                                                Females Needed: {dats.node.femalesNeeded}
+                                            </p>
 
-                                                <p className="cardContentPara">
-                                                    Males Needed: {dats.node.malesNeeded}
-                                                </p>
+                                            <p className="cardContentPara">
+                                                Males Needed: {dats.node.malesNeeded}
+                                            </p>
+                                            <p className="cardContentPara">
+                                                Location: {dats.node.location}
+                                            </p>
 
-                                                <p className="cardContentPara">
-                                                    Description:
-                                                </p>
-                                                <p className="cardContentPara">
-                                                    {dats.node.jobDescription}
-                                                </p>
-
-                                            </Grid>
-                                            <Grid item xs={4}>
-                                                <div className="buttonContainer">
-                                                    
-                                                    <Button onClick={showForm} className="cardButton cardButtonBottom">
-                                                        {show === 'none'? 'Apply' : 'Back'}
-                                                    </Button>
-                                                </div>
-                                            </Grid>
+                                        </Grid>
+                                        <Grid item xs={12} style={{display:"flex", justifyContent:"flex-end"}}>
+                                            
+                                                
+                                                <Button onClick={showForm} className="cardButton cardButtonBottom">
+                                                    {show === 'none'? 'Apply' : 'Back'}
+                                                </Button>
+                                            
+                                        </Grid>
                                      
                                         
                                     </CardContent>
-
+                                    </Grid>
                                 </Card>               
                             </Grid>
 
