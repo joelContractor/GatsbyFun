@@ -28,7 +28,7 @@ const StyledJobGalleryGrid = styled(Grid, {
     ".formWidth": { width:"50%", margin:"0 auto", background:"rgb(26, 36, 33) none repeat scroll 0% 0%", padding:"1rem", borderRadius:"20px", marginTop:"2rem" },
     ".white": { color:"white", marginTop:"1rem" },
     ".left": { textAlign:"left" },
-    ".seperator": { marginTop:"1.5rem" },
+    ".seperator": { marginTop:"3rem" },
     ".MuiCardContent-root:last-child": { paddingBottom:"0.7rem" }
 
     
@@ -61,7 +61,7 @@ function JobGallery({ data }) {
                                     <Grid item xs={12} className="safariRounded">
                                         <GatsbyImage className="cardMediaArea" image={getImage(dats.node.jobImage.gatsbyImageData)} alt={dats.node.agencytitle}/>
                                     </Grid>
-                                    <Grid item xs={12} direction="row" onClick={showForm}>
+                                    <Grid container item xs={12} direction="row" onClick={showForm}>
                                     <CardContent
                                         className="cardContentArea"
                                     >
@@ -79,7 +79,7 @@ function JobGallery({ data }) {
                                                 {dats.node.jobDescription}
                                             </p>
                                         </Grid>
-                                        <Grid item xs={8}>
+                                        <Grid item xs={12}>
                                             <p className="cardContentPara seperator">
                                                 Females Needed: {dats.node.femalesNeeded}
                                             </p>
