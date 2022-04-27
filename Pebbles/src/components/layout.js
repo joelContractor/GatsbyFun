@@ -44,6 +44,11 @@ const Layout = ({ children }) => {
             <Grid container direction="row" spacing={2} style={{ paddingTop:"60px"}}>
 
               <Grid item xs={12} md={6} style={{ textAlign:"left", fontSize:"0.7rem" }}>
+                <h4 style={{ color:"white", fontWeight:"normal", width:"90%", margin:"0 auto", paddingBottom:"2rem", fontSize:"0.8rem"}}>Choose</h4>
+                <p style={{ fontFamily:"Arial", width:"90%", margin:"0 auto", paddingBottom:"2rem"}}>Casting Agents, Producers, Independent Film Makers - use the Call, Emal, or Text buttons on the diverse talent's profile to contact their industry representation. Please be mindfull of time when calling, emailing is often the preffered method. As per the industry, the more established agents may not accept unsolicited requests. </p>
+              </Grid>
+
+              <Grid item xs={12} md={6} style={{ textAlign:"left", fontSize:"0.7rem" }}>
                 <h4 style={{ color:"white", fontWeight:"normal", width:"90%", margin:"0 auto", paddingBottom:"2rem", fontSize:"0.8rem"}}>Participate</h4>
                 <p style={{ fontFamily:"Arial", width:"90%", margin:"0 auto", paddingBottom:"2rem"}}>We aim to collate and help highlight diverse talent in the film industry. Get in touch to be found on this site free! We ONLY feature publicly available contact details used for business (numbers/emails to agents or self-promoting talent). We are not an agency, any contact will be direct from production company to agent/talent.</p>
               </Grid>
@@ -56,11 +61,6 @@ const Layout = ({ children }) => {
               <Grid item xs={12} md={6} style={{ textAlign:"left", fontSize:"0.7rem" }}>
                 <h4 style={{ color:"white", fontWeight:"normal", width:"90%", margin:"0 auto", paddingBottom:"2rem", fontSize:"0.8rem"}}>Get In Touch</h4>
                 <p style={{ fontFamily:"Arial", width:"90%", margin:"0 auto", paddingBottom:"2rem"}}>We are on social media, find and join us using the Facebook, Twitter or LinkedIn buttons, or contact us between 11am and 5pm [Monday - Friday] using the Text, Email or Call buttons. Any emails or texts received outside of our business hours will be followed up upon on the next business day.</p>
-              </Grid>
-
-              <Grid item xs={12} md={6} style={{ textAlign:"left", fontSize:"0.7rem" }}>
-                <h4 style={{ color:"white", fontWeight:"normal", width:"90%", margin:"0 auto", paddingBottom:"2rem", fontSize:"0.8rem"}}>Be Aware</h4>
-                <p style={{ fontFamily:"Arial", width:"90%", margin:"0 auto", paddingBottom:"2rem"}}>Under 18's without representation to handle queries are not permitted to be featured on this site. All data featured is publically available. We do not store any private user details. We do not process any data for any reason. Talent featured can request removal or modification of their profile at any time.</p>
               </Grid>
 
               <Grid item xs={12} style={{ paddingBottom:"0rem", textAlign:"left", fontSize:"0.7rem", borderBottom:"0px dotted white", marginLeft:"105px", marginRight:"95px"  }}>
@@ -81,7 +81,7 @@ const Layout = ({ children }) => {
 
 
 
-              <Grid item xs={2} style={{ textAlign:"center", marginTop:"0rem", paddingTop:"2rem", paddingBottom:"4rem"  }}>
+              <Grid item xs={2} style={{ textAlign:"center", marginTop:"0rem", paddingTop:"2rem", paddingBottom:"4.5rem"  }}>
                 <h5 style={{ textShadow: '1px 1px 2px white', color:"hsla(0, 0%, 0%, 0.8)", fontWeight:"normal", fontSize:"0.7rem" }}>Follow</h5>
                 <a aria-label={`Follow Us`} href={`https://twitter.com/Diverse_Crew`} target="_blank" rel="noreferrer">
                                         
@@ -191,10 +191,15 @@ const Layout = ({ children }) => {
           }}
         >
         <div style={{ margin: `0 auto`, maxWidth: 3800, padding: `0 1.0875rem 1.45rem`, color:"#adadad", fontSize:"0.8rem"}} >
-          <Grid container direction="row" spacing={1} style={{ paddingTop:"0px"}}>
+          <Grid container direction="row" spacing={1} style={{ paddingTop:"2rem", maxWidth:"800px", margin:"0 auto" }}>
+
+            <Grid item xs={12} style={{ textAlign:"left", fontSize:"0.7rem"}}>
+              <h4 style={{ color:"white", fontWeight:"normal", width:"90%", margin:"0 auto", paddingBottom:"2rem", fontSize:"0.8rem"}}>Be Aware</h4>
+              <p style={{ fontFamily:"Arial", width:"90%", margin:"0 auto", paddingBottom:"2rem"}}>Under 18's without representation to handle queries are not permitted to be featured on this site. All data featured is publically available. We do not store any private user details. We do not process any data for any reason. Talent featured can request removal or modification of their profile at any time.</p>
+            </Grid>
 
             <Grid item xs={12} >
-              <p style={{ fontWeight:"normal", textAlign:"center", padding:"10px 0px 0px 0px", fontSize:"0.5rem", marginBottom:"0px" }}>© {new Date().getFullYear()}, Built By Joel White</p>
+              <p style={{ fontWeight:"normal", textAlign:"center", padding:"1rem 0px 0px 0px", fontSize:"0.5rem", marginBottom:"0px" }}>© {new Date().getFullYear()}, Built By Joel White</p>
             </Grid>
 
           </Grid>
