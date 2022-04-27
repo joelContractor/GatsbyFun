@@ -20,19 +20,8 @@ function Header ({ siteTitle }) {
   const res = 
   <header style={ {float:`left`, background: `#1A2421`, marginBottom: `0rem`, width:`100%`, paddingBottom:"0px"} }>
     <div style={ {margin: `0 auto`, maxWidth: 3800, padding: `0.8rem 1.0875rem`} }>
-      <div style={{ float:`left`, marginRight:`5px`, marginTop:"1px", width:"26px" }}>
-      { matches && <Link to="/" >
-          <StaticImage
-              src="../images/bt.png"
-              width={26}
-              quality={95}
-              formats={["AUTO", "WEBP", "AVIF"]}
-              alt="A Gatsby astronaut"
-              style={{ marginBottom: `0px` }} 
-          />
-        </Link> }
-
-        { !matches && <Link to="/" >
+    { matches && <div style={{ float:`left`, marginRight:`5px`, marginTop:"1px", width:"26px" }}>
+       <Link to="/" >
           <StaticImage
               src="../images/adc.png"
               width={26}
@@ -41,12 +30,29 @@ function Header ({ siteTitle }) {
               alt="A Gatsby astronaut"
               style={{ marginBottom: `0px` }} 
           />
-        </Link> }
+        </Link> 
 
-      </div>
+        
+
+      </div> }
+
+      { !matches && <div style={{ width:"26px", margin:"0 auto" }}>
+        <Link to="/" >
+          <StaticImage
+              src="../images/adc.png"
+              width={26}
+              quality={95}
+              formats={["AUTO", "WEBP", "AVIF"]}
+              alt="A Gatsby astronaut"
+              style={{ marginBottom: `0px` }} 
+          />
+        </Link>
+      </div> }
+
+
       { matches && <Link to="/" style={ {float:`left`, color: `white`, textDecoration: `none`, marginTop:'15px'} }> <h1 style={{ fontSize:"0.8rem", fontFamily:"georgia", fontWeight:"normal", marginTop:"0rem" }}>{siteTitle}</h1> </Link> }
  
-      <div style={{ float:`right`, textAlign:`right`, marginTop:"11px", fontSize: '0.8rem', paddingRight:"0.5rem", paddingBottom:"1.4rem" }}>
+      <div style={{ float:`right`, textAlign:`right`, marginTop:"0px", fontSize: '0.8rem', paddingRight:"0.5rem", paddingBottom:"1.4rem" }}>
       { matches && <><Link to="/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`, paddingRight:"0.5rem" } }> news </Link>
         <Link to="/artist/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`, paddingRight:"0.5rem" } }> actors </Link> 
         <Link to="/writer/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`} }> writers </Link>
