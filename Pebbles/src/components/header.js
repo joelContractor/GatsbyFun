@@ -67,6 +67,7 @@ function Header ({ siteTitle }) {
         <Link to="/writer/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`} }> writers </Link>
         <Link to="/director/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`, paddingLeft:"0.5rem"} }> directors </Link>
         <Link to="/page-2/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`, paddingLeft:"0.5rem"} }> agencies </Link>
+        <Link to="/jobs/" activeStyle={{ color: "#d55e5e" }} style={ {color: `#fff`, textDecoration: `none`, paddingLeft:"0.5rem"} }> jobs </Link>
         </div>
         </> 
       }
@@ -86,6 +87,7 @@ function Header ({ siteTitle }) {
         <Link to="/writer/" activeStyle={{ color: "#d55e5e" }} style={ {width:'100%', float:'right', padding:"10px 5px 10px 5px", borderBottom:"1px dotted hsla(0,0%,70%,0.1)", color: `#fff`, textDecoration: `none`} }> Writers </Link>
         <Link to="/director/" activeStyle={{ color: "#d55e5e" }} style={ {width:'100%', float:'right', padding:"10px 5px 10px 5px", borderBottom:"1px dotted hsla(0,0%,50%,0.1)", color: `#fff`, textDecoration: `none`} }> Directors </Link>
         <Link to="/page-2/" activeStyle={{ color: "#d55e5e" }} style={ {width:'100%', float:'right', padding:"10px 5px 10px 5px", color: `#fff`, textDecoration: `none`} }> Agencies </Link>
+        <Link to="/jobs/" activeStyle={{ color: "#d55e5e" }} style={ {width:'100%', float:'right', padding:"10px 5px 10px 5px", color: `#fff`, textDecoration: `none`} }> Jobs </Link>
       </div>
     </div>
   </header>
