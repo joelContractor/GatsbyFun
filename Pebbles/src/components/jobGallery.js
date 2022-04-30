@@ -55,15 +55,15 @@ function JobGallery({ data }) {
             
                         {data.map((dats) => (
                                
-                            <>
-                               <Grid key={dats.node.agencytitle} item xs={12} sm={6} md={4} lg={4} state={dats}>
+                            
+                            <Grid key={dats.node.jobTitle} item xs={12} sm={6} md={4} lg={4} state={dats}>
 
-                                {tempMail = dats.node.employerEmail}
                                 
+
                                 <Card className="infoCard">
 
                                     <Grid item xs={12} className="safariRounded">
-                                        <GatsbyImage className="cardMediaArea" image={getImage(dats.node.jobImage.gatsbyImageData)} alt={dats.node.agencytitle}/>
+                                        <GatsbyImage className="cardMediaArea" image={getImage(dats.node.jobImage.gatsbyImageData)} alt={dats.node.jobTitle}/>
                                     </Grid>
                                     <Grid container item xs={12} direction="row" onClick={showForm}>
                                     <CardContent
@@ -115,7 +115,7 @@ function JobGallery({ data }) {
                             
                            
 
-                            {/* <Grid xs={12} id={dats.node.employerEmail} style={{textAlign:"center", display:show === 'none'? `none`: `block`}}>
+                            /* <Grid xs={12} id={dats.node.employerEmail} style={{textAlign:"center", display:show === 'none'? `none`: `block`}}>
 
                           
 
@@ -154,8 +154,8 @@ function JobGallery({ data }) {
                             </form>
 
 
-                            </Grid> */}
-                            </>
+                            </Grid> */
+                            
                          
                         ))}
                         {(() => {
