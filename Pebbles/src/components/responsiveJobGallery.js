@@ -45,12 +45,13 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".cardTitle": { marginTop:"1rem", marginBottom:"1rem", color: `#141414`, fontSize:"1rem" },
     ".safariRounded": { willChange:"transform", overflow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
     ".monowidth": { width:"100%", borderRadius:"5px", marginBottom:"1rem", marginTop:"0.2rem", padding:'10px' },
-    ".formWidth": { width:"100%", margin:"0 auto", background:"rgb(26, 36, 33) none repeat scroll 0% 0%", padding:"1rem", borderRadius:"20px", marginTop:"2rem" },
+    ".formWidth": { width:"95%", margin:"0 auto", background:"#719fb2", padding:"1rem", borderRadius:"20px", marginTop:"2rem" },
     ".white": { color:"white", marginTop:"1rem" },
     ".left": { textAlign:"left" },
     ".separator": { marginTop:"1.5rem" },
     ".formButton": {border:"black 2px solid", background: "white", width: '10rem', height:"3.5rem"},
     ".formButton:hover": {background: "#719fb2", color:"white"},  
+    ".ourBlue": { color:"#719fb2" }
     
 
   });
@@ -153,19 +154,19 @@ function ResponsiveJobSlider({ data }) {
                                         <h3 className="white">Apply</h3>
                                     </Grid>
                                     <Grid item xs={12} className="left">
-                                        <label className="white" htmlFor="email">Your Email:<input className="monowidth" placeholder="you@gmail.com" type="email" name="email" id="email" required/></label>
+                                        <label className="white" htmlFor="email">Your Email:<input className="monowidth ourBlue" placeholder="you@gmail.com" type="email" name="email" id="email" required/></label>
                                         
                                     </Grid>
                                     <Grid item xs={12} style={{ display:"none" }}>
-                                        <label className="white" htmlFor="entryField" >Your Key:<input className="monowidth" placeholder="your-secret-userkey" type="text" name="entryField" id="entryField" /></label>
+                                        <label className="white" htmlFor="entryField" >Your Key:<input className="monowidth ourBlue" placeholder="your-secret-userkey" type="text" name="entryField" id="entryField" /></label>
                                         
                                     </Grid>
                                     <Grid item xs={12} className="left">
-                                        <label htmlFor="profile-url" className="white">Your Profile URL:<input className="monowidth" placeholder="you@imdb.com" type="text" name="profile-url" id="profile-url" required/></label>
+                                        <label htmlFor="profile-url" className="white">Your Profile URL:<input className="monowidth ourBlue" placeholder="you@imdb.com" type="text" name="profile-url" id="profile-url" required/></label>
                                         
                                     </Grid>
                                     <Grid item xs={12} className="left">
-                                        <label className="white" htmlFor="message" >Message:<textarea className="monowidth" placeholder="Hello, my name is example-name, I am interested in your advertised job role." name="message" id="message" required/></label>
+                                        <label className="white" htmlFor="message" >Message:<textarea className="monowidth ourBlue" placeholder="Hello, my name is example-name, I am interested in your advertised job role." name="message" id="message" required/></label>
                                         
                                     </Grid>
                                     <Grid item xs={12} style={{ marginBottom:"1rem", textAlign:"center" }}>
@@ -176,7 +177,7 @@ function ResponsiveJobSlider({ data }) {
                                         <input className="monowidth" type="password" name="employer-email" id="employer-email" value={dats.node.employerEmail} readOnly/>
                                     </Grid>
                                     <Grid item xs={12} style={{textAlign:"center", marginBottom:"0.3rem"}}>
-                                        <Button style={{ fontWeight:"bold", borderRadius:"50px", padding:"1.3rem 1rem", background:"white", color:"rgb(26, 36, 33)", fontSize:"0.6rem" }} type="submit">Send</Button>
+                                        <Button style={{ fontWeight:"bold", borderRadius:"50px", padding:"1.3rem 1rem", background:"white", color:"#719fb2", fontSize:"0.6rem" }} type="submit">Send</Button>
                                     </Grid>
                                     
                                 </form>
