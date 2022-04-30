@@ -19,8 +19,8 @@ const StyledJobGalleryGrid = styled(Grid, {
     ".cardButtonBottom":{ fontFamily: 'Georgia', width: "auto", padding: "20px 12px", borderRadius: "100px", fontSize:"0.8rem", color: "#719fb2", background: "rgba(129, 184, 207, 0.2)", border:'none', fontWeight:"normal", alignSelf: "end", marginTop:"0px", height:'64px', textShadow: '1px 1px 1px rgb(255,255,255,0.9)'},
     ".cardButtonBottom:hover": { background:"#719fb2", color:"white", textShadow: 'none' },
     ".cardContentArea": {  background:"white", borderBottomLeftRadius: "3px", borderBottomRightRadius: "3px" },
-    ".cardContentPara": { fontFamily: 'Arial', fontSize:"0.6rem", color: "#808080", marginTop:"0.5rem", marginBottom:"0px", maxHeight:"80px", lineHeight:"1rem" },
-    ".MuiCardContent-root:last-child": { paddingBottom:"25pxpx" },
+    ".cardContentPara": { fontFamily: 'Arial', fontSize:"0.6rem", color: "#808080", marginTop:"0.5rem", marginBottom:"0px", lineHeight:"1rem" },
+    ".MuiCardContent-root:last-child": { paddingBottom:"0.7rem" },
     ".buttonContainer": { marginTop: "0px" },
     ".cardTitle": { marginTop:"0.5rem", marginBottom:"1rem", color: `#141414`, fontSize:"0.8rem" },
     ".safariRounded": { willChange:"transform", borderTopLeftRadius: "20px", borderTopRightRadius: "20px", overflow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
@@ -29,8 +29,6 @@ const StyledJobGalleryGrid = styled(Grid, {
     ".white": { color:"white", marginTop:"1rem" },
     ".left": { textAlign:"left" },
     ".seperator": { marginTop:"3rem" },
-    ".MuiCardContent-root:last-child": { paddingBottom:"0.7rem" }
-
     
   });
 
