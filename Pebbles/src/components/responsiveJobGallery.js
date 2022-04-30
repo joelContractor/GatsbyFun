@@ -36,7 +36,7 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".cardButton": { textTransform: `none`, color:"white", fontWeight:"normal", fontSize:"0.8rem", width:"100%", textAlign:"center", border: "1px white solid", marginBottom:"0px", background: "rgb(26, 36, 33)", padding: "25px 10px 20px 15px", borderBottomRightRadius: "0px", borderBottomLeftRadius:"0px", borderTopLeftRadius: "5px", borderTopRightRadius: "5px" },
     ".cardButton:hover": { background: "rgb(26, 36, 33)", color:"orange" },
     ".cardMediaArea": {  height:"45vh", marginBottom:"0px", borderTopLeftRadius: "20px", borderTopRightRadius: "20px" },
-    ".cardButtonBottom":{ fontFamily: 'Georgia', width: "auto", padding: "20px 15px", borderRadius: "100px", fontSize:"0.8rem", color: "#719fb2", background: "rgba(129, 184, 207, 0.2)", border:'none', fontWeight:"normal", alignSelf: "end", marginTop:"0px", height:'64px', textShadow: '1px 1px 1px rgb(255,255,255,0.9)'},
+    ".cardButtonBottom":{ fontFamily: 'Georgia', width: "auto", padding: "20px 10px", borderRadius: "100px", fontSize:"0.8rem", color: "#719fb2", background: "rgba(129, 184, 207, 0.2)", border:'none', fontWeight:"normal", alignSelf: "end", marginTop:"0px", height:'64px', textShadow: '1px 1px 1px rgb(255,255,255,0.9)'},
     ".cardButtonBottom:hover": { background:"#719fb2", color:"white", textShadow: 'none' },
     ".cardContentArea": { background:"white", borderBottomLeftRadius: "3px", borderBottomRightRadius: "3px" },
     ".resCardContentPara": { marginTop:"0.7rem", fontFamily: 'Arial', fontSize:"0.7rem", color: "#808080", marginBottom:"0px", lineHeight:"1rem" },
@@ -44,7 +44,7 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".buttonContainer": {  marginTop: "0px" },
     ".cardTitle": { marginTop:"1rem", marginBottom:"1rem", color: `#141414`, fontSize:"1rem" },
     ".safariRounded": { willChange:"transform", borderTopLeftRadius: "20px", borderTopRightRadius: "20px", overflow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
-    ".monowidth": { width:"100%", borderRadius:"5px", marginBottom:"1rem", marginTop:"0.2rem" },
+    ".monowidth": { width:"100%", borderRadius:"5px", marginBottom:"1rem", marginTop:"0.2rem", padding:'10px' },
     ".formWidth": { width:"100%", margin:"0 auto", background:"rgb(26, 36, 33) none repeat scroll 0% 0%", padding:"1rem", borderRadius:"20px", marginTop:"2rem" },
     ".white": { color:"white", marginTop:"1rem" },
     ".left": { textAlign:"left" },
@@ -175,7 +175,7 @@ function ResponsiveJobSlider({ data }) {
                                         <input className="monowidth" type="password" name="employer-email" id="employer-email" value={dats.node.employerEmail} readOnly/>
                                     </Grid>
                                     <Grid item xs={12} style={{textAlign:"center", marginBottom:"0.3rem"}}>
-                                        <Button style={{ fontWeight:"bold", borderRadius:"50px", padding:"1.5rem 1rem", background:"white", color:"rgb(26, 36, 33)", fontSize:"0.6rem" }} type="submit">Send</Button>
+                                        <Button style={{ fontWeight:"bold", borderRadius:"50px", padding:"1.3rem 1rem", background:"white", color:"rgb(26, 36, 33)", fontSize:"0.6rem" }} type="submit">Send</Button>
                                     </Grid>
                                     
                                 </form>
