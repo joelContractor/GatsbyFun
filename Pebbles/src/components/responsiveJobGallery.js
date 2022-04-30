@@ -49,7 +49,7 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".white": { color:"white", marginTop:"1rem" },
     ".left": { textAlign:"left" },
     ".separator": { marginTop:"1.5rem" },
-    ".formButton": {background: "white", width: '10rem', height:"3.5rem"},
+    ".formButton": {border:"black 2px solid", background: "white", width: '10rem', height:"3.5rem"},
     ".formButton:hover": {background: "#719fb2", color:"white"},  
     
 
@@ -181,7 +181,7 @@ function ResponsiveJobSlider({ data }) {
                                     
                                 </form>
 
-                                <Grid item xs={12} style={{ display:"flex", justifyContent:"center", marginTop:"3rem"}}>
+                                <Grid item xs={12} style={{ display:"flex", justifyContent:"center", marginTop:"6rem"}}>
                                                
                                                     
                                         <Button onClick={showResForm} className="cardButton cardButtonBottom formButton">
