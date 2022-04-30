@@ -5,12 +5,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Grid } from "@material-ui/core";
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { styled } from "@mui/system";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { Grid } from "@material-ui/core";
 
 
 
@@ -32,11 +32,11 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".swiper-button-next": { color:"black", opacity:"0.3"},
     ".historyTitle": {  marginBottom:"10px" },
     ".historySwiperTitle": {  marginBottom:"40px", marginTop:"0px" },
-    ".infoCard": {  borderBottomRightRadius:"20px", borderBottomLeftRadius:"20px", marginRight:"10px", marginLeft:"10px", margin:'0 auto', maxWidth:"1080px", willChange:"transform", overFlow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
+    ".infoCard": {  borderRadius:"0px", borderBottomRightRadius:"20px", borderBottomLeftRadius:"20px", marginRight:"10px", marginLeft:"10px", margin:'0 auto', maxWidth:"1080px", willChange:"transform", overFlow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
     ".cardButton": { textTransform: `none`, color:"white", fontWeight:"normal", fontSize:"0.8rem", width:"100%", textAlign:"center", border: "1px white solid", marginBottom:"0px", background: "rgb(26, 36, 33)", padding: "25px 10px 20px 15px", borderBottomRightRadius: "0px", borderBottomLeftRadius:"0px", borderTopLeftRadius: "5px", borderTopRightRadius: "5px" },
     ".cardButton:hover": { background: "rgb(26, 36, 33)", color:"orange" },
     ".cardMediaArea": {  height:"45vh", marginBottom:"0px"},
-    ".cardButtonBottom":{ fontFamily: 'Georgia', width: "auto", padding: "20px 10px", borderRadius: "100px", fontSize:"0.8rem", color: "#719fb2", background: "rgba(129, 184, 207, 0.2)", border:'none', fontWeight:"normal", alignSelf: "end", marginTop:"0px", height:'64px', textShadow: '1px 1px 1px rgb(255,255,255,0.9)'},
+    ".cardButtonBottom":{ fontFamily: 'Georgia', width: "auto", padding: "20px 10px", borderRadius: "100px", fontSize:"0.8rem", color: "#719fb2", background: "rgba(129, 184, 207, 0.2)", border:'none', fontWeight:"normal", alignSelf: "end", marginTop:"1rem", height:'64px', textShadow: '1px 1px 1px rgb(255,255,255,0.9)'},
     ".cardButtonBottom:hover": { background:"#719fb2", color:"white", textShadow: 'none' },
     ".cardContentArea": { background:"white", borderBottomLeftRadius: "3px", borderBottomRightRadius: "3px" },
     ".resCardContentPara": { marginTop:"0.7rem", fontFamily: 'Arial', fontSize:"0.7rem", color: "#808080", marginBottom:"0px", lineHeight:"1rem" },
@@ -89,30 +89,20 @@ function ResponsiveJobSlider({ data }) {
                         
                         <SwiperSlide key={dats.node.jobTitle} >
 
-                            <Grid key={dats.node.jobTitle} item xs={12} state={data}>
+                            <Grid key={dats.node.jobTitle} container direction="row" item xs={12} state={data}>
                         
                                 <Card className="infoCard">
 
                                     <Grid item xs={12} className="safariRounded">
                                         <GatsbyImage className="cardMediaArea" image={getImage(dats.node.jobImage.gatsbyImageData)} alt={dats.node.jobTitle}/>
                                     </Grid>
-                                    <Grid item xs={12} onClick={showResForm}>
+                                    <Grid item xs={12} onClick={showResForm} >
                                         <CardContent
                                             className="cardContentArea"
                                         >
-                                    
+                                            
                                             <Grid item xs={12}>
-                                                <p className="cardTitle">
-                                                    {dats.node.jobTitle}
-                                                </p>
                                                 
-
-                                                <p className="resCardContentPara">
-                                                    Description:
-                                                </p>
-                                                <p className="resCardContentPara">
-                                                    {dats.node.jobDescription}
-                                                </p>
                                                 <p className="resCardContentPara separator">
                                                     Females Needed: {dats.node.femalesNeeded}
                                                 </p>
@@ -125,6 +115,15 @@ function ResponsiveJobSlider({ data }) {
                                                 </p>
                                                 <p className="resCardContentPara">
                                                     End Date: {dats.node.endDate}
+                                                </p>
+                                                <p className="cardTitle">
+                                                    {dats.node.jobTitle}
+                                                </p>
+                                                <p className="resCardContentPara">
+                                                    Description:
+                                                </p>
+                                                <p className="resCardContentPara">
+                                                    {dats.node.jobDescription}
                                                 </p>
                                             </Grid>
                                             <Grid item xs={12} style={{ display:"flex", justifyContent:"flex-end"}}>
