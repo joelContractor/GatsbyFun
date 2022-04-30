@@ -49,7 +49,7 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".white": { color:"white", marginTop:"1rem" },
     ".left": { textAlign:"left" },
     ".separator": { marginTop:"1.5rem" },
-    ".formButton": {border:"black 2px solid", background: "#719fb2", width: '10rem', height:"3.5rem", color:"White", textShadow: '1px 1px 1px #191919'},
+    ".formButton": {border:"black 2px solid", background: "#719fb2", width: '10rem', height:"3.5rem", color:"White", textShadow: '0px 0px 0px #191919'},
     ".formButton:hover": {background: "#fff", color:"#719fb2"},  
     ".ourBlue": { color:"#719fb2" }
     
@@ -144,7 +144,7 @@ function ResponsiveJobSlider({ data }) {
 
                                 </Card>               
                             </Grid>
-                            <Grid onClick={showResForm} item xs={12} style={{background:"hsla(0,0%,10%,0.9)", position:'absolute', top:"0px", left:"0px", width:"100%", height:"100vh", textAlign:"center", display:show === 'none'? `none`: `block`}}>
+                            <Grid item xs={12} style={{background:"hsla(0,0%,10%,0.9)", position:'absolute', top:"0px", left:"0px", width:"100%", height:"100vh", textAlign:"center", display:show === 'none'? `none`: `block`}}>
 
                                 
 
@@ -181,6 +181,15 @@ function ResponsiveJobSlider({ data }) {
                                     </Grid>
                                     
                                 </form>
+
+                                <Grid item xs={12} style={{ display:"flex", justifyContent:"center", marginTop:"3rem"}}>
+                                               
+                                                    
+                                        <Button onClick={showResForm} className="cardButton cardButtonBottom formButton">
+                                            {show === 'none'? 'Apply' : 'Back'}
+                                        </Button>
+                                    
+                                </Grid>
 
 
 
