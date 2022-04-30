@@ -4,7 +4,8 @@ import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { styled } from "@mui/system";
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import JobForm from "../components/JobForm";
 
 const StyledJobGalleryGrid = styled(Grid, {
     name: "StyledGalleryGrid",
@@ -35,13 +36,16 @@ const StyledJobGalleryGrid = styled(Grid, {
 function JobGallery({ data }) {
 
     const [show, setShow] = useState('none');
-
+    const [mail, setMail] = useState('');
+    var tempMail = '';
     function showForm(){
         if(show ==='none'){
-            setShow('block');  
+            setShow('block');
+            setMail(tempMail);
         }else{setShow('none');}
     }
    
+
     const res =
 
         
@@ -53,6 +57,8 @@ function JobGallery({ data }) {
                                
                             <>
                                <Grid key={dats.node.agencytitle} item xs={12} sm={6} md={4} lg={4} state={dats}>
+
+                                {tempMail = dats.node.employerEmail}
                                 
                                 <Card className="infoCard">
 
@@ -94,7 +100,6 @@ function JobGallery({ data }) {
 
                                         </Grid>
                                         <Grid item xs={12} style={{display:"flex", justifyContent:"flex-end"}}>
-                                            
                                                 
                                                 <Button onClick={showForm} className="cardButton cardButtonBottom">
                                                     {show === 'none'? 'Apply' : 'Back'}
@@ -107,10 +112,12 @@ function JobGallery({ data }) {
                                     </Grid>
                                 </Card>               
                             </Grid>
-
-                            <Grid xs={12} style={{textAlign:"center", display:show === 'none'? `none`: `block`}}>
-
                             
+                           
+
+                            {/* <Grid xs={12} id={dats.node.employerEmail} style={{textAlign:"center", display:show === 'none'? `none`: `block`}}>
+
+                          
 
                             <form className="formWidth" name="Contact Form" method="POST" netlify-honeypot="entryField" data-netlify="true">
                                 <input type="hidden" name="form-name" value="Contact Form" />
@@ -118,7 +125,7 @@ function JobGallery({ data }) {
                                     <h3 className="white">Apply</h3>
                                 </Grid>
                                 <Grid xs={12} className="left">
-                                    <label className="white" htmlFor="email" >Your Email:<input className="monowidth" placeholder="you@gmail.com"type="email" name="email" id="email" /></label>
+                                    <label className="white" htmlFor="email" >Your Email:<input className="monowidth" placeholder="you@gmail.com"type="email" name="email" id="email" required/></label>
                                     
                                 </Grid>
                                 <Grid xs={12} style={{ display:"none" }}>
@@ -126,18 +133,18 @@ function JobGallery({ data }) {
                                     
                                 </Grid>
                                 <Grid xs={12} className="left">
-                                    <label className="white" htmlFor="" >Your Profile URL:<input className="monowidth" placeholder="you@imdb.com" type="text" name="profile-url" id="profile-url" /></label>
+                                    <label className="white" htmlFor="" >Your Profile URL:<input className="monowidth" placeholder="you@imdb.com" type="text" name="profile-url" id="profile-url" required/></label>
                                     
                                 </Grid>
                                 <Grid xs={12} className="left">
-                                    <label className="white" htmlFor="message" >Message:<textarea className="monowidth" placeholder="Hello, my name is example-name, I am interested in your advertised job role." name="message" id="message" /></label>
+                                    <label className="white" htmlFor="message" >Message:<textarea className="monowidth" placeholder="Hello, my name is example-name, I am interested in your advertised job role." name="message" id="message" required/></label>
                                     
                                 </Grid>
                                 <Grid xs={12} style={{ marginBottom:"1rem", textAlign:"center" }}>
                                     <p className="monowidth white" style={{ marginTop:"0.3rem" }}>Please be patient while awaiting a response.</p>
                                 </Grid>
                                 <Grid xs={12} style={{display:"none"}}>
-                                    <label htmlFor="employer-email" >Employer Email:<input className="monowidth" type="email" name="employer-email" id="employer-email" value={dats.node.employerEmail} /></label>
+                                    <label htmlFor="employer-email" >Employer Email:<input className="monowidth" type="password" name="employer-email" id="employer-email" value={dats.node.employerEmail} /></label>
                                     
                                 </Grid>
                                 <Grid xs={12} style={{textAlign:"center", marginBottom:"0.3rem"}}>
@@ -147,10 +154,15 @@ function JobGallery({ data }) {
                             </form>
 
 
-                            </Grid>
+                            </Grid> */}
                             </>
                          
                         ))}
+                        {(() => {
+                            if(show !== 'none'){
+                                return <JobForm data={ mail } />;
+                            }
+                        })()} 
                                 
             </StyledJobGalleryGrid>
             

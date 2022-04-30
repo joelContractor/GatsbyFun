@@ -152,7 +152,7 @@ function ResponsiveJobSlider({ data }) {
                                 <h3 className="white">Apply</h3>
                             </Grid>
                             <Grid xs={12} className="left">
-                                <label className="white" htmlFor="email">Your Email:<input className="monowidth" placeholder="you@gmail.com" type="email" name="email" id="email"/></label>
+                                <label className="white" htmlFor="email">Your Email:<input className="monowidth" placeholder="you@gmail.com" type="email" name="email" id="email" required/></label>
                                 
                             </Grid>
                             <Grid xs={12} style={{ display:"none" }}>
@@ -160,19 +160,19 @@ function ResponsiveJobSlider({ data }) {
                                 
                             </Grid>
                             <Grid xs={12} className="left">
-                                <label htmlFor="profile-url" className="white">Your Profile URL:<input className="monowidth" placeholder="you@imdb.com" type="text" name="profile-url" id="profile-url"/></label>
+                                <label htmlFor="profile-url" className="white">Your Profile URL:<input className="monowidth" placeholder="you@imdb.com" type="text" name="profile-url" id="profile-url" required/></label>
                                 
                             </Grid>
                             <Grid xs={12} className="left">
-                                <label className="white" htmlFor="message" >Message:</label>
-                                <textarea className="monowidth" placeholder="Hello, my name is example-name, I am interested in your advertised job role." name="message" id="message" />
+                                <label className="white" htmlFor="message" >Message:<textarea className="monowidth" placeholder="Hello, my name is example-name, I am interested in your advertised job role." name="message" id="message" required/></label>
+                                
                             </Grid>
                             <Grid xs={12} style={{ marginBottom:"1rem", textAlign:"center" }}>
                                 <p className="monowidth white" style={{ marginTop:"0.3rem" }}>Please be patient while awaiting a response.</p>
                             </Grid>
                             <Grid xs={12} style={{display:"none"}}>
                                 <label htmlFor="employer-email" >Employer Email:</label>
-                                <input className="monowidth" type="email" name="employer-email" id="employer-email" value={dats.node.employerEmail} />
+                                <input className="monowidth" type="password" name="employer-email" id="employer-email" value={dats.node.employerEmail} />
                             </Grid>
                             <Grid xs={12} style={{textAlign:"center", marginBottom:"0.3rem"}}>
                                 <Button style={{ fontWeight:"bold", borderRadius:"50px", padding:"1.5rem 1rem", background:"white", color:"rgb(26, 36, 33)", fontSize:"0.6rem" }} type="submit">Send</Button>
