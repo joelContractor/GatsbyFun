@@ -5,7 +5,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { styled } from "@mui/system";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import JobForm from "../components/JobForm";
+//import JobForm from "../components/JobForm";
 
 const StyledJobGalleryGrid = styled(Grid, {
     name: "StyledGalleryGrid",
@@ -36,12 +36,10 @@ const StyledJobGalleryGrid = styled(Grid, {
 function JobGallery({ data }) {
 
     const [show, setShow] = useState('none');
-    const [mail, setMail] = useState('');
-    var tempMail = '';
+  
     function showForm(){
         if(show ==='none'){
             setShow('block');
-            setMail(tempMail);
         }else{setShow('none');}
     }
    
@@ -55,7 +53,7 @@ function JobGallery({ data }) {
             
                         {data.map((dats) => (
                                
-                            
+                            <>
                             <Grid key={dats.node.jobTitle} item xs={12} sm={6} md={4} lg={4} state={dats}>
 
                                 
@@ -115,7 +113,7 @@ function JobGallery({ data }) {
                             
                            
 
-                            /* <Grid xs={12} id={dats.node.employerEmail} style={{textAlign:"center", display:show === 'none'? `none`: `block`}}>
+                            <Grid xs={12} id={dats.node.employerEmail} style={{textAlign:"center", display:show === 'none'? `none`: `block`}}>
 
                           
 
@@ -154,15 +152,15 @@ function JobGallery({ data }) {
                             </form>
 
 
-                            </Grid> */
+                            </Grid></>
                             
                          
                         ))}
-                        {(() => {
+                        {/* {(() => {
                             if(show !== 'none'){
                                 return <JobForm data={ mail } />;
                             }
-                        })()} 
+                        })()} */}
                                 
             </StyledJobGalleryGrid>
             

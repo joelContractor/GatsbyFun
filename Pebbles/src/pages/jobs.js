@@ -1,15 +1,15 @@
 import { graphql } from 'gatsby'
 import * as React from "react"
-import JobGallery from "../components/jobGallery"
+//import JobGallery from "../components/jobGallery"
 import ResponsiveJobSlider from "../components/responsiveJobGallery"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Grid } from "@material-ui/core"
-import useMediaQuery from "@mui/material/useMediaQuery";
+//import useMediaQuery from "@mui/material/useMediaQuery";
 
 
 function JobsPage({data}) {
-  const matchesUnder = useMediaQuery('(max-width:600px)');
+  //const matchesUnder = useMediaQuery('(max-width:600px)');
   
   const res = 
   <Layout>
@@ -27,8 +27,8 @@ function JobsPage({data}) {
       </Grid>
 
     </Grid>
-    { !matchesUnder && <JobGallery  data={ data.allDatoCmsJob.edges } /> }
-    { matchesUnder && <ResponsiveJobSlider  data={ data.allDatoCmsJob.edges } /> }
+    {/*{ !matchesUnder && <JobGallery  data={ data.allDatoCmsJob.edges } /> } */}
+    <ResponsiveJobSlider  data={ data.allDatoCmsJob.edges } /> 
   
   </Layout>
   return res;

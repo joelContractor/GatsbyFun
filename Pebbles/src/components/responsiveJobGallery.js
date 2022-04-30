@@ -32,7 +32,7 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".swiper-button-next": { color:"black", opacity:"0.3"},
     ".historyTitle": {  marginBottom:"10px" },
     ".historySwiperTitle": {  marginBottom:"40px", marginTop:"0px" },
-    ".infoCard": {  marginRight:"10px", marginLeft:"10px", margin:'0 auto', maxWidth:"380px", willChange:"transform", borderRadius:"20px", overFlow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
+    ".infoCard": {  marginRight:"10px", marginLeft:"10px", margin:'0 auto', maxWidth:"1080px", willChange:"transform", borderRadius:"20px", overFlow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
     ".cardButton": { textTransform: `none`, color:"white", fontWeight:"normal", fontSize:"0.8rem", width:"100%", textAlign:"center", border: "1px white solid", marginBottom:"0px", background: "rgb(26, 36, 33)", padding: "25px 10px 20px 15px", borderBottomRightRadius: "0px", borderBottomLeftRadius:"0px", borderTopLeftRadius: "5px", borderTopRightRadius: "5px" },
     ".cardButton:hover": { background: "rgb(26, 36, 33)", color:"orange" },
     ".cardMediaArea": {  height:"250px", marginBottom:"0px", borderTopLeftRadius: "20px", borderTopRightRadius: "20px" },
@@ -89,7 +89,7 @@ function ResponsiveJobSlider({ data }) {
                         <>
                         <SwiperSlide key={dats.node.jobTitle} >
 
-                            <Grid key={dats.node.jobTitle} item xs={12} sm={6} md={4} lg={4} state={data}>
+                            <Grid key={dats.node.jobTitle} item xs={12} state={data}>
                         
                                 <Card className="infoCard">
 
