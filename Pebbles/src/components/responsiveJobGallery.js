@@ -32,10 +32,10 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".swiper-button-next": { color:"black", opacity:"0.3"},
     ".historyTitle": {  marginBottom:"10px" },
     ".historySwiperTitle": {  marginBottom:"40px", marginTop:"0px" },
-    ".infoCard": {  marginRight:"10px", marginLeft:"10px", margin:'0 auto', maxWidth:"1080px", willChange:"transform", borderRadius:"20px", overFlow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
+    ".infoCard": {  marginRight:"10px", marginLeft:"10px", margin:'0 auto', maxWidth:"1080px", willChange:"transform", overFlow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
     ".cardButton": { textTransform: `none`, color:"white", fontWeight:"normal", fontSize:"0.8rem", width:"100%", textAlign:"center", border: "1px white solid", marginBottom:"0px", background: "rgb(26, 36, 33)", padding: "25px 10px 20px 15px", borderBottomRightRadius: "0px", borderBottomLeftRadius:"0px", borderTopLeftRadius: "5px", borderTopRightRadius: "5px" },
     ".cardButton:hover": { background: "rgb(26, 36, 33)", color:"orange" },
-    ".cardMediaArea": {  height:"45vh", marginBottom:"0px", borderTopLeftRadius: "20px", borderTopRightRadius: "20px" },
+    ".cardMediaArea": {  height:"45vh", marginBottom:"0px"},
     ".cardButtonBottom":{ fontFamily: 'Georgia', width: "auto", padding: "20px 10px", borderRadius: "100px", fontSize:"0.8rem", color: "#719fb2", background: "rgba(129, 184, 207, 0.2)", border:'none', fontWeight:"normal", alignSelf: "end", marginTop:"0px", height:'64px', textShadow: '1px 1px 1px rgb(255,255,255,0.9)'},
     ".cardButtonBottom:hover": { background:"#719fb2", color:"white", textShadow: 'none' },
     ".cardContentArea": { background:"white", borderBottomLeftRadius: "3px", borderBottomRightRadius: "3px" },
@@ -43,7 +43,7 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".MuiCardContent-root:last-child": { paddingBottom:"25px" },
     ".buttonContainer": {  marginTop: "0px" },
     ".cardTitle": { marginTop:"1rem", marginBottom:"1rem", color: `#141414`, fontSize:"1rem" },
-    ".safariRounded": { willChange:"transform", borderTopLeftRadius: "20px", borderTopRightRadius: "20px", overflow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
+    ".safariRounded": { willChange:"transform", overflow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
     ".monowidth": { width:"100%", borderRadius:"5px", marginBottom:"1rem", marginTop:"0.2rem", padding:'10px' },
     ".formWidth": { width:"100%", margin:"0 auto", background:"rgb(26, 36, 33) none repeat scroll 0% 0%", padding:"1rem", borderRadius:"20px", marginTop:"2rem" },
     ".white": { color:"white", marginTop:"1rem" },
@@ -78,7 +78,7 @@ function ResponsiveJobSlider({ data }) {
                 pagination={{ clickable: true }}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
-                style={{ fontFamily: "Arial", paddingBottom:"4rem" }}
+                style={{ fontFamily: "Arial", paddingBottom:"4rem", borderRadius:"20px" }}
                 >
 
 
