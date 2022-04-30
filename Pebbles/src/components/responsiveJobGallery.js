@@ -39,7 +39,7 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".cardButtonBottom":{ fontFamily: 'Georgia', width: "auto", padding: "20px 15px", borderRadius: "100px", fontSize:"0.8rem", color: "#719fb2", background: "rgba(129, 184, 207, 0.2)", border:'none', fontWeight:"normal", alignSelf: "end", marginTop:"0px", height:'64px', textShadow: '1px 1px 1px rgb(255,255,255,0.9)'},
     ".cardButtonBottom:hover": { background:"#719fb2", color:"white", textShadow: 'none' },
     ".cardContentArea": { background:"white", borderBottomLeftRadius: "3px", borderBottomRightRadius: "3px" },
-    ".resCardContentPara": { marginTop:"0.7rem", fontFamily: 'Arial', fontSize:"0.7rem", color: "#808080", marginBottom:"0px", maxHeight:"80px", lineHeight:"1rem" },
+    ".resCardContentPara": { marginTop:"0.7rem", fontFamily: 'Arial', fontSize:"0.7rem", color: "#808080", marginBottom:"0px", lineHeight:"1rem" },
     ".MuiCardContent-root:last-child": { paddingBottom:"25px" },
     ".buttonContainer": {  marginTop: "0px" },
     ".cardTitle": { marginTop:"1rem", marginBottom:"1rem", color: `#141414`, fontSize:"1rem" },
