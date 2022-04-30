@@ -91,7 +91,7 @@ function ResponsiveJobSlider({ data }) {
 
                             <Grid key={dats.node.jobTitle} item xs={12} state={data}>
                         
-                                <Card className="infoCard">
+                                <Card style={{ width:"80%" }} className="infoCard">
 
                                     <Grid item xs={12} className="safariRounded">
                                         <GatsbyImage className="cardMediaArea" image={getImage(dats.node.jobImage.gatsbyImageData)} alt={dats.node.articletitle}/>
