@@ -45,7 +45,7 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".cardTitle": { marginTop:"1rem", marginBottom:"1rem", color: `#141414`, fontSize:"1rem" },
     ".safariRounded": { willChange:"transform", borderTopLeftRadius: "20px", borderTopRightRadius: "20px", overflow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
     ".monowidth": { width:"100%", borderRadius:"5px", marginBottom:"1rem", marginTop:"0.2rem" },
-    ".formWidth": { width:"95%", margin:"0 auto", background:"rgb(26, 36, 33) none repeat scroll 0% 0%", padding:"1rem", borderRadius:"20px", marginTop:"2rem" },
+    ".formWidth": { width:"100%", margin:"0 auto", background:"rgb(26, 36, 33) none repeat scroll 0% 0%", padding:"1rem", borderRadius:"20px", marginTop:"2rem" },
     ".white": { color:"white", marginTop:"1rem" },
     ".left": { textAlign:"left" },
     ".separator": { marginTop:"1.5rem" }
