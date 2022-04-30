@@ -144,7 +144,7 @@ function ResponsiveJobSlider({ data }) {
 
                                 </Card>               
                             </Grid>
-                            <Grid item xs={12} style={{background:"hsla(0,0%,10%,0.9)", position:'absolute', top:"0px", left:"0px", width:"100%", height:"100vh", textAlign:"center", display:show === 'none'? `none`: `block`}}>
+                            <Grid onClick={showResForm} item xs={12} style={{background:"hsla(0,0%,10%,0.9)", position:'absolute', top:"0px", left:"0px", width:"100%", height:"100vh", textAlign:"center", display:show === 'none'? `none`: `block`}}>
 
                                 
 
@@ -182,14 +182,7 @@ function ResponsiveJobSlider({ data }) {
                                     
                                 </form>
 
-                                <Grid item xs={12} style={{ display:"flex", justifyContent:"center", marginTop:"6rem"}}>
-                                               
-                                                    
-                                        <Button onClick={showResForm} className="cardButton cardButtonBottom formButton">
-                                            {show === 'none'? 'Apply' : 'Back'}
-                                        </Button>
-                                    
-                                </Grid>
+
 
 
                             </Grid>
