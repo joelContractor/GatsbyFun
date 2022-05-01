@@ -49,7 +49,7 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".white": { color:"white", marginTop:"1rem" },
     ".left": { textAlign:"left" },
     ".separator": { marginTop:"1.5rem" },
-    ".formButton": {border:"black 2px solid", background: "#719fb2", width: '10rem', height:"3.5rem", color:"White", textShadow: '0px 0px 0px #191919'},
+    ".formButton": { background: "#719fb2", width: '10rem', height:"3.5rem", color:"White", textShadow: '0px 0px 0px #191919'},
     ".formButton:hover": {background: "#fff", color:"#719fb2"},  
     ".ourBlue": { color:"#719fb2" }
     
