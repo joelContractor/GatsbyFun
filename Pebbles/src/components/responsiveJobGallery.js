@@ -62,6 +62,8 @@ function ResponsiveJobSlider({ data }) {
 
     const [show, setShow] = useState('none');
 
+    var myArray = [];
+
     function showResForm(){
         if(show ==='none'){
             setShow('block');  
@@ -88,7 +90,9 @@ function ResponsiveJobSlider({ data }) {
                     {data.map((dats) => (
                         
 
-                        
+                        myArray = [
+                            [dats.node.characterNeeded1], [dats.node.characterNeeded2], [dats.node.characterNeeded3], [dats.node.characterNeeded4], [dats.node.characterNeeded5], [dats.node.characterNeeded6], [dats.node.characterNeeded7], [dats.node.characterNeeded8]
+                        ],
                         
                         <SwiperSlide key={dats.node.jobTitle} >
 
@@ -117,6 +121,9 @@ function ResponsiveJobSlider({ data }) {
                                                     Location: {dats.node.location}
                                                 </p>
                                                 <p className="resCardContentPara">
+                                                    Paid: {dats.node.paid}
+                                                </p>
+                                                <p className="resCardContentPara">
                                                     End Date: {dats.node.endDate}
                                                 </p>
                                                 <p className="cardTitle">
@@ -128,6 +135,26 @@ function ResponsiveJobSlider({ data }) {
                                                 <p className="resCardContentPara">
                                                     {dats.node.jobDescription}
                                                 </p>
+                                                
+                                                {(() => {
+                                                    if(dats.node.characterNeeded1){
+                                                        return <>
+                                                            {myArray.map((character) => (
+                                                                (() => {
+                                                                    if(character[0]){
+                                                                        return <>
+                                                                            <p className="resCardContentPara">
+                                                                                Character Needed: {character}.
+                                                                            </p>
+                                                                        </>
+                                                                    }
+                                                                })()
+
+                                                                
+                                                            ))}
+                                                        </>
+                                                    }
+                                                })()}
                                             </Grid>
                                             <Grid item xs={12} style={{ display:"flex", justifyContent:"flex-end"}}>
                                                
