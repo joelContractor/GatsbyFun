@@ -69,7 +69,8 @@ function ResponsiveJobSlider({ data }) {
             setShow('block');  
         }else{setShow('none');}
     }
-
+ 
+    
     const res =
 
         <StyledJobSwiperGrid container spacing={0}>
