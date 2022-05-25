@@ -165,7 +165,7 @@ function ResponsiveJobSlider({ data }) {
                                                     End Date: <span className="data">{dats.node.endDate}</span>
                                                 </p>
                                             </Grid>
-                                            <Grid item xs={12} style={{ display:"flex", justifyContent:"flex-end", clear:"both" }}>
+                                            <Grid item xs={12} style={{ display:"flex", justifyContent:"center", clear:"both" }}>
                                                
                                                     
                                                     <Button onClick={showResForm}  className="cardButton cardButtonBottom">
