@@ -59,10 +59,12 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".data": { fontSize:"0.8rem", color:"brown" },
     ".dataBorderLeft":{paddingLeft:"10px"},
     ".blockText": {lineHeight:"1.6rem", marginBottom:"40px", float:"left"},
-    ".charactersFontSize": { fontSize: "0.7rem" },
-    ".descriptionFontSize": { fontSize: "0.8rem" },
+    ".charactersFontSize": { fontSize: "0.8rem" },
+    ".descriptionFontSize": { fontSize: "0.9rem" },
     ".jobBoardBorder": { width:"100%", marginTop:"50px", borderTop:"1px dotted #A9A9A9", float:"left", paddingBottom:"3px" },
-    ".black": { color:"black" }
+    ".black": { color:"black" },
+    ".roleTitle": { marginBottom:"0px" },
+    ".roleDescription": { marginBottom:"15px" }
 
   });
 
@@ -137,10 +139,11 @@ function ResponsiveJobSlider({ data }) {
                                                             {myArray.map((character) => (
                                                                 (() => {
                                                                     if(character != ''){
-                                                                        return <div key={character}>
-                                                                            <p key={character} className="resCardContentPara dataBorderLeft">
-                                                                                Role: <span className="data charactersFontSize black">{character}</span>
+                                                                        return <div key={character} className="resCardContentPara dataBorderLeft">
+                                                                            <p className="roleTitle">
+                                                                                Role: 
                                                                             </p>
+                                                                            <p className="data charactersFontSize black roleDescription">{character}</p>
                                                                             </div>
                                                                     }
                                                                 })()
