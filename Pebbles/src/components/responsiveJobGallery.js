@@ -52,7 +52,7 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".formButton": { borderRadius:"20px", background: "#719fb2", width: '95%', height:"70px", color:"White", textShadow: '0px 0px 0px #191919'},
     ".formButton:hover": {background: "#fff", color:"#719fb2"},  
     ".ourBlue": { color:"#719fb2" },
-    ".beside": { float:"left", padding:"5px 10px 5px 10px", borderRight:"1px dotted grey" },
+    ".beside": { float:"left", padding:"5px 10px 5px 10px", borderRight:"1px dotted #A9A9A9" },
     ".beside:nth-child(1)": {paddingLeft:"10px"},
     ".beside:nth-child(5)": {borderRight:"none"},
     ".alone": { clear:"both", paddingTop:"40px" },
@@ -61,7 +61,7 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".blockText": {lineHeight:"1.6rem", marginBottom:"40px", float:"left"},
     ".charactersFontSize": { fontSize: "0.7rem" },
     ".descriptionFontSize": { fontSize: "0.9rem" },
-    ".jobBoardBorder": { marginTop:"50px", borderTop:"1px dotted grey", float:"left", paddingBottom:"3px" },
+    ".jobBoardBorder": { width:"100%", marginTop:"50px", borderTop:"1px dotted #A9A9A9", float:"left", paddingBottom:"3px" },
     ".black": { color:"black" }
 
   });
