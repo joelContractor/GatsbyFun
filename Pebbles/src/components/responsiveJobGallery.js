@@ -53,8 +53,8 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".formButton:hover": {background: "#fff", color:"#719fb2"},  
     ".ourBlue": { color:"#719fb2" },
     ".beside": { float:"left", padding:"5px 10px 5px 10px", borderRight:"1px dotted #A9A9A9" },
-    ".beside:nth-child(1)": {paddingLeft:"10px"},
-    ".beside:nth-child(5)": {borderRight:"none"},
+    ".beside:nth-of-type(1)": {paddingLeft:"10px"},
+    ".beside:nth-of-type(5)": {borderRight:"none"},
     ".alone": { clear:"both", paddingTop:"40px" },
     ".data": { fontSize:"0.8rem", color:"brown" },
     ".dataBorderLeft":{paddingLeft:"10px"},
@@ -100,10 +100,12 @@ function ResponsiveJobSlider({ data }) {
 
                     {data.map((dats) => (
                         
-
+                        
                         myArray = [
                             [dats.node.characterNeeded1], [dats.node.characterNeeded2], [dats.node.characterNeeded3], [dats.node.characterNeeded4], [dats.node.characterNeeded5], [dats.node.characterNeeded6], [dats.node.characterNeeded7], [dats.node.characterNeeded8]
                         ],
+
+
                         
                         <SwiperSlide key={dats.node.jobTitle} >
 
@@ -131,19 +133,19 @@ function ResponsiveJobSlider({ data }) {
                                                 <span className="data blockText descriptionFontSize black">{dats.node.jobDescription}</span>
                                                 </p>
                                                 
-                                                {(() => {
-                                                    if(dats.node.characterNeeded1){
-                                                        return <>
+                                                
                                                             {myArray.map((character) => (
-                                                                
-                                                                <p key={character} className="resCardContentPara dataBorderLeft">
-                                                                    Character: <span className="data charactersFontSize black">{character}.</span>
-                                                                </p>
-
+                                                                (() => {
+                                                                    if(character != ''){
+                                                                        return <div key={character}>
+                                                                            <p key={character} className="resCardContentPara dataBorderLeft">
+                                                                                Role: <span className="data charactersFontSize black">{character}</span>
+                                                                            </p>
+                                                                            </div>
+                                                                    }
+                                                                })()
                                                             ))}
-                                                        </>
-                                                    }
-                                                })()}
+                                                        
                                             </Grid>
                                             <Grid item xs={12} className="jobBoardBorder">
                                                 
