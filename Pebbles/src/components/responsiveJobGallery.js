@@ -42,7 +42,7 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".resCardContentPara": { marginTop:"0.7rem", fontFamily: 'Arial', fontSize:"0.7rem", color: "#808080", marginBottom:"0px", lineHeight:"1rem" },
     ".MuiCardContent-root:last-child": { paddingBottom:"25px" },
     ".buttonContainer": {  marginTop: "0px" },
-    ".cardTitle": { marginTop:"40px", marginBottom:"40px", color: `#141414`, fontSize:"1.2rem" },
+    ".cardTitle": { marginTop:"10px", marginBottom:"40px", color: `#141414`, fontSize:"1.2rem" },
     ".safariRounded": { willChange:"transform", overflow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
     ".monowidth": { width:"100%", borderRadius:"5px", marginBottom:"1rem", marginTop:"0.2rem", padding:'10px' },
     ".formWidth": { width:"95%", margin:"0 auto", background:"#719fb2", padding:"1rem", borderRadius:"20px", marginTop:"2rem" },
@@ -56,10 +56,13 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".beside:nth-child(1)": {paddingLeft:"10px"},
     ".beside:nth-child(5)": {borderRight:"none"},
     ".alone": { clear:"both", paddingTop:"40px" },
-    ".data": { fontSize:"0.9rem", color:"black" },
+    ".data": { fontSize:"0.9rem", color:"brown" },
     ".dataBorderLeft":{paddingLeft:"10px"},
     ".blockText": {lineHeight:"1.6rem", marginBottom:"40px", float:"left"},
-    ".charactersFontSize": { fontSize: "0.7rem"}
+    ".charactersFontSize": { fontSize: "0.7rem" },
+    ".descriptionFontSize": { fontSize: "0.9rem" },
+    ".jobBoardBorder": { marginTop:"50px", borderTop:"1px dotted grey", float:"left", paddingBottom:"3px" },
+    ".black": { color:"black" }
 
   });
 
@@ -116,14 +119,40 @@ function ResponsiveJobSlider({ data }) {
                                             className="cardContentArea"
                                         >
                                             
+                                            
                                             <Grid item xs={12}>
+                                                <p className="cardTitle alone dataBorderLeft">
+                                                    {dats.node.jobTitle}
+                                                </p>
+                                                <p className="resCardContentPara dataBorderLeft">
+                                                    Description:
+                                                </p>
+                                                <p className="resCardContentPara dataBorderLeft">
+                                                <span className="data blockText descriptionFontSize black">{dats.node.jobDescription}</span>
+                                                </p>
+                                                
+                                                {(() => {
+                                                    if(dats.node.characterNeeded1){
+                                                        return <>
+                                                            {myArray.map((character) => (
+                                                                
+                                                                <p key={character} className="resCardContentPara dataBorderLeft">
+                                                                    Character: <span className="data charactersFontSize black">{character}.</span>
+                                                                </p>
+
+                                                            ))}
+                                                        </>
+                                                    }
+                                                })()}
+                                            </Grid>
+                                            <Grid item xs={12} className="jobBoardBorder">
                                                 
                                                 <p className="resCardContentPara beside">
-                                                    Females Needed: <span className="data">{dats.node.femalesNeeded}</span>
+                                                    Females: <span className="data">{dats.node.femalesNeeded}</span>
                                                 </p>
                                             
                                                 <p className="resCardContentPara beside">
-                                                    Males Needed: <span className="data">{dats.node.malesNeeded}</span>
+                                                    Males: <span className="data">{dats.node.malesNeeded}</span>
                                                 </p>
                                          
                                                 <p className="resCardContentPara beside">
@@ -135,29 +164,6 @@ function ResponsiveJobSlider({ data }) {
                                                 <p className="resCardContentPara beside">
                                                     End Date: <span className="data">{dats.node.endDate}</span>
                                                 </p>
-                                                <p className="cardTitle alone dataBorderLeft">
-                                                    {dats.node.jobTitle}
-                                                </p>
-                                                <p className="resCardContentPara dataBorderLeft">
-                                                    Description:
-                                                </p>
-                                                <p className="resCardContentPara dataBorderLeft">
-                                                <span className="data blockText charactersFontSize">{dats.node.jobDescription}</span>
-                                                </p>
-                                                
-                                                {(() => {
-                                                    if(dats.node.characterNeeded1){
-                                                        return <>
-                                                            {myArray.map((character) => (
-                                                                
-                                                                <p key={character} className="resCardContentPara dataBorderLeft">
-                                                                    Character: <span className="data charactersFontSize">{character}.</span>
-                                                                </p>
-
-                                                            ))}
-                                                        </>
-                                                    }
-                                                })()}
                                             </Grid>
                                             <Grid item xs={12} style={{ display:"flex", justifyContent:"flex-end", clear:"both" }}>
                                                
