@@ -56,7 +56,7 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".beside:nth-child(1)": {paddingLeft:"10px"},
     ".beside:nth-child(5)": {borderRight:"none"},
     ".alone": { clear:"both", paddingTop:"40px" },
-    ".data": { fontSize:"0.9rem", color:"brown" },
+    ".data": { fontSize:"0.8rem", color:"brown" },
     ".dataBorderLeft":{paddingLeft:"10px"},
     ".blockText": {lineHeight:"1.6rem", marginBottom:"40px", float:"left"},
     ".charactersFontSize": { fontSize: "0.7rem" },
