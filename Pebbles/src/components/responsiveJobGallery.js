@@ -36,13 +36,13 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".cardButton": { textTransform: `none`, color:"white", fontWeight:"normal", fontSize:"0.8rem", width:"100%", textAlign:"center", border: "1px white solid", marginBottom:"0px", background: "rgb(26, 36, 33)", padding: "25px 10px 20px 15px", borderBottomRightRadius: "0px", borderBottomLeftRadius:"0px", borderTopLeftRadius: "5px", borderTopRightRadius: "5px" },
     ".cardButton:hover": { background: "rgb(26, 36, 33)", color:"orange" },
     ".cardMediaArea": {  height:"45vh", marginBottom:"0px"},
-    ".cardButtonBottom":{ fontFamily: 'Georgia', width: "auto", padding: "20px 10px", borderRadius: "100px", fontSize:"0.8rem", color: "#719fb2", background: "rgba(129, 184, 207, 0.2)", border:'none', fontWeight:"normal", alignSelf: "end", marginTop:"1rem", height:'64px', textShadow: '1px 1px 1px rgb(255,255,255,0.9)'},
+    ".cardButtonBottom":{ fontFamily: 'Georgia', width: "auto", padding: "20px 10px", borderRadius: "10px", fontSize:"0.8rem", color: "#719fb2", background: "rgba(129, 184, 207, 0.2)", border:'none', fontWeight:"normal", alignSelf: "end", marginTop:"1rem", height:'64px', textShadow: '1px 1px 1px rgb(255,255,255,0.9)'},
     ".cardButtonBottom:hover": { background:"#719fb2", color:"white", textShadow: 'none' },
     ".cardContentArea": { background:"white", borderBottomLeftRadius: "3px", borderBottomRightRadius: "3px" },
     ".resCardContentPara": { marginTop:"0.7rem", fontFamily: 'Arial', fontSize:"0.7rem", color: "#808080", marginBottom:"0px", lineHeight:"1rem" },
     ".MuiCardContent-root:last-child": { paddingBottom:"25px" },
     ".buttonContainer": {  marginTop: "0px" },
-    ".cardTitle": { marginTop:"10px", marginBottom:"40px", color: `#141414`, fontSize:"1.2rem" },
+    ".cardTitle": { marginTop:"0px", marginBottom:"20px", color: `#141414`, fontSize:"1.2rem" },
     ".safariRounded": { willChange:"transform", overflow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
     ".monowidth": { width:"100%", borderRadius:"5px", marginBottom:"1rem", marginTop:"0.2rem", padding:'10px' },
     ".formWidth": { width:"95%", margin:"0 auto", background:"#719fb2", padding:"1rem", borderRadius:"20px", marginTop:"2rem" },
@@ -58,13 +58,16 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".alone": { clear:"both", paddingTop:"40px" },
     ".data": { fontSize:"0.7rem", color:"brown" },
     ".dataBorderLeft":{paddingLeft:"10px"},
-    ".blockText": {lineHeight:"1.6rem", marginBottom:"40px", float:"left"},
+    ".blockText": {lineHeight:"1.6rem", marginBottom:"40px"},
     ".charactersFontSize": { fontSize: "0.7rem" },
-    ".descriptionFontSize": { fontSize: "0.8rem" },
-    ".jobBoardBorder": { width:"100%", marginTop:"50px", borderTop:"1px dotted #A9A9A9", float:"left", paddingBottom:"3px" },
+    ".descriptionFontSize": { fontSize: "0.7rem" },
+    ".jobBoardBorder": { width:"100%", marginTop:"15px", borderTop:"1px dotted #A9A9A9", float:"left", paddingBottom:"3px" },
     ".black": { color:"black" },
-    ".roleTitle": { marginBottom:"0px" },
-    ".roleDescription": { marginBottom:"15px" }
+    ".roleTitle": { marginBottom:"0px", float:"left" },
+    ".roleDescription": { float:"left", marginBottom:"15px", marginLeft:"3px" },
+    ".jobBoardBorderTop": { marginTop:"0px",  marginBottom:"20px", paddingTop:"5px"},
+    ".roleFloatClear": { clear:"both", paddingBottom:"30px" },
+    ".floatContentPara": { float:"left", marginBottom:"30px" }
 
   });
 
@@ -81,6 +84,8 @@ function ResponsiveJobSlider({ data }) {
             setShow('block');  
         }else{setShow('none');}
     }
+
+    var i = 0;
  
     
     const res =
@@ -128,20 +133,40 @@ function ResponsiveJobSlider({ data }) {
                                                 <p className="cardTitle alone dataBorderLeft">
                                                     {dats.node.jobTitle}
                                                 </p>
-                                                <p className="resCardContentPara dataBorderLeft">
-                                                    Description:
-                                                </p>
-                                                <p className="resCardContentPara dataBorderLeft">
-                                                <span className="data blockText descriptionFontSize black">{dats.node.jobDescription}</span>
+
+                                                <Grid item xs={12} className="jobBoardBorder jobBoardBorderTop">
+                                                
+                                                    <p className="resCardContentPara beside">
+                                                        Females: <span className="data">{dats.node.femalesNeeded}</span>
+                                                    </p>
+                                                
+                                                    <p className="resCardContentPara beside">
+                                                        Males: <span className="data">{dats.node.malesNeeded}</span>
+                                                    </p>
+                                            
+                                                    <p className="resCardContentPara beside">
+                                                        Location: <span className="data">{dats.node.location}</span>
+                                                    </p>
+                                                    <p className="resCardContentPara beside">
+                                                        Paid: <span className="data">{dats.node.paid}</span>
+                                                    </p>
+                                                    <p className="resCardContentPara beside">
+                                                        End Date: <span className="data">{dats.node.endDate}</span>
+                                                    </p>
+                                                </Grid>
+
+                                                <p className="resCardContentPara dataBorderLeft floatContentPara">
+                                                    Description: <span className="data blockText descriptionFontSize black">{dats.node.jobDescription}</span>
                                                 </p>
                                                 
                                                 
                                                             {myArray.map((character) => (
                                                                 (() => {
                                                                     if(character != ''){
-                                                                        return <div key={character} className="resCardContentPara dataBorderLeft">
+                                                                        i = i + 1;
+                                                                        return <div key={character} className="resCardContentPara dataBorderLeft roleFloatClear">
                                                                             <p className="roleTitle">
-                                                                                Role: 
+                                                                                Role {i}: 
                                                                             </p>
                                                                             <p className="data charactersFontSize black roleDescription">{character}</p>
                                                                             </div>
@@ -151,24 +176,7 @@ function ResponsiveJobSlider({ data }) {
                                                         
                                             </Grid>
                                             <Grid item xs={12} className="jobBoardBorder">
-                                                
-                                                <p className="resCardContentPara beside">
-                                                    Females: <span className="data">{dats.node.femalesNeeded}</span>
-                                                </p>
-                                            
-                                                <p className="resCardContentPara beside">
-                                                    Males: <span className="data">{dats.node.malesNeeded}</span>
-                                                </p>
-                                         
-                                                <p className="resCardContentPara beside">
-                                                    Location: <span className="data">{dats.node.location}</span>
-                                                </p>
-                                                <p className="resCardContentPara beside">
-                                                    Paid: <span className="data">{dats.node.paid}</span>
-                                                </p>
-                                                <p className="resCardContentPara beside">
-                                                    End Date: <span className="data">{dats.node.endDate}</span>
-                                                </p>
+
                                             </Grid>
                                             <Grid item xs={12} style={{ display:"flex", justifyContent:"center", clear:"both" }}>
                                                

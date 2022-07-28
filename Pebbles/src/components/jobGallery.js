@@ -64,49 +64,46 @@ function JobGallery({ data }) {
                                         <GatsbyImage className="cardMediaArea" image={getImage(dats.node.jobImage.gatsbyImageData)} alt={dats.node.jobTitle}/>
                                     </Grid>
                                     <Grid container item xs={12} direction="row" onClick={showForm}>
-                                    <CardContent
-                                        className="cardContentArea"
-                                    >
-                                      
-                                            
-                                        <Grid item xs={12}>
-                                            <p className="cardTitle">
-                                                {dats.node.jobTitle}
-                                            </p>
-                                            
-                                            <p className="cardContentPara">
-                                                Description:
-                                            </p>
-                                            <p className="cardContentPara desc">
-                                                {dats.node.jobDescription}
-                                            </p>
-                                        </Grid>
-                                        <Grid item xs={12}>
-                                            <p className="cardContentPara seperator">
-                                                Females Needed: {dats.node.femalesNeeded}
-                                            </p>
-
-                                            <p className="cardContentPara">
-                                                Males Needed: {dats.node.malesNeeded}
-                                            </p>
-                                            <p className="cardContentPara">
-                                                Location: {dats.node.location}
-                                            </p>
-                                            <p className="cardContentPara">
-                                                End Date: {dats.node.endDate}
-                                            </p>
-
-                                        </Grid>
-                                        <Grid item xs={12} style={{display:"flex", justifyContent:"flex-end"}}>
+                                        <CardContent className="cardContentArea">
                                                 
-                                                <Button onClick={showForm} className="cardButton cardButtonBottom">
-                                                    {show === 'none'? 'Apply' : 'Back'}
-                                                </Button>
-                                            
-                                        </Grid>
-                                     
+                                            <Grid item xs={12}>
+                                                <p className="cardTitle">
+                                                    {dats.node.jobTitle}
+                                                </p>
+                                                
+                                                <p className="cardContentPara">
+                                                    Description:
+                                                </p>
+                                                <p className="cardContentPara desc">
+                                                    {dats.node.jobDescription}
+                                                </p>
+                                            </Grid>
+                                            <Grid item xs={12}>
+                                                <p className="cardContentPara seperator">
+                                                    Females Needed: {dats.node.femalesNeeded}
+                                                </p>
+
+                                                <p className="cardContentPara">
+                                                    Males Needed: {dats.node.malesNeeded}
+                                                </p>
+                                                <p className="cardContentPara">
+                                                    Location: {dats.node.location}
+                                                </p>
+                                                <p className="cardContentPara">
+                                                    End Date: {dats.node.endDate}
+                                                </p>
+
+                                            </Grid>
+                                            <Grid item xs={12} style={{display:"flex", justifyContent:"flex-end"}}>
+                                                    
+                                                    <Button onClick={showForm} className="cardButton cardButtonBottom">
+                                                        {show === 'none'? 'Apply' : 'Back'}
+                                                    </Button>
+                                                
+                                            </Grid>
                                         
-                                    </CardContent>
+                                            
+                                        </CardContent>
                                     </Grid>
                                 </Card>               
                             </Grid>
