@@ -56,11 +56,11 @@ function GalleryBanner({ data }) {
     }
 
     function presentAbility(){
-        alert('Another artist prooving that \'Ability Diversity\' is beneficial to Film, TV and Theatre.');
+        alert('Another artist proving that \'Ability Diversity\' is beneficial to Film, TV and Theatre.');
     }
 
     function presentAge(){
-        alert('The experience required to make thoughtful, relatable art is gained over time. This artist prooves that \'Age Diversity\' aids all aspects of Film, TV and Theatre..');
+        alert('The experience required to make thoughtful, relatable art is gained over time. This artist proves that \'Age Diversity\' aids all aspects of Film, TV and Theatre..');
     }
 
     function presentOrientation(){
