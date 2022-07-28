@@ -63,7 +63,7 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".descriptionFontSize": { fontSize: "0.7rem" },
     ".jobBoardBorder": { width:"100%", marginTop:"15px", borderTop:"1px dotted #A9A9A9", float:"left", paddingBottom:"3px" },
     ".black": { color:"black" },
-    ".roleTitle": { marginBottom:"0px", float:"left", marginRight:"5px" },
+    ".roleTitle": { marginBottom:"10px", float:"left", marginRight:"5px" },
     ".roleDescription": { float:"left", marginBottom:"15px" },
     ".jobBoardBorderTop": { marginTop:"0px",  marginBottom:"20px", paddingTop:"5px"},
     ".roleFloatClear": { clear:"both", paddingBottom:"30px" },
