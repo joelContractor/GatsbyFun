@@ -45,11 +45,11 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".cardTitle": { marginTop:"0px", marginBottom:"20px", color: `#141414`, fontSize:"1.2rem" },
     ".safariRounded": { willChange:"transform", overflow:"hidden", webkitBackfaceVisibility: "hidden", mozBackfaceVisibility: "hidden", webkitTransform: "translate3d(0, 0, 0)", mozTransform: "translate3d(0, 0, 0)", webkitMaskImage: "webkitRadialGradient(white, black)" },
     ".monowidth": { width:"100%", borderRadius:"5px", marginBottom:"1rem", marginTop:"0.2rem", padding:'10px' },
-    ".formWidth": { width:"95%", margin:"0 auto", background:"#719fb2", padding:"1rem", borderRadius:"20px", marginTop:"2rem" },
+    ".formWidth": { width:"95%", margin:"0 auto", background:"#719fb2", padding:"1rem", borderRadius:"5px", marginTop:"2rem" },
     ".white": { color:"white", marginTop:"1rem" },
     ".left": { textAlign:"left" },
     ".separator": { marginTop:"1.5rem" },
-    ".formButton": { borderRadius:"20px", background: "#719fb2", width: '95%', height:"70px", color:"White", textShadow: '0px 0px 0px #191919'},
+    ".formButton": { borderRadius:"5px", background: "#719fb2", width: '95%', height:"70px", color:"White", textShadow: '0px 0px 0px #191919'},
     ".formButton:hover": {background: "#fff", color:"#719fb2"},  
     ".ourBlue": { color:"#719fb2" },
     ".beside": { float:"left", padding:"5px 10px 5px 10px", borderRight:"1px dotted #A9A9A9" },
@@ -67,7 +67,9 @@ const StyledJobSwiperGrid = styled(Grid, {
     ".roleDescription": { float:"left", marginBottom:"15px" },
     ".jobBoardBorderTop": { marginTop:"0px",  marginBottom:"20px", paddingTop:"5px"},
     ".roleFloatClear": { clear:"both", paddingBottom:"30px" },
-    ".floatContentPara": { float:"left", marginBottom:"30px" }
+    ".floatContentPara": { float:"left", marginBottom:"30px" },
+    ".jobFormApplyButton": { fontWeight:"bold", borderRadius:"5px", padding:"1.3rem 1rem", color:"white", fontSize:"0.6rem" },
+    ".jobFormApplyButton:hover": { color:"#719fb2", background: "#eee"}
 
   });
 
@@ -225,7 +227,7 @@ function ResponsiveJobSlider({ data }) {
                                         <input className="monowidth" type="password" name="employer-email" id="employer-email" value={dats.node.employerEmail} readOnly/>
                                     </Grid>
                                     <Grid item xs={12} style={{textAlign:"center", marginBottom:"0.3rem"}}>
-                                        <Button style={{ fontWeight:"bold", borderRadius:"50px", padding:"1.3rem 1rem", background:"white", color:"#719fb2", fontSize:"0.6rem" }} type="submit">Send</Button>
+                                        <Button className="jobFormApplyButton" type="submit">Send</Button>
                                     </Grid>
                                     
                                 </form>

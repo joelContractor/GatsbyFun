@@ -52,31 +52,31 @@ function GalleryBanner({ data }) {
     }
 
     function presentRace(){
-        alert('Join the push toward \'Racial Diversity\' in Film by working with this person.');
+        alert('One of many examples of \'Racially Diverse\' talent in the Film, Theatre and TV industries.');
     }
 
     function presentAbility(){
-        alert('Help proove that \'Ability Diversity\' is beneficial to Film by working with this person.');
+        alert('Another artist prooving that \'Ability Diversity\' is beneficial to Film, TV and Theatre.');
     }
 
     function presentAge(){
-        alert('Decrease the requirement for \'Age Diversity\' in Film by working with this person.');
+        alert('The experience required to make thoughtful, relatable art is gained over time. This artist prooves that \'Age Diversity\' aids all aspects of Film, TV and Theatre..');
     }
 
     function presentOrientation(){
-        alert('Help normalise \'Diversity of Sexual Orientation\' in Film by working with this person.');
+        alert('An example from the plethora of artsists of \'Diverse Sexual Orientation\' in Film, TV and Theatre.');
     }
 
     function presentGender(){
-        alert('Increase awareness of \'Gender Diversity\' in Film by working with this person.');
+        alert('One of many gendre diverse artists. Increase awareness and understanding of \'Gender Diversity\' in Film, TV and Theatre.');
     }
 
     function presentCulture(){
-        alert('Promote \'Cultural Diversity\' in Film by working with this person.');
+        alert('A shining example from the plethora of \'Culturally Diverse\' talent in Film, TV and Theatre.');
     }
 
     function presentReligion(){
-        alert('Increase \'Religious Diversity\' in Film by working with this person.');
+        alert('An example from the plethora of \'Religiously Diverse\' talent in Film, TV and Theatre.');
     }
       
 

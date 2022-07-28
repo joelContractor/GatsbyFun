@@ -48,31 +48,31 @@ function FrontPageBanner({ data }) {
     }
 
     function presentRace(){
-        alert('This article is about \'Race Diversity\'. In 2011, people of color made up 12.2% of directors of theatrical films. While that percentage has spiked in the ensuing decade — to 17.8% in 2013, and 19.3% in 2018 — the overall trend line has remained flat. In 2019, just 14.4% of directors of theatrical films were people of color.');
+        alert('This article is about \'Race Diversity\', or has been written by a \'Racially Diverse\' author.');
     }
 
     function presentAbility(){
-        alert('This article is about \'Ability Diversity\'. Diversity tends to ignore the Disabled. This should not be the case.');
+        alert('This article is about \'Ability Diversity\', or has been written by an author of \'Diverse Ability\'.');
     }
 
     function presentAge(){
-        alert('This article is about \'Age Diversity\'. Of the top 100 films of 2017, only 30 had a male lead over age 44 and only five featured a woman over the same age. They were Meryl Streep, 69, Amy Poehler, 46, Judi Dench, 83, Halle Berry, 51, and Frances McDormand, 61, who famously used her 2018 Oscar speech to urge actors to demand contracts that require diversity in a film’s casting. ');
+        alert('This article is about \'Age Diversity\'., or has been written by an author of \'Diverse Age\'.');
     }
 
     function presentOrientation(){
-        alert('This article is about \'Diversity of Sexula Orientation\'. Filmmakers of diverse sexual orientation have succeeded in creating a vibrant underground and alternative film scene. Why must this be the case?');
+        alert('This article is about \'Diversity within Sexual Orientation\', or has been written by an author of \'Diverse Sexual Orientation\'.');
     }
 
     function presentGender(){
-        alert('This article is about \'Gender Diversity\'. Filmmakers of fluid gender have succeeded in creating a vibrant underground and alternative film scene. Why must this be the case?');
+        alert('This article is about \'Gender Diversity\', or has been written by an author of \'Diverse Gender\'.');
     }
 
     function presentCulture(){
-        alert('This article is about Cultural Diversity, or has been written by a culturally diverse author.');
+        alert('This article is about \'Cultural Diversity\', or has been written by a \'Culturally Diverse\' author.');
     }
 
     function presentReligion(){
-        alert('This article is about \'Religious Diversity\'. Religious ideas in movies are powerful because they naturally connect with the audience represented while informing others about a previously unknown culture, history and religion. ');
+        alert('This article is about \'Religious Diversity\', or has been written by a \'Religiously Diverse\' author.');
     }
       
 
