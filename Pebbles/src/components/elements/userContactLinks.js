@@ -52,7 +52,7 @@ function userContactLinks({ dats }) {
                                                     width={55}
                                                     quality={95}
                                                     formats={["AUTO", "WEBP", "AVIF"]}
-                                                    alt="A Gatsby astronaut"
+                                                    alt="Send Text Icon"
                                                     className="contactLinkImage"
                                                 />
                                             </a>
@@ -64,7 +64,7 @@ function userContactLinks({ dats }) {
                                                 width={55}
                                                 quality={95}
                                                 formats={["AUTO", "WEBP", "AVIF"]}
-                                                alt="A Gatsby astronaut"
+                                                alt="Can Not Text Icon"
                                                 className="contactLinkImage"
                                             /></>
                                         }
@@ -84,7 +84,7 @@ function userContactLinks({ dats }) {
                                                 width={55}
                                                 quality={95}
                                                 formats={["AUTO", "WEBP", "AVIF"]}
-                                                alt="A Gatsby astronaut"
+                                                alt="Send Email Icon"
                                                 className="contactLinkImage"
                                             />
                                         </a>
@@ -96,7 +96,7 @@ function userContactLinks({ dats }) {
                                             width={55}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
-                                            alt="A Gatsby astronaut"
+                                            alt="Cannot Email Icon"
                                             className="contactLinkImage"
                                         /></>
                                 }
@@ -115,7 +115,7 @@ function userContactLinks({ dats }) {
                                                     width={55}
                                                     quality={95}
                                                     formats={["AUTO", "WEBP", "AVIF"]}
-                                                    alt="A Gatsby astronaut"
+                                                    alt="Call Artist Representation Icon"
                                                     className="contactLinkImage"
                                                 />
                                             </a>
@@ -127,7 +127,7 @@ function userContactLinks({ dats }) {
                                                 width={55}
                                                 quality={95}
                                                 formats={["AUTO", "WEBP", "AVIF"]}
-                                                alt="A Gatsby astronaut"
+                                                alt="Can Not Call Icon"
                                                 className="contactLinkImage"
                                             /></>
                                     }

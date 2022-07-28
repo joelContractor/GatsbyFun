@@ -45,7 +45,7 @@ function FrontPageArticleWriterDetailsSmall({ dats, title }) {
                                             width={50}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
-                                            alt="A Gatsby astronaut"
+                                            alt="Twitter Share Button."
                                             style={{ marginBottom: `0px`, marginLeft: `3px` }} 
                                             />
                                 </a>
@@ -61,7 +61,7 @@ function FrontPageArticleWriterDetailsSmall({ dats, title }) {
                                             width={50}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
-                                            alt="A Gatsby astronaut"
+                                            alt="Meta Share Button."
                                             style={{ marginBottom: `0px`, marginLeft: `3px` }} 
                                             />
                                     </a>

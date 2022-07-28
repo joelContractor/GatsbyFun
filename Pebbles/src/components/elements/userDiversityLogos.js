@@ -37,7 +37,7 @@ function UserDiversityLogos({ dats }) {
                             width={25}
                             quality={95}
                             formats={["AUTO", "WEBP", "AVIF"]}
-                            alt="A Gatsby astronaut"
+                            alt="Racial Diversity Icon"
                             className="noMarginBottom"
                             />
 
@@ -56,7 +56,7 @@ function UserDiversityLogos({ dats }) {
                             width={25}
                             quality={95}
                             formats={["AUTO", "WEBP", "AVIF"]}
-                            alt="A Gatsby astronaut"
+                            alt="Religious Diversity Icon"
                             className="noMarginBottom" 
                             />
                         </div>
@@ -75,7 +75,7 @@ function UserDiversityLogos({ dats }) {
                         width={25}
                         quality={95}
                         formats={["AUTO", "WEBP", "AVIF"]}
-                        alt="A Gatsby icon"
+                        alt="Culutural Diversity Icon"
                         className="noMarginBottom"
                         />
                     </div>
@@ -93,7 +93,7 @@ function UserDiversityLogos({ dats }) {
                             width={25}
                             quality={95}
                             formats={["AUTO", "WEBP", "AVIF"]}
-                            alt="A Gatsby icon"
+                            alt="Ability Diversity Icon"
                             className="noMarginBottom"
                             />
                         </div>
@@ -111,7 +111,7 @@ function UserDiversityLogos({ dats }) {
                             width={25}
                             quality={95}
                             formats={["AUTO", "WEBP", "AVIF"]}
-                            alt="A Gatsby astronaut"
+                            alt="Age Diversity Icon"
                             className="noMarginBottom"
                             />
                         </div>
@@ -129,7 +129,7 @@ function UserDiversityLogos({ dats }) {
                         width={25}
                         quality={95}
                         formats={["AUTO", "WEBP", "AVIF"]}
-                        alt="A Gatsby icon"
+                        alt="Diversity Within Sexual Orientation Icon"
                         className="noMarginBottom"
                         />
                     </div>
@@ -147,7 +147,7 @@ function UserDiversityLogos({ dats }) {
                         width={25}
                         quality={95}
                         formats={["AUTO", "WEBP", "AVIF"]}
-                        alt="A Gatsby astronaut"
+                        alt="Gendre Diversity Icon"
                         className="noMarginBottom"
                         />
                     </div>

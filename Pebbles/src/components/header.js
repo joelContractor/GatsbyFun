@@ -27,7 +27,7 @@ function Header ({ siteTitle }) {
               width={26}
               quality={95}
               formats={["AUTO", "WEBP", "AVIF"]}
-              alt="A Gatsby astronaut"
+              alt="Diverse Crew Image."
               style={{ marginBottom: `0px` }} 
           />
         </Link> 
@@ -44,7 +44,7 @@ function Header ({ siteTitle }) {
                 width={26}
                 quality={95}
                 formats={["AUTO", "WEBP", "AVIF"]}
-                alt="A Gatsby astronaut"
+                alt="Diverse Crew Image."
                 style={{ marginBottom: `0px` }} 
             />
           </Link>

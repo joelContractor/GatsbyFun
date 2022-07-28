@@ -75,7 +75,7 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                                             width={50}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
-                                            alt="A Gatsby astronaut"
+                                            alt="Religious Diversity Icon"
                                             style={{ marginBottom: `0px` }} 
                                             />
 
@@ -95,7 +95,7 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                                         width={50}
                                         quality={95}
                                         formats={["AUTO", "WEBP", "AVIF"]}
-                                        alt="A Gatsby icon"
+                                        alt="Cultural Diversity Icon"
                                         style={{ marginBottom: `0px` }} 
                                         />
 
@@ -114,7 +114,7 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                                             width={50}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
-                                            alt="A Gatsby icon"
+                                            alt=" Diverse Ability Icon"
                                             style={{ marginBottom: `0px` }} 
                                             />
 
@@ -133,7 +133,7 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                                             width={50}
                                             quality={95}
                                             formats={["AUTO", "WEBP", "AVIF"]}
-                                            alt="A Gatsby astronaut"
+                                            alt=" Age Diversity Icon"
                                             style={{ marginBottom: `0px` }} 
                                             />
 
@@ -152,7 +152,7 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                                         width={50}
                                         quality={95}
                                         formats={["AUTO", "WEBP", "AVIF"]}
-                                        alt="A Gatsby icon"
+                                        alt=" Diversity Sexual Orientation Icon"
                                         style={{ marginBottom: `0px` }} 
                                         />
 
@@ -171,7 +171,7 @@ function UserBannerImage({ dats, show, showInfo, presentRace, presentAbility, pr
                                         width={50}
                                         quality={95}
                                         formats={["AUTO", "WEBP", "AVIF"]}
-                                        alt="A Gatsby astronaut"
+                                        alt=" Diverse Gendre Icon"
                                         style={{ marginBottom: `0px` }} 
                                         />
 
