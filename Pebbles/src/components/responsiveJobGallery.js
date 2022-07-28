@@ -165,10 +165,9 @@ function ResponsiveJobSlider({ data }) {
                                                                     if(character != ''){
                                                                         i = i + 1;
                                                                         return <div key={character} className="resCardContentPara dataBorderLeft roleFloatClear">
-                                                                            <p className="roleTitle">
-                                                                                Role {i}: 
-                                                                            </p>
-                                                                            <p className="data charactersFontSize black roleDescription">{character}</p>
+                                                                                <p className="roleTitle">
+                                                                                    Role {i}: <span className="black">{character}</span>
+                                                                                </p>
                                                                             </div>
                                                                     }
                                                                 })()
